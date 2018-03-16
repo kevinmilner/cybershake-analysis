@@ -1,8 +1,17 @@
-# CS Study 15.4/NGAWest_2014_NoIdr GMPE Comparisons
+# Study 15.4/NGAWest_2014_NoIdr GMPE Comparisons
 
 **GMPE: NGAWest2 2014 Averaged No Idriss**
 
 **Vs30 Source: Simulation Value**
+
+**Study Details**
+
+| **Name** | Study 15.4 |
+|-----|-----|
+| **Date** | Apr 2015 |
+| **Region** | Los Angeles Box |
+| **Description** | Los Angeles region with CVM-S4.26 Velocity Model, 1hz |
+| **Velocity Model** | CVM-S4.26, 4.26 |
 
 Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore distance (**rJB**), the shortest horizontal distance from a site to the surface projection of the rupture surface
 
@@ -433,7 +442,7 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -448,14 +457,14 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 ##### All Sites, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -468,7 +477,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -483,14 +492,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### All Sites, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -503,7 +512,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -518,14 +527,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### All Sites, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -538,7 +547,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -553,14 +562,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### All Sites, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -573,7 +582,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -588,14 +597,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### All Sites, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -608,12 +617,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/All_Sites_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site COO
@@ -627,7 +636,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -642,14 +651,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### COO, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -662,7 +671,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -677,14 +686,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### COO, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -697,7 +706,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -712,14 +721,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### COO, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -732,7 +741,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -747,14 +756,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### COO, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -767,7 +776,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -782,14 +791,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### COO, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -802,12 +811,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/COO_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site USC
@@ -821,7 +830,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -836,14 +845,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### USC, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -856,7 +865,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -871,14 +880,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### USC, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -891,7 +900,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -906,14 +915,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### USC, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -926,7 +935,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -941,14 +950,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### USC, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -961,7 +970,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -976,14 +985,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### USC, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -996,12 +1005,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/USC_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site PAS
@@ -1015,7 +1024,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1030,14 +1039,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### PAS, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1050,7 +1059,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1065,14 +1074,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### PAS, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1085,7 +1094,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1100,14 +1109,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### PAS, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1120,7 +1129,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1135,14 +1144,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### PAS, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1155,7 +1164,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1170,14 +1179,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### PAS, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1190,12 +1199,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/PAS_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site SBSM
@@ -1209,7 +1218,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1224,14 +1233,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### SBSM, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1244,7 +1253,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1259,14 +1268,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SBSM, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1279,7 +1288,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1294,14 +1303,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SBSM, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1314,7 +1323,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1329,14 +1338,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SBSM, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1349,7 +1358,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1364,14 +1373,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SBSM, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1384,12 +1393,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/SBSM_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site FIL
@@ -1403,7 +1412,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1418,14 +1427,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### FIL, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1438,7 +1447,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1453,14 +1462,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### FIL, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1473,7 +1482,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1488,14 +1497,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### FIL, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1508,7 +1517,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1523,14 +1532,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### FIL, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1543,7 +1552,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1558,14 +1567,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### FIL, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1578,12 +1587,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/FIL_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site LAPD
@@ -1597,7 +1606,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1612,14 +1621,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### LAPD, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1632,7 +1641,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1647,14 +1656,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### LAPD, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1667,7 +1676,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1682,14 +1691,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### LAPD, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1702,7 +1711,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1717,14 +1726,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### LAPD, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1737,7 +1746,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1752,14 +1761,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### LAPD, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1772,12 +1781,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/LAPD_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site SMCA
@@ -1791,7 +1800,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1806,14 +1815,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### SMCA, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1826,7 +1835,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1841,14 +1850,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SMCA, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1861,7 +1870,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1876,14 +1885,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SMCA, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1896,7 +1905,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1911,14 +1920,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SMCA, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1931,7 +1940,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1946,14 +1955,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### SMCA, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1966,12 +1975,12 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/SMCA_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site WNGC
@@ -1985,7 +1994,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -2000,14 +2009,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### WNGC, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -2020,7 +2029,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -2035,14 +2044,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### WNGC, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -2055,7 +2064,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -2070,14 +2079,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### WNGC, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -2090,7 +2099,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -2105,14 +2114,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### WNGC, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -2125,7 +2134,7 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 15.4 single rupture comparison
+* Red +: GMPE Mean/Study 15.4 single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -2140,14 +2149,14 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 ##### WNGC, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 15.4 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -2160,19 +2169,19 @@ These plots compare CS Study 15.4 to the full GMPE log-normal distributions. Eac
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 15.4*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 15.4 Mean
+* Blue Dashed Line: Study 15.4 Mean
 
 ![Standard Normal Plot](resources/WNGC_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ## Hazard Curves
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* Black Solid Line: CS Study 15.4
+* Black Solid Line: Study 15.4
 * Blue Solid Line: NGAWest_2014_NoIdr
 * Blue Dashed Line: NGAWest_2014_NoIdr 3-sigma truncation
 * Blue Dotted Line: NGAWest_2014_NoIdr 2-sigma truncation
@@ -2193,17 +2202,13 @@ z-score standard normal plots across all magnitudes/distances
 ## GMPE Residuals
 *[(top)](#table-of-contents)*
 
-Residuals of simulation data (CS Study 15.4) in log space relative to GMPE log-mean
+Residuals of simulation data (Study 15.4) in log space relative to GMPE log-mean
 
 **Legend**
-* Linear Least-Squares Fit to Residuals
-  * Black Thick Dashed: fit line
-  * Black Thin Dashed: ± data sigma
-  * Blue Thin Dashed: ± GMPE sigma
-* Binned Linear Least-Squares Fit to Residuals
-  * Black Thick Solid: fit lines for each bin
-  * Black Thin Dotted: ± data sigma
-  * Blue Thin Dotted: ± GMPE sigma
+* Black Thick Line: Linear Least-Squares Fit to Residuals
+* Black Circles: Binned Linear Least-Squares Fit to Residuals
+  * Black Thin Dashes: binned mean ± data sigma
+  * Blue Thin Dotted: binned mean ± GMPE sigma
 
 GMPE Residuals use the following values, averaged among all ruptures, for all paremeters which are not varied. All other parameters set to GMPE defaults
 

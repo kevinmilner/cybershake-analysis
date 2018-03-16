@@ -3,7 +3,7 @@
 | **Name** | Study 17.3 1-D |
 |-----|-----|
 | **Date** | Mar 2017 |
-| **Region** | CS Central California Box |
+| **Region** | Central California Box |
 | **Description** | Central California with CCA-1D Velocity Model, 1hz |
 | **Velocity Model** | CCA 1D, 1.0 |
 
