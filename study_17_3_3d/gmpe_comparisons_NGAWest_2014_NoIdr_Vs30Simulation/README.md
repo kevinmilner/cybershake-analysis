@@ -1,8 +1,17 @@
-# CS Study 17.3 3-D/NGAWest_2014_NoIdr GMPE Comparisons
+# Study 17.3 3-D/NGAWest_2014_NoIdr GMPE Comparisons
 
 **GMPE: NGAWest2 2014 Averaged No Idriss**
 
 **Vs30 Source: Simulation Value**
+
+**Study Details**
+
+| **Name** | Study 17.3 3-D |
+|-----|-----|
+| **Date** | Mar 2017 |
+| **Region** | Central California Box |
+| **Description** | Central California with CCA-06 Velocity Model, 1hz |
+| **Velocity Model** | CCA, iteration 6 |
 
 Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore distance (**rJB**), the shortest horizontal distance from a site to the surface projection of the rupture surface
 
@@ -577,7 +586,7 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -592,14 +601,14 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 ##### All Sites, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -612,7 +621,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -627,14 +636,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### All Sites, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -647,7 +656,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -662,14 +671,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### All Sites, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -682,7 +691,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -697,14 +706,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### All Sites, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -717,7 +726,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -732,14 +741,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### All Sites, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -752,12 +761,12 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 ![Standard Normal Plot](resources/All_Sites_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site LEM
@@ -771,7 +780,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -786,14 +795,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### LEM, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -806,7 +815,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -821,14 +830,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### LEM, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -841,7 +850,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -856,14 +865,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### LEM, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -876,7 +885,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -891,14 +900,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### LEM, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -911,7 +920,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -926,14 +935,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### LEM, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -946,12 +955,12 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 ![Standard Normal Plot](resources/LEM_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site SLO
@@ -965,7 +974,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -980,14 +989,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### SLO, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1000,7 +1009,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1015,14 +1024,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SLO, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1035,7 +1044,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1050,14 +1059,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SLO, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1070,7 +1079,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1085,14 +1094,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SLO, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1105,7 +1114,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1120,14 +1129,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SLO, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1140,12 +1149,12 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 ![Standard Normal Plot](resources/SLO_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site CAR
@@ -1159,7 +1168,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1174,14 +1183,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### CAR, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1194,7 +1203,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1209,14 +1218,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### CAR, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1229,7 +1238,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1244,14 +1253,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### CAR, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1264,7 +1273,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1279,14 +1288,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### CAR, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1299,7 +1308,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1314,14 +1323,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### CAR, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1334,12 +1343,12 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 ![Standard Normal Plot](resources/CAR_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site BAK
@@ -1353,7 +1362,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1368,14 +1377,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### BAK, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1388,7 +1397,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1403,14 +1412,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### BAK, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1423,7 +1432,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1438,14 +1447,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### BAK, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1458,7 +1467,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1473,14 +1482,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### BAK, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1493,7 +1502,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1508,14 +1517,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### BAK, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1528,12 +1537,12 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 ![Standard Normal Plot](resources/BAK_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site SBR
@@ -1547,7 +1556,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1562,14 +1571,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### SBR, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1582,7 +1591,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1597,14 +1606,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SBR, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1617,7 +1626,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1632,14 +1641,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SBR, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1652,7 +1661,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1667,14 +1676,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SBR, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1687,7 +1696,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1702,14 +1711,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### SBR, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1722,12 +1731,12 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 ![Standard Normal Plot](resources/SBR_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ### Site VENT
@@ -1741,7 +1750,7 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1756,14 +1765,14 @@ z-score standard normal plots across all magnitudes/distances
 ##### VENT, 6 < Mw < 6.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1776,7 +1785,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1791,14 +1800,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### VENT, 6.5 < Mw < 7, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1811,7 +1820,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1826,14 +1835,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### VENT, 7 < Mw < 7.5, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1846,7 +1855,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1861,14 +1870,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### VENT, 7.5 < Mw < 8, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1881,7 +1890,7 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 *[(top)](#table-of-contents)*
 
 **Legend**
-* Red +: GMPE Mean/CS Study 17.3 3-D single rupture comparison
+* Red +: GMPE Mean/Study 17.3 3-D single rupture comparison
 * Yellow Region: Factor of 2 above & below
 * Green Line: Linear Regression
 
@@ -1896,14 +1905,14 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 ##### VENT, 8 < Mw < 9, Z-Score Histograms
 *[(top)](#table-of-contents)*
 
-These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
+These plots compare Study 17.3 3-D to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 | **0 km < rJB < 10 km** | **10 km < rJB < 20 km** | **20 km < rJB < 40 km** |
 |-----|-----|-----|
@@ -1916,19 +1925,19 @@ These plots compare CS Study 17.3 3-D to the full GMPE log-normal distributions.
 
 z-score standard normal plots across all magnitudes/distances
 
-**z-score**: (ln(*CS Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
+**z-score**: (ln(*Study 17.3 3-D*) - ln(*GMPE-mean*)) / *GMPE-sigma*
 
 **Legend**
 * Black Line: Standard Normal distribution (in natural log space)
 * Gray Histogram: z-score for each rupture
-* Blue Dashed Line: CS Study 17.3 3-D Mean
+* Blue Dashed Line: Study 17.3 3-D Mean
 
 ![Standard Normal Plot](resources/VENT_all_mags_all_dists_NGAWest_2014_NoIdr_std_norm.png)
 ## Hazard Curves
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* Black Solid Line: CS Study 17.3 3-D
+* Black Solid Line: Study 17.3 3-D
 * Blue Solid Line: NGAWest_2014_NoIdr
 * Blue Dashed Line: NGAWest_2014_NoIdr 3-sigma truncation
 * Blue Dotted Line: NGAWest_2014_NoIdr 2-sigma truncation
@@ -1947,7 +1956,7 @@ z-score standard normal plots across all magnitudes/distances
 ## GMPE Residuals
 *[(top)](#table-of-contents)*
 
-Residuals of simulation data (CS Study 17.3 3-D) in log space relative to GMPE log-mean
+Residuals of simulation data (Study 17.3 3-D) in log space relative to GMPE log-mean
 
 **Legend**
 * Black Thick Line: Linear Least-Squares Fit to Residuals
