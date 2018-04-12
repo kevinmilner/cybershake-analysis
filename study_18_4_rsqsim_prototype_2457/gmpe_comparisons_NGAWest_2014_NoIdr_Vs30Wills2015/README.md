@@ -237,11 +237,11 @@ z-score standard normal plots across all magnitudes/distances
 
 **Legend**:
 * Black Solid Line: RSQSim 2457
-* Blue Solid Line: NGAWest_2014_NoIdr
-* Blue Dashed Line: NGAWest_2014_NoIdr 3-sigma truncation
-* Blue Dotted Line: NGAWest_2014_NoIdr 2-sigma truncation
-* Blue Dotted and dashed Line: NGAWest_2014_NoIdr 1-sigma truncation
-* Green Dashed Line: NGAWest_2014_NoIdr mean values only
+* Blue Solid Line: NGAWest_2014_NoIdr full curve
+* Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation
+* Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation
+* Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation
+* Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 | Site | 3s | 5s | 10s |
@@ -271,6 +271,8 @@ GMPE Residuals use the following values, averaged among all ruptures, for all pa
 
 ### Period-Dependent Residual Components
 *[(top)](#table-of-contents)*
+
+**Note: These are not yet corrected for covariance. Currently only useful for comparing relative phi and tau, not absolute values**
 
 ![Residual Components](resources/period_residual_components.png)
 
