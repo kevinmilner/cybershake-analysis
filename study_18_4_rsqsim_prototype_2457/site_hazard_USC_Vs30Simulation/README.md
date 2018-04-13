@@ -31,8 +31,9 @@
   * Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation
   * Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation
   * Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation
-  * Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0.3
-  * Green Dotted Line: NGAWest_2014_NoIdr, Fixed sigma=0
+  * Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0.5
+  * Green Dotted Line: NGAWest_2014_NoIdr, Fixed sigma=0.3
+  * Green Dotted and dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ### 3s Hazard Curves
