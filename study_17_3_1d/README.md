@@ -9,13 +9,14 @@
 
 * [Metadata](#metadata)
 * [GMPE Comparisons](#gmpe-comparisons)
-  * [Vs30 model for GMPE comparisons: Simulation Value](#vs30-model-for-gmpe-comparisons-simulation-value)
 * [RotD100/RotD50 Ratios](#rotd100rotd50-ratios)
+* [Plots](#plots)
+  * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
+  * [Rupture Variation Count Plot](#rupture-variation-count-plot)
+  * [Magnitude-Area Plots](#magnitude-area-plots)
 
 ## GMPE Comparisons
 *[(top)](#study-173-1-d)*
-
-### Vs30 model for GMPE comparisons: Simulation Value
 
 * [ASK2014](gmpe_comparisons_ASK2014_Vs30Simulation/)
 * [BSSA2014](gmpe_comparisons_BSSA2014_Vs30Simulation/)
@@ -27,3 +28,19 @@
 *[(top)](#study-173-1-d)*
 
 [RotD100/RotD50 Ratios Plotted Here](rotd_ratio_comparisons/)
+
+## Plots
+### Magnitude-Frequency Plot
+*[(top)](#study-173-1-d)*
+
+![MFD](resources/mfd.png)
+### Rupture Variation Count Plot
+*[(top)](#study-173-1-d)*
+
+![RV Count](resources/rv_count.png)
+### Magnitude-Area Plots
+*[(top)](#study-173-1-d)*
+
+| Scatter | 2-D Hist |
+|-----|-----|
+| ![MFD Scatter](resources/mag_area.png) | ![MFD Hist](resources/mag_area_hist2D.png) |

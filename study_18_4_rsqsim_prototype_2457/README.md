@@ -12,6 +12,10 @@
   * [Vs30 model for GMPE comparisons: Wills 2015](#vs30-model-for-gmpe-comparisons-wills-2015)
   * [Vs30 model for GMPE comparisons: Simulation Value](#vs30-model-for-gmpe-comparisons-simulation-value)
 * [Site Hazard Comparisons](#site-hazard-comparisons)
+* [Plots](#plots)
+  * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
+  * [Rupture Variation Count Plot](#rupture-variation-count-plot)
+  * [Magnitude-Area Plots](#magnitude-area-plots)
 
 ## GMPE Comparisons
 *[(top)](#rsqsim-2457)*
@@ -27,3 +31,19 @@
 *[(top)](#rsqsim-2457)*
 
 * [USC](site_hazard_USC_Vs30Simulation/)
+
+## Plots
+### Magnitude-Frequency Plot
+*[(top)](#rsqsim-2457)*
+
+![MFD](resources/mfd.png)
+### Rupture Variation Count Plot
+*[(top)](#rsqsim-2457)*
+
+![RV Count](resources/rv_count.png)
+### Magnitude-Area Plots
+*[(top)](#rsqsim-2457)*
+
+| Scatter | 2-D Hist |
+|-----|-----|
+| ![MFD Scatter](resources/mag_area.png) | ![MFD Hist](resources/mag_area_hist2D.png) |
