@@ -31,36 +31,56 @@ img {
 <ul>
 <li><a href="#hazard-curves">Hazard Curves</a>
 <ul>
-<li><a href="#3s-hazard-curves">3s Hazard Curves</a></li>
-<li><a href="#5s-hazard-curves">5s Hazard Curves</a></li>
-<li><a href="#75s-hazard-curves">7.5s Hazard Curves</a></li>
-<li><a href="#10s-hazard-curves">10s Hazard Curves</a></li>
+<li><a href="#3s-hazard-curves">3s Hazard Curves</a>
+<ul>
+<li><a href="#3s-gmpe-sim-comparison">3s GMPE-Sim Comparison</a></li>
+</ul>
+</li>
+<li><a href="#5s-hazard-curves">5s Hazard Curves</a>
+<ul>
+<li><a href="#5s-gmpe-sim-comparison">5s GMPE-Sim Comparison</a></li>
+</ul>
+</li>
+<li><a href="#75s-hazard-curves">7.5s Hazard Curves</a>
+<ul>
+<li><a href="#75s-gmpe-sim-comparison">7.5s GMPE-Sim Comparison</a></li>
+</ul>
+</li>
+<li><a href="#10s-hazard-curves">10s Hazard Curves</a>
+<ul>
+<li><a href="#10s-gmpe-sim-comparison">10s GMPE-Sim Comparison</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#disaggregations">Disaggregations</a>
 <ul>
 <li><a href="#3s-disaggregations">3s Disaggregations</a>
 <ul>
+<li><a href="#3s-disaggregations-at-simulationgmpe-intersections">3s Disaggregations at Simulation/GMPE Intersections</a></li>
 <li><a href="#3s-disaggregations-at-fixed-return-periods">3s Disaggregations at Fixed Return Periods</a></li>
-<li><a href="#3s-disaggregations-at-intersections">3s Disaggregations at Intersections</a></li>
+<li><a href="#3s-disaggregations-at-fixed-imls">3s Disaggregations at Fixed IMLs</a></li>
 </ul>
 </li>
 <li><a href="#5s-disaggregations">5s Disaggregations</a>
 <ul>
+<li><a href="#5s-disaggregations-at-simulationgmpe-intersections">5s Disaggregations at Simulation/GMPE Intersections</a></li>
 <li><a href="#5s-disaggregations-at-fixed-return-periods">5s Disaggregations at Fixed Return Periods</a></li>
-<li><a href="#5s-disaggregations-at-intersections">5s Disaggregations at Intersections</a></li>
+<li><a href="#5s-disaggregations-at-fixed-imls">5s Disaggregations at Fixed IMLs</a></li>
 </ul>
 </li>
 <li><a href="#75s-disaggregations">7.5s Disaggregations</a>
 <ul>
+<li><a href="#75s-disaggregations-at-simulationgmpe-intersections">7.5s Disaggregations at Simulation/GMPE Intersections</a></li>
 <li><a href="#75s-disaggregations-at-fixed-return-periods">7.5s Disaggregations at Fixed Return Periods</a></li>
-<li><a href="#75s-disaggregations-at-intersections">7.5s Disaggregations at Intersections</a></li>
+<li><a href="#75s-disaggregations-at-fixed-imls">7.5s Disaggregations at Fixed IMLs</a></li>
 </ul>
 </li>
 <li><a href="#10s-disaggregations">10s Disaggregations</a>
 <ul>
+<li><a href="#10s-disaggregations-at-simulationgmpe-intersections">10s Disaggregations at Simulation/GMPE Intersections</a></li>
 <li><a href="#10s-disaggregations-at-fixed-return-periods">10s Disaggregations at Fixed Return Periods</a></li>
-<li><a href="#10s-disaggregations-at-intersections">10s Disaggregations at Intersections</a></li>
+<li><a href="#10s-disaggregations-at-fixed-imls">10s Disaggregations at Fixed IMLs</a></li>
 </ul>
 </li>
 </ul>
@@ -94,24 +114,122 @@ img {
 <h3 id="3s-hazard-curves">3s Hazard Curves</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/USC_curves_3.0s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="3s-gmpe-sim-comparison">3s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2457</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/USC_curves_3.0s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
 <h3 id="5s-hazard-curves">5s Hazard Curves</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/USC_curves_5.0s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="5s-gmpe-sim-comparison">5s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2457</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/USC_curves_5.0s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
 <h3 id="75s-hazard-curves">7.5s Hazard Curves</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/USC_curves_7.5s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="75s-gmpe-sim-comparison">7.5s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2457</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/USC_curves_7.5s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
 <h3 id="10s-hazard-curves">10s Hazard Curves</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/USC_curves_10.0s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="10s-gmpe-sim-comparison">10s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2457</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/USC_curves_10.0s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
 <h2 id="disaggregations">Disaggregations</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="3s-disaggregations">3s Disaggregations</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="3s-disaggregations-at-simulationgmpe-intersections">3s Disaggregations at Simulation/GMPE Intersections</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1733 yr<br>0.2141644 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.2141644.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_intersect_0.2141644.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
 <h4 id="3s-disaggregations-at-fixed-return-periods">3s Disaggregations at Fixed Return Periods</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Return Period</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
 <tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_1000yr.png" alt="Disaggregation" /></td></tr>
@@ -119,23 +237,35 @@ img {
 <tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_10000yr.png" alt="Disaggregation" /></td></tr>
 </tbody>
 </table>
-<h4 id="3s-disaggregations-at-intersections">3s Disaggregations at Intersections</h4>
+<h4 id="3s-disaggregations-at-fixed-imls">3s Disaggregations at Fixed IMLs</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Disagg Point</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>1733 yr</strong>, 0.2141644 g</td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_0.2141644g.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_0.2141644g.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.1 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.1.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_iml_0.1.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.5 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.5.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_iml_0.5.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
 </tbody>
 </table>
 <h3 id="5s-disaggregations">5s Disaggregations</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="5s-disaggregations-at-simulationgmpe-intersections">5s Disaggregations at Simulation/GMPE Intersections</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>2683 yr<br>0.13532826 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_intersect_0.13532826.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_intersect_0.13532826.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
 <h4 id="5s-disaggregations-at-fixed-return-periods">5s Disaggregations at Fixed Return Periods</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Return Period</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
 <tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_1000yr.png" alt="Disaggregation" /></td></tr>
@@ -143,23 +273,35 @@ img {
 <tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_10000yr.png" alt="Disaggregation" /></td></tr>
 </tbody>
 </table>
-<h4 id="5s-disaggregations-at-intersections">5s Disaggregations at Intersections</h4>
+<h4 id="5s-disaggregations-at-fixed-imls">5s Disaggregations at Fixed IMLs</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Disagg Point</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>2683 yr</strong>, 0.13532826 g</td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_0.13532826g.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_0.13532826g.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.1 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_iml_0.1.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_iml_0.1.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.5 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
 </tbody>
 </table>
 <h3 id="75s-disaggregations">7.5s Disaggregations</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="75s-disaggregations-at-simulationgmpe-intersections">7.5s Disaggregations at Simulation/GMPE Intersections</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>958 yr<br>0.047384318 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_intersect_0.047384318.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_intersect_0.047384318.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
 <h4 id="75s-disaggregations-at-fixed-return-periods">7.5s Disaggregations at Fixed Return Periods</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Return Period</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
 <tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_1000yr.png" alt="Disaggregation" /></td></tr>
@@ -167,23 +309,35 @@ img {
 <tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_10000yr.png" alt="Disaggregation" /></td></tr>
 </tbody>
 </table>
-<h4 id="75s-disaggregations-at-intersections">7.5s Disaggregations at Intersections</h4>
+<h4 id="75s-disaggregations-at-fixed-imls">7.5s Disaggregations at Fixed IMLs</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Disagg Point</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>958 yr</strong>, 0.047384318 g</td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_0.047384318g.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_0.047384318g.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.1 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_iml_0.1.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_iml_0.1.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.5 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
 </tbody>
 </table>
 <h3 id="10s-disaggregations">10s Disaggregations</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="10s-disaggregations-at-simulationgmpe-intersections">10s Disaggregations at Simulation/GMPE Intersections</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>464 yr<br>0.02001288 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_intersect_0.02001288.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_intersect_0.02001288.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
 <h4 id="10s-disaggregations-at-fixed-return-periods">10s Disaggregations at Fixed Return Periods</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Return Period</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
 <tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_1000yr.png" alt="Disaggregation" /></td></tr>
@@ -191,14 +345,16 @@ img {
 <tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_10000yr.png" alt="Disaggregation" /></td></tr>
 </tbody>
 </table>
-<h4 id="10s-disaggregations-at-intersections">10s Disaggregations at Intersections</h4>
+<h4 id="10s-disaggregations-at-fixed-imls">10s Disaggregations at Fixed IMLs</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>Disagg Point</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2457 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>464 yr</strong>, 0.02001288 g</td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_0.02001288g.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_0.02001288g.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.1 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>0.5 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
 </tbody>
 </table>
 </body>
