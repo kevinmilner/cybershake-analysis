@@ -49,6 +49,7 @@ img {
 <li><a href="#gmpe-residuals">GMPE Residuals</a>
 <ul>
 <li><a href="#period-dependent-residual-components">Period-Dependent Residual Components</a></li>
+<li><a href="#detrended-period-dependent-residual-components">Detrended Period-Dependent Residual Components</a></li>
 <li><a href="#gmpe-magnitude-residuals">GMPE Magnitude Residuals</a></li>
 <li><a href="#gmpe-rjb-residuals">GMPE rJB Residuals</a></li>
 <li><a href="#gmpe-rrup-residuals">GMPE rRup Residuals</a></li>
@@ -299,12 +300,20 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Legend</strong>:</p>
 <ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
 <li>Black Solid Line: RSQSim 2457</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
 <li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
 <li>Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation</li>
 <li>Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation</li>
 <li>Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation</li>
 <li>Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0</li>
+</ul>
+</li>
 <li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
 </ul>
 <table>
@@ -346,6 +355,19 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Note: These are not yet corrected for covariance. Currently only useful for comparing relative phi and tau, not absolute values</strong></p>
 <p><img src="resources/period_residual_components.png" alt="Residual Components" /></p>
+<h3 id="detrended-period-dependent-residual-components">Detrended Period-Dependent Residual Components</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Note: These are not yet corrected for covariance. Currently only useful for comparing relative phi and tau, not absolute values</strong></p>
+<p>Residuals shown here are first detrended according to the following magnitude &amp; log-distance dependent average residuals</p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/detrend_residuals_3s.png" alt="Detrend XYZ" /></td><td><img src="resources/detrend_residuals_5s.png" alt="Detrend XYZ" /></td><td><img src="resources/detrend_residuals_10s.png" alt="Detrend XYZ" /></td></tr>
+</tbody>
+</table>
+<p><img src="resources/period_residual_detrend_components.png" alt="Residual Components" /></p>
 <h3 id="gmpe-magnitude-residuals">GMPE Magnitude Residuals</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>

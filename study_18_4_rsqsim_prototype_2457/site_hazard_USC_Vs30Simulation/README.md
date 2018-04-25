@@ -15,12 +15,16 @@
 * [Hazard Curves](#hazard-curves)
   * [3s Hazard Curves](#3s-hazard-curves)
     * [3s GMPE-Sim Comparison](#3s-gmpe-sim-comparison)
+    * [3s Source Contributions](#3s-source-contributions)
   * [5s Hazard Curves](#5s-hazard-curves)
     * [5s GMPE-Sim Comparison](#5s-gmpe-sim-comparison)
+    * [5s Source Contributions](#5s-source-contributions)
   * [7.5s Hazard Curves](#75s-hazard-curves)
     * [7.5s GMPE-Sim Comparison](#75s-gmpe-sim-comparison)
+    * [7.5s Source Contributions](#75s-source-contributions)
   * [10s Hazard Curves](#10s-hazard-curves)
     * [10s GMPE-Sim Comparison](#10s-gmpe-sim-comparison)
+    * [10s Source Contributions](#10s-source-contributions)
 * [Disaggregations](#disaggregations)
   * [3s Disaggregations](#3s-disaggregations)
     * [3s Disaggregations at Simulation/GMPE Intersections](#3s-disaggregations-at-simulationgmpe-intersections)
@@ -79,6 +83,13 @@
 
 ![Hazard Curve](resources/USC_curves_3.0s_NGAWest_2014_NoIdr_gmpe_sims.png)
 
+#### 3s Source Contributions
+*[(top)](#table-of-contents)*
+
+| **Simulation Source Contributions** | **GMPE Source Contributions** |
+|-----|-----|
+| ![Hazard Curve](resources/USC_curves_3.0s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_3.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
+
 ### 5s Hazard Curves
 *[(top)](#table-of-contents)*
 
@@ -100,6 +111,13 @@
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_5.0s_NGAWest_2014_NoIdr_gmpe_sims.png)
+
+#### 5s Source Contributions
+*[(top)](#table-of-contents)*
+
+| **Simulation Source Contributions** | **GMPE Source Contributions** |
+|-----|-----|
+| ![Hazard Curve](resources/USC_curves_5.0s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_5.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
 
 ### 7.5s Hazard Curves
 *[(top)](#table-of-contents)*
@@ -123,6 +141,13 @@
 
 ![Hazard Curve](resources/USC_curves_7.5s_NGAWest_2014_NoIdr_gmpe_sims.png)
 
+#### 7.5s Source Contributions
+*[(top)](#table-of-contents)*
+
+| **Simulation Source Contributions** | **GMPE Source Contributions** |
+|-----|-----|
+| ![Hazard Curve](resources/USC_curves_7.5s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_7.5s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
+
 ### 10s Hazard Curves
 *[(top)](#table-of-contents)*
 
@@ -144,6 +169,13 @@
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_10.0s_NGAWest_2014_NoIdr_gmpe_sims.png)
+
+#### 10s Source Contributions
+*[(top)](#table-of-contents)*
+
+| **Simulation Source Contributions** | **GMPE Source Contributions** |
+|-----|-----|
+| ![Hazard Curve](resources/USC_curves_10.0s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_10.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
 
 ## Disaggregations
 *[(top)](#table-of-contents)*

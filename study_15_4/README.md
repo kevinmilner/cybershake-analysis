@@ -9,8 +9,8 @@
 
 * [Metadata](#metadata)
 * [GMPE Comparisons](#gmpe-comparisons)
-  * [Vs30 model for GMPE comparisons: Simulation Value](#vs30-model-for-gmpe-comparisons-simulation-value)
   * [Vs30 model for GMPE comparisons: Wills 2015](#vs30-model-for-gmpe-comparisons-wills-2015)
+  * [Vs30 model for GMPE comparisons: Simulation Value](#vs30-model-for-gmpe-comparisons-simulation-value)
 * [Site Hazard Comparisons](#site-hazard-comparisons)
 * [RotD100/RotD50 Ratios](#rotd100rotd50-ratios)
 * [Plots](#plots)
@@ -25,13 +25,6 @@
 ## GMPE Comparisons
 *[(top)](#study-154)*
 
-### Vs30 model for GMPE comparisons: Simulation Value
-
-* [ASK2014](gmpe_comparisons_ASK2014_Vs30Simulation/)
-* [BSSA2014](gmpe_comparisons_BSSA2014_Vs30Simulation/)
-* [CB2014](gmpe_comparisons_CB2014_Vs30Simulation/)
-* [CY2014](gmpe_comparisons_CY2014_Vs30Simulation/)
-* [NGAWest_2014_NoIdr](gmpe_comparisons_NGAWest_2014_NoIdr_Vs30Simulation/)
 ### Vs30 model for GMPE comparisons: Wills 2015
 
 * [ASK2014](gmpe_comparisons_ASK2014_Vs30Wills2015/)
@@ -39,6 +32,13 @@
 * [CB2014](gmpe_comparisons_CB2014_Vs30Wills2015/)
 * [CY2014](gmpe_comparisons_CY2014_Vs30Wills2015/)
 * [NGAWest_2014_NoIdr](gmpe_comparisons_NGAWest_2014_NoIdr_Vs30Wills2015/)
+### Vs30 model for GMPE comparisons: Simulation Value
+
+* [ASK2014](gmpe_comparisons_ASK2014_Vs30Simulation/)
+* [BSSA2014](gmpe_comparisons_BSSA2014_Vs30Simulation/)
+* [CB2014](gmpe_comparisons_CB2014_Vs30Simulation/)
+* [CY2014](gmpe_comparisons_CY2014_Vs30Simulation/)
+* [NGAWest_2014_NoIdr](gmpe_comparisons_NGAWest_2014_NoIdr_Vs30Simulation/)
 
 ## Site Hazard Comparisons
 *[(top)](#study-154)*

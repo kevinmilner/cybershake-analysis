@@ -27,6 +27,7 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 * [Hazard Curves](#hazard-curves)
 * [GMPE Residuals](#gmpe-residuals)
   * [Period-Dependent Residual Components](#period-dependent-residual-components)
+  * [Detrended Period-Dependent Residual Components](#detrended-period-dependent-residual-components)
   * [GMPE Magnitude Residuals](#gmpe-magnitude-residuals)
   * [GMPE rJB Residuals](#gmpe-rjb-residuals)
   * [GMPE rRup Residuals](#gmpe-rrup-residuals)
@@ -236,12 +237,14 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* Black Solid Line: RSQSim 2457
-* Blue Solid Line: NGAWest_2014_NoIdr full curve
-* Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation
-* Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation
-* Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation
-* Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0
+* **Simulations Curves** *(truncated below lowest possible y-value)*
+  * Black Solid Line: RSQSim 2457
+* **GMPE Curves**
+  * Blue Solid Line: NGAWest_2014_NoIdr full curve
+  * Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation
+  * Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation
+  * Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation
+  * Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 | Site | 3s | 5s | 10s |
@@ -275,6 +278,18 @@ GMPE Residuals use the following values, averaged among all ruptures, for all pa
 **Note: These are not yet corrected for covariance. Currently only useful for comparing relative phi and tau, not absolute values**
 
 ![Residual Components](resources/period_residual_components.png)
+
+### Detrended Period-Dependent Residual Components
+*[(top)](#table-of-contents)*
+
+**Note: These are not yet corrected for covariance. Currently only useful for comparing relative phi and tau, not absolute values**
+
+Residuals shown here are first detrended according to the following magnitude & log-distance dependent average residuals
+
+| **3s** | **5s** | **10s** |
+|-----|-----|-----|
+| ![Detrend XYZ](resources/detrend_residuals_3s.png) | ![Detrend XYZ](resources/detrend_residuals_5s.png) | ![Detrend XYZ](resources/detrend_residuals_10s.png) |
+![Residual Components](resources/period_residual_detrend_components.png)
 
 ### GMPE Magnitude Residuals
 *[(top)](#table-of-contents)*
