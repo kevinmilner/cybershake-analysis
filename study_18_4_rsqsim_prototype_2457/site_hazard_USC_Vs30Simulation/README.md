@@ -16,15 +16,19 @@
   * [3s Hazard Curves](#3s-hazard-curves)
     * [3s GMPE-Sim Comparison](#3s-gmpe-sim-comparison)
     * [3s Source Contributions](#3s-source-contributions)
+    * [3s Simulation Curve Animation](#3s-simulation-curve-animation)
   * [5s Hazard Curves](#5s-hazard-curves)
     * [5s GMPE-Sim Comparison](#5s-gmpe-sim-comparison)
     * [5s Source Contributions](#5s-source-contributions)
+    * [5s Simulation Curve Animation](#5s-simulation-curve-animation)
   * [7.5s Hazard Curves](#75s-hazard-curves)
     * [7.5s GMPE-Sim Comparison](#75s-gmpe-sim-comparison)
     * [7.5s Source Contributions](#75s-source-contributions)
+    * [7.5s Simulation Curve Animation](#75s-simulation-curve-animation)
   * [10s Hazard Curves](#10s-hazard-curves)
     * [10s GMPE-Sim Comparison](#10s-gmpe-sim-comparison)
     * [10s Source Contributions](#10s-source-contributions)
+    * [10s Simulation Curve Animation](#10s-simulation-curve-animation)
 * [Disaggregations](#disaggregations)
   * [3s Disaggregations](#3s-disaggregations)
     * [3s Disaggregations at Simulation/GMPE Intersections](#3s-disaggregations-at-simulationgmpe-intersections)
@@ -90,6 +94,11 @@
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_3.0s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_3.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
 
+#### 3s Simulation Curve Animation
+*[(top)](#table-of-contents)*
+
+![Hazard Curve Animation](resources/USC_curves_3.0s_NGAWest_2014_NoIdr_animation.gif)
+
 ### 5s Hazard Curves
 *[(top)](#table-of-contents)*
 
@@ -118,6 +127,11 @@
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_5.0s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_5.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
+
+#### 5s Simulation Curve Animation
+*[(top)](#table-of-contents)*
+
+![Hazard Curve Animation](resources/USC_curves_5.0s_NGAWest_2014_NoIdr_animation.gif)
 
 ### 7.5s Hazard Curves
 *[(top)](#table-of-contents)*
@@ -148,6 +162,11 @@
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_7.5s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_7.5s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
 
+#### 7.5s Simulation Curve Animation
+*[(top)](#table-of-contents)*
+
+![Hazard Curve Animation](resources/USC_curves_7.5s_NGAWest_2014_NoIdr_animation.gif)
+
 ### 10s Hazard Curves
 *[(top)](#table-of-contents)*
 
@@ -176,6 +195,11 @@
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_10.0s_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_10.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
+
+#### 10s Simulation Curve Animation
+*[(top)](#table-of-contents)*
+
+![Hazard Curve Animation](resources/USC_curves_10.0s_NGAWest_2014_NoIdr_animation.gif)
 
 ## Disaggregations
 *[(top)](#table-of-contents)*
