@@ -89,12 +89,19 @@
 #### 3s Source Contributions
 *[(top)](#table-of-contents)*
 
+
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+
+*NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
+
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_3.0s_ASK2014_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_3.0s_ASK2014_source_contrib_gmpe.png) |
 
 #### 3s Simulation Curve Animation
 *[(top)](#table-of-contents)*
+
+This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 10000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.
 
 ![Hazard Curve Animation](resources/USC_curves_3.0s_ASK2014_animation.gif)
 
@@ -123,12 +130,19 @@
 #### 5s Source Contributions
 *[(top)](#table-of-contents)*
 
+
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+
+*NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
+
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_5.0s_ASK2014_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_5.0s_ASK2014_source_contrib_gmpe.png) |
 
 #### 5s Simulation Curve Animation
 *[(top)](#table-of-contents)*
+
+This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 10000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.
 
 ![Hazard Curve Animation](resources/USC_curves_5.0s_ASK2014_animation.gif)
 
@@ -157,12 +171,19 @@
 #### 7.5s Source Contributions
 *[(top)](#table-of-contents)*
 
+
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+
+*NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
+
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_7.5s_ASK2014_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_7.5s_ASK2014_source_contrib_gmpe.png) |
 
 #### 7.5s Simulation Curve Animation
 *[(top)](#table-of-contents)*
+
+This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 10000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.
 
 ![Hazard Curve Animation](resources/USC_curves_7.5s_ASK2014_animation.gif)
 
@@ -191,6 +212,11 @@
 #### 10s Source Contributions
 *[(top)](#table-of-contents)*
 
+
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+
+*NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
+
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
 | ![Hazard Curve](resources/USC_curves_10.0s_ASK2014_source_contrib_sim.png) | ![Hazard Curve](resources/USC_curves_10.0s_ASK2014_source_contrib_gmpe.png) |
@@ -198,10 +224,20 @@
 #### 10s Simulation Curve Animation
 *[(top)](#table-of-contents)*
 
+This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 10000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.
+
 ![Hazard Curve Animation](resources/USC_curves_10.0s_ASK2014_animation.gif)
 
 ## Disaggregations
 *[(top)](#table-of-contents)*
+
+**Note on Epsilons:** Epsilon values are not straightforward for simulations. For a GMPE (in natural log space):
+
+**GMPE Epsilon:** *epsilon = (gmpe_IML - gmpe_mean)/gmpe_sigma*
+
+This simulation does not have distributions for each rupture, so in order to compute an epsilon, we must use the GMPE mean and sigma values:
+
+**Simulation w/ GMPE Distribution Epsilon:** *epsilon = (sim_IML - gmpe_mean)/gmpe_sigma*
 
 ### 3s Disaggregations
 *[(top)](#table-of-contents)*
