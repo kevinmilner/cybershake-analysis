@@ -11,7 +11,25 @@
 | **Description** | RSQSim prototype with catalog 2585 (1myr) |
 | **Velocity Model** | CVM-S4.26, 4.26 |
 
+## Site Information
+
+| **Name** | STNI |
+|-----|-----|
+| **Latitude** | 33.93088 |
+| **Longitude** | -118.17881 |
+| **GMPE Parameters** |  |
+| **Vs30** | 500.0 |
+| **Vs30 Type** | Inferred |
+| **Depth 1.0 km/sec** | 900.0 |
+| **Depth 2.5 km/sec** | 5.6 |
+
+### Site Map
+
+![Site Map](resources/site_location_map.png)
+
 ## Table Of Contents
+* [Site Information](#site-information)
+  * [Site Map](#site-map)
 * [Hazard Curves](#hazard-curves)
   * [3s Hazard Curves](#3s-hazard-curves)
     * [3s GMPE-Sim Comparison](#3s-gmpe-sim-comparison)
