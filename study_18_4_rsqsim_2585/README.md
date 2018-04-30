@@ -22,6 +22,8 @@
 ### GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value
 
 * [LAPD](site_hazard_LAPD_NGAWest_2014_NoIdr_Vs30Simulation/)
+* [PAS](site_hazard_PAS_NGAWest_2014_NoIdr_Vs30Simulation/)
+* [SBSM](site_hazard_SBSM_NGAWest_2014_NoIdr_Vs30Simulation/)
 * [STNI](site_hazard_STNI_NGAWest_2014_NoIdr_Vs30Simulation/)
 * [USC](site_hazard_USC_NGAWest_2014_NoIdr_Vs30Simulation/)
 ### GMPE: ASK2014, Vs30 model: Simulation Value

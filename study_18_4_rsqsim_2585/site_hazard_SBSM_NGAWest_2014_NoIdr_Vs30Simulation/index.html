@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	max-width:1000px;
+	margin: auto;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+</style>
+</head>
+<body>
+<h1 id="rsqsim-2585-sbsm-hazard-curves">RSQSim 2585 SBSM Hazard Curves</h1>
+<p><strong>GMPE: NGAWest2 2014 Averaged No Idriss, Vs30 Source: Simulation Value</strong></p>
+<p><strong>Study Details</strong></p>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th>RSQSim 2585</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Date</strong></td><td>Apr 2018</td></tr>
+<tr><td><strong>Region</strong></td><td>Central California Box</td></tr>
+<tr><td><strong>Description</strong></td><td>RSQSim prototype with catalog 2585 (1myr)</td></tr>
+<tr><td><strong>Velocity Model</strong></td><td>CVM-S4.26, 4.26</td></tr>
+</tbody>
+</table>
+<h2 id="site-information">Site Information</h2>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th>SBSM</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Latitude</strong></td><td>34.064987</td></tr>
+<tr><td><strong>Longitude</strong></td><td>-117.29201</td></tr>
+<tr><td><strong>GMPE Parameters</strong></td><td></td></tr>
+<tr><td><strong>Vs30</strong></td><td>500.0</td></tr>
+<tr><td><strong>Vs30 Type</strong></td><td>Inferred</td></tr>
+<tr><td><strong>Depth 1.0 km/sec</strong></td><td>350.0</td></tr>
+<tr><td><strong>Depth 2.5 km/sec</strong></td><td>1.8</td></tr>
+</tbody>
+</table>
+<h3 id="site-map">Site Map</h3>
+<p><img src="resources/site_location_map.png" alt="Site Map" /></p>
+<h2 id="table-of-contents">Table Of Contents</h2>
+<ul>
+<li><a href="#site-information">Site Information</a>
+<ul>
+<li><a href="#site-map">Site Map</a></li>
+</ul>
+</li>
+<li><a href="#hazard-curves">Hazard Curves</a>
+<ul>
+<li><a href="#3s-hazard-curves">3s Hazard Curves</a>
+<ul>
+<li><a href="#3s-gmpe-sim-comparison">3s GMPE-Sim Comparison</a></li>
+<li><a href="#3s-source-contributions">3s Source Contributions</a></li>
+<li><a href="#3s-simulation-curve-animation">3s Simulation Curve Animation</a></li>
+</ul>
+</li>
+<li><a href="#5s-hazard-curves">5s Hazard Curves</a>
+<ul>
+<li><a href="#5s-gmpe-sim-comparison">5s GMPE-Sim Comparison</a></li>
+<li><a href="#5s-source-contributions">5s Source Contributions</a></li>
+<li><a href="#5s-simulation-curve-animation">5s Simulation Curve Animation</a></li>
+</ul>
+</li>
+<li><a href="#75s-hazard-curves">7.5s Hazard Curves</a>
+<ul>
+<li><a href="#75s-gmpe-sim-comparison">7.5s GMPE-Sim Comparison</a></li>
+<li><a href="#75s-source-contributions">7.5s Source Contributions</a></li>
+<li><a href="#75s-simulation-curve-animation">7.5s Simulation Curve Animation</a></li>
+</ul>
+</li>
+<li><a href="#10s-hazard-curves">10s Hazard Curves</a>
+<ul>
+<li><a href="#10s-gmpe-sim-comparison">10s GMPE-Sim Comparison</a></li>
+<li><a href="#10s-source-contributions">10s Source Contributions</a></li>
+<li><a href="#10s-simulation-curve-animation">10s Simulation Curve Animation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#disaggregations">Disaggregations</a>
+<ul>
+<li><a href="#3s-disaggregations">3s Disaggregations</a>
+<ul>
+<li><a href="#3s-disaggregations-at-simulationgmpe-intersections">3s Disaggregations at Simulation/GMPE Intersections</a></li>
+<li><a href="#3s-disaggregations-at-fixed-return-periods">3s Disaggregations at Fixed Return Periods</a></li>
+<li><a href="#3s-disaggregations-at-fixed-imls">3s Disaggregations at Fixed IMLs</a></li>
+</ul>
+</li>
+<li><a href="#5s-disaggregations">5s Disaggregations</a>
+<ul>
+<li><a href="#5s-disaggregations-at-simulationgmpe-intersections">5s Disaggregations at Simulation/GMPE Intersections</a></li>
+<li><a href="#5s-disaggregations-at-fixed-return-periods">5s Disaggregations at Fixed Return Periods</a></li>
+<li><a href="#5s-disaggregations-at-fixed-imls">5s Disaggregations at Fixed IMLs</a></li>
+</ul>
+</li>
+<li><a href="#75s-disaggregations">7.5s Disaggregations</a>
+<ul>
+<li><a href="#75s-disaggregations-at-fixed-return-periods">7.5s Disaggregations at Fixed Return Periods</a></li>
+<li><a href="#75s-disaggregations-at-fixed-imls">7.5s Disaggregations at Fixed IMLs</a></li>
+</ul>
+</li>
+<li><a href="#10s-disaggregations">10s Disaggregations</a>
+<ul>
+<li><a href="#10s-disaggregations-at-fixed-return-periods">10s Disaggregations at Fixed Return Periods</a></li>
+<li><a href="#10s-disaggregations-at-fixed-imls">10s Disaggregations at Fixed IMLs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="hazard-curves">Hazard Curves</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2585</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+<li>Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation</li>
+<li>Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation</li>
+<li>Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation</li>
+<li>Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0.5</li>
+<li>Green Dotted Line: NGAWest_2014_NoIdr, Fixed sigma=0.3</li>
+<li>Green Dotted and dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<h3 id="3s-hazard-curves">3s Hazard Curves</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/SBSM_curves_3.0s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="3s-gmpe-sim-comparison">3s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2585</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/SBSM_curves_3.0s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
+<h4 id="3s-source-contributions">3s Source Contributions</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the <strong>POE=4.0E-4</strong> level, and only the top 10 sources are plotted.</p>
+<p><em>NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources</em></p>
+<table>
+<thead>
+<tr><th><strong>Simulation Source Contributions</strong></th><th><strong>GMPE Source Contributions</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_curves_3.0s_NGAWest_2014_NoIdr_source_contrib_sim.png" alt="Hazard Curve" /></td><td><img src="resources/SBSM_curves_3.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png" alt="Hazard Curve" /></td></tr>
+</tbody>
+</table>
+<h4 id="3s-simulation-curve-animation">3s Simulation Curve Animation</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 50000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.</p>
+<p><img src="resources/SBSM_curves_3.0s_NGAWest_2014_NoIdr_animation.gif" alt="Hazard Curve Animation" /></p>
+<h3 id="5s-hazard-curves">5s Hazard Curves</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/SBSM_curves_5.0s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="5s-gmpe-sim-comparison">5s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2585</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/SBSM_curves_5.0s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
+<h4 id="5s-source-contributions">5s Source Contributions</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the <strong>POE=4.0E-4</strong> level, and only the top 10 sources are plotted.</p>
+<p><em>NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources</em></p>
+<table>
+<thead>
+<tr><th><strong>Simulation Source Contributions</strong></th><th><strong>GMPE Source Contributions</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_curves_5.0s_NGAWest_2014_NoIdr_source_contrib_sim.png" alt="Hazard Curve" /></td><td><img src="resources/SBSM_curves_5.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png" alt="Hazard Curve" /></td></tr>
+</tbody>
+</table>
+<h4 id="5s-simulation-curve-animation">5s Simulation Curve Animation</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 50000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.</p>
+<p><img src="resources/SBSM_curves_5.0s_NGAWest_2014_NoIdr_animation.gif" alt="Hazard Curve Animation" /></p>
+<h3 id="75s-hazard-curves">7.5s Hazard Curves</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/SBSM_curves_7.5s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="75s-gmpe-sim-comparison">7.5s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2585</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/SBSM_curves_7.5s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
+<h4 id="75s-source-contributions">7.5s Source Contributions</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the <strong>POE=4.0E-4</strong> level, and only the top 10 sources are plotted.</p>
+<p><em>NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources</em></p>
+<table>
+<thead>
+<tr><th><strong>Simulation Source Contributions</strong></th><th><strong>GMPE Source Contributions</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_curves_7.5s_NGAWest_2014_NoIdr_source_contrib_sim.png" alt="Hazard Curve" /></td><td><img src="resources/SBSM_curves_7.5s_NGAWest_2014_NoIdr_source_contrib_gmpe.png" alt="Hazard Curve" /></td></tr>
+</tbody>
+</table>
+<h4 id="75s-simulation-curve-animation">7.5s Simulation Curve Animation</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 50000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.</p>
+<p><img src="resources/SBSM_curves_7.5s_NGAWest_2014_NoIdr_animation.gif" alt="Hazard Curve Animation" /></p>
+<h3 id="10s-hazard-curves">10s Hazard Curves</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/SBSM_curves_10.0s_NGAWest_2014_NoIdr.png" alt="Hazard Curve" /></p>
+<h4 id="10s-gmpe-sim-comparison">10s GMPE-Sim Comparison</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<ul>
+<li>Black Solid Line: RSQSim 2585</li>
+<li>Gray Solid Line: Study 15.4</li>
+<li>Gray Dashed Line: Study 15.4 w/o Aleatory Mag</li>
+<li>Gray Dotted Line: RSQSim/BBP</li>
+</ul>
+</li>
+<li><strong>GMPE Curves</strong>
+<ul>
+<li>Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)</li>
+<li>Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations</li>
+<li>Blue Solid Line: NGAWest_2014_NoIdr full curve</li>
+</ul>
+</li>
+<li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
+</ul>
+<p><img src="resources/SBSM_curves_10.0s_NGAWest_2014_NoIdr_gmpe_sims.png" alt="Hazard Curve" /></p>
+<h4 id="10s-source-contributions">10s Source Contributions</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the <strong>POE=4.0E-4</strong> level, and only the top 10 sources are plotted.</p>
+<p><em>NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources</em></p>
+<table>
+<thead>
+<tr><th><strong>Simulation Source Contributions</strong></th><th><strong>GMPE Source Contributions</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_curves_10.0s_NGAWest_2014_NoIdr_source_contrib_sim.png" alt="Hazard Curve" /></td><td><img src="resources/SBSM_curves_10.0s_NGAWest_2014_NoIdr_source_contrib_gmpe.png" alt="Hazard Curve" /></td></tr>
+</tbody>
+</table>
+<h4 id="10s-simulation-curve-animation">10s Simulation Curve Animation</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>This animation shows the affect of input simulation catalog length on the simulation hazard curve. Each frame adds an additional 50000 years of the catalog to the simulation (in both the simulation and GMPE curves). Previous results (for shorter sub-catalogs) are faded out.</p>
+<p><img src="resources/SBSM_curves_10.0s_NGAWest_2014_NoIdr_animation.gif" alt="Hazard Curve Animation" /></p>
+<h2 id="disaggregations">Disaggregations</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Note on Epsilons:</strong> Epsilon values are not straightforward for simulations. For a GMPE (in natural log space):</p>
+<p><strong>GMPE Epsilon:</strong> <em>epsilon = (gmpe_IML - gmpe_mean)/gmpe_sigma</em></p>
+<p>This simulation does not have distributions for each rupture, so in order to compute an epsilon, we must use the GMPE mean and sigma values:</p>
+<p><strong>Simulation w/ GMPE Distribution Epsilon:</strong> <em>epsilon = (sim_IML - gmpe_mean)/gmpe_sigma</em></p>
+<h3 id="3s-disaggregations">3s Disaggregations</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="3s-disaggregations-at-simulationgmpe-intersections">3s Disaggregations at Simulation/GMPE Intersections</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1568 yr<br>0.4213534 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.4213534.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_intersect_0.4213534.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
+<h4 id="3s-disaggregations-at-fixed-return-periods">3s Disaggregations at Fixed Return Periods</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_1000yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>2500 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_2500yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_2500yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_10000yr.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
+<h4 id="3s-disaggregations-at-fixed-imls">3s Disaggregations at Fixed IMLs</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0.1 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.1.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_iml_0.1.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.5 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.5.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_iml_0.5.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h3 id="5s-disaggregations">5s Disaggregations</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="5s-disaggregations-at-simulationgmpe-intersections">5s Disaggregations at Simulation/GMPE Intersections</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>203 yr<br>0.07451725 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_intersect_0.07451725.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_intersect_0.07451725.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
+<h4 id="5s-disaggregations-at-fixed-return-periods">5s Disaggregations at Fixed Return Periods</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_1000yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>2500 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_2500yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_2500yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_10000yr.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
+<h4 id="5s-disaggregations-at-fixed-imls">5s Disaggregations at Fixed IMLs</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0.1 g</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_iml_0.1.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_iml_0.1.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>0.5 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h3 id="75s-disaggregations">7.5s Disaggregations</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="75s-disaggregations-at-fixed-return-periods">7.5s Disaggregations at Fixed Return Periods</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_1000yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>2500 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_2500yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_2500yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_10000yr.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
+<h4 id="75s-disaggregations-at-fixed-imls">7.5s Disaggregations at Fixed IMLs</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0.1 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>0.5 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h3 id="10s-disaggregations">10s Disaggregations</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="10s-disaggregations-at-fixed-return-periods">10s Disaggregations at Fixed Return Periods</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_1000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_1000yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>2500 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_2500yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_2500yr.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>10000 yr</strong></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_10000yr.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_10000yr.png" alt="Disaggregation" /></td></tr>
+</tbody>
+</table>
+<h4 id="10s-disaggregations-at-fixed-imls">10s Disaggregations at Fixed IMLs</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Disagg Level</strong></th><th><strong>RSQSim 2585 w/ GMPE dist for Epsilon</strong></th><th><strong>NGAWest2 2014 Averaged No Idriss</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0.1 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>0.5 g</strong></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>1.0 g</strong></td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+</body>
+</html>
