@@ -11,6 +11,22 @@
 | **Description** | RSQSim prototype with catalog 2585 (1myr) |
 | **Velocity Model** | CVM-S4.26, 4.26 |
 
+## Site Information
+
+| **Name** | USC |
+|-----|-----|
+| **Latitude** | 34.0192 |
+| **Longitude** | -118.286 |
+| **GMPE Parameters** |  |
+| **Vs30** | 500.0 |
+| **Vs30 Type** | Inferred |
+| **Depth 1.0 km/sec** | 600.0 |
+| **Depth 2.5 km/sec** | 4.05 |
+
+### Site Map
+
+![Site Map](resources/site_location_map.png)
+
 ## Table Of Contents
 * [Site Information](#site-information)
   * [Site Map](#site-map)
@@ -48,22 +64,6 @@
     * [10s Disaggregations at Simulation/GMPE Intersections](#10s-disaggregations-at-simulationgmpe-intersections)
     * [10s Disaggregations at Fixed Return Periods](#10s-disaggregations-at-fixed-return-periods)
     * [10s Disaggregations at Fixed IMLs](#10s-disaggregations-at-fixed-imls)
-## Site Information
-
-| **Name** | USC |
-|-----|-----|
-| **Latitude** | 34.0192 |
-| **Longitude** | -118.286 |
-| **GMPE Parameters** |  |
-| **Vs30** | 500.0 |
-| **Vs30 Type** | Inferred |
-| **Depth 1.0 km/sec** | 600.0 |
-| **Depth 2.5 km/sec** | 4.05 |
-
-### Site Map
-
-![Hazard Curve](https://maps.googleapis.com/maps/api/staticmap?center=34.0192,-118.286&zoom=9&size=400x300&maptype=roadmap&markers=34.0192,-118.286&key=AIzaSyCOfe8NIHLR0Z6l4KzajcDAwxOjlhLlEb4)
-
 ## Hazard Curves
 *[(top)](#table-of-contents)*
 
