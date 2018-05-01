@@ -18,10 +18,10 @@
 | **Latitude** | 34.557 |
 | **Longitude** | -118.125 |
 | **GMPE Parameters** |  |
-| **Vs30** | 2573.6 |
+| **Vs30** (*m/sec*) | 2573.6 |
 | **Vs30 Type** | Inferred |
-| **Depth 1.0 km/sec** | 0.0 |
-| **Depth 2.5 km/sec** | 0.0 |
+| **Depth 1.0 km/sec** (*m*) | 0.0 |
+| **Depth 2.5 km/sec** (*km*) | 0.0 |
 
 ### Site Map
 

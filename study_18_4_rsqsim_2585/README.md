@@ -8,6 +8,7 @@
 | **Velocity Model** | CVM-S4.26, 4.26 |
 
 * [Metadata](#metadata)
+* [GMPE Comparisons](#gmpe-comparisons)
 * [Site Hazard Comparisons](#site-hazard-comparisons)
   * [GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value](#gmpe-ngawest2014noidr-vs30-model-simulation-value)
   * [GMPE: ASK2014, Vs30 model: Simulation Value](#gmpe-ask2014-vs30-model-simulation-value)
@@ -15,6 +16,12 @@
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)
   * [Magnitude-Area Plots](#magnitude-area-plots)
+
+## GMPE Comparisons
+*[(top)](#rsqsim-2585)*
+
+* [ASK2014](gmpe_comparisons_ASK2014_Vs30Simulation/)
+* [NGAWest_2014_NoIdr](gmpe_comparisons_NGAWest_2014_NoIdr_Vs30Simulation/)
 
 ## Site Hazard Comparisons
 *[(top)](#rsqsim-2585)*
@@ -26,6 +33,7 @@
 * [SBSM](site_hazard_SBSM_NGAWest_2014_NoIdr_Vs30Simulation/)
 * [STNI](site_hazard_STNI_NGAWest_2014_NoIdr_Vs30Simulation/)
 * [USC](site_hazard_USC_NGAWest_2014_NoIdr_Vs30Simulation/)
+* [WNGC](site_hazard_WNGC_NGAWest_2014_NoIdr_Vs30Simulation/)
 ### GMPE: ASK2014, Vs30 model: Simulation Value
 
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
