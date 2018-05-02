@@ -30,6 +30,8 @@
 ## Table Of Contents
 * [Site Information](#site-information)
   * [Site Map](#site-map)
+* [Hazard Spectra](#hazard-spectra)
+  * [Source Contribution Spectra](#source-contribution-spectra)
 * [Hazard Curves](#hazard-curves)
   * [3s Hazard Curves](#3s-hazard-curves)
     * [3s GMPE-Sim Comparison](#3s-gmpe-sim-comparison)
@@ -64,6 +66,27 @@
     * [10s Disaggregations at Simulation/GMPE Intersections](#10s-disaggregations-at-simulationgmpe-intersections)
     * [10s Disaggregations at Fixed Return Periods](#10s-disaggregations-at-fixed-return-periods)
     * [10s Disaggregations at Fixed IMLs](#10s-disaggregations-at-fixed-imls)
+## Hazard Spectra
+*[(top)](#table-of-contents)*
+
+| **1000yr** | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_1000yr.png) |
+|-----|-----|
+| **2500yr** | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_2500yr.png) |
+| **10000yr** | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_10000yr.png) |
+### Source Contribution Spectra
+*[(top)](#table-of-contents)*
+
+
+These plots show the contribution of each fault source to the hazard spectra. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their average contrubution in the simulation results at the given return period, and only the top 10 sources are plotted.
+
+*NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
+
+| **Return Period** | **Simulation Source Contributions** | **GMPE Source Contributions** |
+|-----|-----|-----|
+| 1000yr | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
+| 2500yr | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
+| 10000yr | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_source_contrib_sim.png) | ![Hazard Spectra](resources/STNI_spectra_NGAWest_2014_NoIdr_source_contrib_gmpe.png) |
+
 ## Hazard Curves
 *[(top)](#table-of-contents)*
 
