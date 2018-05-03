@@ -11,7 +11,27 @@
 | **Description** | Los Angeles region with CVM-S4.26 Velocity Model, 1hz |
 | **Velocity Model** | CVM-S4.26, 4.26 |
 
+## Site Information
+
+| **Name** | USC |
+|-----|-----|
+| **Latitude** | 34.0192 |
+| **Longitude** | -118.286 |
+| **GMPE Parameters** |  |
+| **Vs30** (*m/sec*) | 313.0 |
+| **Vs30 Type** | Inferred |
+| **Depth 1.0 km/sec** (*m*) | 600.0 |
+| **Depth 2.5 km/sec** (*km*) | 4.05 |
+
+### Site Map
+
+![Site Map](resources/site_location_map.png)
+
 ## Table Of Contents
+* [Site Information](#site-information)
+  * [Site Map](#site-map)
+* [Hazard Spectra](#hazard-spectra)
+  * [Source Contribution Spectra](#source-contribution-spectra)
 * [Hazard Curves](#hazard-curves)
   * [3s Hazard Curves](#3s-hazard-curves)
     * [3s GMPE-Sim Comparison](#3s-gmpe-sim-comparison)
@@ -40,15 +60,47 @@
   * [10s Disaggregations](#10s-disaggregations)
     * [10s Disaggregations at Fixed Return Periods](#10s-disaggregations-at-fixed-return-periods)
     * [10s Disaggregations at Fixed IMLs](#10s-disaggregations-at-fixed-imls)
+## Hazard Spectra
+*[(top)](#table-of-contents)*
+
+**Legend**:
+* **Simulation Spectra**
+  * Black Solid Line: Study 15.4
+  * Gray Solid Line: Study 15.4 w/o Aleatory Mag
+* **GMPE Spectra**
+  * Blue Solid Line: NGAWest_2014_NoIdr full spectra
+  * Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation
+  * Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation
+  * Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation
+  * Green Dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0.5
+  * Green Dotted Line: NGAWest_2014_NoIdr, Fixed sigma=0.3
+  * Green Dotted and dashed Line: NGAWest_2014_NoIdr, Fixed sigma=0
+
+| **1000yr** | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_1000yr.png) |
+|-----|-----|
+| **2500yr** | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_2500yr.png) |
+| **10000yr** | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_10000yr.png) |
+### Source Contribution Spectra
+*[(top)](#table-of-contents)*
+
+
+These plots show the contribution of each fault source to the hazard spectra. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their average contrubution in the simulation results at the given return period, and only the top 10 sources are plotted.
+
+| **Return Period** | **Simulation Source Contributions** | **GMPE Source Contributions** |
+|-----|-----|-----|
+| 1000yr | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_source_contrib_1000yr_sim.png) | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_source_contrib_1000yr_gmpe.png) |
+| 2500yr | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_source_contrib_2500yr_sim.png) | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_source_contrib_2500yr_gmpe.png) |
+| 10000yr | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_source_contrib_10000yr_sim.png) | ![Hazard Spectra](resources/USC_spectra_NGAWest_2014_NoIdr_source_contrib_10000yr_gmpe.png) |
+
 ## Hazard Curves
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: Study 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
-  * Blue Solid Line: NGAWest_2014_NoIdr full curve
+  * Blue Solid Line: NGAWest_2014_NoIdr full curves
   * Blue Dashed Line: NGAWest_2014_NoIdr, 3-sigma truncation
   * Blue Dotted Line: NGAWest_2014_NoIdr, 2-sigma truncation
   * Blue Dotted and dashed Line: NGAWest_2014_NoIdr, 1-sigma truncation
@@ -66,13 +118,13 @@
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: Study 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations
-  * Blue Solid Line: NGAWest_2014_NoIdr full curve
+  * Blue Solid Line: NGAWest_2014_NoIdr full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_3.0s_NGAWest_2014_NoIdr_gmpe_sims.png)
@@ -96,13 +148,13 @@ These plots show the contribution of each fault source to the hazard curves. The
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: Study 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations
-  * Blue Solid Line: NGAWest_2014_NoIdr full curve
+  * Blue Solid Line: NGAWest_2014_NoIdr full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_5.0s_NGAWest_2014_NoIdr_gmpe_sims.png)
@@ -126,13 +178,13 @@ These plots show the contribution of each fault source to the hazard curves. The
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: Study 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations
-  * Blue Solid Line: NGAWest_2014_NoIdr full curve
+  * Blue Solid Line: NGAWest_2014_NoIdr full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_7.5s_NGAWest_2014_NoIdr_gmpe_sims.png)
@@ -156,13 +208,13 @@ These plots show the contribution of each fault source to the hazard curves. The
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: Study 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: NGAWest_2014_NoIdr simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: NGAWest_2014_NoIdr, mean of 100 simulations
-  * Blue Solid Line: NGAWest_2014_NoIdr full curve
+  * Blue Solid Line: NGAWest_2014_NoIdr full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_10.0s_NGAWest_2014_NoIdr_gmpe_sims.png)
