@@ -246,10 +246,10 @@ z-score standard normal plots across all magnitudes/distances
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
 * **GMPE Curves**
-  * Blue Solid Line: ASK2014 full curve
+  * Blue Solid Line: ASK2014 full curves
   * Blue Dashed Line: ASK2014, 3-sigma truncation
   * Blue Dotted Line: ASK2014, 2-sigma truncation
   * Blue Dotted and dashed Line: ASK2014, 1-sigma truncation

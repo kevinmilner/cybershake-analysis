@@ -11,7 +11,27 @@
 | **Description** | RSQSim prototype with catalog 2585 (1myr) |
 | **Velocity Model** | CVM-S4.26, 4.26 |
 
+## Site Information
+
+| **Name** | USC |
+|-----|-----|
+| **Latitude** | 34.0192 |
+| **Longitude** | -118.286 |
+| **GMPE Parameters** |  |
+| **Vs30** (*m/sec*) | 500.0 |
+| **Vs30 Type** | Inferred |
+| **Depth 1.0 km/sec** (*m*) | 600.0 |
+| **Depth 2.5 km/sec** (*km*) | 4.05 |
+
+### Site Map
+
+![Site Map](resources/site_location_map.png)
+
 ## Table Of Contents
+* [Site Information](#site-information)
+  * [Site Map](#site-map)
+* [Hazard Spectra](#hazard-spectra)
+  * [Source Contribution Spectra](#source-contribution-spectra)
 * [Hazard Curves](#hazard-curves)
   * [3s Hazard Curves](#3s-hazard-curves)
     * [3s GMPE-Sim Comparison](#3s-gmpe-sim-comparison)
@@ -45,23 +65,43 @@
   * [10s Disaggregations](#10s-disaggregations)
     * [10s Disaggregations at Fixed Return Periods](#10s-disaggregations-at-fixed-return-periods)
     * [10s Disaggregations at Fixed IMLs](#10s-disaggregations-at-fixed-imls)
+## Hazard Spectra
+*[(top)](#table-of-contents)*
+
+**Legend**:
+* **Simulation Spectra**
+  * Black Solid Line: RSQSim 2585
+  * Orange Solid Line: RSQSim/BBP
+* **GMPE Spectra**
+  * Blue Solid Line: ASK2014 full spectra
+
+| **1000yr** | ![Hazard Spectra](resources/USC_spectra_ASK2014_1000yr.png) |
+|-----|-----|
+| **2500yr** | ![Hazard Spectra](resources/USC_spectra_ASK2014_2500yr.png) |
+| **10000yr** | ![Hazard Spectra](resources/USC_spectra_ASK2014_10000yr.png) |
+### Source Contribution Spectra
+*[(top)](#table-of-contents)*
+
+
+These plots show the contribution of each fault source to the hazard spectra. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their average contrubution in the simulation results at the given return period, and only the top 10 sources are plotted.
+
+*NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
+
+| **Return Period** | **Simulation Source Contributions** | **GMPE Source Contributions** |
+|-----|-----|-----|
+| 1000yr | ![Hazard Spectra](resources/USC_spectra_ASK2014_source_contrib_1000yr_sim.png) | ![Hazard Spectra](resources/USC_spectra_ASK2014_source_contrib_1000yr_gmpe.png) |
+| 2500yr | ![Hazard Spectra](resources/USC_spectra_ASK2014_source_contrib_2500yr_sim.png) | ![Hazard Spectra](resources/USC_spectra_ASK2014_source_contrib_2500yr_gmpe.png) |
+| 10000yr | ![Hazard Spectra](resources/USC_spectra_ASK2014_source_contrib_10000yr_sim.png) | ![Hazard Spectra](resources/USC_spectra_ASK2014_source_contrib_10000yr_gmpe.png) |
+
 ## Hazard Curves
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Gray Solid Line: Study 15.4
-  * Gray Dashed Line: Study 15.4 w/o Aleatory Mag
-  * Gray Dotted Line: RSQSim/BBP
+  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
-  * Blue Solid Line: ASK2014 full curve
-  * Blue Dashed Line: ASK2014, 3-sigma truncation
-  * Blue Dotted Line: ASK2014, 2-sigma truncation
-  * Blue Dotted and dashed Line: ASK2014, 1-sigma truncation
-  * Green Dashed Line: ASK2014, Fixed sigma=0.5
-  * Green Dotted Line: ASK2014, Fixed sigma=0.3
-  * Green Dotted and dashed Line: ASK2014, Fixed sigma=0
+  * Blue Solid Line: ASK2014 full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ### 3s Hazard Curves
@@ -73,15 +113,13 @@
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Gray Solid Line: Study 15.4
-  * Gray Dashed Line: Study 15.4 w/o Aleatory Mag
-  * Gray Dotted Line: RSQSim/BBP
+  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
-  * Blue Solid Line: ASK2014 full curve
+  * Blue Solid Line: ASK2014 full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_3.0s_ASK2014_gmpe_sims.png)
@@ -114,15 +152,13 @@ This animation shows the affect of input simulation catalog length on the simula
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Gray Solid Line: Study 15.4
-  * Gray Dashed Line: Study 15.4 w/o Aleatory Mag
-  * Gray Dotted Line: RSQSim/BBP
+  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
-  * Blue Solid Line: ASK2014 full curve
+  * Blue Solid Line: ASK2014 full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_5.0s_ASK2014_gmpe_sims.png)
@@ -155,15 +191,13 @@ This animation shows the affect of input simulation catalog length on the simula
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Gray Solid Line: Study 15.4
-  * Gray Dashed Line: Study 15.4 w/o Aleatory Mag
-  * Gray Dotted Line: RSQSim/BBP
+  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
-  * Blue Solid Line: ASK2014 full curve
+  * Blue Solid Line: ASK2014 full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_7.5s_ASK2014_gmpe_sims.png)
@@ -196,15 +230,13 @@ This animation shows the affect of input simulation catalog length on the simula
 *[(top)](#table-of-contents)*
 
 **Legend**:
-* **Simulations Curves** *(truncated below lowest possible y-value)*
+* **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Gray Solid Line: Study 15.4
-  * Gray Dashed Line: Study 15.4 w/o Aleatory Mag
-  * Gray Dotted Line: RSQSim/BBP
+  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
-  * Blue Solid Line: ASK2014 full curve
+  * Blue Solid Line: ASK2014 full curves
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ![Hazard Curve](resources/USC_curves_10.0s_ASK2014_gmpe_sims.png)

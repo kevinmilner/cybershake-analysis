@@ -10,9 +10,10 @@
 * [Metadata](#metadata)
 * [GMPE Comparisons](#gmpe-comparisons)
 * [Site Hazard Comparisons](#site-hazard-comparisons)
-  * [GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value](#gmpe-ngawest2014noidr-vs30-model-simulation-value)
   * [GMPE: ASK2014, Vs30 model: Simulation Value](#gmpe-ask2014-vs30-model-simulation-value)
+  * [GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value](#gmpe-ngawest2014noidr-vs30-model-simulation-value)
 * [Source/Site Ground Motion Comparisons](#sourcesite-ground-motion-comparisons)
+* [3-D vs 1-D Comparisons](#3-d-vs-1-d-comparisons)
 * [Plots](#plots)
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)
@@ -27,6 +28,12 @@
 ## Site Hazard Comparisons
 *[(top)](#rsqsim-2585)*
 
+### GMPE: ASK2014, Vs30 model: Simulation Value
+
+* [LAPD](site_hazard_LAPD_ASK2014_Vs30Simulation/)
+* [SBSM](site_hazard_SBSM_ASK2014_Vs30Simulation/)
+* [STNI](site_hazard_STNI_ASK2014_Vs30Simulation/)
+* [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
 ### GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value
 
 * [LAPD](site_hazard_LAPD_NGAWest_2014_NoIdr_Vs30Simulation/)
@@ -35,14 +42,16 @@
 * [STNI](site_hazard_STNI_NGAWest_2014_NoIdr_Vs30Simulation/)
 * [USC](site_hazard_USC_NGAWest_2014_NoIdr_Vs30Simulation/)
 * [WNGC](site_hazard_WNGC_NGAWest_2014_NoIdr_Vs30Simulation/)
-### GMPE: ASK2014, Vs30 model: Simulation Value
-
-* [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
 
 ## Source/Site Ground Motion Comparisons
 *[(top)](#rsqsim-2585)*
 
 [Source/Site Ground Motion Comparisons Here](source_site_comparisons_Vs30Simulation/)
+
+## 3-D vs 1-D Comparisons
+*[(top)](#rsqsim-2585)*
+
+[3-D vs 1-D Comparisons Plotted Here](3d_1d_comparison/)
 
 ## Plots
 ### Magnitude-Frequency Plot
