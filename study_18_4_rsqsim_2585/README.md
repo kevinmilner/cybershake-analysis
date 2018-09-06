@@ -34,6 +34,7 @@
 * [SBSM](site_hazard_SBSM_ASK2014_Vs30Simulation/)
 * [STNI](site_hazard_STNI_ASK2014_Vs30Simulation/)
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
+* [WNGC](site_hazard_WNGC_ASK2014_Vs30Simulation/)
 ### GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value
 
 * [LAPD](site_hazard_LAPD_NGAWest_2014_NoIdr_Vs30Simulation/)
