@@ -3,7 +3,7 @@
 | **Name** | RSQSim 2585 |
 |-----|-----|
 | **Date** | Apr 2018 |
-| **Region** | Central California Box |
+| **Region** | Los Angeles Box |
 | **Description** | RSQSim prototype with catalog 2585 (1myr) |
 | **Velocity Model** | CVM-S4.26, 4.26 |
 

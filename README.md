@@ -2,6 +2,7 @@
 
 | Date | Name | Description |
 |-----|-----|-----|
+| Sep 2018 | [RSQSim 2740](study_18_9_rsqsim_2740#rsqsim-2740) | RSQSim prototype with catalog 2740 (259kyr) |
 | Apr 2018 | [RSQSim 2457](study_18_4_rsqsim_prototype_2457#rsqsim-2457) | RSQSim prototype with catalog 2457 |
 | Apr 2018 | [RSQSim 2585](study_18_4_rsqsim_2585#rsqsim-2585) | RSQSim prototype with catalog 2585 (1myr) |
 | Mar 2017 | [Study 17.3 1-D](study_17_3_1d#study-173-1-d) | Central California with CCA-1D Velocity Model, 1hz |
