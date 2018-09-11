@@ -21,7 +21,9 @@
 
 ### GMPE: ASK2014, Vs30 model: Simulation Value
 
+* [LAPD](site_hazard_LAPD_ASK2014_Vs30Simulation/)
 * [PAS](site_hazard_PAS_ASK2014_Vs30Simulation/)
+* [s279](site_hazard_s279_ASK2014_Vs30Simulation/)
 * [SBSM](site_hazard_SBSM_ASK2014_Vs30Simulation/)
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
 
