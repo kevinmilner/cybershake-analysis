@@ -27,8 +27,29 @@ img {
 <tr><td><strong>Velocity Model</strong></td><td>CVM-S4.26, 4.26</td></tr>
 </tbody>
 </table>
+<h2 id="site-information">Site Information</h2>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th>USC</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Latitude</strong></td><td>34.0192</td></tr>
+<tr><td><strong>Longitude</strong></td><td>-118.286</td></tr>
+<tr><td><strong>GMPE Parameters</strong></td><td></td></tr>
+<tr><td><strong>Vs30</strong> (<em>m/sec</em>)</td><td>500.0</td></tr>
+<tr><td><strong>Vs30 Type</strong></td><td>Inferred</td></tr>
+<tr><td><strong>Depth 1.0 km/sec</strong> (<em>m</em>)</td><td>600.0</td></tr>
+<tr><td><strong>Depth 2.5 km/sec</strong> (<em>km</em>)</td><td>4.05</td></tr>
+</tbody>
+</table>
 <h2 id="table-of-contents">Table Of Contents</h2>
 <ul>
+<li><a href="#site-information">Site Information</a></li>
+<li><a href="#hazard-spectra">Hazard Spectra</a>
+<ul>
+<li><a href="#source-contribution-spectra">Source Contribution Spectra</a></li>
+</ul>
+</li>
 <li><a href="#hazard-curves">Hazard Curves</a>
 <ul>
 <li><a href="#3s-hazard-curves">3s Hazard Curves</a>
@@ -68,21 +89,18 @@ img {
 </li>
 <li><a href="#5s-disaggregations">5s Disaggregations</a>
 <ul>
-<li><a href="#5s-disaggregations-at-simulationgmpe-intersections">5s Disaggregations at Simulation/GMPE Intersections</a></li>
 <li><a href="#5s-disaggregations-at-fixed-return-periods">5s Disaggregations at Fixed Return Periods</a></li>
 <li><a href="#5s-disaggregations-at-fixed-imls">5s Disaggregations at Fixed IMLs</a></li>
 </ul>
 </li>
 <li><a href="#75s-disaggregations">7.5s Disaggregations</a>
 <ul>
-<li><a href="#75s-disaggregations-at-simulationgmpe-intersections">7.5s Disaggregations at Simulation/GMPE Intersections</a></li>
 <li><a href="#75s-disaggregations-at-fixed-return-periods">7.5s Disaggregations at Fixed Return Periods</a></li>
 <li><a href="#75s-disaggregations-at-fixed-imls">7.5s Disaggregations at Fixed IMLs</a></li>
 </ul>
 </li>
 <li><a href="#10s-disaggregations">10s Disaggregations</a>
 <ul>
-<li><a href="#10s-disaggregations-at-simulationgmpe-intersections">10s Disaggregations at Simulation/GMPE Intersections</a></li>
 <li><a href="#10s-disaggregations-at-fixed-return-periods">10s Disaggregations at Fixed Return Periods</a></li>
 <li><a href="#10s-disaggregations-at-fixed-imls">10s Disaggregations at Fixed IMLs</a></li>
 </ul>
@@ -90,11 +108,49 @@ img {
 </ul>
 </li>
 </ul>
+<h2 id="hazard-spectra">Hazard Spectra</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong>:</p>
+<ul>
+<li><strong>Simulation Spectra</strong>
+<ul>
+<li>Black Solid Line: Study 15.4</li>
+<li>Gray Solid Line: Study 15.4 w/o Aleatory Mag</li>
+</ul>
+</li>
+<li><strong>GMPE Spectra</strong>
+<ul>
+<li>Blue Solid Line: ASK2014 full spectra</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>1000yr</strong></th><th><img src="resources/USC_spectra_ASK2014_1000yr.png" alt="Hazard Spectra" /></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>2500yr</strong></td><td><img src="resources/USC_spectra_ASK2014_2500yr.png" alt="Hazard Spectra" /></td></tr>
+<tr><td><strong>10000yr</strong></td><td><img src="resources/USC_spectra_ASK2014_10000yr.png" alt="Hazard Spectra" /></td></tr>
+</tbody>
+</table>
+<h3 id="source-contribution-spectra">Source Contribution Spectra</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots show the contribution of each fault source to the hazard spectra. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their average contrubution in the simulation results at the given return period, and only the top 10 sources are plotted.</p>
+<table>
+<thead>
+<tr><th><strong>Return Period</strong></th><th><strong>Simulation Source Contributions</strong></th><th><strong>GMPE Source Contributions</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>1000yr</td><td><img src="resources/USC_spectra_ASK2014_source_contrib_1000yr_sim.png" alt="Hazard Spectra" /></td><td><img src="resources/USC_spectra_ASK2014_source_contrib_1000yr_gmpe.png" alt="Hazard Spectra" /></td></tr>
+<tr><td>2500yr</td><td><img src="resources/USC_spectra_ASK2014_source_contrib_2500yr_sim.png" alt="Hazard Spectra" /></td><td><img src="resources/USC_spectra_ASK2014_source_contrib_2500yr_gmpe.png" alt="Hazard Spectra" /></td></tr>
+<tr><td>10000yr</td><td><img src="resources/USC_spectra_ASK2014_source_contrib_10000yr_sim.png" alt="Hazard Spectra" /></td><td><img src="resources/USC_spectra_ASK2014_source_contrib_10000yr_gmpe.png" alt="Hazard Spectra" /></td></tr>
+</tbody>
+</table>
 <h2 id="hazard-curves">Hazard Curves</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Legend</strong>:</p>
 <ul>
-<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<li><strong>Simulation Curves</strong> <em>(truncated below lowest possible y-value)</em>
 <ul>
 <li>Black Solid Line: Study 15.4</li>
 <li>Gray Solid Line: Study 15.4 w/o Aleatory Mag</li>
@@ -102,13 +158,7 @@ img {
 </li>
 <li><strong>GMPE Curves</strong>
 <ul>
-<li>Blue Solid Line: ASK2014 full curve</li>
-<li>Blue Dashed Line: ASK2014, 3-sigma truncation</li>
-<li>Blue Dotted Line: ASK2014, 2-sigma truncation</li>
-<li>Blue Dotted and dashed Line: ASK2014, 1-sigma truncation</li>
-<li>Green Dashed Line: ASK2014, Fixed sigma=0.5</li>
-<li>Green Dotted Line: ASK2014, Fixed sigma=0.3</li>
-<li>Green Dotted and dashed Line: ASK2014, Fixed sigma=0</li>
+<li>Blue Solid Line: ASK2014 full curves</li>
 </ul>
 </li>
 <li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
@@ -120,7 +170,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Legend</strong>:</p>
 <ul>
-<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<li><strong>Simulation Curves</strong> <em>(truncated below lowest possible y-value)</em>
 <ul>
 <li>Black Solid Line: Study 15.4</li>
 <li>Gray Solid Line: Study 15.4 w/o Aleatory Mag</li>
@@ -130,7 +180,7 @@ img {
 <ul>
 <li>Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)</li>
 <li>Red Solid Line: ASK2014, mean of 100 simulations</li>
-<li>Blue Solid Line: ASK2014 full curve</li>
+<li>Blue Solid Line: ASK2014 full curves</li>
 </ul>
 </li>
 <li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
@@ -154,7 +204,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Legend</strong>:</p>
 <ul>
-<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<li><strong>Simulation Curves</strong> <em>(truncated below lowest possible y-value)</em>
 <ul>
 <li>Black Solid Line: Study 15.4</li>
 <li>Gray Solid Line: Study 15.4 w/o Aleatory Mag</li>
@@ -164,7 +214,7 @@ img {
 <ul>
 <li>Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)</li>
 <li>Red Solid Line: ASK2014, mean of 100 simulations</li>
-<li>Blue Solid Line: ASK2014 full curve</li>
+<li>Blue Solid Line: ASK2014 full curves</li>
 </ul>
 </li>
 <li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
@@ -188,7 +238,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Legend</strong>:</p>
 <ul>
-<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<li><strong>Simulation Curves</strong> <em>(truncated below lowest possible y-value)</em>
 <ul>
 <li>Black Solid Line: Study 15.4</li>
 <li>Gray Solid Line: Study 15.4 w/o Aleatory Mag</li>
@@ -198,7 +248,7 @@ img {
 <ul>
 <li>Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)</li>
 <li>Red Solid Line: ASK2014, mean of 100 simulations</li>
-<li>Blue Solid Line: ASK2014 full curve</li>
+<li>Blue Solid Line: ASK2014 full curves</li>
 </ul>
 </li>
 <li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
@@ -222,7 +272,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Legend</strong>:</p>
 <ul>
-<li><strong>Simulations Curves</strong> <em>(truncated below lowest possible y-value)</em>
+<li><strong>Simulation Curves</strong> <em>(truncated below lowest possible y-value)</em>
 <ul>
 <li>Black Solid Line: Study 15.4</li>
 <li>Gray Solid Line: Study 15.4 w/o Aleatory Mag</li>
@@ -232,7 +282,7 @@ img {
 <ul>
 <li>Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)</li>
 <li>Red Solid Line: ASK2014, mean of 100 simulations</li>
-<li>Blue Solid Line: ASK2014 full curve</li>
+<li>Blue Solid Line: ASK2014 full curves</li>
 </ul>
 </li>
 <li>Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods</li>
@@ -266,7 +316,7 @@ img {
 <tr><th><strong>Disagg Level</strong></th><th><strong>Study 15.4 w/ sim dist for Epsilon</strong></th><th><strong>Study 15.4 w/ GMPE dist for Epsilon</strong></th><th><strong>Abrahamson, Silva &amp; Kamai (2014)</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>1170 yr<br>0.28164512 g</strong></td><td><img src="resources/disagg_sim_3s_intersect_0.28164512.png" alt="Disaggregation" /></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.28164512.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_intersect_0.28164512.png" alt="Disaggregation" /></td></tr>
+<tr><td><strong>334787 yr<br>0.9677538 g</strong></td><td><img src="resources/disagg_sim_3s_intersect_0.9677538.png" alt="Disaggregation" /></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.9677538.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_3s_intersect_0.9677538.png" alt="Disaggregation" /></td></tr>
 </tbody>
 </table>
 <h4 id="3s-disaggregations-at-fixed-return-periods">3s Disaggregations at Fixed Return Periods</h4>
@@ -295,16 +345,6 @@ img {
 </table>
 <h3 id="5s-disaggregations">5s Disaggregations</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<h4 id="5s-disaggregations-at-simulationgmpe-intersections">5s Disaggregations at Simulation/GMPE Intersections</h4>
-<p><em><a href="#table-of-contents">(top)</a></em></p>
-<table>
-<thead>
-<tr><th><strong>Disagg Level</strong></th><th><strong>Study 15.4 w/ sim dist for Epsilon</strong></th><th><strong>Study 15.4 w/ GMPE dist for Epsilon</strong></th><th><strong>Abrahamson, Silva &amp; Kamai (2014)</strong></th></tr>
-</thead>
-<tbody>
-<tr><td><strong>16223 yr<br>0.35021445 g</strong></td><td><img src="resources/disagg_sim_5s_intersect_0.35021445.png" alt="Disaggregation" /></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_5s_intersect_0.35021445.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_5s_intersect_0.35021445.png" alt="Disaggregation" /></td></tr>
-</tbody>
-</table>
 <h4 id="5s-disaggregations-at-fixed-return-periods">5s Disaggregations at Fixed Return Periods</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
@@ -331,16 +371,6 @@ img {
 </table>
 <h3 id="75s-disaggregations">7.5s Disaggregations</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<h4 id="75s-disaggregations-at-simulationgmpe-intersections">7.5s Disaggregations at Simulation/GMPE Intersections</h4>
-<p><em><a href="#table-of-contents">(top)</a></em></p>
-<table>
-<thead>
-<tr><th><strong>Disagg Level</strong></th><th><strong>Study 15.4 w/ sim dist for Epsilon</strong></th><th><strong>Study 15.4 w/ GMPE dist for Epsilon</strong></th><th><strong>Abrahamson, Silva &amp; Kamai (2014)</strong></th></tr>
-</thead>
-<tbody>
-<tr><td><strong>20888 yr<br>0.23188661 g</strong></td><td><img src="resources/disagg_sim_7.5s_intersect_0.23188661.png" alt="Disaggregation" /></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_intersect_0.23188661.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_7.5s_intersect_0.23188661.png" alt="Disaggregation" /></td></tr>
-</tbody>
-</table>
 <h4 id="75s-disaggregations-at-fixed-return-periods">7.5s Disaggregations at Fixed Return Periods</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
@@ -367,16 +397,6 @@ img {
 </table>
 <h3 id="10s-disaggregations">10s Disaggregations</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<h4 id="10s-disaggregations-at-simulationgmpe-intersections">10s Disaggregations at Simulation/GMPE Intersections</h4>
-<p><em><a href="#table-of-contents">(top)</a></em></p>
-<table>
-<thead>
-<tr><th><strong>Disagg Level</strong></th><th><strong>Study 15.4 w/ sim dist for Epsilon</strong></th><th><strong>Study 15.4 w/ GMPE dist for Epsilon</strong></th><th><strong>Abrahamson, Silva &amp; Kamai (2014)</strong></th></tr>
-</thead>
-<tbody>
-<tr><td><strong>4887 yr<br>0.107602745 g</strong></td><td><img src="resources/disagg_sim_10s_intersect_0.107602745.png" alt="Disaggregation" /></td><td><img src="resources/disagg_sim_gmpe_dist_for_epsilon_10s_intersect_0.107602745.png" alt="Disaggregation" /></td><td><img src="resources/disagg_gmpe_10s_intersect_0.107602745.png" alt="Disaggregation" /></td></tr>
-</tbody>
-</table>
 <h4 id="10s-disaggregations-at-fixed-return-periods">10s Disaggregations at Fixed Return Periods</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>

@@ -23,8 +23,11 @@
 
 * [LAPD](site_hazard_LAPD_ASK2014_Vs30Simulation/)
 * [PAS](site_hazard_PAS_ASK2014_Vs30Simulation/)
+* [s119](site_hazard_s119_ASK2014_Vs30Simulation/)
 * [s279](site_hazard_s279_ASK2014_Vs30Simulation/)
+* [s480](site_hazard_s480_ASK2014_Vs30Simulation/)
 * [SBSM](site_hazard_SBSM_ASK2014_Vs30Simulation/)
+* [STNI](site_hazard_STNI_ASK2014_Vs30Simulation/)
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
 
 ## 3-D vs 1-D Comparisons
