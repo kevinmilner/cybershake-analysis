@@ -66,6 +66,9 @@
   * Orange Solid Line: RSQSim/BBP
 * **GMPE Spectra**
   * Blue Solid Line: ASK2014 full spectra
+  * Blue Dashed Line: ASK2014, 3-sigma truncation
+  * Blue Dotted Line: ASK2014, 2-sigma truncation
+  * Blue Dotted and dashed Line: ASK2014, 1-sigma truncation
 
 | **1000yr** | ![Hazard Spectra](resources/LAPD_spectra_ASK2014_1000yr.png) |
 |-----|-----|
@@ -94,6 +97,9 @@ These plots show the contribution of each fault source to the hazard spectra. Th
   * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Blue Solid Line: ASK2014 full curves
+  * Blue Dashed Line: ASK2014, 3-sigma truncation
+  * Blue Dotted Line: ASK2014, 2-sigma truncation
+  * Blue Dotted and dashed Line: ASK2014, 1-sigma truncation
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ### 3s Hazard Curves

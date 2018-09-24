@@ -23,8 +23,13 @@
 | **Depth 1.0 km/sec** (*m*) | 0.0 |
 | **Depth 2.5 km/sec** (*km*) | 0.0 |
 
+### Site Map
+
+![Site Map](resources/site_location_map.png)
+
 ## Table Of Contents
 * [Site Information](#site-information)
+  * [Site Map](#site-map)
 * [Hazard Spectra](#hazard-spectra)
   * [Source Contribution Spectra](#source-contribution-spectra)
 * [Hazard Curves](#hazard-curves)
@@ -221,7 +226,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 
 **GMPE Epsilon:** *epsilon = (gmpe_IML - gmpe_mean)/gmpe_sigma*
 
-This simulation has at least 2 simulations per rupture, so we can calculate a 'simulation' mean/sigma for using in epsilon calculations. These disaggregations are labeled 'w/ sim dist for Epsilon':
+This simulation has at least 2 simulations per rupture, so we can calculate a 'simulation' mean/sigma for use in epsilon calculations. These disaggregations are labeled 'w/ sim dist for Epsilon':
 
 **Simulation Distribution Epsilon:** *epsilon = (sim_IML - sim_mean)/sim_sigma*
 
