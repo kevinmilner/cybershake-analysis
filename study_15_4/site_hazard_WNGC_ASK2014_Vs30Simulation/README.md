@@ -23,8 +23,13 @@
 | **Depth 1.0 km/sec** (*m*) | 550.0 |
 | **Depth 2.5 km/sec** (*km*) | 3.7 |
 
+### Site Map
+
+![Site Map](resources/site_location_map.png)
+
 ## Table Of Contents
 * [Site Information](#site-information)
+  * [Site Map](#site-map)
 * [Hazard Spectra](#hazard-spectra)
   * [Source Contribution Spectra](#source-contribution-spectra)
 * [Hazard Curves](#hazard-curves)
@@ -64,6 +69,9 @@
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Spectra**
   * Blue Solid Line: ASK2014 full spectra
+  * Blue Dashed Line: ASK2014, 3-sigma truncation
+  * Blue Dotted Line: ASK2014, 2-sigma truncation
+  * Blue Dotted and dashed Line: ASK2014, 1-sigma truncation
 
 | **1000yr** | ![Hazard Spectra](resources/WNGC_spectra_ASK2014_1000yr.png) |
 |-----|-----|
@@ -90,6 +98,9 @@ These plots show the contribution of each fault source to the hazard spectra. Th
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Blue Solid Line: ASK2014 full curves
+  * Blue Dashed Line: ASK2014, 3-sigma truncation
+  * Blue Dotted Line: ASK2014, 2-sigma truncation
+  * Blue Dotted and dashed Line: ASK2014, 1-sigma truncation
 * Gray Dashed Lines: 1000 yr, 2500 yr, 10000 yr return periods
 
 ### 3s Hazard Curves
@@ -219,7 +230,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 
 **GMPE Epsilon:** *epsilon = (gmpe_IML - gmpe_mean)/gmpe_sigma*
 
-This simulation has at least 2 simulations per rupture, so we can calculate a 'simulation' mean/sigma for using in epsilon calculations. These disaggregations are labeled 'w/ sim dist for Epsilon':
+This simulation has at least 2 simulations per rupture, so we can calculate a 'simulation' mean/sigma for use in epsilon calculations. These disaggregations are labeled 'w/ sim dist for Epsilon':
 
 **Simulation Distribution Epsilon:** *epsilon = (sim_IML - sim_mean)/sim_sigma*
 
