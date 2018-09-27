@@ -29,6 +29,7 @@
 * [SBSM](site_hazard_SBSM_ASK2014_Vs30Simulation/)
 * [STNI](site_hazard_STNI_ASK2014_Vs30Simulation/)
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
+* [WNGC](site_hazard_WNGC_ASK2014_Vs30Simulation/)
 
 ## 3-D vs 1-D Comparisons
 *[(top)](#rsqsim-2740)*
