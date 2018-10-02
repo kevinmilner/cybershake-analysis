@@ -16,10 +16,10 @@
   * [Magnitude-Area Plots](#magnitude-area-plots)
   * [Slip-Area Plots](#slip-area-plots)
   * [Plots Without Aleatory Magnitude Variability](#plots-without-aleatory-magnitude-variability)
-    * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
-    * [Rupture Variation Count Plot](#rupture-variation-count-plot)
-    * [Magnitude-Area Plots](#magnitude-area-plots)
-    * [Slip-Area Plots](#slip-area-plots)
+    * [No-Aleatory Magnitude-Frequency Plot](#no-aleatory-magnitude-frequency-plot)
+    * [No-Aleatory Rupture Variation Count Plot](#no-aleatory-rupture-variation-count-plot)
+    * [No-Aleatory Magnitude-Area Plots](#no-aleatory-magnitude-area-plots)
+    * [No-Aleatory Slip-Area Plots](#no-aleatory-slip-area-plots)
 
 ## GMPE Comparisons
 *[(top)](#study-173-1-d)*
@@ -57,21 +57,21 @@
 |-----|-----|
 | ![Slip Scatter](resources/slip_area.png) | ![Slip Hist](resources/slip_area_hist2D.png) |
 ### Plots Without Aleatory Magnitude Variability
-#### Magnitude-Frequency Plot
+#### No-Aleatory Magnitude-Frequency Plot
 *[(top)](#study-173-1-d)*
 
 ![MFD](resources/mfd_no_aleatory.png)
-#### Rupture Variation Count Plot
+#### No-Aleatory Rupture Variation Count Plot
 *[(top)](#study-173-1-d)*
 
 ![RV Count](resources/rv_count_no_aleatory.png)
-#### Magnitude-Area Plots
+#### No-Aleatory Magnitude-Area Plots
 *[(top)](#study-173-1-d)*
 
 | Scatter | 2-D Hist |
 |-----|-----|
 | ![MFD Scatter](resources/mag_area_no_aleatory.png) | ![MFD Hist](resources/mag_area_no_aleatory_hist2D.png) |
-#### Slip-Area Plots
+#### No-Aleatory Slip-Area Plots
 *[(top)](#study-173-1-d)*
 
 | Scatter | 2-D Hist |
