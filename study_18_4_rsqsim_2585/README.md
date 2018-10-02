@@ -18,6 +18,7 @@
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)
   * [Magnitude-Area Plots](#magnitude-area-plots)
+  * [Slip-Area Plots](#slip-area-plots)
 
 ## GMPE Comparisons
 *[(top)](#rsqsim-2585)*
@@ -70,3 +71,9 @@
 | Scatter | 2-D Hist |
 |-----|-----|
 | ![MFD Scatter](resources/mag_area.png) | ![MFD Hist](resources/mag_area_hist2D.png) |
+### Slip-Area Plots
+*[(top)](#rsqsim-2585)*
+
+| Scatter | 2-D Hist |
+|-----|-----|
+| ![Slip Scatter](resources/slip_area.png) | ![Slip Hist](resources/slip_area_hist2D.png) |
