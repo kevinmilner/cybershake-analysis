@@ -5,9 +5,10 @@
 | **Date** | Aug 2018 |
 | **Region** | CyberShake Bay Area Map Region |
 | **Description** | Northern California with Bay Area, CCA, and CVM-S4.26 Velocity Models, 1hz |
-| **Velocity Model** | USGS Bay Area, 8.3.0 |
+| **Velocity Model** | Study 18.8 Stitched,  |
 
 * [Metadata](#metadata)
+* [Hazard Maps](#hazard-maps)
 * [Plots](#plots)
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)
@@ -18,6 +19,11 @@
     * [No-Aleatory Rupture Variation Count Plot](#no-aleatory-rupture-variation-count-plot)
     * [No-Aleatory Magnitude-Area Plots](#no-aleatory-magnitude-area-plots)
     * [No-Aleatory Slip-Area Plots](#no-aleatory-slip-area-plots)
+
+## Hazard Maps
+*[(top)](#study-188)*
+
+[Hazard Maps Plotted Here](hazard_maps/)
 
 ## Plots
 ### Magnitude-Frequency Plot
