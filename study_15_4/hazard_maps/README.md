@@ -20,44 +20,44 @@ These are interpolated difference maps, where the differences between CyberShake
 ## 2sec SA, GEOM, 2% in 50 yr
 *[(top)](#table-of-contents)*
 
-| **Interpolated CyberShake Map** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 |-----|-----|
 | ![Interpolated CyberShake Map](resources/map_2s_GEOM_2in50_interpolated.png) | ![GMPE Basemap](resources/map_2s_GEOM_2in50_basemap.png) |
-| **Interpolated CyberShake Map w/ Sites Marked** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map w/ Sites Marked**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 | ![Interpolated CyberShake Map w/ Sites Marked](resources/map_2s_GEOM_2in50_interpolated_marks.png) | ![GMPE Basemap](resources/map_2s_GEOM_2in50_basemap.png) |
-| **Difference: CyberShake - GMPE Basemap** | **Ratio: CyberShake / GMPE Basemap** |
+| <p style="text-align: center;">**Difference: CyberShake - GMPE Basemap**</p> | <p style="text-align: center;">**Ratio: CyberShake / GMPE Basemap**</p> |
 | ![Difference: CyberShake - GMPE Basemap](resources/map_2s_GEOM_2in50_diff.png) | ![Ratio: CyberShake / GMPE Basemap](resources/map_2s_GEOM_2in50_ratio.png) |
 
 ## 3sec SA, GEOM, 2% in 50 yr
 *[(top)](#table-of-contents)*
 
-| **Interpolated CyberShake Map** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 |-----|-----|
 | ![Interpolated CyberShake Map](resources/map_3s_GEOM_2in50_interpolated.png) | ![GMPE Basemap](resources/map_3s_GEOM_2in50_basemap.png) |
-| **Interpolated CyberShake Map w/ Sites Marked** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map w/ Sites Marked**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 | ![Interpolated CyberShake Map w/ Sites Marked](resources/map_3s_GEOM_2in50_interpolated_marks.png) | ![GMPE Basemap](resources/map_3s_GEOM_2in50_basemap.png) |
-| **Difference: CyberShake - GMPE Basemap** | **Ratio: CyberShake / GMPE Basemap** |
+| <p style="text-align: center;">**Difference: CyberShake - GMPE Basemap**</p> | <p style="text-align: center;">**Ratio: CyberShake / GMPE Basemap**</p> |
 | ![Difference: CyberShake - GMPE Basemap](resources/map_3s_GEOM_2in50_diff.png) | ![Ratio: CyberShake / GMPE Basemap](resources/map_3s_GEOM_2in50_ratio.png) |
 
 ## 5sec SA, GEOM, 2% in 50 yr
 *[(top)](#table-of-contents)*
 
-| **Interpolated CyberShake Map** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 |-----|-----|
 | ![Interpolated CyberShake Map](resources/map_5s_GEOM_2in50_interpolated.png) | ![GMPE Basemap](resources/map_5s_GEOM_2in50_basemap.png) |
-| **Interpolated CyberShake Map w/ Sites Marked** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map w/ Sites Marked**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 | ![Interpolated CyberShake Map w/ Sites Marked](resources/map_5s_GEOM_2in50_interpolated_marks.png) | ![GMPE Basemap](resources/map_5s_GEOM_2in50_basemap.png) |
-| **Difference: CyberShake - GMPE Basemap** | **Ratio: CyberShake / GMPE Basemap** |
+| <p style="text-align: center;">**Difference: CyberShake - GMPE Basemap**</p> | <p style="text-align: center;">**Ratio: CyberShake / GMPE Basemap**</p> |
 | ![Difference: CyberShake - GMPE Basemap](resources/map_5s_GEOM_2in50_diff.png) | ![Ratio: CyberShake / GMPE Basemap](resources/map_5s_GEOM_2in50_ratio.png) |
 
 ## 10sec SA, GEOM, 2% in 50 yr
 *[(top)](#table-of-contents)*
 
-| **Interpolated CyberShake Map** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 |-----|-----|
 | ![Interpolated CyberShake Map](resources/map_10s_GEOM_2in50_interpolated.png) | ![GMPE Basemap](resources/map_10s_GEOM_2in50_basemap.png) |
-| **Interpolated CyberShake Map w/ Sites Marked** | **GMPE Basemap** |
+| <p style="text-align: center;">**Interpolated CyberShake Map w/ Sites Marked**</p> | <p style="text-align: center;">**GMPE Basemap**</p> |
 | ![Interpolated CyberShake Map w/ Sites Marked](resources/map_10s_GEOM_2in50_interpolated_marks.png) | ![GMPE Basemap](resources/map_10s_GEOM_2in50_basemap.png) |
-| **Difference: CyberShake - GMPE Basemap** | **Ratio: CyberShake / GMPE Basemap** |
+| <p style="text-align: center;">**Difference: CyberShake - GMPE Basemap**</p> | <p style="text-align: center;">**Ratio: CyberShake / GMPE Basemap**</p> |
 | ![Difference: CyberShake - GMPE Basemap](resources/map_10s_GEOM_2in50_diff.png) | ![Ratio: CyberShake / GMPE Basemap](resources/map_10s_GEOM_2in50_ratio.png) |
 
