@@ -28,6 +28,7 @@
 * [s279](site_hazard_s279_ASK2014_Vs30Simulation/)
 * [s480](site_hazard_s480_ASK2014_Vs30Simulation/)
 * [SBSM](site_hazard_SBSM_ASK2014_Vs30Simulation/)
+* [SMCA](site_hazard_SMCA_ASK2014_Vs30Simulation/)
 * [STNI](site_hazard_STNI_ASK2014_Vs30Simulation/)
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
 * [WNGC](site_hazard_WNGC_ASK2014_Vs30Simulation/)

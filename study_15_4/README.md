@@ -8,6 +8,7 @@
 | **Velocity Model** | CVM-S4.26, 4.26 |
 
 * [Metadata](#metadata)
+* [Hazard Maps](#hazard-maps)
 * [GMPE Comparisons](#gmpe-comparisons)
   * [Vs30 model for GMPE comparisons: Simulation Value](#vs30-model-for-gmpe-comparisons-simulation-value)
   * [Vs30 model for GMPE comparisons: Wills 2015](#vs30-model-for-gmpe-comparisons-wills-2015)
@@ -25,6 +26,11 @@
     * [No-Aleatory Rupture Variation Count Plot](#no-aleatory-rupture-variation-count-plot)
     * [No-Aleatory Magnitude-Area Plots](#no-aleatory-magnitude-area-plots)
     * [No-Aleatory Slip-Area Plots](#no-aleatory-slip-area-plots)
+
+## Hazard Maps
+*[(top)](#study-154)*
+
+[Hazard Maps Plotted Here](hazard_maps/)
 
 ## GMPE Comparisons
 *[(top)](#study-154)*
