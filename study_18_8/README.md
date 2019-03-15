@@ -8,7 +8,7 @@
 | **Velocity Model** | Study 18.8 Stitched,  |
 
 * [Metadata](#metadata)
-* [Hazard Maps](#hazard-maps)
+* [Hazard Maps](hazard_maps/)
 * [Plots](#plots)
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)

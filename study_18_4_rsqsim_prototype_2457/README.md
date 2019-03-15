@@ -9,12 +9,12 @@
 
 * [Metadata](#metadata)
 * [GMPE Comparisons](#gmpe-comparisons)
-  * [Vs30 model for GMPE comparisons: Wills 2015](#vs30-model-for-gmpe-comparisons-wills-2015)
   * [Vs30 model for GMPE comparisons: Simulation Value](#vs30-model-for-gmpe-comparisons-simulation-value)
+  * [Vs30 model for GMPE comparisons: Wills 2015](#vs30-model-for-gmpe-comparisons-wills-2015)
 * [Site Hazard Comparisons](#site-hazard-comparisons)
   * [GMPE: ASK2014, Vs30 model: Simulation Value](#gmpe-ask2014-vs30-model-simulation-value)
-  * [GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value](#gmpe-ngawest2014noidr-vs30-model-simulation-value)
-* [Source/Site Ground Motion Comparisons](#sourcesite-ground-motion-comparisons)
+  * [GMPE: NGAWest_2014_NoIdr, Vs30 model: Simulation Value](#gmpe-ngawest_2014_noidr-vs30-model-simulation-value)
+* [Source/Site Ground Motion Comparisons](source_site_comparisons_Vs30Simulation/)
 * [Plots](#plots)
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)
@@ -24,12 +24,12 @@
 ## GMPE Comparisons
 *[(top)](#rsqsim-2457)*
 
-### Vs30 model for GMPE comparisons: Wills 2015
-
-* [NGAWest_2014_NoIdr](gmpe_comparisons_NGAWest_2014_NoIdr_Vs30Wills2015/)
 ### Vs30 model for GMPE comparisons: Simulation Value
 
 * [NGAWest_2014_NoIdr](gmpe_comparisons_NGAWest_2014_NoIdr_Vs30Simulation/)
+### Vs30 model for GMPE comparisons: Wills 2015
+
+* [NGAWest_2014_NoIdr](gmpe_comparisons_NGAWest_2014_NoIdr_Vs30Wills2015/)
 
 ## Site Hazard Comparisons
 *[(top)](#rsqsim-2457)*

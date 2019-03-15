@@ -8,9 +8,9 @@
 | **Velocity Model** | CCA 1D, 1.0 |
 
 * [Metadata](#metadata)
-* [Hazard Maps](#hazard-maps)
+* [Hazard Maps](hazard_maps/)
 * [GMPE Comparisons](#gmpe-comparisons)
-* [RotD100/RotD50 Ratios](#rotd100rotd50-ratios)
+* [RotD100/RotD50 Ratios](rotd_ratio_comparisons/)
 * [Plots](#plots)
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)

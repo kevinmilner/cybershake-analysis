@@ -45,15 +45,15 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 
 | Name | Location | # Ruptures | Vs30 (m/s) | Z1.0 (km) | Z2.5 (km) |
 |-----|-----|-----|-----|-----|-----|
-| WNGC | *34.041824, -118.0653* | 27959 (27959 sims) | 300.2 | 0.5 | 3.5 |
-| STNI | *33.93088, -118.17881* | 27613 (27613 sims) | 272.5 | 0.9 | 5.6 |
-| s480 | *34.15755, -117.87389* | 28896 (28896 sims) | 750.5 | 0.1 | 1.3 |
-| s119 | *34.55314, -118.72826* | 25932 (25932 sims) | 839.6 | 0.1 | 0.4 |
+| USC | *34.0192, -118.286* | 27960 (27960 sims) | 313.1 | 0.6 | 4.1 |
 | LAPD | *34.557, -118.125* | 30445 (30445 sims) | 2573.6 | 0 | 0 |
 | s279 | *34.37809, -118.34757* | 29133 (29133 sims) | 750.9 | 0.1 | 0.4 |
 | SBSM | *34.064987, -117.29201* | 33012 (33012 sims) | 357.1 | 0.4 | 1.9 |
 | PAS | *34.148426, -118.17119* | 28898 (28898 sims) | 838.8 | 0.1 | 0.7 |
-| USC | *34.0192, -118.286* | 27960 (27960 sims) | 313.1 | 0.6 | 4.1 |
+| s119 | *34.55314, -118.72826* | 25932 (25932 sims) | 839.6 | 0.1 | 0.4 |
+| s480 | *34.15755, -117.87389* | 28896 (28896 sims) | 750.5 | 0.1 | 1.3 |
+| STNI | *33.93088, -118.17881* | 27613 (27613 sims) | 272.5 | 0.9 | 5.6 |
+| WNGC | *34.041824, -118.0653* | 27959 (27959 sims) | 300.2 | 0.5 | 3.5 |
 | SMCA | *34.00909, -118.48939* | 28069 (28069 sims) | 391.4 | 0.59 | 2.45 |
 
 37945 ruptures within 200 km of *any* site
@@ -262,15 +262,15 @@ z-score standard normal plots across all magnitudes/distances
 
 | Site | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **WNGC** | ![Hazard Curve](resources/WNGC_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/WNGC_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/WNGC_curves_10.0s_ASK2014.png) |
-| **STNI** | ![Hazard Curve](resources/STNI_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/STNI_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/STNI_curves_10.0s_ASK2014.png) |
-| **s480** | ![Hazard Curve](resources/s480_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/s480_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/s480_curves_10.0s_ASK2014.png) |
-| **s119** | ![Hazard Curve](resources/s119_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/s119_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/s119_curves_10.0s_ASK2014.png) |
+| **USC** | ![Hazard Curve](resources/USC_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/USC_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/USC_curves_10.0s_ASK2014.png) |
 | **LAPD** | ![Hazard Curve](resources/LAPD_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/LAPD_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/LAPD_curves_10.0s_ASK2014.png) |
 | **s279** | ![Hazard Curve](resources/s279_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/s279_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/s279_curves_10.0s_ASK2014.png) |
 | **SBSM** | ![Hazard Curve](resources/SBSM_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/SBSM_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/SBSM_curves_10.0s_ASK2014.png) |
 | **PAS** | ![Hazard Curve](resources/PAS_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/PAS_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/PAS_curves_10.0s_ASK2014.png) |
-| **USC** | ![Hazard Curve](resources/USC_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/USC_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/USC_curves_10.0s_ASK2014.png) |
+| **s119** | ![Hazard Curve](resources/s119_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/s119_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/s119_curves_10.0s_ASK2014.png) |
+| **s480** | ![Hazard Curve](resources/s480_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/s480_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/s480_curves_10.0s_ASK2014.png) |
+| **STNI** | ![Hazard Curve](resources/STNI_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/STNI_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/STNI_curves_10.0s_ASK2014.png) |
+| **WNGC** | ![Hazard Curve](resources/WNGC_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/WNGC_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/WNGC_curves_10.0s_ASK2014.png) |
 | **SMCA** | ![Hazard Curve](resources/SMCA_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/SMCA_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/SMCA_curves_10.0s_ASK2014.png) |
 ## GMPE Residuals
 *[(top)](#table-of-contents)*
