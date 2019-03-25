@@ -78,8 +78,24 @@ img {
 </li>
 <li><a href="#azumth-dependence">Azumth Dependence</a>
 <ul>
-<li><a href="#rupture-strike-dependence">Rupture Strike Dependence</a></li>
-<li><a href="#path-dependence">Path Dependence</a></li>
+<li><a href="#pas-azumth-dependence">PAS Azumth Dependence</a>
+<ul>
+<li><a href="#pas-rupture-strike-dependence">PAS Rupture Strike Dependence</a></li>
+<li><a href="#pas-path-dependence">PAS Path Dependence</a></li>
+</ul>
+</li>
+<li><a href="#usc-azumth-dependence">USC Azumth Dependence</a>
+<ul>
+<li><a href="#usc-rupture-strike-dependence">USC Rupture Strike Dependence</a></li>
+<li><a href="#usc-path-dependence">USC Path Dependence</a></li>
+</ul>
+</li>
+<li><a href="#all-sites-azumth-dependence">All Sites Azumth Dependence</a>
+<ul>
+<li><a href="#all-sites-rupture-strike-dependence">All Sites Rupture Strike Dependence</a></li>
+<li><a href="#all-sites-path-dependence">All Sites Path Dependence</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#bbp-partb-comparison">BBP PartB Comparison</a>
@@ -97,11 +113,11 @@ img {
 </thead>
 <tbody>
 <tr><td>Rupture</td><td>49</td><td>Unique (but similar in faulting style and magnitude) ruptures which match the given scenario.</td></tr>
-<tr><td>Site</td><td>1</td><td>Unique site locations. If 3-d, each will have unique velocity profiles.</td></tr>
+<tr><td>Site</td><td>2</td><td>Unique site locations. If 3-d, each will have unique velocity profiles.</td></tr>
 <tr><td>Rupture Strike</td><td>18</td><td>Rupture strike conforming to the Aki &amp; Richards (1980) convention, where dipping faults dip to the right of the rupture. If path rotation is also performed, this azimuth is relative to the path.</td></tr>
 <tr><td>Path</td><td>36</td><td>Path from the site to the centroid of the rupture, in azimuthal degrees (0 is North)</td></tr>
 <tr><td>Distance</td><td>20.0, 50.0, 100.0 km</td><td>3-dimensional distance between the site and the rupture surface.</td></tr>
-<tr><td><strong>Total # Simulations</strong></td><td><strong>95256</strong></td><td>Total number of combinations of the above.</td></tr>
+<tr><td><strong>Total # Simulations</strong></td><td><strong>190512</strong></td><td>Total number of combinations of the above.</td></tr>
 </tbody>
 </table>
 <h2 id="m66-reverse-rsqsim-rupture-match-criteria">M6.6 Reverse RSQSim Rupture Match Criteria</h2>
@@ -119,6 +135,7 @@ img {
 <tr><th>Name</th><th>Location</th><th>Vs30 (m/s)</th><th>Z1.0 (km)</th><th>Z2.5 (km)</th></tr>
 </thead>
 <tbody>
+<tr><td>PAS</td><td><em>34.148426, -118.17119</em></td><td>838.8</td><td>0.05</td><td>0.65</td></tr>
 <tr><td>USC</td><td><em>34.0192, -118.286</em></td><td>313.1</td><td>0.6</td><td>4.05</td></tr>
 </tbody>
 </table>
@@ -128,18 +145,18 @@ img {
 <tr><th>Type</th><th>Notation</th><th>Distance</th><th>3s Std. Dev.</th><th>5s Std. Dev.</th><th>10s Std. Dev.</th></tr>
 </thead>
 <tbody>
-<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>20 km</td><td>0.31</td><td>0.3</td><td>0.16</td></tr>
-<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>50 km</td><td>0.34</td><td>0.36</td><td>0.22</td></tr>
-<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>100 km</td><td>0.36</td><td>0.36</td><td>0.27</td></tr>
-<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>20 km</td><td>0.33</td><td>0.41</td><td>0.39</td></tr>
-<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>50 km</td><td>0.32</td><td>0.42</td><td>0.42</td></tr>
-<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>100 km</td><td>0.33</td><td>0.43</td><td>0.44</td></tr>
-<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>20 km</td><td>0.39</td><td>0.45</td><td>0.39</td></tr>
-<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>50 km</td><td>0.41</td><td>0.5</td><td>0.44</td></tr>
-<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>100 km</td><td>0.45</td><td>0.52</td><td>0.49</td></tr>
-<tr><td>Between-events</td><td>τ</td><td>20 km</td><td>0.18</td><td>0.21</td><td>0.22</td></tr>
+<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>20 km</td><td>0.32</td><td>0.27</td><td>0.15</td></tr>
+<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>50 km</td><td>0.36</td><td>0.35</td><td>0.19</td></tr>
+<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>100 km</td><td>0.38</td><td>0.35</td><td>0.24</td></tr>
+<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>20 km</td><td>0.34</td><td>0.42</td><td>0.39</td></tr>
+<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>50 km</td><td>0.33</td><td>0.43</td><td>0.42</td></tr>
+<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>100 km</td><td>0.34</td><td>0.43</td><td>0.44</td></tr>
+<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>20 km</td><td>0.41</td><td>0.45</td><td>0.4</td></tr>
+<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>50 km</td><td>0.43</td><td>0.49</td><td>0.43</td></tr>
+<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>100 km</td><td>0.46</td><td>0.51</td><td>0.47</td></tr>
+<tr><td>Between-events</td><td>τ</td><td>20 km</td><td>0.17</td><td>0.21</td><td>0.22</td></tr>
 <tr><td>Between-events</td><td>τ</td><td>50 km</td><td>0.19</td><td>0.23</td><td>0.23</td></tr>
-<tr><td>Between-events</td><td>τ</td><td>100 km</td><td>0.16</td><td>0.24</td><td>0.24</td></tr>
+<tr><td>Between-events</td><td>τ</td><td>100 km</td><td>0.16</td><td>0.23</td><td>0.25</td></tr>
 </tbody>
 </table>
 <h3 id="dist-dependent-plot-table">Dist-Dependent Plot Table</h3>
@@ -160,7 +177,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p>Path-to-path variability, denoted φ<sub>P2P</sub> in Al Atik (2010), is computed separately for each:</p>
 <ul>
-<li>Site <em>[1 unique]</em></li>
+<li>Site <em>[2 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
 <p>Then, for each unique combination of:</p>
@@ -172,7 +189,7 @@ img {
 <ul>
 <li>Path <em>[36 unique]</em></li>
 </ul>
-<p>We take φ<sub>P2P</sub> to be the standard deviation of all residuals across each combination of Rupture, Rupture Strike.</p>
+<p>We take φ<sub>P2P</sub> to be the standard deviation of all residuals across each combination of Rupture, Rupture Strike. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture, Rupture Strike]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_path.png" alt="Example" /></p>
 <h3 id="200-km-m66-path-to-path-results">20.0 km M6.6 Path-to-path Results</h3>
@@ -180,10 +197,12 @@ img {
 <p><img src="resources/path_m6.6_20km_std_dev.png" alt="Path-to-path Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.31</td><td>0.3</td><td>0.29</td><td>[0.1 0.56]</td><td></td><td>0.3</td><td>0.29</td><td>0.29</td><td>[0.08 0.54]</td><td></td><td>0.16</td><td>0.15</td><td>0.15</td><td>[0.03 0.42]</td></tr>
+<tr><td>PAS</td><td></td><td>0.32</td><td>0.31</td><td>0.31</td><td>[0.1 0.56]</td><td></td><td>0.25</td><td>0.24</td><td>0.24</td><td>[0.11 0.48]</td><td></td><td>0.13</td><td>0.12</td><td>0.12</td><td>[0.02 0.38]</td></tr>
+<tr><td>USC</td><td></td><td>0.31</td><td>0.3</td><td>0.29</td><td>[0.1 0.56]</td><td></td><td>0.3</td><td>0.29</td><td>0.29</td><td>[0.08 0.54]</td><td></td><td>0.16</td><td>0.15</td><td>0.15</td><td>[0.03 0.42]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.32</strong></td><td><strong>0.31</strong></td><td><strong>0.3</strong></td><td><strong>[0.1 0.56]</strong></td><td></td><td><strong>0.27</strong></td><td><strong>0.26</strong></td><td><strong>0.26</strong></td><td><strong>[0.08 0.54]</strong></td><td></td><td><strong>0.15</strong></td><td><strong>0.14</strong></td><td><strong>0.13</strong></td><td><strong>[0.02 0.42]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -201,10 +220,12 @@ img {
 <p><img src="resources/path_m6.6_50km_std_dev.png" alt="Path-to-path Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.34</td><td>0.34</td><td>0.34</td><td>[0.22 0.49]</td><td></td><td>0.36</td><td>0.36</td><td>0.36</td><td>[0.22 0.6]</td><td></td><td>0.22</td><td>0.21</td><td>0.21</td><td>[0.08 0.46]</td></tr>
+<tr><td>PAS</td><td></td><td>0.38</td><td>0.36</td><td>0.35</td><td>[0.16 0.69]</td><td></td><td>0.33</td><td>0.32</td><td>0.32</td><td>[0.12 0.59]</td><td></td><td>0.16</td><td>0.15</td><td>0.15</td><td>[0.06 0.43]</td></tr>
+<tr><td>USC</td><td></td><td>0.34</td><td>0.34</td><td>0.34</td><td>[0.22 0.49]</td><td></td><td>0.36</td><td>0.36</td><td>0.36</td><td>[0.22 0.6]</td><td></td><td>0.22</td><td>0.21</td><td>0.21</td><td>[0.08 0.46]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>0.34</strong></td><td><strong>[0.16 0.69]</strong></td><td></td><td><strong>0.35</strong></td><td><strong>0.34</strong></td><td><strong>0.34</strong></td><td><strong>[0.12 0.6]</strong></td><td></td><td><strong>0.19</strong></td><td><strong>0.18</strong></td><td><strong>0.18</strong></td><td><strong>[0.06 0.46]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -222,10 +243,12 @@ img {
 <p><img src="resources/path_m6.6_100km_std_dev.png" alt="Path-to-path Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.36</td><td>0.36</td><td>0.36</td><td>[0.25 0.58]</td><td></td><td>0.36</td><td>0.36</td><td>0.36</td><td>[0.24 0.53]</td><td></td><td>0.27</td><td>0.27</td><td>0.27</td><td>[0.15 0.4]</td></tr>
+<tr><td>PAS</td><td></td><td>0.4</td><td>0.4</td><td>0.38</td><td>[0.18 0.67]</td><td></td><td>0.34</td><td>0.34</td><td>0.34</td><td>[0.17 0.51]</td><td></td><td>0.2</td><td>0.2</td><td>0.2</td><td>[0.11 0.34]</td></tr>
+<tr><td>USC</td><td></td><td>0.36</td><td>0.36</td><td>0.36</td><td>[0.25 0.58]</td><td></td><td>0.36</td><td>0.36</td><td>0.36</td><td>[0.24 0.53]</td><td></td><td>0.27</td><td>0.27</td><td>0.27</td><td>[0.15 0.4]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>[0.18 0.67]</strong></td><td></td><td><strong>0.35</strong></td><td><strong>0.35</strong></td><td><strong>0.35</strong></td><td><strong>[0.17 0.53]</strong></td><td></td><td><strong>0.24</strong></td><td><strong>0.24</strong></td><td><strong>0.23</strong></td><td><strong>[0.11 0.4]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -244,7 +267,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p>Source-strike variability, denoted φ<sub>s</sub> in Aki &amp; Richards (1980), is computed separately for each:</p>
 <ul>
-<li>Site <em>[1 unique]</em></li>
+<li>Site <em>[2 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
 <p>Then, for each unique combination of:</p>
@@ -256,7 +279,7 @@ img {
 <ul>
 <li>Rupture Strike <em>[18 unique]</em></li>
 </ul>
-<p>We take φ<sub>s</sub> to be the standard deviation of all residuals, δW<sub>es</sub>, across each combination of Rupture, Path.</p>
+<p>We take φ<sub>s</sub> to be the standard deviation of all residuals, δW<sub>es</sub>, across each combination of Rupture, Path. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture, Path]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_source_strike.png" alt="Example" /></p>
 <h3 id="200-km-m66-source-strike-results">20.0 km M6.6 Source-strike Results</h3>
@@ -264,10 +287,12 @@ img {
 <p><img src="resources/source_strike_m6.6_20km_std_dev.png" alt="Source-strike Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.33</td><td>0.32</td><td>0.31</td><td>[0.13 0.62]</td><td></td><td>0.41</td><td>0.39</td><td>0.38</td><td>[0.13 0.86]</td><td></td><td>0.39</td><td>0.37</td><td>0.36</td><td>[0.1 0.8]</td></tr>
+<tr><td>PAS</td><td></td><td>0.35</td><td>0.35</td><td>0.35</td><td>[0.15 0.61]</td><td></td><td>0.43</td><td>0.42</td><td>0.41</td><td>[0.15 0.8]</td><td></td><td>0.4</td><td>0.39</td><td>0.38</td><td>[0.11 0.77]</td></tr>
+<tr><td>USC</td><td></td><td>0.33</td><td>0.32</td><td>0.31</td><td>[0.13 0.62]</td><td></td><td>0.41</td><td>0.39</td><td>0.38</td><td>[0.13 0.86]</td><td></td><td>0.39</td><td>0.37</td><td>0.36</td><td>[0.1 0.8]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.34</strong></td><td><strong>0.34</strong></td><td><strong>0.33</strong></td><td><strong>[0.13 0.62]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.4</strong></td><td><strong>0.4</strong></td><td><strong>[0.13 0.86]</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>[0.1 0.8]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -294,10 +319,12 @@ img {
 <p><img src="resources/source_strike_m6.6_50km_std_dev.png" alt="Source-strike Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.32</td><td>0.31</td><td>0.31</td><td>[0.1 0.71]</td><td></td><td>0.42</td><td>0.4</td><td>0.39</td><td>[0.12 0.8]</td><td></td><td>0.42</td><td>0.41</td><td>0.39</td><td>[0.13 0.81]</td></tr>
+<tr><td>PAS</td><td></td><td>0.33</td><td>0.33</td><td>0.31</td><td>[0.11 0.65]</td><td></td><td>0.44</td><td>0.42</td><td>0.42</td><td>[0.11 0.8]</td><td></td><td>0.41</td><td>0.4</td><td>0.38</td><td>[0.16 0.78]</td></tr>
+<tr><td>USC</td><td></td><td>0.32</td><td>0.31</td><td>0.31</td><td>[0.1 0.71]</td><td></td><td>0.42</td><td>0.4</td><td>0.39</td><td>[0.12 0.8]</td><td></td><td>0.42</td><td>0.41</td><td>0.39</td><td>[0.13 0.81]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.33</strong></td><td><strong>0.32</strong></td><td><strong>0.31</strong></td><td><strong>[0.1 0.71]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.41</strong></td><td><strong>0.4</strong></td><td><strong>[0.11 0.8]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.4</strong></td><td><strong>0.39</strong></td><td><strong>[0.13 0.81]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -324,10 +351,12 @@ img {
 <p><img src="resources/source_strike_m6.6_100km_std_dev.png" alt="Source-strike Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.33</td><td>0.32</td><td>0.32</td><td>[0.1 0.77]</td><td></td><td>0.43</td><td>0.41</td><td>0.39</td><td>[0.11 0.82]</td><td></td><td>0.44</td><td>0.43</td><td>0.42</td><td>[0.11 0.81]</td></tr>
+<tr><td>PAS</td><td></td><td>0.34</td><td>0.33</td><td>0.32</td><td>[0.11 0.8]</td><td></td><td>0.42</td><td>0.41</td><td>0.39</td><td>[0.1 0.8]</td><td></td><td>0.44</td><td>0.43</td><td>0.42</td><td>[0.13 0.78]</td></tr>
+<tr><td>USC</td><td></td><td>0.33</td><td>0.32</td><td>0.32</td><td>[0.1 0.77]</td><td></td><td>0.43</td><td>0.41</td><td>0.39</td><td>[0.11 0.82]</td><td></td><td>0.44</td><td>0.43</td><td>0.42</td><td>[0.11 0.81]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.34</strong></td><td><strong>0.33</strong></td><td><strong>0.32</strong></td><td><strong>[0.1 0.8]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.41</strong></td><td><strong>0.39</strong></td><td><strong>[0.1 0.82]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>[0.11 0.81]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -355,7 +384,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p>Within-event, single-site variability, denoted φ<sub>SS</sub> in Al Atik (2010), is computed separately for each:</p>
 <ul>
-<li>Site <em>[1 unique]</em></li>
+<li>Site <em>[2 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
 <p>Then, for each unique combination of:</p>
@@ -367,7 +396,7 @@ img {
 <li>Rupture Strike <em>[18 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
-<p>We take φ<sub>SS</sub> to be the standard deviation of all residuals, δW<sub>es</sub>, across each combination of Rupture.</p>
+<p>We take φ<sub>SS</sub> to be the standard deviation of all residuals, δW<sub>es</sub>, across each combination of Rupture. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_within_event_ss.png" alt="Example" /></p>
 <h3 id="200-km-m66-within-event-single-site-results">20.0 km M6.6 Within-event, single-site Results</h3>
@@ -375,10 +404,12 @@ img {
 <p><img src="resources/within_event_ss_m6.6_20km_std_dev.png" alt="Within-event, single-site Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.39</td><td>0.38</td><td>0.38</td><td>[0.3 0.5]</td><td></td><td>0.45</td><td>0.44</td><td>0.41</td><td>[0.3 0.64]</td><td></td><td>0.39</td><td>0.37</td><td>0.38</td><td>[0.19 0.66]</td></tr>
+<tr><td>PAS</td><td></td><td>0.43</td><td>0.43</td><td>0.43</td><td>[0.36 0.52]</td><td></td><td>0.45</td><td>0.44</td><td>0.44</td><td>[0.31 0.64]</td><td></td><td>0.4</td><td>0.38</td><td>0.39</td><td>[0.22 0.64]</td></tr>
+<tr><td>USC</td><td></td><td>0.39</td><td>0.38</td><td>0.38</td><td>[0.3 0.5]</td><td></td><td>0.45</td><td>0.44</td><td>0.41</td><td>[0.3 0.64]</td><td></td><td>0.39</td><td>0.37</td><td>0.38</td><td>[0.19 0.66]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.41</strong></td><td><strong>0.41</strong></td><td><strong>0.41</strong></td><td><strong>[0.3 0.52]</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>[0.3 0.64]</strong></td><td></td><td><strong>0.4</strong></td><td><strong>0.38</strong></td><td><strong>0.38</strong></td><td><strong>[0.19 0.66]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -405,10 +436,12 @@ img {
 <p><img src="resources/within_event_ss_m6.6_50km_std_dev.png" alt="Within-event, single-site Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.41</td><td>0.41</td><td>0.41</td><td>[0.33 0.55]</td><td></td><td>0.5</td><td>0.49</td><td>0.47</td><td>[0.38 0.68]</td><td></td><td>0.44</td><td>0.43</td><td>0.41</td><td>[0.3 0.71]</td></tr>
+<tr><td>PAS</td><td></td><td>0.44</td><td>0.44</td><td>0.44</td><td>[0.32 0.56]</td><td></td><td>0.48</td><td>0.48</td><td>0.47</td><td>[0.34 0.65]</td><td></td><td>0.41</td><td>0.4</td><td>0.37</td><td>[0.27 0.67]</td></tr>
+<tr><td>USC</td><td></td><td>0.41</td><td>0.41</td><td>0.41</td><td>[0.33 0.55]</td><td></td><td>0.5</td><td>0.49</td><td>0.47</td><td>[0.38 0.68]</td><td></td><td>0.44</td><td>0.43</td><td>0.41</td><td>[0.3 0.71]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.43</strong></td><td><strong>0.43</strong></td><td><strong>[0.32 0.56]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.34 0.68]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>0.4</strong></td><td><strong>[0.27 0.71]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -435,10 +468,12 @@ img {
 <p><img src="resources/within_event_ss_m6.6_100km_std_dev.png" alt="Within-event, single-site Variability" /></p>
 <table>
 <thead>
-<tr><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>0.45</td><td>0.45</td><td>0.45</td><td>[0.34 0.57]</td><td></td><td>0.52</td><td>0.51</td><td>0.5</td><td>[0.36 0.7]</td><td></td><td>0.49</td><td>0.48</td><td>0.46</td><td>[0.35 0.7]</td></tr>
+<tr><td>PAS</td><td></td><td>0.48</td><td>0.47</td><td>0.47</td><td>[0.37 0.6]</td><td></td><td>0.5</td><td>0.49</td><td>0.48</td><td>[0.35 0.67]</td><td></td><td>0.46</td><td>0.45</td><td>0.44</td><td>[0.31 0.65]</td></tr>
+<tr><td>USC</td><td></td><td>0.45</td><td>0.45</td><td>0.45</td><td>[0.34 0.57]</td><td></td><td>0.52</td><td>0.51</td><td>0.5</td><td>[0.36 0.7]</td><td></td><td>0.49</td><td>0.48</td><td>0.46</td><td>[0.35 0.7]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>[0.34 0.6]</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>[0.35 0.7]</strong></td><td></td><td><strong>0.47</strong></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>[0.31 0.7]</strong></td></tr>
 </tbody>
 </table>
 <table>
@@ -466,7 +501,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p>Between-events variability, denoted τ in Al Atik (2010), is computed separately for each:</p>
 <ul>
-<li>Site <em>[1 unique]</em></li>
+<li>Site <em>[2 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
 <p>We first compute the median natural-log ground motion, δB<sub>e</sub>, for each combination of:</p>
@@ -478,7 +513,7 @@ img {
 <li>Rupture Strike <em>[18 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
-<p>We take τ to be the standard deviation of all δB<sub>e</sub>.</p>
+<p>We take τ to be the standard deviation of all δB<sub>e</sub>. Finally, we compute the median standard deviation across all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_between_events.png" alt="Example" /></p>
 <h3 id="200-km-m66-between-events-results">20.0 km M6.6 Between-events Results</h3>
@@ -486,10 +521,12 @@ img {
 <p><img src="resources/between_events_m6.6_20km_std_dev.png" alt="Between-events Variability" /></p>
 <table>
 <thead>
-<tr><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
+<tr><th>Site</th><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td>0.18</td><td>-3.12</td><td>[-3.45 -2.69]</td><td>0.21</td><td>-3.76</td><td>[-4.1 -3.34]</td><td>0.22</td><td>-5.02</td><td>[-5.51 -4.49]</td></tr>
+<tr><td>PAS</td><td>0.16</td><td>-4.4</td><td>[-4.69 -3.96]</td><td>0.21</td><td>-4.94</td><td>[-5.33 -4.5]</td><td>0.23</td><td>-5.98</td><td>[-6.49 -5.44]</td></tr>
+<tr><td>USC</td><td>0.18</td><td>-3.12</td><td>[-3.45 -2.69]</td><td>0.21</td><td>-3.76</td><td>[-4.1 -3.34]</td><td>0.22</td><td>-5.02</td><td>[-5.51 -4.49]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td><strong>0.17</strong></td><td><strong>-3.76</strong></td><td><strong>[-4.69 -2.69]</strong></td><td><strong>0.21</strong></td><td><strong>-4.35</strong></td><td><strong>[-5.33 -3.34]</strong></td><td><strong>0.22</strong></td><td><strong>-5.5</strong></td><td><strong>[-6.49 -4.49]</strong></td></tr>
 </tbody>
 </table>
 <h3 id="500-km-m66-between-events-results">50.0 km M6.6 Between-events Results</h3>
@@ -497,10 +534,12 @@ img {
 <p><img src="resources/between_events_m6.6_50km_std_dev.png" alt="Between-events Variability" /></p>
 <table>
 <thead>
-<tr><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
+<tr><th>Site</th><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td>0.19</td><td>-3.92</td><td>[-4.25 -3.47]</td><td>0.23</td><td>-4.36</td><td>[-4.76 -3.83]</td><td>0.23</td><td>-5.64</td><td>[-6.17 -5.05]</td></tr>
+<tr><td>PAS</td><td>0.18</td><td>-5.26</td><td>[-5.57 -4.82]</td><td>0.24</td><td>-5.6</td><td>[-5.96 -5.06]</td><td>0.24</td><td>-6.63</td><td>[-7.16 -6.02]</td></tr>
+<tr><td>USC</td><td>0.19</td><td>-3.92</td><td>[-4.25 -3.47]</td><td>0.23</td><td>-4.36</td><td>[-4.76 -3.83]</td><td>0.23</td><td>-5.64</td><td>[-6.17 -5.05]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td><strong>0.19</strong></td><td><strong>-4.59</strong></td><td><strong>[-5.57 -3.47]</strong></td><td><strong>0.23</strong></td><td><strong>-4.98</strong></td><td><strong>[-5.96 -3.83]</strong></td><td><strong>0.23</strong></td><td><strong>-6.14</strong></td><td><strong>[-7.16 -5.05]</strong></td></tr>
 </tbody>
 </table>
 <h3 id="1000-km-m66-between-events-results">100.0 km M6.6 Between-events Results</h3>
@@ -508,37 +547,97 @@ img {
 <p><img src="resources/between_events_m6.6_100km_std_dev.png" alt="Between-events Variability" /></p>
 <table>
 <thead>
-<tr><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
+<tr><th>Site</th><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td>0.16</td><td>-4.56</td><td>[-4.85 -4.16]</td><td>0.24</td><td>-4.9</td><td>[-5.4 -4.39]</td><td>0.24</td><td>-6.06</td><td>[-6.51 -5.42]</td></tr>
+<tr><td>PAS</td><td>0.16</td><td>-5.86</td><td>[-6.12 -5.47]</td><td>0.22</td><td>-6.25</td><td>[-6.65 -5.74]</td><td>0.26</td><td>-6.99</td><td>[-7.51 -6.33]</td></tr>
+<tr><td>USC</td><td>0.16</td><td>-4.56</td><td>[-4.85 -4.16]</td><td>0.24</td><td>-4.9</td><td>[-5.4 -4.39]</td><td>0.24</td><td>-6.06</td><td>[-6.51 -5.42]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td><strong>0.16</strong></td><td><strong>-5.21</strong></td><td><strong>[-6.12 -4.16]</strong></td><td><strong>0.23</strong></td><td><strong>-5.58</strong></td><td><strong>[-6.65 -4.39]</strong></td><td><strong>0.25</strong></td><td><strong>-6.53</strong></td><td><strong>[-7.51 -5.42]</strong></td></tr>
 </tbody>
 </table>
 <h2 id="azumth-dependence">Azumth Dependence</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<h3 id="rupture-strike-dependence">Rupture Strike Dependence</h3>
+<h3 id="pas-azumth-dependence">PAS Azumth Dependence</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="pas-rupture-strike-dependence">PAS Rupture Strike Dependence</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>τ</strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
+</tbody>
+</table>
+<h4 id="pas-path-dependence">PAS Path Dependence</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>τ</strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
+</tbody>
+</table>
+<h3 id="usc-azumth-dependence">USC Azumth Dependence</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="usc-rupture-strike-dependence">USC Rupture Strike Dependence</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>τ</strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
+</tbody>
+</table>
+<h4 id="usc-path-dependence">USC Path Dependence</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>τ</strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
+</tbody>
+</table>
+<h3 id="all-sites-azumth-dependence">All Sites Azumth Dependence</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h4 id="all-sites-rupture-strike-dependence">All Sites Rupture Strike Dependence</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
+</thead>
+<tbody>
 <tr><td><strong>τ</strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
-<h3 id="path-dependence">Path Dependence</h3>
+<h4 id="all-sites-path-dependence">All Sites Path Dependence</h4>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>τ</strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -551,20 +650,22 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th>Scenario</th><th>20.0 km</th><th>50.0 km</th><th>100.0 km</th></tr>
+<tr><th>Scenario</th><th>Site</th><th>20.0 km</th><th>50.0 km</th><th>100.0 km</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>M6.6 Reverse</strong></td><td><strong>PASS</strong></td><td><strong>PASS</strong></td><td><em>(PASS)</em></td></tr>
+<tr><td><strong>M6.6 Reverse</strong></td><td><strong>PAS</strong></td><td><strong>FAIL</strong></td><td><strong>PASS</strong></td><td><em>(PASS)</em></td></tr>
+<tr><td><strong>M6.6 Reverse</strong></td><td><strong>USC</strong></td><td><strong>PASS</strong></td><td><strong>PASS</strong></td><td><em>(PASS)</em></td></tr>
 </tbody>
 </table>
 <h3 id="bbp-partb-m66-reverse-dip45-ztor3">BBP PartB, M6.6, Reverse, Dip=45, Ztor=3</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th>20.0 km</th><th>50.0 km</th><th>100.0 km</th></tr>
+<tr><th>Site</th><th>20.0 km</th><th>50.0 km</th><th>100.0 km</th></tr>
 </thead>
 <tbody>
-<tr><td><img src="resources/bbp_partB_m6p6_reverse_20km.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m6p6_reverse_50km.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m6p6_reverse_100km.png" alt="PartB Plot" /></td></tr>
+<tr><td><strong>PAS</strong></td><td><img src="resources/bbp_partB_m6p6_reverse_20km_PAS.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m6p6_reverse_50km_PAS.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m6p6_reverse_100km_PAS.png" alt="PartB Plot" /></td></tr>
+<tr><td><strong>USC</strong></td><td><img src="resources/bbp_partB_m6p6_reverse_20km_USC.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m6p6_reverse_50km_USC.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m6p6_reverse_100km_USC.png" alt="PartB Plot" /></td></tr>
 </tbody>
 </table>
 <h2 id="csv-files">CSV Files</h2>
@@ -574,8 +675,11 @@ img {
 <tr><th>Magnitude</th><th>Distance</th><th>Site</th><th>CSV File</th></tr>
 </thead>
 <tbody>
+<tr><td>M6.6</td><td>20.0 km</td><td>PAS</td><td><a href="resources/sa_PAS_m6.6_20.0km.csv.gz">sa_PAS_m6.6_20.0km.csv.gz</a></td></tr>
 <tr><td>M6.6</td><td>20.0 km</td><td>USC</td><td><a href="resources/sa_USC_m6.6_20.0km.csv.gz">sa_USC_m6.6_20.0km.csv.gz</a></td></tr>
+<tr><td>M6.6</td><td>50.0 km</td><td>PAS</td><td><a href="resources/sa_PAS_m6.6_50.0km.csv.gz">sa_PAS_m6.6_50.0km.csv.gz</a></td></tr>
 <tr><td>M6.6</td><td>50.0 km</td><td>USC</td><td><a href="resources/sa_USC_m6.6_50.0km.csv.gz">sa_USC_m6.6_50.0km.csv.gz</a></td></tr>
+<tr><td>M6.6</td><td>100.0 km</td><td>PAS</td><td><a href="resources/sa_PAS_m6.6_100.0km.csv.gz">sa_PAS_m6.6_100.0km.csv.gz</a></td></tr>
 <tr><td>M6.6</td><td>100.0 km</td><td>USC</td><td><a href="resources/sa_USC_m6.6_100.0km.csv.gz">sa_USC_m6.6_100.0km.csv.gz</a></td></tr>
 </tbody>
 </table>

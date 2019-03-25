@@ -40,8 +40,15 @@ We then  perform various rotations. We rotate the rupture in place around its ce
   * [50.0 km M6.6 Between-events Results](#500-km-m66-between-events-results)
   * [100.0 km M6.6 Between-events Results](#1000-km-m66-between-events-results)
 * [Azumth Dependence](#azumth-dependence)
-  * [Rupture Strike Dependence](#rupture-strike-dependence)
-  * [Path Dependence](#path-dependence)
+  * [PAS Azumth Dependence](#pas-azumth-dependence)
+    * [PAS Rupture Strike Dependence](#pas-rupture-strike-dependence)
+    * [PAS Path Dependence](#pas-path-dependence)
+  * [USC Azumth Dependence](#usc-azumth-dependence)
+    * [USC Rupture Strike Dependence](#usc-rupture-strike-dependence)
+    * [USC Path Dependence](#usc-path-dependence)
+  * [All Sites Azumth Dependence](#all-sites-azumth-dependence)
+    * [All Sites Rupture Strike Dependence](#all-sites-rupture-strike-dependence)
+    * [All Sites Path Dependence](#all-sites-path-dependence)
 * [BBP PartB Comparison](#bbp-partb-comparison)
   * [BBP PartB Summary Table](#bbp-partb-summary-table)
   * [BBP PartB, M6.6, Vertical Strike-Slip with Surface Rupture](#bbp-partb-m66-vertical-strike-slip-with-surface-rupture)
@@ -51,11 +58,11 @@ We then  perform various rotations. We rotate the rupture in place around its ce
 | Quantity | Variations | Description |
 |-----|-----|-----|
 | Rupture | 100 | Unique (but similar in faulting style and magnitude) ruptures which match the given scenario. |
-| Site | 1 | Unique site locations. If 3-d, each will have unique velocity profiles. |
+| Site | 2 | Unique site locations. If 3-d, each will have unique velocity profiles. |
 | Rupture Strike | 18 | Rupture strike conforming to the Aki & Richards (1980) convention, where dipping faults dip to the right of the rupture. If path rotation is also performed, this azimuth is relative to the path. |
 | Path | 36 | Path from the site to the centroid of the rupture, in azimuthal degrees (0 is North) |
 | Distance | 20.0, 50.0, 100.0 km | 3-dimensional distance between the site and the rupture surface. |
-| **Total # Simulations** | **194400** | Total number of combinations of the above. |
+| **Total # Simulations** | **388800** | Total number of combinations of the above. |
 
 ## M6.6 SS RSQSim Rupture Match Criteria
 *[(top)](#table-of-contents)*
@@ -72,24 +79,25 @@ We condisder 100 events in the catalog which match the following criteria:
 
 | Name | Location | Vs30 (m/s) | Z1.0 (km) | Z2.5 (km) |
 |-----|-----|-----|-----|-----|
+| PAS | *34.148426, -118.17119* | 838.8 | 0.05 | 0.65 |
 | USC | *34.0192, -118.286* | 313.1 | 0.6 | 4.05 |
 
 ## Result Summary Table
 
 | Type | Notation | Distance | 3s Std. Dev. | 5s Std. Dev. | 10s Std. Dev. |
 |-----|-----|-----|-----|-----|-----|
-| Path-to-path | &phi;<sub>P2P</sub> | 20 km | 0.36 | 0.39 | 0.17 |
-| Path-to-path | &phi;<sub>P2P</sub> | 50 km | 0.37 | 0.39 | 0.27 |
-| Path-to-path | &phi;<sub>P2P</sub> | 100 km | 0.38 | 0.41 | 0.31 |
-| Source-strike | &phi;<sub>s</sub> | 20 km | 0.39 | 0.44 | 0.36 |
-| Source-strike | &phi;<sub>s</sub> | 50 km | 0.36 | 0.44 | 0.49 |
-| Source-strike | &phi;<sub>s</sub> | 100 km | 0.36 | 0.47 | 0.5 |
-| Within-event, single-site | &phi;<sub>SS</sub> | 20 km | 0.45 | 0.5 | 0.36 |
-| Within-event, single-site | &phi;<sub>SS</sub> | 50 km | 0.44 | 0.51 | 0.5 |
-| Within-event, single-site | &phi;<sub>SS</sub> | 100 km | 0.47 | 0.56 | 0.54 |
-| Between-events | &tau; | 20 km | 0.16 | 0.2 | 0.25 |
-| Between-events | &tau; | 50 km | 0.16 | 0.24 | 0.27 |
-| Between-events | &tau; | 100 km | 0.15 | 0.25 | 0.27 |
+| Path-to-path | &phi;<sub>P2P</sub> | 20 km | 0.37 | 0.36 | 0.16 |
+| Path-to-path | &phi;<sub>P2P</sub> | 50 km | 0.41 | 0.39 | 0.25 |
+| Path-to-path | &phi;<sub>P2P</sub> | 100 km | 0.4 | 0.41 | 0.27 |
+| Source-strike | &phi;<sub>s</sub> | 20 km | 0.41 | 0.42 | 0.33 |
+| Source-strike | &phi;<sub>s</sub> | 50 km | 0.38 | 0.43 | 0.48 |
+| Source-strike | &phi;<sub>s</sub> | 100 km | 0.38 | 0.46 | 0.49 |
+| Within-event, single-site | &phi;<sub>SS</sub> | 20 km | 0.49 | 0.49 | 0.34 |
+| Within-event, single-site | &phi;<sub>SS</sub> | 50 km | 0.48 | 0.51 | 0.49 |
+| Within-event, single-site | &phi;<sub>SS</sub> | 100 km | 0.49 | 0.56 | 0.52 |
+| Between-events | &tau; | 20 km | 0.16 | 0.21 | 0.25 |
+| Between-events | &tau; | 50 km | 0.16 | 0.23 | 0.27 |
+| Between-events | &tau; | 100 km | 0.15 | 0.24 | 0.27 |
 
 ### Dist-Dependent Plot Table
 *[(top)](#table-of-contents)*
@@ -109,7 +117,7 @@ We condisder 100 events in the catalog which match the following criteria:
 
 Path-to-path variability, denoted &phi;<sub>P2P</sub> in Al Atik (2010), is computed separately for each:
 
-* Site *[1 unique]*
+* Site *[2 unique]*
 * Distance *[3 unique]*
 
 Then, for each unique combination of:
@@ -121,7 +129,7 @@ we compute residuals of the natural-log ground motions (relative to the median),
 
 * Path *[36 unique]*
 
-We take &phi;<sub>P2P</sub> to be the standard deviation of all residuals across each combination of Rupture, Rupture Strike.
+We take &phi;<sub>P2P</sub> to be the standard deviation of all residuals across each combination of Rupture, Rupture Strike. We also compute the total standard deviation across all residuals from all sites. This total value is reported as **ALL SITES** and in summary plots/tables.
 
 Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture, Rupture Strike]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:
 
@@ -133,9 +141,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Path-to-path Variability](resources/path_m6.6_20km_std_dev.png)
 
-| 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.36 | 0.35 | 0.34 | [0.14 0.62] |  | 0.39 | 0.38 | 0.38 | [0.16 0.67] |  | 0.17 | 0.16 | 0.15 | [0.05 0.36] |
+| Site | 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.38 | 0.36 | 0.36 | [0.12 0.73] |  | 0.33 | 0.31 | 0.31 | [0.09 0.61] |  | 0.14 | 0.13 | 0.12 | [0.03 0.31] |
+| USC |  | 0.36 | 0.35 | 0.34 | [0.14 0.62] |  | 0.39 | 0.38 | 0.38 | [0.16 0.67] |  | 0.17 | 0.16 | 0.15 | [0.05 0.36] |
+| **ALL SITES** |  | **0.37** | **0.36** | **0.35** | **[0.12 0.73]** |  | **0.36** | **0.34** | **0.34** | **[0.09 0.67]** |  | **0.16** | **0.14** | **0.14** | **[0.03 0.36]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -149,9 +159,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Path-to-path Variability](resources/path_m6.6_50km_std_dev.png)
 
-| 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.37 | 0.36 | 0.35 | [0.21 0.65] |  | 0.39 | 0.38 | 0.38 | [0.18 0.58] |  | 0.27 | 0.25 | 0.25 | [0.1 0.53] |
+| Site | 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.45 | 0.43 | 0.42 | [0.19 0.87] |  | 0.39 | 0.38 | 0.38 | [0.16 0.6] |  | 0.23 | 0.21 | 0.2 | [0.07 0.42] |
+| USC |  | 0.37 | 0.36 | 0.35 | [0.21 0.65] |  | 0.39 | 0.38 | 0.38 | [0.18 0.58] |  | 0.27 | 0.25 | 0.25 | [0.1 0.53] |
+| **ALL SITES** |  | **0.41** | **0.4** | **0.38** | **[0.19 0.87]** |  | **0.39** | **0.38** | **0.38** | **[0.16 0.6]** |  | **0.25** | **0.23** | **0.23** | **[0.07 0.53]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -165,9 +177,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Path-to-path Variability](resources/path_m6.6_100km_std_dev.png)
 
-| 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.38 | 0.38 | 0.38 | [0.26 0.64] |  | 0.41 | 0.41 | 0.41 | [0.22 0.63] |  | 0.31 | 0.3 | 0.3 | [0.12 0.46] |
+| Site | 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.43 | 0.42 | 0.41 | [0.21 0.77] |  | 0.41 | 0.4 | 0.39 | [0.19 0.66] |  | 0.22 | 0.22 | 0.22 | [0.13 0.42] |
+| USC |  | 0.38 | 0.38 | 0.38 | [0.26 0.64] |  | 0.41 | 0.41 | 0.41 | [0.22 0.63] |  | 0.31 | 0.3 | 0.3 | [0.12 0.46] |
+| **ALL SITES** |  | **0.4** | **0.4** | **0.39** | **[0.21 0.77]** |  | **0.41** | **0.41** | **0.4** | **[0.19 0.66]** |  | **0.27** | **0.26** | **0.25** | **[0.12 0.46]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -184,7 +198,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 Source-strike variability, denoted &phi;<sub>s</sub> in Aki & Richards (1980), is computed separately for each:
 
-* Site *[1 unique]*
+* Site *[2 unique]*
 * Distance *[3 unique]*
 
 Then, for each unique combination of:
@@ -196,7 +210,7 @@ we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (
 
 * Rupture Strike *[18 unique]*
 
-We take &phi;<sub>s</sub> to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture, Path.
+We take &phi;<sub>s</sub> to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture, Path. We also compute the total standard deviation across all residuals from all sites. This total value is reported as **ALL SITES** and in summary plots/tables.
 
 Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture, Path]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:
 
@@ -208,9 +222,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Source-strike Variability](resources/source_strike_m6.6_20km_std_dev.png)
 
-| 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.39 | 0.38 | 0.36 | [0.13 0.86] |  | 0.44 | 0.43 | 0.42 | [0.13 0.86] |  | 0.36 | 0.35 | 0.34 | [0.09 0.7] |
+| Site | 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.42 | 0.42 | 0.41 | [0.18 0.74] |  | 0.41 | 0.4 | 0.39 | [0.15 0.92] |  | 0.31 | 0.29 | 0.28 | [0.05 0.63] |
+| USC |  | 0.39 | 0.38 | 0.36 | [0.13 0.86] |  | 0.44 | 0.43 | 0.42 | [0.13 0.86] |  | 0.36 | 0.35 | 0.34 | [0.09 0.7] |
+| **ALL SITES** |  | **0.41** | **0.4** | **0.39** | **[0.13 0.86]** |  | **0.42** | **0.41** | **0.41** | **[0.13 0.92]** |  | **0.33** | **0.32** | **0.31** | **[0.05 0.7]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -229,9 +245,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Source-strike Variability](resources/source_strike_m6.6_50km_std_dev.png)
 
-| 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.36 | 0.34 | 0.33 | [0.1 0.8] |  | 0.44 | 0.42 | 0.41 | [0.1 1.05] |  | 0.49 | 0.49 | 0.5 | [0.12 0.82] |
+| Site | 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.39 | 0.37 | 0.35 | [0.11 0.83] |  | 0.42 | 0.4 | 0.39 | [0.09 0.96] |  | 0.48 | 0.48 | 0.49 | [0.15 0.76] |
+| USC |  | 0.36 | 0.34 | 0.33 | [0.1 0.8] |  | 0.44 | 0.42 | 0.41 | [0.1 1.05] |  | 0.49 | 0.49 | 0.5 | [0.12 0.82] |
+| **ALL SITES** |  | **0.38** | **0.36** | **0.34** | **[0.1 0.83]** |  | **0.43** | **0.41** | **0.4** | **[0.09 1.05]** |  | **0.48** | **0.48** | **0.49** | **[0.12 0.82]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -250,9 +268,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Source-strike Variability](resources/source_strike_m6.6_100km_std_dev.png)
 
-| 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.36 | 0.35 | 0.34 | [0.1 0.8] |  | 0.47 | 0.45 | 0.43 | [0.09 1.04] |  | 0.5 | 0.49 | 0.49 | [0.11 0.86] |
+| Site | 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.39 | 0.38 | 0.38 | [0.08 0.84] |  | 0.46 | 0.44 | 0.43 | [0.1 1] |  | 0.48 | 0.48 | 0.48 | [0.11 0.82] |
+| USC |  | 0.36 | 0.35 | 0.34 | [0.1 0.8] |  | 0.47 | 0.45 | 0.43 | [0.09 1.04] |  | 0.5 | 0.49 | 0.49 | [0.11 0.86] |
+| **ALL SITES** |  | **0.38** | **0.36** | **0.36** | **[0.08 0.84]** |  | **0.46** | **0.44** | **0.43** | **[0.09 1.04]** |  | **0.49** | **0.48** | **0.48** | **[0.11 0.86]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -274,7 +294,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 Within-event, single-site variability, denoted &phi;<sub>SS</sub> in Al Atik (2010), is computed separately for each:
 
-* Site *[1 unique]*
+* Site *[2 unique]*
 * Distance *[3 unique]*
 
 Then, for each unique combination of:
@@ -286,7 +306,7 @@ we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (
 * Rupture Strike *[18 unique]*
 * Path *[36 unique]*
 
-We take &phi;<sub>SS</sub> to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture.
+We take &phi;<sub>SS</sub> to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture. We also compute the total standard deviation across all residuals from all sites. This total value is reported as **ALL SITES** and in summary plots/tables.
 
 Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:
 
@@ -298,9 +318,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Within-event, single-site Variability](resources/within_event_ss_m6.6_20km_std_dev.png)
 
-| 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.45 | 0.45 | 0.44 | [0.32 0.61] |  | 0.5 | 0.5 | 0.49 | [0.36 0.79] |  | 0.36 | 0.35 | 0.34 | [0.16 0.55] |
+| Site | 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.52 | 0.51 | 0.51 | [0.33 0.68] |  | 0.48 | 0.48 | 0.47 | [0.34 0.8] |  | 0.32 | 0.3 | 0.29 | [0.12 0.48] |
+| USC |  | 0.45 | 0.45 | 0.44 | [0.32 0.61] |  | 0.5 | 0.5 | 0.49 | [0.36 0.79] |  | 0.36 | 0.35 | 0.34 | [0.16 0.55] |
+| **ALL SITES** |  | **0.49** | **0.48** | **0.47** | **[0.32 0.68]** |  | **0.49** | **0.49** | **0.48** | **[0.34 0.8]** |  | **0.34** | **0.32** | **0.32** | **[0.12 0.55]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -319,9 +341,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Within-event, single-site Variability](resources/within_event_ss_m6.6_50km_std_dev.png)
 
-| 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.44 | 0.43 | 0.42 | [0.34 0.57] |  | 0.51 | 0.51 | 0.49 | [0.36 0.83] |  | 0.5 | 0.5 | 0.5 | [0.26 0.69] |
+| Site | 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.52 | 0.52 | 0.52 | [0.36 0.68] |  | 0.5 | 0.5 | 0.49 | [0.36 0.78] |  | 0.48 | 0.48 | 0.48 | [0.28 0.63] |
+| USC |  | 0.44 | 0.43 | 0.42 | [0.34 0.57] |  | 0.51 | 0.51 | 0.49 | [0.36 0.83] |  | 0.5 | 0.5 | 0.5 | [0.26 0.69] |
+| **ALL SITES** |  | **0.48** | **0.48** | **0.47** | **[0.34 0.68]** |  | **0.51** | **0.5** | **0.49** | **[0.36 0.83]** |  | **0.49** | **0.49** | **0.49** | **[0.26 0.69]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -340,9 +364,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Within-event, single-site Variability](resources/within_event_ss_m6.6_100km_std_dev.png)
 
-| 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|  | 0.47 | 0.46 | 0.46 | [0.37 0.62] |  | 0.56 | 0.55 | 0.53 | [0.41 0.91] |  | 0.54 | 0.53 | 0.52 | [0.33 0.74] |
+| Site | 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS |  | 0.52 | 0.52 | 0.51 | [0.42 0.71] |  | 0.56 | 0.55 | 0.54 | [0.42 0.86] |  | 0.5 | 0.49 | 0.47 | [0.32 0.71] |
+| USC |  | 0.47 | 0.46 | 0.46 | [0.37 0.62] |  | 0.56 | 0.55 | 0.53 | [0.41 0.91] |  | 0.54 | 0.53 | 0.52 | [0.33 0.74] |
+| **ALL SITES** |  | **0.49** | **0.49** | **0.49** | **[0.37 0.71]** |  | **0.56** | **0.55** | **0.54** | **[0.41 0.91]** |  | **0.52** | **0.51** | **0.51** | **[0.32 0.74]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -364,7 +390,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 Between-events variability, denoted &tau; in Al Atik (2010), is computed separately for each:
 
-* Site *[1 unique]*
+* Site *[2 unique]*
 * Distance *[3 unique]*
 
 We first compute the median natural-log ground motion, &delta;B<sub>e</sub>, for each combination of:
@@ -376,7 +402,7 @@ That median, &delta;B<sub>e</sub>, is computed across all 648 combinations of:
 * Rupture Strike *[18 unique]*
 * Path *[36 unique]*
 
-We take &tau; to be the standard deviation of all &delta;B<sub>e</sub>.
+We take &tau; to be the standard deviation of all &delta;B<sub>e</sub>. Finally, we compute the median standard deviation across all sites. This total value is reported as **ALL SITES** and in summary plots/tables.
 
 Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:
 
@@ -388,9 +414,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Between-events Variability](resources/between_events_m6.6_20km_std_dev.png)
 
-| 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 0.16 | -2.98 | [-3.34 -2.45] | 0.2 | -3.59 | [-4.06 -3.21] | 0.25 | -4.61 | [-5.41 -4.11] |
+| Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS | 0.17 | -4.14 | [-4.56 -3.67] | 0.23 | -4.69 | [-5.2 -4.2] | 0.26 | -5.54 | [-6.29 -5.05] |
+| USC | 0.16 | -2.98 | [-3.34 -2.45] | 0.2 | -3.59 | [-4.06 -3.21] | 0.25 | -4.61 | [-5.41 -4.11] |
+| **ALL SITES** | **0.16** | **-3.56** | **[-4.56 -2.45]** | **0.21** | **-4.14** | **[-5.2 -3.21]** | **0.25** | **-5.07** | **[-6.29 -4.11]** |
 
 
 ### 50.0 km M6.6 Between-events Results
@@ -398,9 +426,11 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Between-events Variability](resources/between_events_m6.6_50km_std_dev.png)
 
-| 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 0.16 | -3.76 | [-4.14 -3.22] | 0.24 | -4.14 | [-4.74 -3.7] | 0.27 | -5.25 | [-5.95 -4.67] |
+| Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS | 0.16 | -5.09 | [-5.41 -4.61] | 0.23 | -5.48 | [-6.05 -5.01] | 0.27 | -6.27 | [-7.06 -5.67] |
+| USC | 0.16 | -3.76 | [-4.14 -3.22] | 0.24 | -4.14 | [-4.74 -3.7] | 0.27 | -5.25 | [-5.95 -4.67] |
+| **ALL SITES** | **0.16** | **-4.42** | **[-5.41 -3.22]** | **0.23** | **-4.81** | **[-6.05 -3.7]** | **0.27** | **-5.76** | **[-7.06 -4.67]** |
 
 
 ### 100.0 km M6.6 Between-events Results
@@ -408,32 +438,83 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 ![Between-events Variability](resources/between_events_m6.6_100km_std_dev.png)
 
-| 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 0.15 | -4.44 | [-4.86 -4] | 0.25 | -4.71 | [-5.33 -4.22] | 0.27 | -5.8 | [-6.47 -5.2] |
+| Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PAS | 0.15 | -5.71 | [-6.1 -5.34] | 0.22 | -6.06 | [-6.55 -5.6] | 0.27 | -6.76 | [-7.54 -6.19] |
+| USC | 0.15 | -4.44 | [-4.86 -4] | 0.25 | -4.71 | [-5.33 -4.22] | 0.27 | -5.8 | [-6.47 -5.2] |
+| **ALL SITES** | **0.15** | **-5.08** | **[-6.1 -4]** | **0.24** | **-5.39** | **[-6.55 -4.22]** | **0.27** | **-6.28** | **[-7.54 -5.2]** |
 
 
 ## Azumth Dependence
 *[(top)](#table-of-contents)*
 
-### Rupture Strike Dependence
+### PAS Azumth Dependence
+*[(top)](#table-of-contents)*
+
+#### PAS Rupture Strike Dependence
 *[(top)](#table-of-contents)*
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
+| **&tau;** | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
+| **Median SA** | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
+
+#### PAS Path Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&tau;** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>SS</sub>** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
+| **Median SA** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
+
+### USC Azumth Dependence
+*[(top)](#table-of-contents)*
+
+#### USC Rupture Strike Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&tau;** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
+| **Median SA** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
+
+#### USC Path Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&tau;** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>SS</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
+| **Median SA** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
+
+### All Sites Azumth Dependence
+*[(top)](#table-of-contents)*
+
+#### All Sites Rupture Strike Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
 | **&tau;** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
-### Path Dependence
+#### All Sites Path Dependence
 *[(top)](#table-of-contents)*
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;<sub>s</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&tau;** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ## BBP PartB Comparison
@@ -448,23 +529,28 @@ The BBP exercise positioned sites in a 'racetrack' around the ruptures. Here, we
 ### BBP PartB Summary Table
 *[(top)](#table-of-contents)*
 
-| Scenario | 20.0 km | 50.0 km | 100.0 km |
-|-----|-----|-----|-----|
-| **M6.6 SS** | **PASS** | **PASS** | *(PASS)* |
+| Scenario | Site | 20.0 km | 50.0 km | 100.0 km |
+|-----|-----|-----|-----|-----|
+| **M6.6 SS** | **PAS** | **PASS** | **PASS** | *(PASS)* |
+| **M6.6 SS** | **USC** | **PASS** | **PASS** | *(PASS)* |
 
 ### BBP PartB, M6.6, Vertical Strike-Slip with Surface Rupture
 *[(top)](#table-of-contents)*
 
-| 20.0 km | 50.0 km | 100.0 km |
-|-----|-----|-----|
-| ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km.png) |
+| Site | 20.0 km | 50.0 km | 100.0 km |
+|-----|-----|-----|-----|
+| **PAS** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_PAS.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_PAS.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_PAS.png) |
+| **USC** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_USC.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_USC.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_USC.png) |
 
 ## CSV Files
 *[(top)](#table-of-contents)*
 
 | Magnitude | Distance | Site | CSV File |
 |-----|-----|-----|-----|
+| M6.6 | 20.0 km | PAS | [sa_PAS_m6.6_20.0km.csv.gz](resources/sa_PAS_m6.6_20.0km.csv.gz) |
 | M6.6 | 20.0 km | USC | [sa_USC_m6.6_20.0km.csv.gz](resources/sa_USC_m6.6_20.0km.csv.gz) |
+| M6.6 | 50.0 km | PAS | [sa_PAS_m6.6_50.0km.csv.gz](resources/sa_PAS_m6.6_50.0km.csv.gz) |
 | M6.6 | 50.0 km | USC | [sa_USC_m6.6_50.0km.csv.gz](resources/sa_USC_m6.6_50.0km.csv.gz) |
+| M6.6 | 100.0 km | PAS | [sa_PAS_m6.6_100.0km.csv.gz](resources/sa_PAS_m6.6_100.0km.csv.gz) |
 | M6.6 | 100.0 km | USC | [sa_USC_m6.6_100.0km.csv.gz](resources/sa_USC_m6.6_100.0km.csv.gz) |
 
