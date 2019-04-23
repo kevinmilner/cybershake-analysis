@@ -43,12 +43,21 @@ We then  perform various rotations. We rotate the rupture in place around its ce
   * [PAS Azumth Dependence](#pas-azumth-dependence)
     * [PAS Rupture Strike Dependence](#pas-rupture-strike-dependence)
     * [PAS Path Dependence](#pas-path-dependence)
+  * [SBSM Azumth Dependence](#sbsm-azumth-dependence)
+    * [SBSM Rupture Strike Dependence](#sbsm-rupture-strike-dependence)
+    * [SBSM Path Dependence](#sbsm-path-dependence)
   * [SMCA Azumth Dependence](#smca-azumth-dependence)
     * [SMCA Rupture Strike Dependence](#smca-rupture-strike-dependence)
     * [SMCA Path Dependence](#smca-path-dependence)
+  * [STNI Azumth Dependence](#stni-azumth-dependence)
+    * [STNI Rupture Strike Dependence](#stni-rupture-strike-dependence)
+    * [STNI Path Dependence](#stni-path-dependence)
   * [USC Azumth Dependence](#usc-azumth-dependence)
     * [USC Rupture Strike Dependence](#usc-rupture-strike-dependence)
     * [USC Path Dependence](#usc-path-dependence)
+  * [WNGC Azumth Dependence](#wngc-azumth-dependence)
+    * [WNGC Rupture Strike Dependence](#wngc-rupture-strike-dependence)
+    * [WNGC Path Dependence](#wngc-path-dependence)
   * [All Sites Azumth Dependence](#all-sites-azumth-dependence)
     * [All Sites Rupture Strike Dependence](#all-sites-rupture-strike-dependence)
     * [All Sites Path Dependence](#all-sites-path-dependence)
@@ -61,11 +70,11 @@ We then  perform various rotations. We rotate the rupture in place around its ce
 | Quantity | Variations | Description |
 |-----|-----|-----|
 | Rupture | 100 | Unique (but similar in faulting style and magnitude) ruptures which match the given scenario. |
-| Site | 3 | Unique site locations. If 3-d, each will have unique velocity profiles. |
+| Site | 6 | Unique site locations. If 3-d, each will have unique velocity profiles. |
 | Rupture Strike | 18 | Rupture strike conforming to the Aki & Richards (1980) convention, where dipping faults dip to the right of the rupture. If path rotation is also performed, this azimuth is relative to the path. |
 | Path | 36 | Path from the site to the centroid of the rupture, in azimuthal degrees (0 is North) |
 | Distance | 20.0, 50.0, 100.0 km | 3-dimensional distance between the site and the rupture surface. |
-| **Total # Simulations** | **583200** | Total number of combinations of the above. |
+| **Total # Simulations** | **1166400** | Total number of combinations of the above. |
 
 ## M6.6 SS RSQSim Rupture Match Criteria
 *[(top)](#table-of-contents)*
@@ -83,25 +92,28 @@ We condisder 100 events in the catalog which match the following criteria:
 | Name | Location | Vs30 (m/s) | Z1.0 (km) | Z2.5 (km) |
 |-----|-----|-----|-----|-----|
 | PAS | *34.148426, -118.17119* | 838.8 | 0.01 | 0.68 |
+| SBSM | *34.064987, -117.29201* | 500 | 0.33 | 1.82 |
 | SMCA | *34.00909, -118.48939* | 500 | 0.59 | 2.45 |
+| STNI | *33.93088, -118.17881* | 500 | 0.88 | 5.57 |
 | USC | *34.0192, -118.286* | 500 | 0.58 | 4.1 |
+| WNGC | *34.041824, -118.0653* | 500 | 0.5 | 3.49 |
 
 ## Result Summary Table
 
 | Type | Notation | Distance | 3s Std. Dev. | 5s Std. Dev. | 10s Std. Dev. |
 |-----|-----|-----|-----|-----|-----|
-| Path-to-path | &phi;<sub>P2P</sub> | 20 km | 0.34 | 0.34 | 0.16 |
-| Path-to-path | &phi;<sub>P2P</sub> | 50 km | 0.43 | 0.38 | 0.24 |
-| Path-to-path | &phi;<sub>P2P</sub> | 100 km | 0.45 | 0.41 | 0.28 |
-| Source-strike | &phi;<sub>s</sub> | 20 km | 0.34 | 0.34 | 0.25 |
-| Source-strike | &phi;<sub>s</sub> | 50 km | 0.32 | 0.34 | 0.41 |
-| Source-strike | &phi;<sub>s</sub> | 100 km | 0.32 | 0.36 | 0.4 |
-| Within-event, single-site | &phi;<sub>SS</sub> | 20 km | 0.42 | 0.41 | 0.26 |
-| Within-event, single-site | &phi;<sub>SS</sub> | 50 km | 0.47 | 0.44 | 0.42 |
-| Within-event, single-site | &phi;<sub>SS</sub> | 100 km | 0.51 | 0.49 | 0.44 |
-| Between-events | &tau; | 20 km | 0.21 | 0.23 | 0.34 |
-| Between-events | &tau; | 50 km | 0.2 | 0.24 | 0.34 |
-| Between-events | &tau; | 100 km | 0.18 | 0.25 | 0.34 |
+| Path-to-path | &phi;<sub>P2P</sub> | 20 km | 0.36 | 0.34 | 0.15 |
+| Path-to-path | &phi;<sub>P2P</sub> | 50 km | 0.45 | 0.39 | 0.24 |
+| Path-to-path | &phi;<sub>P2P</sub> | 100 km | 0.48 | 0.44 | 0.27 |
+| Source-strike | &phi;<sub>s</sub> | 20 km | 0.35 | 0.35 | 0.25 |
+| Source-strike | &phi;<sub>s</sub> | 50 km | 0.34 | 0.35 | 0.41 |
+| Source-strike | &phi;<sub>s</sub> | 100 km | 0.34 | 0.38 | 0.41 |
+| Within-event, single-site | &phi;<sub>SS</sub> | 20 km | 0.44 | 0.42 | 0.26 |
+| Within-event, single-site | &phi;<sub>SS</sub> | 50 km | 0.5 | 0.46 | 0.43 |
+| Within-event, single-site | &phi;<sub>SS</sub> | 100 km | 0.53 | 0.52 | 0.45 |
+| Between-events | &tau; | 20 km | 0.22 | 0.23 | 0.33 |
+| Between-events | &tau; | 50 km | 0.21 | 0.25 | 0.34 |
+| Between-events | &tau; | 100 km | 0.19 | 0.25 | 0.34 |
 
 ### Dist-Dependent Plot Table
 *[(top)](#table-of-contents)*
@@ -121,7 +133,7 @@ We condisder 100 events in the catalog which match the following criteria:
 
 Path-to-path variability, denoted &phi;<sub>P2P</sub> in Al Atik (2010), is computed separately for each:
 
-* Site *[3 unique]*
+* Site *[6 unique]*
 * Distance *[3 unique]*
 
 Then, for each unique combination of:
@@ -148,9 +160,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.34 | 0.33 | 0.32 | [0.11 0.68] |  | 0.3 | 0.29 | 0.29 | [0.07 0.54] |  | 0.13 | 0.12 | 0.12 | [0.03 0.4] |
+| SBSM |  | 0.26 | 0.25 | 0.24 | [0.08 0.57] |  | 0.2 | 0.18 | 0.17 | [0.05 0.48] |  | 0.11 | 0.11 | 0.1 | [0.03 0.33] |
 | SMCA |  | 0.34 | 0.33 | 0.33 | [0.14 0.65] |  | 0.35 | 0.34 | 0.33 | [0.11 0.61] |  | 0.16 | 0.15 | 0.15 | [0.04 0.4] |
+| STNI |  | 0.27 | 0.27 | 0.27 | [0.11 0.48] |  | 0.29 | 0.28 | 0.27 | [0.07 0.6] |  | 0.13 | 0.12 | 0.11 | [0.04 0.35] |
 | USC |  | 0.34 | 0.33 | 0.33 | [0.1 0.57] |  | 0.36 | 0.35 | 0.35 | [0.06 0.6] |  | 0.17 | 0.16 | 0.15 | [0.05 0.4] |
-| **ALL SITES** |  | **0.34** | **0.33** | **0.33** | **[0.1 0.68]** |  | **0.34** | **0.33** | **0.33** | **[0.06 0.61]** |  | **0.16** | **0.15** | **0.14** | **[0.03 0.4]** |
+| WNGC |  | 0.53 | 0.51 | 0.51 | [0.1 0.89] |  | 0.48 | 0.46 | 0.47 | [0.11 0.83] |  | 0.19 | 0.18 | 0.17 | [0.04 0.53] |
+| **ALL SITES** |  | **0.36** | **0.34** | **0.31** | **[0.08 0.89]** |  | **0.34** | **0.32** | **0.31** | **[0.05 0.83]** |  | **0.15** | **0.14** | **0.13** | **[0.03 0.53]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -167,9 +182,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.43 | 0.41 | 0.4 | [0.19 0.82] |  | 0.37 | 0.36 | 0.35 | [0.15 0.59] |  | 0.22 | 0.21 | 0.2 | [0.07 0.48] |
+| SBSM |  | 0.47 | 0.46 | 0.46 | [0.23 0.78] |  | 0.37 | 0.36 | 0.36 | [0.12 0.64] |  | 0.2 | 0.19 | 0.18 | [0.06 0.46] |
 | SMCA |  | 0.48 | 0.47 | 0.47 | [0.26 0.81] |  | 0.4 | 0.39 | 0.38 | [0.18 0.66] |  | 0.25 | 0.24 | 0.23 | [0.11 0.44] |
+| STNI |  | 0.33 | 0.33 | 0.33 | [0.2 0.53] |  | 0.37 | 0.36 | 0.37 | [0.18 0.55] |  | 0.23 | 0.22 | 0.21 | [0.08 0.46] |
 | USC |  | 0.36 | 0.36 | 0.35 | [0.21 0.63] |  | 0.37 | 0.37 | 0.37 | [0.19 0.55] |  | 0.26 | 0.25 | 0.24 | [0.09 0.5] |
-| **ALL SITES** |  | **0.43** | **0.41** | **0.4** | **[0.19 0.82]** |  | **0.38** | **0.37** | **0.37** | **[0.15 0.66]** |  | **0.24** | **0.23** | **0.23** | **[0.07 0.5]** |
+| WNGC |  | 0.58 | 0.56 | 0.55 | [0.24 1.04] |  | 0.47 | 0.46 | 0.45 | [0.22 0.79] |  | 0.25 | 0.24 | 0.23 | [0.08 0.48] |
+| **ALL SITES** |  | **0.45** | **0.43** | **0.41** | **[0.19 1.04]** |  | **0.39** | **0.38** | **0.37** | **[0.12 0.79]** |  | **0.24** | **0.22** | **0.21** | **[0.06 0.5]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -186,9 +204,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 5s &phi;<sub>P2P</sub> | Total | Mean | Median | Range | 10s &phi;<sub>P2P</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.4 | 0.4 | 0.39 | [0.2 0.71] |  | 0.4 | 0.39 | 0.38 | [0.21 0.63] |  | 0.22 | 0.22 | 0.21 | [0.12 0.43] |
+| SBSM |  | 0.58 | 0.57 | 0.57 | [0.28 0.94] |  | 0.46 | 0.46 | 0.46 | [0.22 0.75] |  | 0.25 | 0.25 | 0.24 | [0.13 0.58] |
 | SMCA |  | 0.56 | 0.56 | 0.55 | [0.33 0.85] |  | 0.44 | 0.44 | 0.45 | [0.19 0.61] |  | 0.32 | 0.32 | 0.32 | [0.19 0.52] |
+| STNI |  | 0.32 | 0.32 | 0.32 | [0.19 0.49] |  | 0.39 | 0.38 | 0.39 | [0.15 0.61] |  | 0.25 | 0.25 | 0.24 | [0.11 0.44] |
 | USC |  | 0.37 | 0.37 | 0.37 | [0.26 0.57] |  | 0.4 | 0.4 | 0.39 | [0.22 0.58] |  | 0.3 | 0.29 | 0.3 | [0.13 0.45] |
-| **ALL SITES** |  | **0.45** | **0.44** | **0.41** | **[0.2 0.85]** |  | **0.41** | **0.41** | **0.41** | **[0.19 0.63]** |  | **0.28** | **0.28** | **0.27** | **[0.12 0.52]** |
+| WNGC |  | 0.55 | 0.54 | 0.53 | [0.26 0.92] |  | 0.51 | 0.5 | 0.5 | [0.24 0.75] |  | 0.25 | 0.24 | 0.24 | [0.12 0.47] |
+| **ALL SITES** |  | **0.48** | **0.46** | **0.44** | **[0.19 0.94]** |  | **0.44** | **0.43** | **0.42** | **[0.15 0.75]** |  | **0.27** | **0.26** | **0.25** | **[0.11 0.58]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -205,7 +226,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 Source-strike variability, denoted &phi;<sub>s</sub> in Aki & Richards (1980), is computed separately for each:
 
-* Site *[3 unique]*
+* Site *[6 unique]*
 * Distance *[3 unique]*
 
 Then, for each unique combination of:
@@ -232,9 +253,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.37 | 0.36 | 0.35 | [0.13 0.69] |  | 0.32 | 0.31 | 0.3 | [0.1 0.7] |  | 0.22 | 0.21 | 0.19 | [0.05 0.58] |
+| SBSM |  | 0.41 | 0.4 | 0.39 | [0.12 0.78] |  | 0.38 | 0.38 | 0.37 | [0.18 0.67] |  | 0.23 | 0.22 | 0.21 | [0.06 0.51] |
 | SMCA |  | 0.33 | 0.33 | 0.32 | [0.1 0.69] |  | 0.36 | 0.35 | 0.35 | [0.1 0.75] |  | 0.25 | 0.24 | 0.23 | [0.06 0.61] |
+| STNI |  | 0.31 | 0.31 | 0.3 | [0.1 0.59] |  | 0.33 | 0.32 | 0.32 | [0.1 0.73] |  | 0.28 | 0.27 | 0.26 | [0.07 0.64] |
 | USC |  | 0.33 | 0.32 | 0.31 | [0.12 0.73] |  | 0.35 | 0.34 | 0.33 | [0.11 0.65] |  | 0.26 | 0.25 | 0.25 | [0.09 0.61] |
-| **ALL SITES** |  | **0.34** | **0.34** | **0.33** | **[0.1 0.73]** |  | **0.34** | **0.34** | **0.32** | **[0.1 0.75]** |  | **0.25** | **0.23** | **0.22** | **[0.05 0.61]** |
+| WNGC |  | 0.33 | 0.32 | 0.32 | [0.11 0.69] |  | 0.35 | 0.34 | 0.33 | [0.09 0.66] |  | 0.26 | 0.25 | 0.24 | [0.06 0.59] |
+| **ALL SITES** |  | **0.35** | **0.34** | **0.33** | **[0.1 0.78]** |  | **0.35** | **0.34** | **0.33** | **[0.09 0.75]** |  | **0.25** | **0.24** | **0.23** | **[0.05 0.64]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -256,9 +280,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.34 | 0.32 | 0.3 | [0.09 0.76] |  | 0.32 | 0.3 | 0.29 | [0.1 0.65] |  | 0.41 | 0.4 | 0.41 | [0.12 0.62] |
+| SBSM |  | 0.43 | 0.42 | 0.42 | [0.16 0.81] |  | 0.41 | 0.4 | 0.4 | [0.13 0.7] |  | 0.41 | 0.41 | 0.42 | [0.15 0.66] |
 | SMCA |  | 0.33 | 0.32 | 0.3 | [0.09 0.74] |  | 0.35 | 0.34 | 0.34 | [0.1 0.76] |  | 0.4 | 0.4 | 0.4 | [0.09 0.66] |
+| STNI |  | 0.26 | 0.26 | 0.25 | [0.07 0.57] |  | 0.32 | 0.31 | 0.29 | [0.09 0.8] |  | 0.44 | 0.43 | 0.43 | [0.1 0.71] |
 | USC |  | 0.3 | 0.29 | 0.27 | [0.08 0.68] |  | 0.34 | 0.32 | 0.31 | [0.08 0.76] |  | 0.41 | 0.4 | 0.41 | [0.07 0.69] |
-| **ALL SITES** |  | **0.32** | **0.31** | **0.29** | **[0.08 0.76]** |  | **0.34** | **0.32** | **0.31** | **[0.08 0.76]** |  | **0.41** | **0.4** | **0.41** | **[0.07 0.69]** |
+| WNGC |  | 0.34 | 0.32 | 0.29 | [0.09 0.85] |  | 0.38 | 0.36 | 0.35 | [0.07 0.79] |  | 0.42 | 0.41 | 0.42 | [0.08 0.66] |
+| **ALL SITES** |  | **0.34** | **0.32** | **0.3** | **[0.07 0.85]** |  | **0.35** | **0.34** | **0.33** | **[0.07 0.8]** |  | **0.41** | **0.41** | **0.42** | **[0.07 0.71]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -280,9 +307,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>s</sub> | Total | Mean | Median | Range | 5s &phi;<sub>s</sub> | Total | Mean | Median | Range | 10s &phi;<sub>s</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.34 | 0.33 | 0.33 | [0.07 0.66] |  | 0.36 | 0.35 | 0.33 | [0.07 0.77] |  | 0.4 | 0.39 | 0.39 | [0.05 0.73] |
+| SBSM |  | 0.42 | 0.41 | 0.4 | [0.08 0.8] |  | 0.44 | 0.43 | 0.44 | [0.1 0.86] |  | 0.41 | 0.41 | 0.41 | [0.1 0.7] |
 | SMCA |  | 0.33 | 0.32 | 0.31 | [0.09 0.72] |  | 0.36 | 0.35 | 0.34 | [0.09 0.81] |  | 0.38 | 0.37 | 0.38 | [0.07 0.73] |
+| STNI |  | 0.28 | 0.27 | 0.27 | [0.08 0.63] |  | 0.36 | 0.35 | 0.34 | [0.1 0.81] |  | 0.45 | 0.45 | 0.45 | [0.1 0.79] |
 | USC |  | 0.3 | 0.29 | 0.29 | [0.07 0.64] |  | 0.35 | 0.34 | 0.33 | [0.07 0.77] |  | 0.41 | 0.4 | 0.4 | [0.08 0.76] |
-| **ALL SITES** |  | **0.32** | **0.31** | **0.31** | **[0.07 0.72]** |  | **0.36** | **0.34** | **0.33** | **[0.07 0.81]** |  | **0.4** | **0.39** | **0.39** | **[0.05 0.76]** |
+| WNGC |  | 0.33 | 0.32 | 0.3 | [0.07 0.78] |  | 0.39 | 0.38 | 0.37 | [0.1 0.88] |  | 0.41 | 0.4 | 0.41 | [0.1 0.78] |
+| **ALL SITES** |  | **0.34** | **0.32** | **0.31** | **[0.07 0.8]** |  | **0.38** | **0.36** | **0.36** | **[0.07 0.88]** |  | **0.41** | **0.4** | **0.41** | **[0.05 0.79]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -304,7 +334,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 Within-event, single-site variability, denoted &phi;<sub>SS</sub> in Al Atik (2010), is computed separately for each:
 
-* Site *[3 unique]*
+* Site *[6 unique]*
 * Distance *[3 unique]*
 
 Then, for each unique combination of:
@@ -331,9 +361,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.46 | 0.45 | 0.45 | [0.32 0.57] |  | 0.4 | 0.39 | 0.38 | [0.25 0.59] |  | 0.24 | 0.22 | 0.21 | [0.11 0.46] |
+| SBSM |  | 0.43 | 0.42 | 0.41 | [0.28 0.61] |  | 0.39 | 0.38 | 0.38 | [0.26 0.63] |  | 0.23 | 0.22 | 0.21 | [0.1 0.42] |
 | SMCA |  | 0.4 | 0.39 | 0.38 | [0.27 0.52] |  | 0.41 | 0.41 | 0.4 | [0.29 0.62] |  | 0.26 | 0.25 | 0.24 | [0.15 0.44] |
+| STNI |  | 0.35 | 0.35 | 0.34 | [0.26 0.48] |  | 0.37 | 0.37 | 0.37 | [0.22 0.59] |  | 0.28 | 0.27 | 0.25 | [0.13 0.53] |
 | USC |  | 0.4 | 0.4 | 0.39 | [0.3 0.53] |  | 0.42 | 0.41 | 0.4 | [0.29 0.61] |  | 0.27 | 0.26 | 0.25 | [0.16 0.45] |
-| **ALL SITES** |  | **0.42** | **0.41** | **0.4** | **[0.27 0.57]** |  | **0.41** | **0.4** | **0.4** | **[0.25 0.62]** |  | **0.26** | **0.25** | **0.24** | **[0.11 0.46]** |
+| WNGC |  | 0.57 | 0.56 | 0.55 | [0.39 0.77] |  | 0.53 | 0.52 | 0.52 | [0.32 0.7] |  | 0.29 | 0.28 | 0.27 | [0.16 0.48] |
+| **ALL SITES** |  | **0.44** | **0.43** | **0.41** | **[0.26 0.77]** |  | **0.42** | **0.41** | **0.4** | **[0.22 0.7]** |  | **0.26** | **0.25** | **0.24** | **[0.1 0.53]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -355,9 +388,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.47 | 0.47 | 0.47 | [0.35 0.6] |  | 0.42 | 0.41 | 0.41 | [0.33 0.57] |  | 0.41 | 0.4 | 0.42 | [0.23 0.54] |
+| SBSM |  | 0.56 | 0.55 | 0.55 | [0.41 0.75] |  | 0.49 | 0.49 | 0.48 | [0.36 0.64] |  | 0.43 | 0.42 | 0.43 | [0.29 0.57] |
 | SMCA |  | 0.52 | 0.52 | 0.52 | [0.42 0.62] |  | 0.47 | 0.46 | 0.46 | [0.36 0.64] |  | 0.43 | 0.42 | 0.43 | [0.28 0.58] |
+| STNI |  | 0.38 | 0.37 | 0.37 | [0.3 0.47] |  | 0.42 | 0.42 | 0.4 | [0.31 0.67] |  | 0.45 | 0.44 | 0.45 | [0.23 0.64] |
 | USC |  | 0.4 | 0.39 | 0.39 | [0.31 0.52] |  | 0.43 | 0.42 | 0.42 | [0.32 0.64] |  | 0.43 | 0.42 | 0.43 | [0.22 0.6] |
-| **ALL SITES** |  | **0.47** | **0.46** | **0.46** | **[0.31 0.62]** |  | **0.44** | **0.43** | **0.42** | **[0.32 0.64]** |  | **0.42** | **0.42** | **0.43** | **[0.22 0.6]** |
+| WNGC |  | 0.61 | 0.61 | 0.6 | [0.46 0.76] |  | 0.53 | 0.53 | 0.53 | [0.43 0.68] |  | 0.43 | 0.43 | 0.43 | [0.3 0.58] |
+| **ALL SITES** |  | **0.5** | **0.49** | **0.48** | **[0.3 0.76]** |  | **0.46** | **0.46** | **0.45** | **[0.31 0.68]** |  | **0.43** | **0.42** | **0.43** | **[0.22 0.64]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -379,9 +415,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 5s &phi;<sub>SS</sub> | Total | Mean | Median | Range | 10s &phi;<sub>SS</sub> | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS |  | 0.47 | 0.47 | 0.46 | [0.4 0.59] |  | 0.48 | 0.48 | 0.48 | [0.39 0.66] |  | 0.42 | 0.41 | 0.4 | [0.27 0.59] |
+| SBSM |  | 0.65 | 0.64 | 0.65 | [0.48 0.8] |  | 0.58 | 0.58 | 0.58 | [0.43 0.74] |  | 0.45 | 0.44 | 0.44 | [0.31 0.62] |
 | SMCA |  | 0.61 | 0.6 | 0.6 | [0.47 0.71] |  | 0.51 | 0.51 | 0.51 | [0.39 0.68] |  | 0.45 | 0.44 | 0.44 | [0.31 0.62] |
+| STNI |  | 0.38 | 0.38 | 0.38 | [0.32 0.49] |  | 0.48 | 0.47 | 0.47 | [0.34 0.71] |  | 0.48 | 0.47 | 0.47 | [0.29 0.68] |
 | USC |  | 0.42 | 0.42 | 0.42 | [0.36 0.51] |  | 0.47 | 0.47 | 0.46 | [0.37 0.67] |  | 0.46 | 0.45 | 0.44 | [0.29 0.65] |
-| **ALL SITES** |  | **0.51** | **0.5** | **0.47** | **[0.36 0.71]** |  | **0.49** | **0.49** | **0.48** | **[0.37 0.68]** |  | **0.44** | **0.44** | **0.43** | **[0.27 0.65]** |
+| WNGC |  | 0.59 | 0.59 | 0.58 | [0.43 0.77] |  | 0.58 | 0.58 | 0.58 | [0.45 0.76] |  | 0.44 | 0.44 | 0.43 | [0.29 0.64] |
+| **ALL SITES** |  | **0.53** | **0.52** | **0.51** | **[0.32 0.8]** |  | **0.52** | **0.51** | **0.51** | **[0.34 0.76]** |  | **0.45** | **0.44** | **0.44** | **[0.27 0.68]** |
 
 | 3s | 5s |
 |-----|-----|
@@ -403,7 +442,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 Between-events variability, denoted &tau; in Al Atik (2010), is computed separately for each:
 
-* Site *[3 unique]*
+* Site *[6 unique]*
 * Distance *[3 unique]*
 
 We first compute the median natural-log ground motion, &delta;B<sub>e</sub>, for each combination of:
@@ -430,9 +469,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS | 0.21 | -4.49 | [-4.91 -3.84] | 0.23 | -5.09 | [-5.57 -4.53] | 0.34 | -5.88 | [-6.69 -5.28] |
+| SBSM | 0.3 | -3.02 | [-3.65 -2.27] | 0.26 | -3.97 | [-4.73 -3.46] | 0.26 | -5.5 | [-6.2 -4.95] |
 | SMCA | 0.2 | -3.18 | [-3.66 -2.63] | 0.24 | -3.71 | [-4.23 -3.23] | 0.32 | -4.95 | [-5.72 -4.34] |
+| STNI | 0.22 | -3.2 | [-3.7 -2.7] | 0.23 | -3.73 | [-4.26 -3.22] | 0.37 | -4.44 | [-5.49 -3.81] |
 | USC | 0.22 | -3.32 | [-3.81 -2.82] | 0.22 | -3.98 | [-4.4 -3.52] | 0.34 | -4.95 | [-5.84 -4.36] |
-| **ALL SITES** | **0.21** | **-3.66** | **[-4.91 -2.63]** | **0.23** | **-4.26** | **[-5.57 -3.23]** | **0.34** | **-5.26** | **[-6.69 -4.34]** |
+| WNGC | 0.23 | -3.35 | [-3.83 -2.82] | 0.24 | -4.01 | [-4.48 -3.54] | 0.32 | -5.12 | [-5.94 -4.52] |
+| **ALL SITES** | **0.22** | **-3.43** | **[-4.91 -2.27]** | **0.23** | **-4.08** | **[-5.57 -3.22]** | **0.33** | **-5.14** | **[-6.69 -3.81]** |
 
 
 ### 50.0 km M6.6 Between-events Results
@@ -443,9 +485,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS | 0.2 | -5.45 | [-5.91 -4.93] | 0.24 | -5.88 | [-6.36 -5.39] | 0.34 | -6.55 | [-7.39 -5.9] |
+| SBSM | 0.28 | -3.71 | [-4.35 -3.06] | 0.25 | -4.62 | [-5.24 -4.16] | 0.26 | -6.15 | [-6.82 -5.57] |
 | SMCA | 0.19 | -4.16 | [-4.57 -3.69] | 0.23 | -4.52 | [-5.03 -4.03] | 0.32 | -5.65 | [-6.44 -5] |
+| STNI | 0.2 | -3.94 | [-4.41 -3.48] | 0.28 | -4.13 | [-4.75 -3.53] | 0.37 | -5.03 | [-5.95 -4.34] |
 | USC | 0.22 | -4.12 | [-4.62 -3.6] | 0.25 | -4.54 | [-5.1 -4.03] | 0.35 | -5.56 | [-6.41 -4.9] |
-| **ALL SITES** | **0.2** | **-4.58** | **[-5.91 -3.6]** | **0.24** | **-4.98** | **[-6.36 -4.03]** | **0.34** | **-5.92** | **[-7.39 -4.9]** |
+| WNGC | 0.22 | -4.22 | [-4.71 -3.72] | 0.26 | -4.58 | [-5.14 -4.05] | 0.33 | -5.73 | [-6.53 -5.08] |
+| **ALL SITES** | **0.21** | **-4.27** | **[-5.91 -3.06]** | **0.25** | **-4.71** | **[-6.36 -3.53]** | **0.34** | **-5.78** | **[-7.39 -4.34]** |
 
 
 ### 100.0 km M6.6 Between-events Results
@@ -456,9 +501,12 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | PAS | 0.18 | -6.07 | [-6.48 -5.6] | 0.22 | -6.46 | [-6.89 -5.98] | 0.35 | -7.06 | [-7.96 -6.42] |
+| SBSM | 0.27 | -4.43 | [-4.95 -3.77] | 0.24 | -5.24 | [-5.8 -4.76] | 0.27 | -6.68 | [-7.4 -6.1] |
 | SMCA | 0.17 | -4.85 | [-5.32 -4.46] | 0.25 | -5.04 | [-5.57 -4.51] | 0.32 | -6.19 | [-6.95 -5.54] |
+| STNI | 0.18 | -4.65 | [-5.1 -4.2] | 0.25 | -4.74 | [-5.31 -4.19] | 0.36 | -5.55 | [-6.49 -4.89] |
 | USC | 0.19 | -4.82 | [-5.27 -4.35] | 0.25 | -5.11 | [-5.7 -4.59] | 0.34 | -6.11 | [-6.95 -5.45] |
-| **ALL SITES** | **0.18** | **-5.24** | **[-6.48 -4.35]** | **0.25** | **-5.54** | **[-6.89 -4.51]** | **0.34** | **-6.45** | **[-7.96 -5.45]** |
+| WNGC | 0.2 | -4.87 | [-5.28 -4.36] | 0.24 | -5.21 | [-5.74 -4.73] | 0.33 | -6.26 | [-7.06 -5.61] |
+| **ALL SITES** | **0.19** | **-4.95** | **[-6.48 -3.77]** | **0.25** | **-5.3** | **[-6.89 -4.19]** | **0.34** | **-6.31** | **[-7.96 -4.89]** |
 
 
 ## Azumth Dependence
@@ -482,10 +530,33 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;<sub>s</sub>** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&tau;** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **Median SA** | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
+
+### SBSM Azumth Dependence
+*[(top)](#table-of-contents)*
+
+#### SBSM Rupture Strike Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
+| **&tau;** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **Median SA** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
+
+#### SBSM Path Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
+| **&tau;** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **Median SA** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### SMCA Azumth Dependence
 *[(top)](#table-of-contents)*
@@ -505,10 +576,33 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;<sub>s</sub>** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&tau;** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **Median SA** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
+
+### STNI Azumth Dependence
+*[(top)](#table-of-contents)*
+
+#### STNI Rupture Strike Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
+| **&tau;** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **Median SA** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
+
+#### STNI Path Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
+| **&tau;** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **Median SA** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### USC Azumth Dependence
 *[(top)](#table-of-contents)*
@@ -528,10 +622,33 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;<sub>s</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&tau;** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **Median SA** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
+
+### WNGC Azumth Dependence
+*[(top)](#table-of-contents)*
+
+#### WNGC Rupture Strike Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
+| **&tau;** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **Median SA** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
+
+#### WNGC Path Dependence
+*[(top)](#table-of-contents)*
+
+| Type | 3s | 5s | 10s |
+|-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
+| **&tau;** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **Median SA** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### All Sites Azumth Dependence
 *[(top)](#table-of-contents)*
@@ -551,8 +668,8 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;<sub>s</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&tau;** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **Median SA** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
@@ -571,9 +688,12 @@ The BBP exercise positioned sites in a 'racetrack' around the ruptures. Here, we
 | Scenario | Site | 20.0 km | 50.0 km | 100.0 km |
 |-----|-----|-----|-----|-----|
 | **M6.6 SS** | **PAS** | **FAIL** | **FAIL** | *(FAIL)* |
+| **M6.6 SS** | **SBSM** | **FAIL** | **FAIL** | *(FAIL)* |
 | **M6.6 SS** | **SMCA** | **PASS** | **PASS** | *(PASS)* |
+| **M6.6 SS** | **STNI** | **PASS** | **FAIL** | *(FAIL)* |
 | **M6.6 SS** | **USC** | **PASS** | **PASS** | *(PASS)* |
-| **M6.6 SS** | **2sites_Vs30_500** | **PASS** | **PASS** | *(PASS)* |
+| **M6.6 SS** | **WNGC** | **PASS** | **PASS** | *(PASS)* |
+| **M6.6 SS** | **5sites_Vs30_500** | **PASS** | **FAIL** | *(FAIL)* |
 
 ### BBP PartB, M6.6, Vertical Strike-Slip with Surface Rupture
 *[(top)](#table-of-contents)*
@@ -581,9 +701,12 @@ The BBP exercise positioned sites in a 'racetrack' around the ruptures. Here, we
 | Site | 20.0 km | 50.0 km | 100.0 km |
 |-----|-----|-----|-----|
 | **PAS** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_PAS.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_PAS.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_PAS.png) |
+| **SBSM** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_SBSM.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_SBSM.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_SBSM.png) |
 | **SMCA** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_SMCA.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_SMCA.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_SMCA.png) |
+| **STNI** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_STNI.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_STNI.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_STNI.png) |
 | **USC** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_USC.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_USC.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_USC.png) |
-| **2sites_Vs30_500** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_2sites_Vs30_500.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_2sites_Vs30_500.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_2sites_Vs30_500.png) |
+| **WNGC** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_WNGC.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_WNGC.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_WNGC.png) |
+| **5sites_Vs30_500** | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_20km_5sites_Vs30_500.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_50km_5sites_Vs30_500.png) | ![PartB Plot](resources/bbp_partB_m6p6_vert_ss_surface_100km_5sites_Vs30_500.png) |
 
 ## CSV Files
 *[(top)](#table-of-contents)*
@@ -591,12 +714,21 @@ The BBP exercise positioned sites in a 'racetrack' around the ruptures. Here, we
 | Magnitude | Distance | Site | CSV File |
 |-----|-----|-----|-----|
 | M6.6 | 20.0 km | PAS | [sa_PAS_m6.6_20.0km.csv.gz](resources/sa_PAS_m6.6_20.0km.csv.gz) |
+| M6.6 | 20.0 km | SBSM | [sa_SBSM_m6.6_20.0km.csv.gz](resources/sa_SBSM_m6.6_20.0km.csv.gz) |
 | M6.6 | 20.0 km | SMCA | [sa_SMCA_m6.6_20.0km.csv.gz](resources/sa_SMCA_m6.6_20.0km.csv.gz) |
+| M6.6 | 20.0 km | STNI | [sa_STNI_m6.6_20.0km.csv.gz](resources/sa_STNI_m6.6_20.0km.csv.gz) |
 | M6.6 | 20.0 km | USC | [sa_USC_m6.6_20.0km.csv.gz](resources/sa_USC_m6.6_20.0km.csv.gz) |
+| M6.6 | 20.0 km | WNGC | [sa_WNGC_m6.6_20.0km.csv.gz](resources/sa_WNGC_m6.6_20.0km.csv.gz) |
 | M6.6 | 50.0 km | PAS | [sa_PAS_m6.6_50.0km.csv.gz](resources/sa_PAS_m6.6_50.0km.csv.gz) |
+| M6.6 | 50.0 km | SBSM | [sa_SBSM_m6.6_50.0km.csv.gz](resources/sa_SBSM_m6.6_50.0km.csv.gz) |
 | M6.6 | 50.0 km | SMCA | [sa_SMCA_m6.6_50.0km.csv.gz](resources/sa_SMCA_m6.6_50.0km.csv.gz) |
+| M6.6 | 50.0 km | STNI | [sa_STNI_m6.6_50.0km.csv.gz](resources/sa_STNI_m6.6_50.0km.csv.gz) |
 | M6.6 | 50.0 km | USC | [sa_USC_m6.6_50.0km.csv.gz](resources/sa_USC_m6.6_50.0km.csv.gz) |
+| M6.6 | 50.0 km | WNGC | [sa_WNGC_m6.6_50.0km.csv.gz](resources/sa_WNGC_m6.6_50.0km.csv.gz) |
 | M6.6 | 100.0 km | PAS | [sa_PAS_m6.6_100.0km.csv.gz](resources/sa_PAS_m6.6_100.0km.csv.gz) |
+| M6.6 | 100.0 km | SBSM | [sa_SBSM_m6.6_100.0km.csv.gz](resources/sa_SBSM_m6.6_100.0km.csv.gz) |
 | M6.6 | 100.0 km | SMCA | [sa_SMCA_m6.6_100.0km.csv.gz](resources/sa_SMCA_m6.6_100.0km.csv.gz) |
+| M6.6 | 100.0 km | STNI | [sa_STNI_m6.6_100.0km.csv.gz](resources/sa_STNI_m6.6_100.0km.csv.gz) |
 | M6.6 | 100.0 km | USC | [sa_USC_m6.6_100.0km.csv.gz](resources/sa_USC_m6.6_100.0km.csv.gz) |
+| M6.6 | 100.0 km | WNGC | [sa_WNGC_m6.6_100.0km.csv.gz](resources/sa_WNGC_m6.6_100.0km.csv.gz) |
 
