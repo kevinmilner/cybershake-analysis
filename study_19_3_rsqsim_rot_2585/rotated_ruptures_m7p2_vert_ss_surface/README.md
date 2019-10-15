@@ -37,6 +37,12 @@ We then  perform various rotations. We rotate the rupture in place around its ce
   * [50.0 km M7.2 Within-event, single-site Results](#500-km-m72-within-event-single-site-results)
   * [100.0 km M7.2 Within-event, single-site Results](#1000-km-m72-within-event-single-site-results)
   * [All Distances M7.2 Within-event, single-site Results](#all-distances-m72-within-event-single-site-results)
+* [Within-event Variability](#within-event-variability)
+  * [Within-event Variability Methodology](#within-event-variability-methodology)
+  * [20.0 km M7.2 Within-event Results](#200-km-m72-within-event-results)
+  * [50.0 km M7.2 Within-event Results](#500-km-m72-within-event-results)
+  * [100.0 km M7.2 Within-event Results](#1000-km-m72-within-event-results)
+  * [All Distances M7.2 Within-event Results](#all-distances-m72-within-event-results)
 * [Between-events Variability](#between-events-variability)
   * [Between-events Variability Methodology](#between-events-variability-methodology)
   * [20.0 km M7.2 Between-events Results](#200-km-m72-between-events-results)
@@ -118,10 +124,14 @@ We condisder 100 events in the catalog which match the following criteria:
 | Within-event, single-site | &phi;<sub>SS</sub> | 50 km | 0.48 | 0.51 | 0.48 | 0.45 |
 | Within-event, single-site | &phi;<sub>SS</sub> | 100 km | 0.52 | 0.54 | 0.52 | 0.48 |
 | Within-event, single-site | &phi;<sub>SS</sub> | (all) | 0.47 | 0.51 | 0.48 | 0.42 |
-| Between-events | &tau; | 20 km | 0.15 | 0.1 | 0.15 | 0.19 |
-| Between-events | &tau; | 50 km | 0.16 | 0.11 | 0.17 | 0.19 |
-| Between-events | &tau; | 100 km | 0.16 | 0.11 | 0.16 | 0.2 |
-| Between-events | &tau; | (all) | 0.16 | 0.11 | 0.16 | 0.19 |
+| Within-event | &phi; | 20 km | 0.64 | 0.69 | 0.65 | 0.55 |
+| Within-event | &phi; | 50 km | 0.71 | 0.74 | 0.71 | 0.65 |
+| Within-event | &phi; | 100 km | 0.73 | 0.75 | 0.74 | 0.66 |
+| Within-event | &phi; | (all) | 0.69 | 0.72 | 0.7 | 0.62 |
+| Between-events | &tau; | 20 km | 0.27 | 0.26 | 0.27 | 0.27 |
+| Between-events | &tau; | 50 km | 0.29 | 0.27 | 0.3 | 0.31 |
+| Between-events | &tau; | 100 km | 0.31 | 0.28 | 0.32 | 0.32 |
+| Between-events | &tau; | (all) | 0.29 | 0.27 | 0.3 | 0.3 |
 
 ### Dist-Dependent Plot Table
 *[(top)](#table-of-contents)*
@@ -130,6 +140,7 @@ We condisder 100 events in the catalog which match the following criteria:
 |-----|-----|
 | **&phi;<sub>s</sub>** | ![&phi;<sub>s</sub>](resources/source_strike_m7.2_dist_periods.png) |
 | **&phi;<sub>SS</sub>** | ![&phi;<sub>SS</sub>](resources/within_event_ss_m7.2_dist_periods.png) |
+| **&phi;** | ![&phi;](resources/within_event_m7.2_dist_periods.png) |
 | **&tau;** | ![&tau;](resources/between_events_m7.2_dist_periods.png) |
 
 
@@ -782,6 +793,177 @@ Here are plots of the histogram of &phi;<sub>SS</sub> for each individual ruptur
 | ![10s](resources/within_event_ss_m7.2_10s_hist.png) |  |
 
 
+## Within-event Variability
+*[(top)](#table-of-contents)*
+
+### Within-event Variability Methodology
+*[(top)](#table-of-contents)*
+
+Within-event variability, denoted &phi; in Al Atik (2010), is computed separately for each:
+
+* Distance *[3 unique]*
+
+Then, for each unique combination of:
+
+* Rupture *[100 unique]*
+
+we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 3888 combinations of:
+
+* Site *[6 unique]* (Singleton)
+* Rupture Strike *[18 unique]*
+* Path *[36 unique]*
+
+We subdivide residual sets such that there is only a single unique value of each quantity marked '(Singleton)' above.
+
+We take &phi; to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture. This is done separately for each set of sites with the same V<sub>S30</sub> value.
+
+We also compute distance-independent &phi;, which is computed as the standard deviation of all residuals, &delta;W<sub>es</sub>, across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.
+
+Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:
+
+![Example](resources/example_within_event.png)
+
+
+### 20.0 km M7.2 Within-event Results
+*[(top)](#table-of-contents)*
+
+![Within-event Variability](resources/within_event_m7.2_20km_std_dev.png)
+
+| Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| **5 sites, V<sub>S30</sub>=500** |  | **0.46** | **0.46** | **0.45** | **[0.01 1.17]** |  | **0.42** | **0.42** | **0.41** | **[0.02 1.15]** |  | **0.44** | **0.45** | **0.45** | **[0.02 1.2]** |
+
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 22 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+
+*WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 29 fewer data points.*
+
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.44 | 0.43 | 0.04 | [0.38 0.48] | [0.34 0.53] |
+| 3 | 0.46 | 0.44 | 0.08 | [0.37 0.53] | [0.3 0.62] |
+| 4 | 0.44 | 0.42 | 0.08 | [0.34 0.49] | [0.27 0.56] |
+| 5 | 0.42 | 0.4 | 0.07 | [0.34 0.48] | [0.26 0.57] |
+| 7.5 | 0.46 | 0.45 | 0.07 | [0.38 0.52] | [0.27 0.59] |
+| 10 | 0.44 | 0.44 | 0.07 | [0.37 0.52] | [0.3 0.59] |
+
+This plot shows the distribution of period-independent downsampled &phi;.
+
+![Dowmsampled Histogram](resources/within_event_m7.2_20km_downsampled_hist.png)
+
+Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
+
+| 3s | 5s |
+|-----|-----|
+| ![3s](resources/within_event_m7.2_20km_3s_hist.png) | ![5s](resources/within_event_m7.2_20km_5s_hist.png) |
+| 10s |  |
+| ![10s](resources/within_event_m7.2_20km_10s_hist.png) |  |
+
+
+### 50.0 km M7.2 Within-event Results
+*[(top)](#table-of-contents)*
+
+![Within-event Variability](resources/within_event_m7.2_50km_std_dev.png)
+
+| Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| **5 sites, V<sub>S30</sub>=500** |  | **0.52** | **0.52** | **0.51** | **[0.03 1.3]** |  | **0.5** | **0.49** | **0.48** | **[0.03 1.43]** |  | **0.57** | **0.57** | **0.56** | **[0.04 1.44]** |
+
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 21 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+
+*WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 5 fewer data points.*
+
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.53 | 0.5 | 0.06 | [0.44 0.56] | [0.37 0.64] |
+| 3 | 0.52 | 0.5 | 0.1 | [0.4 0.61] | [0.31 0.71] |
+| 4 | 0.5 | 0.46 | 0.08 | [0.4 0.57] | [0.33 0.69] |
+| 5 | 0.5 | 0.47 | 0.08 | [0.39 0.56] | [0.33 0.64] |
+| 7.5 | 0.56 | 0.53 | 0.1 | [0.44 0.66] | [0.35 0.72] |
+| 10 | 0.57 | 0.54 | 0.09 | [0.46 0.65] | [0.34 0.73] |
+
+This plot shows the distribution of period-independent downsampled &phi;.
+
+![Dowmsampled Histogram](resources/within_event_m7.2_50km_downsampled_hist.png)
+
+Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
+
+| 3s | 5s |
+|-----|-----|
+| ![3s](resources/within_event_m7.2_50km_3s_hist.png) | ![5s](resources/within_event_m7.2_50km_5s_hist.png) |
+| 10s |  |
+| ![10s](resources/within_event_m7.2_50km_10s_hist.png) |  |
+
+
+### 100.0 km M7.2 Within-event Results
+*[(top)](#table-of-contents)*
+
+![Within-event Variability](resources/within_event_m7.2_100km_std_dev.png)
+
+| Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| **5 sites, V<sub>S30</sub>=500** |  | **0.54** | **0.54** | **0.53** | **[0.04 1.39]** |  | **0.54** | **0.54** | **0.52** | **[0.03 1.49]** |  | **0.59** | **0.6** | **0.59** | **[0.02 1.52]** |
+
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 17 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+
+*WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 44 fewer data points.*
+
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.56 | 0.56 | 0.09 | [0.47 0.68] | [0.39 0.74] |
+| 3 | 0.54 | 0.55 | 0.12 | [0.42 0.64] | [0.3 0.82] |
+| 4 | 0.54 | 0.53 | 0.12 | [0.42 0.66] | [0.33 0.81] |
+| 5 | 0.54 | 0.54 | 0.12 | [0.44 0.68] | [0.35 0.86] |
+| 7.5 | 0.6 | 0.62 | 0.13 | [0.51 0.75] | [0.33 0.86] |
+| 10 | 0.59 | 0.59 | 0.12 | [0.47 0.71] | [0.37 0.87] |
+
+This plot shows the distribution of period-independent downsampled &phi;.
+
+![Dowmsampled Histogram](resources/within_event_m7.2_100km_downsampled_hist.png)
+
+Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
+
+| 3s | 5s |
+|-----|-----|
+| ![3s](resources/within_event_m7.2_100km_3s_hist.png) | ![5s](resources/within_event_m7.2_100km_5s_hist.png) |
+| 10s |  |
+| ![10s](resources/within_event_m7.2_100km_10s_hist.png) |  |
+
+
+### All Distances M7.2 Within-event Results
+*[(top)](#table-of-contents)*
+
+![Within-event Variability](resources/within_event_m7.2_std_dev.png)
+
+| Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| **5 sites, V<sub>S30</sub>=500** |  | **0.51** | **0.51** | **0.49** | **[0.01 1.39]** |  | **0.49** | **0.48** | **0.47** | **[0.02 1.49]** |  | **0.54** | **0.54** | **0.52** | **[0.02 1.52]** |
+
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 93 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+
+*WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 95 fewer data points.*
+
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.51 | 0.51 | 0.03 | [0.47 0.53] | [0.43 0.57] |
+| 3 | 0.51 | 0.49 | 0.05 | [0.45 0.54] | [0.39 0.59] |
+| 4 | 0.49 | 0.49 | 0.05 | [0.42 0.53] | [0.39 0.58] |
+| 5 | 0.49 | 0.48 | 0.05 | [0.43 0.53] | [0.4 0.57] |
+| 7.5 | 0.54 | 0.54 | 0.05 | [0.49 0.58] | [0.43 0.62] |
+| 10 | 0.54 | 0.54 | 0.05 | [0.48 0.59] | [0.43 0.62] |
+
+This plot shows the distribution of period-independent downsampled &phi;.
+
+![Dowmsampled Histogram](resources/within_event_m7.2_downsampled_hist.png)
+
+Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
+
+| 3s | 5s |
+|-----|-----|
+| ![3s](resources/within_event_m7.2_3s_hist.png) | ![5s](resources/within_event_m7.2_5s_hist.png) |
+| 10s |  |
+| ![10s](resources/within_event_m7.2_10s_hist.png) |  |
+
+
 ## Between-events Variability
 *[(top)](#table-of-contents)*
 
@@ -818,7 +1000,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** | **0.11** | **-2.02** | **[-2.38 -1.82]** | **0.16** | **-2.75** | **[-3.17 -2.38]** | **0.2** | **-4.11** | **[-4.66 -3.64]** |
+| **5 sites, V<sub>S30</sub>=500** | **0.27** | **-2.03** | **[-3.24 -0.93]** | **0.29** | **-2.76** | **[-4 -1.52]** | **0.28** | **-4.12** | **[-5.23 -3.02]** |
 | PAS | 0.12 | -3.37 | [-3.78 -3.1] | 0.16 | -4.06 | [-4.42 -3.68] | 0.24 | -5.01 | [-5.61 -4.45] |
 | SBSM | 0.14 | -1.74 | [-2.26 -1.46] | 0.16 | -2.86 | [-3.32 -2.45] | 0.18 | -4.54 | [-4.98 -4.08] |
 | SMCA | 0.11 | -2.07 | [-2.41 -1.86] | 0.17 | -2.64 | [-3.1 -2.27] | 0.21 | -4.06 | [-4.6 -3.53] |
@@ -830,12 +1012,12 @@ We compute uncertainties on &tau; through downsampling the rotational synthetic 
 
 | Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.16 | 0.21 | 0.06 | [0.17 0.28] | [0.13 0.39] |
-| 3 | 0.11 | 0.19 | 0.09 | [0.09 0.28] | [0.04 0.43] |
-| 4 | 0.13 | 0.2 | 0.09 | [0.12 0.31] | [0.07 0.39] |
-| 5 | 0.16 | 0.22 | 0.1 | [0.15 0.33] | [0.08 0.44] |
-| 7.5 | 0.18 | 0.21 | 0.11 | [0.13 0.35] | [0.06 0.47] |
-| 10 | 0.2 | 0.24 | 0.1 | [0.16 0.35] | [0.04 0.45] |
+| T-independent | 0.28 | 0.24 | 0.07 | [0.2 0.31] | [0.13 0.43] |
+| 3 | 0.27 | 0.25 | 0.1 | [0.16 0.35] | [0.09 0.53] |
+| 4 | 0.28 | 0.23 | 0.12 | [0.14 0.38] | [0.08 0.54] |
+| 5 | 0.29 | 0.24 | 0.11 | [0.12 0.35] | [0.05 0.49] |
+| 7.5 | 0.29 | 0.24 | 0.09 | [0.15 0.35] | [0.07 0.45] |
+| 10 | 0.28 | 0.26 | 0.1 | [0.17 0.37] | [0.09 0.47] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
 
@@ -849,7 +1031,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 
 | Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** | **0.11** | **-2.82** | **[-3.17 -2.57]** | **0.17** | **-3.34** | **[-3.76 -2.92]** | **0.2** | **-4.69** | **[-5.18 -4.22]** |
+| **5 sites, V<sub>S30</sub>=500** | **0.29** | **-2.81** | **[-4.06 -1.34]** | **0.32** | **-3.34** | **[-4.66 -1.41]** | **0.34** | **-4.69** | **[-5.92 -3.21]** |
 | PAS | 0.11 | -4.27 | [-4.64 -4.05] | 0.16 | -4.78 | [-5.17 -4.38] | 0.23 | -5.62 | [-6.2 -5.03] |
 | SBSM | 0.13 | -2.43 | [-2.83 -2.14] | 0.17 | -3.51 | [-3.98 -3.12] | 0.17 | -5.16 | [-5.59 -4.73] |
 | SMCA | 0.11 | -2.94 | [-3.29 -2.75] | 0.16 | -3.4 | [-3.8 -2.97] | 0.2 | -4.71 | [-5.23 -4.12] |
@@ -861,12 +1043,12 @@ We compute uncertainties on &tau; through downsampling the rotational synthetic 
 
 | Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.16 | 0.28 | 0.07 | [0.23 0.36] | [0.19 0.45] |
-| 3 | 0.11 | 0.26 | 0.11 | [0.16 0.33] | [0.08 0.62] |
-| 4 | 0.14 | 0.25 | 0.11 | [0.17 0.38] | [0.11 0.57] |
-| 5 | 0.17 | 0.28 | 0.11 | [0.19 0.4] | [0.09 0.52] |
-| 7.5 | 0.19 | 0.28 | 0.12 | [0.18 0.43] | [0.06 0.59] |
-| 10 | 0.2 | 0.32 | 0.12 | [0.2 0.47] | [0.09 0.58] |
+| T-independent | 0.32 | 0.29 | 0.08 | [0.23 0.38] | [0.19 0.53] |
+| 3 | 0.29 | 0.28 | 0.12 | [0.2 0.41] | [0.1 0.64] |
+| 4 | 0.31 | 0.31 | 0.12 | [0.19 0.41] | [0.1 0.58] |
+| 5 | 0.32 | 0.3 | 0.12 | [0.2 0.42] | [0.07 0.58] |
+| 7.5 | 0.34 | 0.31 | 0.13 | [0.2 0.44] | [0.08 0.64] |
+| 10 | 0.34 | 0.29 | 0.14 | [0.18 0.45] | [0.09 0.65] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
 
@@ -880,7 +1062,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 
 | Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** | **0.11** | **-3.45** | **[-3.81 -3.17]** | **0.17** | **-3.89** | **[-4.29 -3.48]** | **0.2** | **-5.17** | **[-5.69 -4.73]** |
+| **5 sites, V<sub>S30</sub>=500** | **0.32** | **-3.43** | **[-4.48 -1.68]** | **0.34** | **-3.89** | **[-5.18 -2.31]** | **0.36** | **-5.17** | **[-6.54 -3.66]** |
 | PAS | 0.11 | -4.83 | [-5.2 -4.6] | 0.15 | -5.32 | [-5.68 -4.95] | 0.24 | -6.07 | [-6.7 -5.56] |
 | SBSM | 0.13 | -3.1 | [-3.51 -2.79] | 0.16 | -4.09 | [-4.54 -3.69] | 0.18 | -5.67 | [-6.08 -5.27] |
 | SMCA | 0.11 | -3.62 | [-3.96 -3.4] | 0.17 | -3.9 | [-4.3 -3.5] | 0.21 | -5.19 | [-5.75 -4.68] |
@@ -892,12 +1074,12 @@ We compute uncertainties on &tau; through downsampling the rotational synthetic 
 
 | Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.16 | 0.23 | 0.1 | [0.16 0.31] | [0.11 0.48] |
-| 3 | 0.11 | 0.2 | 0.12 | [0.08 0.33] | [0.03 0.56] |
-| 4 | 0.14 | 0.21 | 0.14 | [0.08 0.35] | [0.01 0.63] |
-| 5 | 0.17 | 0.21 | 0.14 | [0.11 0.36] | [0.03 0.64] |
-| 7.5 | 0.2 | 0.24 | 0.16 | [0.11 0.41] | [0.05 0.61] |
-| 10 | 0.2 | 0.25 | 0.16 | [0.12 0.45] | [0.06 0.69] |
+| T-independent | 0.34 | 0.29 | 0.1 | [0.2 0.4] | [0.13 0.57] |
+| 3 | 0.32 | 0.26 | 0.14 | [0.13 0.38] | [0.06 0.65] |
+| 4 | 0.33 | 0.29 | 0.16 | [0.12 0.46] | [0.05 0.64] |
+| 5 | 0.34 | 0.27 | 0.16 | [0.16 0.5] | [0.05 0.63] |
+| 7.5 | 0.36 | 0.29 | 0.16 | [0.15 0.5] | [0.05 0.73] |
+| 10 | 0.36 | 0.29 | 0.15 | [0.14 0.49] | [0.08 0.66] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
 
@@ -911,7 +1093,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 
 | Site | 3s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 5s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range | 10s &tau; | Mean &delta;B<sub>e</sub> | &delta;B<sub>e</sub> Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** | **0.11** | **-2.76** | **[-3.81 -1.82]** | **0.17** | **-3.33** | **[-4.29 -2.38]** | **0.2** | **-4.66** | **[-5.69 -3.64]** |
+| **5 sites, V<sub>S30</sub>=500** | **0.29** | **-2.76** | **[-4.48 -0.93]** | **0.32** | **-3.33** | **[-5.18 -1.41]** | **0.33** | **-4.66** | **[-6.54 -3.02]** |
 | PAS | 0.11 | -4.16 | [-5.2 -3.1] | 0.16 | -4.72 | [-5.68 -3.68] | 0.24 | -5.57 | [-6.7 -4.45] |
 | SBSM | 0.13 | -2.42 | [-3.51 -1.46] | 0.17 | -3.49 | [-4.54 -2.45] | 0.18 | -5.12 | [-6.08 -4.08] |
 | SMCA | 0.11 | -2.88 | [-3.96 -1.86] | 0.17 | -3.31 | [-4.3 -2.27] | 0.21 | -4.65 | [-5.75 -3.53] |
@@ -923,12 +1105,12 @@ We compute uncertainties on &tau; through downsampling the rotational synthetic 
 
 | Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.16 | 0.26 | 0.04 | [0.21 0.29] | [0.19 0.37] |
-| 3 | 0.11 | 0.22 | 0.07 | [0.17 0.3] | [0.15 0.41] |
-| 4 | 0.14 | 0.24 | 0.06 | [0.19 0.29] | [0.15 0.39] |
-| 5 | 0.17 | 0.26 | 0.06 | [0.2 0.32] | [0.15 0.37] |
-| 7.5 | 0.19 | 0.28 | 0.06 | [0.22 0.33] | [0.17 0.41] |
-| 10 | 0.2 | 0.28 | 0.06 | [0.22 0.34] | [0.18 0.42] |
+| T-independent | 0.32 | 0.31 | 0.03 | [0.28 0.34] | [0.24 0.38] |
+| 3 | 0.29 | 0.29 | 0.05 | [0.25 0.35] | [0.2 0.41] |
+| 4 | 0.31 | 0.3 | 0.05 | [0.25 0.35] | [0.21 0.39] |
+| 5 | 0.32 | 0.3 | 0.05 | [0.25 0.36] | [0.22 0.44] |
+| 7.5 | 0.33 | 0.32 | 0.06 | [0.26 0.39] | [0.21 0.46] |
+| 10 | 0.33 | 0.32 | 0.06 | [0.26 0.38] | [0.21 0.45] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
 
@@ -949,6 +1131,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### PAS Path Dependence
@@ -959,6 +1142,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### SBSM Azumth Dependence
@@ -972,6 +1156,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### SBSM Path Dependence
@@ -982,6 +1167,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### SMCA Azumth Dependence
@@ -995,6 +1181,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### SMCA Path Dependence
@@ -1005,6 +1192,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### STNI Azumth Dependence
@@ -1018,6 +1206,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### STNI Path Dependence
@@ -1028,6 +1217,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### USC Azumth Dependence
@@ -1041,6 +1231,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### USC Path Dependence
@@ -1051,6 +1242,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### WNGC Azumth Dependence
@@ -1064,6 +1256,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### WNGC Path Dependence
@@ -1074,6 +1267,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### All Sites Azumth Dependence
@@ -1087,6 +1281,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### All Sites Path Dependence
@@ -1097,6 +1292,7 @@ This plot shows the distribution of period-independent downsampled &tau;.
 | **&tau;** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;<sub>SS</sub>** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&phi;** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **Median SA** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ## BBP PartB Comparison
