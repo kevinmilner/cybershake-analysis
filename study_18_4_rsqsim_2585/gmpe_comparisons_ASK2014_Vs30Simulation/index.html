@@ -2,6 +2,12 @@
 <html>
 <head>
 <style>
+table {
+	border-collapse: collapse
+}
+table, th, td {
+	border: 1px solid black
+}
 body {
 	max-width:1000px;
 	margin: auto;
@@ -23,7 +29,7 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>Date</strong></td><td>Apr 2018</td></tr>
-<tr><td><strong>Region</strong></td><td>Central California Box</td></tr>
+<tr><td><strong>Region</strong></td><td>Los Angeles Box</td></tr>
 <tr><td><strong>Description</strong></td><td>RSQSim prototype with catalog 2585 (1myr)</td></tr>
 <tr><td><strong>Velocity Model</strong></td><td>CVM-S4.26, 4.26</td></tr>
 </tbody>
@@ -41,6 +47,66 @@ img {
 <li><a href="#all-sites-75--mw--8">All Sites, 7.5 &lt; Mw &lt; 8</a></li>
 <li><a href="#all-sites-8--mw--9">All Sites, 8 &lt; Mw &lt; 9</a></li>
 <li><a href="#all-sites-all-ruptures-z-score-histograms">All Sites, All Ruptures, Z-Score Histograms</a></li>
+</ul>
+</li>
+<li><a href="#site-usc">Site USC</a>
+<ul>
+<li><a href="#usc-6--mw--65">USC, 6 &lt; Mw &lt; 6.5</a></li>
+<li><a href="#usc-65--mw--7">USC, 6.5 &lt; Mw &lt; 7</a></li>
+<li><a href="#usc-7--mw--75">USC, 7 &lt; Mw &lt; 7.5</a></li>
+<li><a href="#usc-75--mw--8">USC, 7.5 &lt; Mw &lt; 8</a></li>
+<li><a href="#usc-8--mw--9">USC, 8 &lt; Mw &lt; 9</a></li>
+<li><a href="#usc-all-ruptures-z-score-histograms">USC, All Ruptures, Z-Score Histograms</a></li>
+</ul>
+</li>
+<li><a href="#site-pas">Site PAS</a>
+<ul>
+<li><a href="#pas-6--mw--65">PAS, 6 &lt; Mw &lt; 6.5</a></li>
+<li><a href="#pas-65--mw--7">PAS, 6.5 &lt; Mw &lt; 7</a></li>
+<li><a href="#pas-7--mw--75">PAS, 7 &lt; Mw &lt; 7.5</a></li>
+<li><a href="#pas-75--mw--8">PAS, 7.5 &lt; Mw &lt; 8</a></li>
+<li><a href="#pas-8--mw--9">PAS, 8 &lt; Mw &lt; 9</a></li>
+<li><a href="#pas-all-ruptures-z-score-histograms">PAS, All Ruptures, Z-Score Histograms</a></li>
+</ul>
+</li>
+<li><a href="#site-stni">Site STNI</a>
+<ul>
+<li><a href="#stni-6--mw--65">STNI, 6 &lt; Mw &lt; 6.5</a></li>
+<li><a href="#stni-65--mw--7">STNI, 6.5 &lt; Mw &lt; 7</a></li>
+<li><a href="#stni-7--mw--75">STNI, 7 &lt; Mw &lt; 7.5</a></li>
+<li><a href="#stni-75--mw--8">STNI, 7.5 &lt; Mw &lt; 8</a></li>
+<li><a href="#stni-8--mw--9">STNI, 8 &lt; Mw &lt; 9</a></li>
+<li><a href="#stni-all-ruptures-z-score-histograms">STNI, All Ruptures, Z-Score Histograms</a></li>
+</ul>
+</li>
+<li><a href="#site-lapd">Site LAPD</a>
+<ul>
+<li><a href="#lapd-6--mw--65">LAPD, 6 &lt; Mw &lt; 6.5</a></li>
+<li><a href="#lapd-65--mw--7">LAPD, 6.5 &lt; Mw &lt; 7</a></li>
+<li><a href="#lapd-7--mw--75">LAPD, 7 &lt; Mw &lt; 7.5</a></li>
+<li><a href="#lapd-75--mw--8">LAPD, 7.5 &lt; Mw &lt; 8</a></li>
+<li><a href="#lapd-8--mw--9">LAPD, 8 &lt; Mw &lt; 9</a></li>
+<li><a href="#lapd-all-ruptures-z-score-histograms">LAPD, All Ruptures, Z-Score Histograms</a></li>
+</ul>
+</li>
+<li><a href="#site-sbsm">Site SBSM</a>
+<ul>
+<li><a href="#sbsm-6--mw--65">SBSM, 6 &lt; Mw &lt; 6.5</a></li>
+<li><a href="#sbsm-65--mw--7">SBSM, 6.5 &lt; Mw &lt; 7</a></li>
+<li><a href="#sbsm-7--mw--75">SBSM, 7 &lt; Mw &lt; 7.5</a></li>
+<li><a href="#sbsm-75--mw--8">SBSM, 7.5 &lt; Mw &lt; 8</a></li>
+<li><a href="#sbsm-8--mw--9">SBSM, 8 &lt; Mw &lt; 9</a></li>
+<li><a href="#sbsm-all-ruptures-z-score-histograms">SBSM, All Ruptures, Z-Score Histograms</a></li>
+</ul>
+</li>
+<li><a href="#site-wngc">Site WNGC</a>
+<ul>
+<li><a href="#wngc-6--mw--65">WNGC, 6 &lt; Mw &lt; 6.5</a></li>
+<li><a href="#wngc-65--mw--7">WNGC, 6.5 &lt; Mw &lt; 7</a></li>
+<li><a href="#wngc-7--mw--75">WNGC, 7 &lt; Mw &lt; 7.5</a></li>
+<li><a href="#wngc-75--mw--8">WNGC, 7.5 &lt; Mw &lt; 8</a></li>
+<li><a href="#wngc-8--mw--9">WNGC, 8 &lt; Mw &lt; 9</a></li>
+<li><a href="#wngc-all-ruptures-z-score-histograms">WNGC, All Ruptures, Z-Score Histograms</a></li>
 </ul>
 </li>
 </ul>
@@ -304,7 +370,1436 @@ img {
 <li>Gray Histogram: z-score for each rupture</li>
 <li>Blue Dashed Line: RSQSim 2585 Mean</li>
 </ul>
-<p><img src="resources/All_Sites_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></p>
+<table>
+<thead>
+<tr><th>Total</th><th>Source Contributions</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/All_Sites_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/All_Sites_all_mags_all_dists_ASK2014_std_norm_source_contrib.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="site-usc">Site USC</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><em>Location: 34.0192, -118.286</em>
+89271 ruptures within 200.0 km</p>
+<h4 id="usc-6--mw--65">USC, 6 &lt; Mw &lt; 6.5</h4>
+<p>0 Ruptures</p>
+<h5 id="usc-6--mw--65-scatter-plots">USC, 6 &lt; Mw &lt; 6.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="usc-6--mw--65-z-score-histograms">USC, 6 &lt; Mw &lt; 6.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="usc-65--mw--7">USC, 6.5 &lt; Mw &lt; 7</h4>
+<p>49385 Ruptures</p>
+<h5 id="usc-65--mw--7-scatter-plots">USC, 6.5 &lt; Mw &lt; 7, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/USC_mag_6.5_7_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/USC_mag_6.5_7_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/USC_mag_6.5_7_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/USC_mag_6.5_7_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/USC_mag_6.5_7_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/USC_mag_6.5_7_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="usc-65--mw--7-z-score-histograms">USC, 6.5 &lt; Mw &lt; 7, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/USC_mag_6.5_7_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/USC_mag_6.5_7_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_6.5_7_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="usc-7--mw--75">USC, 7 &lt; Mw &lt; 7.5</h4>
+<p>47935 Ruptures</p>
+<h5 id="usc-7--mw--75-scatter-plots">USC, 7 &lt; Mw &lt; 7.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/USC_mag_7_7.5_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/USC_mag_7_7.5_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/USC_mag_7_7.5_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/USC_mag_7_7.5_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/USC_mag_7_7.5_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/USC_mag_7_7.5_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="usc-7--mw--75-z-score-histograms">USC, 7 &lt; Mw &lt; 7.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/USC_mag_7_7.5_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/USC_mag_7_7.5_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7_7.5_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="usc-75--mw--8">USC, 7.5 &lt; Mw &lt; 8</h4>
+<p>18481 Ruptures</p>
+<h5 id="usc-75--mw--8-scatter-plots">USC, 7.5 &lt; Mw &lt; 8, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/USC_mag_7.5_8_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/USC_mag_7.5_8_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/USC_mag_7.5_8_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/USC_mag_7.5_8_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/USC_mag_7.5_8_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/USC_mag_7.5_8_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="usc-75--mw--8-z-score-histograms">USC, 7.5 &lt; Mw &lt; 8, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/USC_mag_7.5_8_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/USC_mag_7.5_8_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_7.5_8_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="usc-8--mw--9">USC, 8 &lt; Mw &lt; 9</h4>
+<p>84 Ruptures</p>
+<h5 id="usc-8--mw--9-scatter-plots">USC, 8 &lt; Mw &lt; 9, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/USC_mag_8_9_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_8_9_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_8_9_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/USC_mag_8_9_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_8_9_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/USC_mag_8_9_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="usc-8--mw--9-z-score-histograms">USC, 8 &lt; Mw &lt; 9, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/USC_mag_8_9_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_mag_8_9_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="usc-all-ruptures-z-score-histograms">USC, All Ruptures, Z-Score Histograms</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>z-score standard normal plots across all magnitudes/distances</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th>Total</th><th>Source Contributions</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/USC_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/USC_all_mags_all_dists_ASK2014_std_norm_source_contrib.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="site-pas">Site PAS</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><em>Location: 34.148426, -118.17119</em>
+92952 ruptures within 200.0 km</p>
+<h4 id="pas-6--mw--65">PAS, 6 &lt; Mw &lt; 6.5</h4>
+<p>0 Ruptures</p>
+<h5 id="pas-6--mw--65-scatter-plots">PAS, 6 &lt; Mw &lt; 6.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="pas-6--mw--65-z-score-histograms">PAS, 6 &lt; Mw &lt; 6.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="pas-65--mw--7">PAS, 6.5 &lt; Mw &lt; 7</h4>
+<p>49385 Ruptures</p>
+<h5 id="pas-65--mw--7-scatter-plots">PAS, 6.5 &lt; Mw &lt; 7, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/PAS_mag_6.5_7_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/PAS_mag_6.5_7_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/PAS_mag_6.5_7_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/PAS_mag_6.5_7_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/PAS_mag_6.5_7_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/PAS_mag_6.5_7_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="pas-65--mw--7-z-score-histograms">PAS, 6.5 &lt; Mw &lt; 7, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/PAS_mag_6.5_7_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/PAS_mag_6.5_7_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_6.5_7_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="pas-7--mw--75">PAS, 7 &lt; Mw &lt; 7.5</h4>
+<p>47935 Ruptures</p>
+<h5 id="pas-7--mw--75-scatter-plots">PAS, 7 &lt; Mw &lt; 7.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/PAS_mag_7_7.5_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/PAS_mag_7_7.5_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/PAS_mag_7_7.5_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/PAS_mag_7_7.5_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/PAS_mag_7_7.5_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/PAS_mag_7_7.5_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="pas-7--mw--75-z-score-histograms">PAS, 7 &lt; Mw &lt; 7.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/PAS_mag_7_7.5_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/PAS_mag_7_7.5_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7_7.5_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="pas-75--mw--8">PAS, 7.5 &lt; Mw &lt; 8</h4>
+<p>18481 Ruptures</p>
+<h5 id="pas-75--mw--8-scatter-plots">PAS, 7.5 &lt; Mw &lt; 8, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/PAS_mag_7.5_8_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/PAS_mag_7.5_8_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/PAS_mag_7.5_8_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/PAS_mag_7.5_8_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/PAS_mag_7.5_8_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/PAS_mag_7.5_8_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="pas-75--mw--8-z-score-histograms">PAS, 7.5 &lt; Mw &lt; 8, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/PAS_mag_7.5_8_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/PAS_mag_7.5_8_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_7.5_8_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="pas-8--mw--9">PAS, 8 &lt; Mw &lt; 9</h4>
+<p>84 Ruptures</p>
+<h5 id="pas-8--mw--9-scatter-plots">PAS, 8 &lt; Mw &lt; 9, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/PAS_mag_8_9_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_8_9_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_8_9_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/PAS_mag_8_9_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_8_9_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_8_9_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/PAS_mag_8_9_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_8_9_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/PAS_mag_8_9_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="pas-8--mw--9-z-score-histograms">PAS, 8 &lt; Mw &lt; 9, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td><img src="resources/PAS_mag_8_9_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/PAS_mag_8_9_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_mag_8_9_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="pas-all-ruptures-z-score-histograms">PAS, All Ruptures, Z-Score Histograms</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>z-score standard normal plots across all magnitudes/distances</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th>Total</th><th>Source Contributions</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/PAS_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/PAS_all_mags_all_dists_ASK2014_std_norm_source_contrib.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="site-stni">Site STNI</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><em>Location: 33.93088, -118.17881</em>
+87906 ruptures within 200.0 km</p>
+<h4 id="stni-6--mw--65">STNI, 6 &lt; Mw &lt; 6.5</h4>
+<p>0 Ruptures</p>
+<h5 id="stni-6--mw--65-scatter-plots">STNI, 6 &lt; Mw &lt; 6.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="stni-6--mw--65-z-score-histograms">STNI, 6 &lt; Mw &lt; 6.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="stni-65--mw--7">STNI, 6.5 &lt; Mw &lt; 7</h4>
+<p>49385 Ruptures</p>
+<h5 id="stni-65--mw--7-scatter-plots">STNI, 6.5 &lt; Mw &lt; 7, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/STNI_mag_6.5_7_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/STNI_mag_6.5_7_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/STNI_mag_6.5_7_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/STNI_mag_6.5_7_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/STNI_mag_6.5_7_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/STNI_mag_6.5_7_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="stni-65--mw--7-z-score-histograms">STNI, 6.5 &lt; Mw &lt; 7, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/STNI_mag_6.5_7_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/STNI_mag_6.5_7_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_6.5_7_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="stni-7--mw--75">STNI, 7 &lt; Mw &lt; 7.5</h4>
+<p>47935 Ruptures</p>
+<h5 id="stni-7--mw--75-scatter-plots">STNI, 7 &lt; Mw &lt; 7.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/STNI_mag_7_7.5_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/STNI_mag_7_7.5_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/STNI_mag_7_7.5_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/STNI_mag_7_7.5_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/STNI_mag_7_7.5_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/STNI_mag_7_7.5_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="stni-7--mw--75-z-score-histograms">STNI, 7 &lt; Mw &lt; 7.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/STNI_mag_7_7.5_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/STNI_mag_7_7.5_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7_7.5_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="stni-75--mw--8">STNI, 7.5 &lt; Mw &lt; 8</h4>
+<p>18481 Ruptures</p>
+<h5 id="stni-75--mw--8-scatter-plots">STNI, 7.5 &lt; Mw &lt; 8, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/STNI_mag_7.5_8_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/STNI_mag_7.5_8_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/STNI_mag_7.5_8_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/STNI_mag_7.5_8_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/STNI_mag_7.5_8_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/STNI_mag_7.5_8_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="stni-75--mw--8-z-score-histograms">STNI, 7.5 &lt; Mw &lt; 8, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/STNI_mag_7.5_8_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/STNI_mag_7.5_8_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_mag_7.5_8_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="stni-8--mw--9">STNI, 8 &lt; Mw &lt; 9</h4>
+<p>84 Ruptures</p>
+<h5 id="stni-8--mw--9-scatter-plots">STNI, 8 &lt; Mw &lt; 9, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/STNI_mag_8_9_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_8_9_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/STNI_mag_8_9_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="stni-8--mw--9-z-score-histograms">STNI, 8 &lt; Mw &lt; 9, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/STNI_mag_8_9_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="stni-all-ruptures-z-score-histograms">STNI, All Ruptures, Z-Score Histograms</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>z-score standard normal plots across all magnitudes/distances</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th>Total</th><th>Source Contributions</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/STNI_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/STNI_all_mags_all_dists_ASK2014_std_norm_source_contrib.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="site-lapd">Site LAPD</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><em>Location: 34.557, -118.125</em>
+97073 ruptures within 200.0 km</p>
+<h4 id="lapd-6--mw--65">LAPD, 6 &lt; Mw &lt; 6.5</h4>
+<p>0 Ruptures</p>
+<h5 id="lapd-6--mw--65-scatter-plots">LAPD, 6 &lt; Mw &lt; 6.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="lapd-6--mw--65-z-score-histograms">LAPD, 6 &lt; Mw &lt; 6.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="lapd-65--mw--7">LAPD, 6.5 &lt; Mw &lt; 7</h4>
+<p>49385 Ruptures</p>
+<h5 id="lapd-65--mw--7-scatter-plots">LAPD, 6.5 &lt; Mw &lt; 7, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/LAPD_mag_6.5_7_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/LAPD_mag_6.5_7_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/LAPD_mag_6.5_7_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/LAPD_mag_6.5_7_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/LAPD_mag_6.5_7_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/LAPD_mag_6.5_7_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="lapd-65--mw--7-z-score-histograms">LAPD, 6.5 &lt; Mw &lt; 7, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/LAPD_mag_6.5_7_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/LAPD_mag_6.5_7_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_6.5_7_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="lapd-7--mw--75">LAPD, 7 &lt; Mw &lt; 7.5</h4>
+<p>47935 Ruptures</p>
+<h5 id="lapd-7--mw--75-scatter-plots">LAPD, 7 &lt; Mw &lt; 7.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/LAPD_mag_7_7.5_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/LAPD_mag_7_7.5_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/LAPD_mag_7_7.5_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/LAPD_mag_7_7.5_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/LAPD_mag_7_7.5_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/LAPD_mag_7_7.5_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="lapd-7--mw--75-z-score-histograms">LAPD, 7 &lt; Mw &lt; 7.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/LAPD_mag_7_7.5_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/LAPD_mag_7_7.5_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7_7.5_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="lapd-75--mw--8">LAPD, 7.5 &lt; Mw &lt; 8</h4>
+<p>18481 Ruptures</p>
+<h5 id="lapd-75--mw--8-scatter-plots">LAPD, 7.5 &lt; Mw &lt; 8, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/LAPD_mag_7.5_8_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/LAPD_mag_7.5_8_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/LAPD_mag_7.5_8_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/LAPD_mag_7.5_8_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/LAPD_mag_7.5_8_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/LAPD_mag_7.5_8_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="lapd-75--mw--8-z-score-histograms">LAPD, 7.5 &lt; Mw &lt; 8, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/LAPD_mag_7.5_8_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/LAPD_mag_7.5_8_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_mag_7.5_8_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="lapd-8--mw--9">LAPD, 8 &lt; Mw &lt; 9</h4>
+<p>84 Ruptures</p>
+<h5 id="lapd-8--mw--9-scatter-plots">LAPD, 8 &lt; Mw &lt; 9, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/LAPD_mag_8_9_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_8_9_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_8_9_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/LAPD_mag_8_9_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_8_9_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/LAPD_mag_8_9_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="lapd-8--mw--9-z-score-histograms">LAPD, 8 &lt; Mw &lt; 9, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/LAPD_mag_8_9_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td><img src="resources/LAPD_mag_8_9_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="lapd-all-ruptures-z-score-histograms">LAPD, All Ruptures, Z-Score Histograms</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>z-score standard normal plots across all magnitudes/distances</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th>Total</th><th>Source Contributions</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/LAPD_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/LAPD_all_mags_all_dists_ASK2014_std_norm_source_contrib.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="site-sbsm">Site SBSM</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><em>Location: 34.064987, -117.29201</em>
+103034 ruptures within 200.0 km</p>
+<h4 id="sbsm-6--mw--65">SBSM, 6 &lt; Mw &lt; 6.5</h4>
+<p>0 Ruptures</p>
+<h5 id="sbsm-6--mw--65-scatter-plots">SBSM, 6 &lt; Mw &lt; 6.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="sbsm-6--mw--65-z-score-histograms">SBSM, 6 &lt; Mw &lt; 6.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="sbsm-65--mw--7">SBSM, 6.5 &lt; Mw &lt; 7</h4>
+<p>49385 Ruptures</p>
+<h5 id="sbsm-65--mw--7-scatter-plots">SBSM, 6.5 &lt; Mw &lt; 7, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/SBSM_mag_6.5_7_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/SBSM_mag_6.5_7_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/SBSM_mag_6.5_7_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/SBSM_mag_6.5_7_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/SBSM_mag_6.5_7_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/SBSM_mag_6.5_7_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="sbsm-65--mw--7-z-score-histograms">SBSM, 6.5 &lt; Mw &lt; 7, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_mag_6.5_7_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/SBSM_mag_6.5_7_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_6.5_7_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="sbsm-7--mw--75">SBSM, 7 &lt; Mw &lt; 7.5</h4>
+<p>47935 Ruptures</p>
+<h5 id="sbsm-7--mw--75-scatter-plots">SBSM, 7 &lt; Mw &lt; 7.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/SBSM_mag_7_7.5_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/SBSM_mag_7_7.5_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/SBSM_mag_7_7.5_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/SBSM_mag_7_7.5_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/SBSM_mag_7_7.5_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/SBSM_mag_7_7.5_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="sbsm-7--mw--75-z-score-histograms">SBSM, 7 &lt; Mw &lt; 7.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_mag_7_7.5_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/SBSM_mag_7_7.5_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7_7.5_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="sbsm-75--mw--8">SBSM, 7.5 &lt; Mw &lt; 8</h4>
+<p>18481 Ruptures</p>
+<h5 id="sbsm-75--mw--8-scatter-plots">SBSM, 7.5 &lt; Mw &lt; 8, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/SBSM_mag_7.5_8_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/SBSM_mag_7.5_8_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/SBSM_mag_7.5_8_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/SBSM_mag_7.5_8_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/SBSM_mag_7.5_8_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/SBSM_mag_7.5_8_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="sbsm-75--mw--8-z-score-histograms">SBSM, 7.5 &lt; Mw &lt; 8, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_mag_7.5_8_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/SBSM_mag_7.5_8_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_7.5_8_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="sbsm-8--mw--9">SBSM, 8 &lt; Mw &lt; 9</h4>
+<p>84 Ruptures</p>
+<h5 id="sbsm-8--mw--9-scatter-plots">SBSM, 8 &lt; Mw &lt; 9, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/SBSM_mag_8_9_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/SBSM_mag_8_9_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/SBSM_mag_8_9_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/SBSM_mag_8_9_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="sbsm-8--mw--9-z-score-histograms">SBSM, 8 &lt; Mw &lt; 9, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_mag_8_9_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_mag_8_9_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td><img src="resources/SBSM_mag_8_9_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="sbsm-all-ruptures-z-score-histograms">SBSM, All Ruptures, Z-Score Histograms</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>z-score standard normal plots across all magnitudes/distances</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th>Total</th><th>Source Contributions</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/SBSM_all_mags_all_dists_ASK2014_std_norm_source_contrib.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="site-wngc">Site WNGC</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><em>Location: 34.041824, -118.0653</em>
+89874 ruptures within 200.0 km</p>
+<h4 id="wngc-6--mw--65">WNGC, 6 &lt; Mw &lt; 6.5</h4>
+<p>0 Ruptures</p>
+<h5 id="wngc-6--mw--65-scatter-plots">WNGC, 6 &lt; Mw &lt; 6.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="wngc-6--mw--65-z-score-histograms">WNGC, 6 &lt; Mw &lt; 6.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="wngc-65--mw--7">WNGC, 6.5 &lt; Mw &lt; 7</h4>
+<p>49385 Ruptures</p>
+<h5 id="wngc-65--mw--7-scatter-plots">WNGC, 6.5 &lt; Mw &lt; 7, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/WNGC_mag_6.5_7_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/WNGC_mag_6.5_7_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/WNGC_mag_6.5_7_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/WNGC_mag_6.5_7_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/WNGC_mag_6.5_7_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/WNGC_mag_6.5_7_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="wngc-65--mw--7-z-score-histograms">WNGC, 6.5 &lt; Mw &lt; 7, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/WNGC_mag_6.5_7_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/WNGC_mag_6.5_7_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_6.5_7_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="wngc-7--mw--75">WNGC, 7 &lt; Mw &lt; 7.5</h4>
+<p>47935 Ruptures</p>
+<h5 id="wngc-7--mw--75-scatter-plots">WNGC, 7 &lt; Mw &lt; 7.5, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/WNGC_mag_7_7.5_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/WNGC_mag_7_7.5_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/WNGC_mag_7_7.5_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/WNGC_mag_7_7.5_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/WNGC_mag_7_7.5_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/WNGC_mag_7_7.5_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="wngc-7--mw--75-z-score-histograms">WNGC, 7 &lt; Mw &lt; 7.5, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/WNGC_mag_7_7.5_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/WNGC_mag_7_7.5_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7_7.5_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="wngc-75--mw--8">WNGC, 7.5 &lt; Mw &lt; 8</h4>
+<p>18481 Ruptures</p>
+<h5 id="wngc-75--mw--8-scatter-plots">WNGC, 7.5 &lt; Mw &lt; 8, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td><img src="resources/WNGC_mag_7.5_8_dist_0_10_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_0_10_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_0_10_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td><img src="resources/WNGC_mag_7.5_8_dist_10_20_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_10_20_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_10_20_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/WNGC_mag_7.5_8_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/WNGC_mag_7.5_8_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><img src="resources/WNGC_mag_7.5_8_dist_80_160_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_80_160_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_80_160_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td><img src="resources/WNGC_mag_7.5_8_dist_160_200_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_160_200_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_160_200_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+</tbody>
+</table>
+<h5 id="wngc-75--mw--8-z-score-histograms">WNGC, 7.5 &lt; Mw &lt; 8, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/WNGC_mag_7.5_8_dist_0_10_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_10_20_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/WNGC_mag_7.5_8_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_80_160_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_mag_7.5_8_dist_160_200_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
+<h4 id="wngc-8--mw--9">WNGC, 8 &lt; Mw &lt; 9</h4>
+<p>84 Ruptures</p>
+<h5 id="wngc-8--mw--9-scatter-plots">WNGC, 8 &lt; Mw &lt; 9, Scatter Plots</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Red +: GMPE Mean/RSQSim 2585 single rupture comparison</li>
+<li>Yellow Region: Factor of 2 above &amp; below</li>
+<li>Green Line: Linear Regression</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>Distance Bin</strong></th><th><strong>3 s</strong></th><th><strong>5 s</strong></th><th><strong>10 s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0 km &lt; rJB &lt; 10 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>10 km &lt; rJB &lt; 20 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>20 km &lt; rJB &lt; 40 km</strong></td><td><img src="resources/WNGC_mag_8_9_dist_20_40_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_8_9_dist_20_40_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_8_9_dist_20_40_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><img src="resources/WNGC_mag_8_9_dist_40_80_3s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_8_9_dist_40_80_5s_ASK2014_scatter.png" alt="Scatter Plot" /></td><td><img src="resources/WNGC_mag_8_9_dist_40_80_10s_ASK2014_scatter.png" alt="Scatter Plot" /></td></tr>
+<tr><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td><strong>160 km &lt; rJB &lt; 200 km</strong></td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h5 id="wngc-8--mw--9-z-score-histograms">WNGC, 8 &lt; Mw &lt; 9, Z-Score Histograms</h5>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>These plots compare RSQSim 2585 to the full GMPE log-normal distributions. Each rupture's GMPE distribution is converted to a standard log-normal distribution, and the z-score is computed for each rupture:</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th><strong>0 km &lt; rJB &lt; 10 km</strong></th><th><strong>10 km &lt; rJB &lt; 20 km</strong></th><th><strong>20 km &lt; rJB &lt; 40 km</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>N/A</td><td>N/A</td><td><img src="resources/WNGC_mag_8_9_dist_20_40_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td></tr>
+<tr><td><strong>40 km &lt; rJB &lt; 80 km</strong></td><td><strong>80 km &lt; rJB &lt; 160 km</strong></td><td><strong>160 km &lt; rJB &lt; 200 km</strong></td></tr>
+<tr><td><img src="resources/WNGC_mag_8_9_dist_40_80_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td>N/A</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4 id="wngc-all-ruptures-z-score-histograms">WNGC, All Ruptures, Z-Score Histograms</h4>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>z-score standard normal plots across all magnitudes/distances</p>
+<p><strong>z-score</strong>: (ln(<em>RSQSim 2585</em>) - ln(<em>GMPE-mean</em>)) / <em>GMPE-sigma</em></p>
+<p><strong>Legend</strong></p>
+<ul>
+<li>Black Line: Standard Normal distribution (in natural log space)</li>
+<li>Gray Histogram: z-score for each rupture</li>
+<li>Blue Dashed Line: RSQSim 2585 Mean</li>
+</ul>
+<table>
+<thead>
+<tr><th>Total</th><th>Source Contributions</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/WNGC_all_mags_all_dists_ASK2014_std_norm.png" alt="Standard Normal Plot" /></td><td><img src="resources/WNGC_all_mags_all_dists_ASK2014_std_norm_source_contrib.png" alt="Standard Normal Plot" /></td></tr>
+</tbody>
+</table>
 <h2 id="hazard-curves">Hazard Curves</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><strong>Legend</strong>:</p>
@@ -368,7 +1863,7 @@ img {
 </table>
 <h3 id="period-dependent-residual-components">Period-Dependent Residual Components</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<p><strong>Note: These are not yet corrected for covariance. Currently only useful for comparing relative phi and tau, not absolute values</strong></p>
+<p><strong>Note: These are not corrected for covariance. Currently only useful for comparing relative phi and tau, not absolute values</strong></p>
 <p><img src="resources/period_residual_components.png" alt="Residual Components" /></p>
 <h3 id="detrended-period-dependent-residual-components">Detrended Period-Dependent Residual Components</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
