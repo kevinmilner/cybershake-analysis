@@ -41,6 +41,7 @@ img {
 <li><a href="#sites">Sites</a></li>
 <li><a href="#result-summary-table">Result Summary Table</a>
 <ul>
+<li><a href="#gmpe-table">GMPE Table</a></li>
 <li><a href="#dist-dependent-plot-table">Dist-Dependent Plot Table</a></li>
 </ul>
 </li>
@@ -187,46 +188,67 @@ img {
 <tr><th>Type</th><th>Notation</th><th>Distance</th><th>T-independent Std. Dev.</th><th>3s Std. Dev.</th><th>5s Std. Dev.</th><th>10s Std. Dev.</th></tr>
 </thead>
 <tbody>
-<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>20 km</td><td>0.29</td><td>0.36</td><td>0.32</td><td>0.15</td></tr>
-<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>50 km</td><td>0.37</td><td>0.45</td><td>0.38</td><td>0.23</td></tr>
-<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>100 km</td><td>0.41</td><td>0.49</td><td>0.43</td><td>0.27</td></tr>
-<tr><td>Path-to-path</td><td>φ<sub>P2P</sub></td><td>(all)</td><td>0.36</td><td>0.43</td><td>0.38</td><td>0.22</td></tr>
-<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>20 km</td><td>0.36</td><td>0.38</td><td>0.38</td><td>0.31</td></tr>
-<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>50 km</td><td>0.4</td><td>0.36</td><td>0.39</td><td>0.44</td></tr>
-<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>100 km</td><td>0.4</td><td>0.34</td><td>0.4</td><td>0.45</td></tr>
-<tr><td>Source-strike</td><td>φ<sub>s</sub></td><td>(all)</td><td>0.39</td><td>0.36</td><td>0.39</td><td>0.41</td></tr>
-<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>20 km</td><td>0.41</td><td>0.46</td><td>0.43</td><td>0.32</td></tr>
-<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>50 km</td><td>0.48</td><td>0.51</td><td>0.48</td><td>0.45</td></tr>
-<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>100 km</td><td>0.52</td><td>0.54</td><td>0.52</td><td>0.48</td></tr>
-<tr><td>Within-event, single-site</td><td>φ<sub>SS</sub></td><td>(all)</td><td>0.47</td><td>0.51</td><td>0.48</td><td>0.42</td></tr>
-<tr><td>Within-event</td><td>φ</td><td>20 km</td><td>0.64</td><td>0.69</td><td>0.65</td><td>0.55</td></tr>
-<tr><td>Within-event</td><td>φ</td><td>50 km</td><td>0.71</td><td>0.74</td><td>0.71</td><td>0.65</td></tr>
-<tr><td>Within-event</td><td>φ</td><td>100 km</td><td>0.73</td><td>0.75</td><td>0.74</td><td>0.66</td></tr>
-<tr><td>Within-event</td><td>φ</td><td>(all)</td><td>0.69</td><td>0.72</td><td>0.7</td><td>0.62</td></tr>
-<tr><td>Between-events</td><td>τ</td><td>20 km</td><td>0.27</td><td>0.26</td><td>0.27</td><td>0.27</td></tr>
-<tr><td>Between-events</td><td>τ</td><td>50 km</td><td>0.29</td><td>0.27</td><td>0.3</td><td>0.31</td></tr>
-<tr><td>Between-events</td><td>τ</td><td>100 km</td><td>0.31</td><td>0.28</td><td>0.32</td><td>0.32</td></tr>
-<tr><td>Between-events</td><td>τ</td><td>(all)</td><td>0.29</td><td>0.27</td><td>0.3</td><td>0.3</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>20 km</td><td>0.29</td><td>0.36</td><td>0.32</td><td>0.15</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>50 km</td><td>0.37</td><td>0.45</td><td>0.38</td><td>0.23</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>100 km</td><td>0.41</td><td>0.49</td><td>0.43</td><td>0.27</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>(all)</td><td>0.36</td><td>0.43</td><td>0.38</td><td>0.22</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>20 km</td><td>0.36</td><td>0.38</td><td>0.38</td><td>0.31</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>50 km</td><td>0.4</td><td>0.36</td><td>0.39</td><td>0.44</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>100 km</td><td>0.4</td><td>0.34</td><td>0.4</td><td>0.45</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>(all)</td><td>0.39</td><td>0.36</td><td>0.39</td><td>0.41</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>20 km</td><td>0.41</td><td>0.46</td><td>0.43</td><td>0.32</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>50 km</td><td>0.48</td><td>0.51</td><td>0.48</td><td>0.45</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>100 km</td><td>0.52</td><td>0.54</td><td>0.52</td><td>0.48</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>(all)</td><td>0.47</td><td>0.51</td><td>0.48</td><td>0.42</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>20 km</td><td>0.64</td><td>0.69</td><td>0.65</td><td>0.55</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>50 km</td><td>0.71</td><td>0.74</td><td>0.71</td><td>0.65</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>100 km</td><td>0.73</td><td>0.75</td><td>0.74</td><td>0.66</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>(all)</td><td>0.69</td><td>0.72</td><td>0.7</td><td>0.62</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>20 km</td><td>0.27</td><td>0.25</td><td>0.27</td><td>0.26</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>50 km</td><td>0.29</td><td>0.27</td><td>0.3</td><td>0.31</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>100 km</td><td>0.31</td><td>0.28</td><td>0.32</td><td>0.32</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>(all)</td><td>0.29</td><td>0.27</td><td>0.3</td><td>0.3</td></tr>
+</tbody>
+</table>
+<h3 id="gmpe-table">GMPE Table</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Type</th><th>Notation</th><th>Distance</th><th>ASK2014 3s</th><th>ASK2014 5s</th><th>ASK2014 10s</th><th>BSSA2014 3s</th><th>BSSA2014 5s</th><th>BSSA2014 10s</th><th>CB2014 3s</th><th>CB2014 5s</th><th>CB2014 10s</th><th>CY2014 3s</th><th>CY2014 5s</th><th>CY2014 10s</th></tr>
+</thead>
+<tbody>
+<tr><td>Source-strike</td><td>&phi;<sub>SS</sub></td><td>20 km</td><td>0.57</td><td>0.55</td><td>0.55</td><td>0.54</td><td>0.54</td><td>0.54</td><td>0.49</td><td>0.47</td><td>0.46</td><td>0.52</td><td>0.51</td><td>0.51</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>SS</sub></td><td>50 km</td><td>0.57</td><td>0.55</td><td>0.55</td><td>0.54</td><td>0.54</td><td>0.54</td><td>0.49</td><td>0.47</td><td>0.46</td><td>0.52</td><td>0.51</td><td>0.51</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>SS</sub></td><td>100 km</td><td>0.57</td><td>0.55</td><td>0.55</td><td>0.54</td><td>0.54</td><td>0.54</td><td>0.49</td><td>0.47</td><td>0.46</td><td>0.52</td><td>0.51</td><td>0.51</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>20 km</td><td>0.57</td><td>0.55</td><td>0.55</td><td>0.54</td><td>0.54</td><td>0.54</td><td>0.49</td><td>0.47</td><td>0.46</td><td>0.52</td><td>0.51</td><td>0.51</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>50 km</td><td>0.57</td><td>0.55</td><td>0.55</td><td>0.54</td><td>0.54</td><td>0.54</td><td>0.49</td><td>0.47</td><td>0.46</td><td>0.52</td><td>0.51</td><td>0.51</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>100 km</td><td>0.57</td><td>0.55</td><td>0.55</td><td>0.54</td><td>0.54</td><td>0.54</td><td>0.49</td><td>0.47</td><td>0.46</td><td>0.52</td><td>0.51</td><td>0.51</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>20 km</td><td>0.64</td><td>0.63</td><td>0.63</td><td>0.62</td><td>0.62</td><td>0.62</td><td>0.58</td><td>0.56</td><td>0.55</td><td>0.6</td><td>0.6</td><td>0.59</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>50 km</td><td>0.64</td><td>0.63</td><td>0.63</td><td>0.62</td><td>0.62</td><td>0.62</td><td>0.58</td><td>0.56</td><td>0.55</td><td>0.6</td><td>0.6</td><td>0.59</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>100 km</td><td>0.64</td><td>0.63</td><td>0.63</td><td>0.62</td><td>0.62</td><td>0.62</td><td>0.58</td><td>0.56</td><td>0.55</td><td>0.6</td><td>0.6</td><td>0.59</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>20 km</td><td>0.36</td><td>0.36</td><td>0.36</td><td>0.34</td><td>0.35</td><td>0.34</td><td>0.42</td><td>0.39</td><td>0.42</td><td>0.34</td><td>0.34</td><td>0.34</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>50 km</td><td>0.36</td><td>0.36</td><td>0.36</td><td>0.34</td><td>0.35</td><td>0.34</td><td>0.42</td><td>0.39</td><td>0.42</td><td>0.34</td><td>0.34</td><td>0.34</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>100 km</td><td>0.36</td><td>0.36</td><td>0.36</td><td>0.34</td><td>0.35</td><td>0.34</td><td>0.42</td><td>0.39</td><td>0.42</td><td>0.34</td><td>0.34</td><td>0.34</td></tr>
 </tbody>
 </table>
 <h3 id="dist-dependent-plot-table">Dist-Dependent Plot Table</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
-<tr><th><strong>φ<sub>P2P</sub></strong></th><th><img src="resources/path_m7.2_dist_periods.png" alt="φP2P" /></th></tr>
+<tr><th><strong>&phi;<sub>P2P</sub></strong></th><th><img src="resources/path_m7.2_dist_periods.png" alt="&phi;P2P" /></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/source_strike_m7.2_dist_periods.png" alt="φs" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/within_event_ss_m7.2_dist_periods.png" alt="φSS" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/within_event_m7.2_dist_periods.png" alt="φ" /></td></tr>
-<tr><td><strong>τ</strong></td><td><img src="resources/between_events_m7.2_dist_periods.png" alt="τ" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/source_strike_m7.2_dist_periods.png" alt="&phi;s" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/within_event_ss_m7.2_dist_periods.png" alt="&phi;SS" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/within_event_m7.2_dist_periods.png" alt="&phi;" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/between_events_m7.2_dist_periods.png" alt="&tau;" /></td></tr>
 </tbody>
 </table>
 <h2 id="path-to-path-variability">Path-to-path Variability</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="path-to-path-variability-methodology">Path-to-path Variability Methodology</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<p>Path-to-path variability, denoted φ<sub>P2P</sub> in Al Atik (2010), is computed separately for each:</p>
+<p>Path-to-path variability, denoted &phi;<sub>P2P</sub> in Al Atik (2010), is computed separately for each:</p>
 <ul>
 <li>Site <em>[6 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
@@ -240,8 +262,8 @@ img {
 <ul>
 <li>Path <em>[36 unique]</em></li>
 </ul>
-<p>We take φ<sub>P2P</sub> to be the standard deviation of all residuals across each combination of Rupture, Rupture Strike. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
-<p>We also compute distance-independent φ<sub>P2P</sub>, which is computed as the standard deviation of all residuals across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
+<p>We take &phi;<sub>P2P</sub> to be the standard deviation of all residuals across each combination of Rupture, Rupture Strike. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
+<p>We also compute distance-independent &phi;<sub>P2P</sub>, which is computed as the standard deviation of all residuals across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture, Rupture Strike]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_path.png" alt="Example" /></p>
 <h3 id="200-km-m72-path-to-path-results">20.0 km M7.2 Path-to-path Results</h3>
@@ -249,7 +271,7 @@ img {
 <p><img src="resources/path_m7.2_20km_std_dev.png" alt="Path-to-path Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.34</strong></td><td><strong>0.3</strong></td><td><strong>[0.1 0.96]</strong></td><td></td><td><strong>0.32</strong></td><td><strong>0.3</strong></td><td><strong>0.29</strong></td><td><strong>[0.05 0.84]</strong></td><td></td><td><strong>0.15</strong></td><td><strong>0.14</strong></td><td><strong>0.13</strong></td><td><strong>[0.03 0.46]</strong></td></tr>
@@ -261,10 +283,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.56</td><td>0.54</td><td>0.54</td><td>[0.21 0.96]</td><td></td><td>0.45</td><td>0.44</td><td>0.43</td><td>[0.16 0.84]</td><td></td><td>0.19</td><td>0.18</td><td>0.17</td><td>[0.05 0.46]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>P2P</sub></th><th>Downsampled median φ<sub>P2P</sub></th><th>Downsampled φ<sub>P2P</sub> std. dev.</th><th>Downsampled φ<sub>P2P</sub> 68% conf range</th><th>Downsampled φ<sub>P2P</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.29</td><td>0.29</td><td>0.02</td><td>[0.27 0.31]</td><td>[0.25 0.32]</td></tr>
@@ -275,7 +297,7 @@ img {
 <tr><td>10</td><td>0.15</td><td>0.15</td><td>0.02</td><td>[0.13 0.17]</td><td>[0.13 0.19]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>P2P</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -286,7 +308,7 @@ img {
 <tr><td><img src="resources/path_m7.2_20km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>P2P</sub> for each individual rupture, from which we compute a total φ<sub>P2P</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual rupture, from which we compute a total &phi;<sub>P2P</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -302,7 +324,7 @@ img {
 <p><img src="resources/path_m7.2_50km_std_dev.png" alt="Path-to-path Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.17 0.94]</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>[0.15 0.75]</strong></td><td></td><td><strong>0.23</strong></td><td><strong>0.22</strong></td><td><strong>0.21</strong></td><td><strong>[0.06 0.49]</strong></td></tr>
@@ -314,10 +336,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.59</td><td>0.58</td><td>0.58</td><td>[0.27 0.94]</td><td></td><td>0.46</td><td>0.45</td><td>0.45</td><td>[0.19 0.75]</td><td></td><td>0.23</td><td>0.22</td><td>0.22</td><td>[0.08 0.47]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>P2P</sub></th><th>Downsampled median φ<sub>P2P</sub></th><th>Downsampled φ<sub>P2P</sub> std. dev.</th><th>Downsampled φ<sub>P2P</sub> 68% conf range</th><th>Downsampled φ<sub>P2P</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.37</td><td>0.35</td><td>0.02</td><td>[0.33 0.37]</td><td>[0.31 0.39]</td></tr>
@@ -328,7 +350,7 @@ img {
 <tr><td>10</td><td>0.23</td><td>0.22</td><td>0.02</td><td>[0.2 0.24]</td><td>[0.18 0.26]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>P2P</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -339,7 +361,7 @@ img {
 <tr><td><img src="resources/path_m7.2_50km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>P2P</sub> for each individual rupture, from which we compute a total φ<sub>P2P</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual rupture, from which we compute a total &phi;<sub>P2P</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -355,7 +377,7 @@ img {
 <p><img src="resources/path_m7.2_100km_std_dev.png" alt="Path-to-path Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.47</strong></td><td><strong>0.46</strong></td><td><strong>[0.2 0.92]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.18 0.79]</strong></td><td></td><td><strong>0.27</strong></td><td><strong>0.27</strong></td><td><strong>0.26</strong></td><td><strong>[0.09 0.51]</strong></td></tr>
@@ -367,10 +389,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.58</td><td>0.58</td><td>0.58</td><td>[0.34 0.9]</td><td></td><td>0.49</td><td>0.48</td><td>0.49</td><td>[0.25 0.79]</td><td></td><td>0.26</td><td>0.25</td><td>0.25</td><td>[0.1 0.46]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>P2P</sub></th><th>Downsampled median φ<sub>P2P</sub></th><th>Downsampled φ<sub>P2P</sub> std. dev.</th><th>Downsampled φ<sub>P2P</sub> 68% conf range</th><th>Downsampled φ<sub>P2P</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.41</td><td>0.41</td><td>0.02</td><td>[0.39 0.43]</td><td>[0.37 0.45]</td></tr>
@@ -381,7 +403,7 @@ img {
 <tr><td>10</td><td>0.27</td><td>0.27</td><td>0.02</td><td>[0.25 0.29]</td><td>[0.24 0.32]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>P2P</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -392,7 +414,7 @@ img {
 <tr><td><img src="resources/path_m7.2_100km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>P2P</sub> for each individual rupture, from which we compute a total φ<sub>P2P</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual rupture, from which we compute a total &phi;<sub>P2P</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -408,7 +430,7 @@ img {
 <p><img src="resources/path_m7.2_std_dev.png" alt="Path-to-path Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.41</strong></td><td><strong>0.39</strong></td><td><strong>[0.1 0.96]</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.36</strong></td><td><strong>0.36</strong></td><td><strong>[0.05 0.84]</strong></td><td></td><td><strong>0.22</strong></td><td><strong>0.21</strong></td><td><strong>0.2</strong></td><td><strong>[0.03 0.51]</strong></td></tr>
@@ -420,10 +442,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.58</td><td>0.57</td><td>0.56</td><td>[0.21 0.96]</td><td></td><td>0.47</td><td>0.46</td><td>0.45</td><td>[0.16 0.84]</td><td></td><td>0.23</td><td>0.22</td><td>0.22</td><td>[0.05 0.47]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 348 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 348 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>P2P</sub></th><th>Downsampled median φ<sub>P2P</sub></th><th>Downsampled φ<sub>P2P</sub> std. dev.</th><th>Downsampled φ<sub>P2P</sub> 68% conf range</th><th>Downsampled φ<sub>P2P</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.36</td><td>0.36</td><td>0.01</td><td>[0.35 0.36]</td><td>[0.34 0.38]</td></tr>
@@ -434,7 +456,7 @@ img {
 <tr><td>10</td><td>0.22</td><td>0.22</td><td>0.01</td><td>[0.21 0.23]</td><td>[0.21 0.24]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>P2P</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -445,7 +467,7 @@ img {
 <tr><td><img src="resources/path_m7.2_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>P2P</sub> for each individual rupture, from which we compute a total φ<sub>P2P</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual rupture, from which we compute a total &phi;<sub>P2P</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -460,7 +482,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="source-strike-variability-methodology">Source-strike Variability Methodology</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<p>Source-strike variability, denoted φ<sub>s</sub> in Aki &amp; Richards (1980), is computed separately for each:</p>
+<p>Source-strike variability, denoted &phi;<sub>s</sub> in Aki &amp; Richards (1980), is computed separately for each:</p>
 <ul>
 <li>Site <em>[6 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
@@ -470,12 +492,12 @@ img {
 <li>Rupture <em>[100 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
-<p>we compute residuals, δW<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 18 combinations of:</p>
+<p>we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 18 combinations of:</p>
 <ul>
 <li>Rupture Strike <em>[18 unique]</em></li>
 </ul>
-<p>We take φ<sub>s</sub> to be the standard deviation of all residuals, δW<sub>es</sub>, across each combination of Rupture, Path. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
-<p>We also compute distance-independent φ<sub>s</sub>, which is computed as the standard deviation of all residuals, δW<sub>es</sub>, across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
+<p>We take &phi;<sub>s</sub> to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture, Path. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
+<p>We also compute distance-independent &phi;<sub>s</sub>, which is computed as the standard deviation of all residuals, &delta;W<sub>es</sub>, across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture, Path]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_source_strike.png" alt="Example" /></p>
 <h3 id="200-km-m72-source-strike-results">20.0 km M7.2 Source-strike Results</h3>
@@ -483,7 +505,7 @@ img {
 <p><img src="resources/source_strike_m7.2_20km_std_dev.png" alt="Source-strike Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.81]</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>0.35</strong></td><td><strong>[0.12 0.86]</strong></td><td></td><td><strong>0.31</strong></td><td><strong>0.3</strong></td><td><strong>0.29</strong></td><td><strong>[0.09 0.68]</strong></td></tr>
@@ -495,11 +517,11 @@ img {
 <tr><td>WNGC</td><td></td><td>0.36</td><td>0.36</td><td>0.35</td><td>[0.11 0.75]</td><td></td><td>0.37</td><td>0.36</td><td>0.35</td><td>[0.15 0.78]</td><td></td><td>0.31</td><td>0.3</td><td>0.29</td><td>[0.09 0.59]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 49 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 49 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 2 fewer data points.</em></p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>s</sub></th><th>Downsampled median φ<sub>s</sub></th><th>Downsampled φ<sub>s</sub> std. dev.</th><th>Downsampled φ<sub>s</sub> 68% conf range</th><th>Downsampled φ<sub>s</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.36</td><td>0.36</td><td>0.02</td><td>[0.34 0.37]</td><td>[0.33 0.39]</td></tr>
@@ -510,7 +532,7 @@ img {
 <tr><td>10</td><td>0.31</td><td>0.31</td><td>0.02</td><td>[0.28 0.33]</td><td>[0.26 0.35]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>s</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -521,7 +543,7 @@ img {
 <tr><td><img src="resources/source_strike_m7.2_20km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>s</sub> for each individual rupture, from which we compute a total φ<sub>s</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture, from which we compute a total &phi;<sub>s</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -532,7 +554,7 @@ img {
 <tr><td><img src="resources/source_strike_m7.2_20km_10s_hist.png" alt="10s" /></td><td></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the φ<sub>s</sub> as a function of various parameters for disaggregation.</p>
+<p>Here are plots of the &phi;<sub>s</sub> as a function of various parameters for disaggregation.</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th><th>10s</th></tr>
@@ -547,7 +569,7 @@ img {
 <p><img src="resources/source_strike_m7.2_50km_std_dev.png" alt="Source-strike Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>0.33</strong></td><td><strong>[0.1 0.88]</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.87]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>0.43</strong></td><td><strong>[0.12 0.92]</strong></td></tr>
@@ -559,10 +581,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.37</td><td>0.35</td><td>0.32</td><td>[0.11 0.84]</td><td></td><td>0.41</td><td>0.39</td><td>0.37</td><td>[0.13 0.87]</td><td></td><td>0.44</td><td>0.43</td><td>0.43</td><td>[0.18 0.86]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>s</sub></th><th>Downsampled median φ<sub>s</sub></th><th>Downsampled φ<sub>s</sub> std. dev.</th><th>Downsampled φ<sub>s</sub> 68% conf range</th><th>Downsampled φ<sub>s</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.4</td><td>0.38</td><td>0.02</td><td>[0.36 0.4]</td><td>[0.34 0.44]</td></tr>
@@ -573,7 +595,7 @@ img {
 <tr><td>10</td><td>0.44</td><td>0.42</td><td>0.03</td><td>[0.39 0.44]</td><td>[0.37 0.5]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>s</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -584,7 +606,7 @@ img {
 <tr><td><img src="resources/source_strike_m7.2_50km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>s</sub> for each individual rupture, from which we compute a total φ<sub>s</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture, from which we compute a total &phi;<sub>s</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -595,7 +617,7 @@ img {
 <tr><td><img src="resources/source_strike_m7.2_50km_10s_hist.png" alt="10s" /></td><td></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the φ<sub>s</sub> as a function of various parameters for disaggregation.</p>
+<p>Here are plots of the &phi;<sub>s</sub> as a function of various parameters for disaggregation.</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th><th>10s</th></tr>
@@ -610,7 +632,7 @@ img {
 <p><img src="resources/source_strike_m7.2_100km_std_dev.png" alt="Source-strike Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.34</strong></td><td><strong>0.33</strong></td><td><strong>0.32</strong></td><td><strong>[0.08 0.91]</strong></td><td></td><td><strong>0.4</strong></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>[0.09 0.89]</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>0.44</strong></td><td><strong>[0.12 0.97]</strong></td></tr>
@@ -622,11 +644,11 @@ img {
 <tr><td>WNGC</td><td></td><td>0.34</td><td>0.33</td><td>0.31</td><td>[0.1 0.84]</td><td></td><td>0.41</td><td>0.39</td><td>0.38</td><td>[0.09 0.89]</td><td></td><td>0.45</td><td>0.45</td><td>0.44</td><td>[0.16 0.97]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 41 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 41 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 20 fewer data points.</em></p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>s</sub></th><th>Downsampled median φ<sub>s</sub></th><th>Downsampled φ<sub>s</sub> std. dev.</th><th>Downsampled φ<sub>s</sub> 68% conf range</th><th>Downsampled φ<sub>s</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.4</td><td>0.4</td><td>0.02</td><td>[0.38 0.43]</td><td>[0.36 0.44]</td></tr>
@@ -637,7 +659,7 @@ img {
 <tr><td>10</td><td>0.45</td><td>0.45</td><td>0.02</td><td>[0.43 0.48]</td><td>[0.4 0.5]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>s</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -648,7 +670,7 @@ img {
 <tr><td><img src="resources/source_strike_m7.2_100km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>s</sub> for each individual rupture, from which we compute a total φ<sub>s</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture, from which we compute a total &phi;<sub>s</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -659,7 +681,7 @@ img {
 <tr><td><img src="resources/source_strike_m7.2_100km_10s_hist.png" alt="10s" /></td><td></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the φ<sub>s</sub> as a function of various parameters for disaggregation.</p>
+<p>Here are plots of the &phi;<sub>s</sub> as a function of various parameters for disaggregation.</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th><th>10s</th></tr>
@@ -674,7 +696,7 @@ img {
 <p><img src="resources/source_strike_m7.2_std_dev.png" alt="Source-strike Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>0.34</strong></td><td><strong>[0.08 0.91]</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.89]</strong></td><td></td><td><strong>0.41</strong></td><td><strong>0.39</strong></td><td><strong>0.39</strong></td><td><strong>[0.09 0.97]</strong></td></tr>
@@ -686,10 +708,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.36</td><td>0.35</td><td>0.33</td><td>[0.1 0.84]</td><td></td><td>0.39</td><td>0.38</td><td>0.36</td><td>[0.09 0.89]</td><td></td><td>0.4</td><td>0.39</td><td>0.39</td><td>[0.09 0.97]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 219 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 219 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>s</sub></th><th>Downsampled median φ<sub>s</sub></th><th>Downsampled φ<sub>s</sub> std. dev.</th><th>Downsampled φ<sub>s</sub> 68% conf range</th><th>Downsampled φ<sub>s</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.39</td><td>0.38</td><td>0.01</td><td>[0.38 0.39]</td><td>[0.37 0.41]</td></tr>
@@ -700,7 +722,7 @@ img {
 <tr><td>10</td><td>0.41</td><td>0.4</td><td>0.01</td><td>[0.39 0.41]</td><td>[0.38 0.43]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>s</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -711,7 +733,7 @@ img {
 <tr><td><img src="resources/source_strike_m7.2_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>s</sub> for each individual rupture, from which we compute a total φ<sub>s</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture, from which we compute a total &phi;<sub>s</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -726,7 +748,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="within-event-single-site-variability-methodology">Within-event, single-site Variability Methodology</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<p>Within-event, single-site variability, denoted φ<sub>SS</sub> in Al Atik (2010), is computed separately for each:</p>
+<p>Within-event, single-site variability, denoted &phi;<sub>SS</sub> in Al Atik (2010), is computed separately for each:</p>
 <ul>
 <li>Site <em>[6 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
@@ -735,13 +757,13 @@ img {
 <ul>
 <li>Rupture <em>[100 unique]</em></li>
 </ul>
-<p>we compute residuals, δW<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 648 combinations of:</p>
+<p>we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 648 combinations of:</p>
 <ul>
 <li>Rupture Strike <em>[18 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
-<p>We take φ<sub>SS</sub> to be the standard deviation of all residuals, δW<sub>es</sub>, across each combination of Rupture. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
-<p>We also compute distance-independent φ<sub>SS</sub>, which is computed as the standard deviation of all residuals, δW<sub>es</sub>, across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
+<p>We take &phi;<sub>SS</sub> to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture. We also compute the total standard deviation across all residuals from all sites. This total value is reported as <strong>ALL SITES</strong> and in summary plots/tables.</p>
+<p>We also compute distance-independent &phi;<sub>SS</sub>, which is computed as the standard deviation of all residuals, &delta;W<sub>es</sub>, across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_within_event_ss.png" alt="Example" /></p>
 <h3 id="200-km-m72-within-event-single-site-results">20.0 km M7.2 Within-event, single-site Results</h3>
@@ -749,7 +771,7 @@ img {
 <p><img src="resources/within_event_ss_m7.2_20km_std_dev.png" alt="Within-event, single-site Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>0.43</strong></td><td><strong>[0.27 0.7]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.26 0.7]</strong></td><td></td><td><strong>0.32</strong></td><td><strong>0.3</strong></td><td><strong>0.3</strong></td><td><strong>[0.15 0.59]</strong></td></tr>
@@ -761,10 +783,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.6</td><td>0.6</td><td>0.6</td><td>[0.49 0.7]</td><td></td><td>0.52</td><td>0.51</td><td>0.5</td><td>[0.41 0.69]</td><td></td><td>0.33</td><td>0.32</td><td>0.32</td><td>[0.2 0.53]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>SS</sub></th><th>Downsampled median φ<sub>SS</sub></th><th>Downsampled φ<sub>SS</sub> std. dev.</th><th>Downsampled φ<sub>SS</sub> 68% conf range</th><th>Downsampled φ<sub>SS</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.41</td><td>0.4</td><td>0.02</td><td>[0.38 0.42]</td><td>[0.36 0.43]</td></tr>
@@ -775,7 +797,7 @@ img {
 <tr><td>10</td><td>0.32</td><td>0.3</td><td>0.02</td><td>[0.28 0.33]</td><td>[0.26 0.35]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>SS</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -786,7 +808,7 @@ img {
 <tr><td><img src="resources/within_event_ss_m7.2_20km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>SS</sub> for each individual rupture, from which we compute a total φ<sub>SS</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>SS</sub> for each individual rupture, from which we compute a total &phi;<sub>SS</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -797,7 +819,7 @@ img {
 <tr><td><img src="resources/within_event_ss_m7.2_20km_10s_hist.png" alt="10s" /></td><td></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the φ<sub>SS</sub> as a function of various parameters for disaggregation.</p>
+<p>Here are plots of the &phi;<sub>SS</sub> as a function of various parameters for disaggregation.</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th><th>10s</th></tr>
@@ -812,7 +834,7 @@ img {
 <p><img src="resources/within_event_ss_m7.2_50km_std_dev.png" alt="Within-event, single-site Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.5</strong></td><td><strong>0.5</strong></td><td><strong>[0.3 0.74]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>0.46</strong></td><td><strong>[0.31 0.75]</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>[0.28 0.81]</strong></td></tr>
@@ -824,10 +846,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.64</td><td>0.63</td><td>0.64</td><td>[0.53 0.73]</td><td></td><td>0.54</td><td>0.54</td><td>0.53</td><td>[0.43 0.71]</td><td></td><td>0.45</td><td>0.44</td><td>0.43</td><td>[0.33 0.73]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>SS</sub></th><th>Downsampled median φ<sub>SS</sub></th><th>Downsampled φ<sub>SS</sub> std. dev.</th><th>Downsampled φ<sub>SS</sub> 68% conf range</th><th>Downsampled φ<sub>SS</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.48</td><td>0.45</td><td>0.02</td><td>[0.43 0.48]</td><td>[0.42 0.51]</td></tr>
@@ -838,7 +860,7 @@ img {
 <tr><td>10</td><td>0.45</td><td>0.43</td><td>0.03</td><td>[0.4 0.46]</td><td>[0.37 0.5]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>SS</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -849,7 +871,7 @@ img {
 <tr><td><img src="resources/within_event_ss_m7.2_50km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>SS</sub> for each individual rupture, from which we compute a total φ<sub>SS</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>SS</sub> for each individual rupture, from which we compute a total &phi;<sub>SS</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -860,7 +882,7 @@ img {
 <tr><td><img src="resources/within_event_ss_m7.2_50km_10s_hist.png" alt="10s" /></td><td></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the φ<sub>SS</sub> as a function of various parameters for disaggregation.</p>
+<p>Here are plots of the &phi;<sub>SS</sub> as a function of various parameters for disaggregation.</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th><th>10s</th></tr>
@@ -875,7 +897,7 @@ img {
 <p><img src="resources/within_event_ss_m7.2_100km_std_dev.png" alt="Within-event, single-site Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.53</strong></td><td><strong>0.54</strong></td><td><strong>[0.31 0.76]</strong></td><td></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>[0.38 0.76]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.29 0.82]</strong></td></tr>
@@ -887,10 +909,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.63</td><td>0.63</td><td>0.63</td><td>[0.53 0.72]</td><td></td><td>0.58</td><td>0.57</td><td>0.56</td><td>[0.46 0.76]</td><td></td><td>0.48</td><td>0.47</td><td>0.46</td><td>[0.32 0.75]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>SS</sub></th><th>Downsampled median φ<sub>SS</sub></th><th>Downsampled φ<sub>SS</sub> std. dev.</th><th>Downsampled φ<sub>SS</sub> 68% conf range</th><th>Downsampled φ<sub>SS</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.52</td><td>0.52</td><td>0.02</td><td>[0.5 0.54]</td><td>[0.48 0.56]</td></tr>
@@ -901,7 +923,7 @@ img {
 <tr><td>10</td><td>0.48</td><td>0.47</td><td>0.03</td><td>[0.45 0.51]</td><td>[0.43 0.53]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>SS</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -912,7 +934,7 @@ img {
 <tr><td><img src="resources/within_event_ss_m7.2_100km_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>SS</sub> for each individual rupture, from which we compute a total φ<sub>SS</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>SS</sub> for each individual rupture, from which we compute a total &phi;<sub>SS</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -923,7 +945,7 @@ img {
 <tr><td><img src="resources/within_event_ss_m7.2_100km_10s_hist.png" alt="10s" /></td><td></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the φ<sub>SS</sub> as a function of various parameters for disaggregation.</p>
+<p>Here are plots of the &phi;<sub>SS</sub> as a function of various parameters for disaggregation.</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th><th>10s</th></tr>
@@ -938,7 +960,7 @@ img {
 <p><img src="resources/within_event_ss_m7.2_std_dev.png" alt="Within-event, single-site Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.27 0.76]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>0.47</strong></td><td><strong>[0.26 0.76]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>0.42</strong></td><td><strong>[0.15 0.82]</strong></td></tr>
@@ -950,10 +972,10 @@ img {
 <tr><td>WNGC</td><td></td><td>0.63</td><td>0.62</td><td>0.62</td><td>[0.49 0.73]</td><td></td><td>0.55</td><td>0.54</td><td>0.54</td><td>[0.41 0.76]</td><td></td><td>0.42</td><td>0.41</td><td>0.41</td><td>[0.2 0.75]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 564 recordings. We then downsample our simulated data 100 times for each site, and compute φ<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 564 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ<sub>SS</sub></th><th>Downsampled median φ<sub>SS</sub></th><th>Downsampled φ<sub>SS</sub> std. dev.</th><th>Downsampled φ<sub>SS</sub> 68% conf range</th><th>Downsampled φ<sub>SS</sub> 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
 <tr><td>T-independent</td><td>0.47</td><td>0.47</td><td>0.01</td><td>[0.46 0.48]</td><td>[0.46 0.48]</td></tr>
@@ -964,7 +986,7 @@ img {
 <tr><td>10</td><td>0.42</td><td>0.42</td><td>0.01</td><td>[0.41 0.43]</td><td>[0.4 0.44]</td></tr>
 </tbody>
 </table>
-<p>These plots show the distribution of period-independent downsampled φ<sub>SS</sub> for each site.</p>
+<p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
 <tr><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
@@ -975,7 +997,7 @@ img {
 <tr><td><img src="resources/within_event_ss_m7.2_STNI_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_USC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_WNGC_downsampled_hist.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>Here are plots of the histogram of φ<sub>SS</sub> for each individual rupture, from which we compute a total φ<sub>SS</sub></p>
+<p>Here are plots of the histogram of &phi;<sub>SS</sub> for each individual rupture, from which we compute a total &phi;<sub>SS</sub></p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -990,7 +1012,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="within-event-variability-methodology">Within-event Variability Methodology</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<p>Within-event variability, denoted φ in Al Atik (2010), is computed separately for each:</p>
+<p>Within-event variability, denoted &phi; in Al Atik (2010), is computed separately for each:</p>
 <ul>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
@@ -998,15 +1020,15 @@ img {
 <ul>
 <li>Rupture <em>[100 unique]</em></li>
 </ul>
-<p>we compute residuals, δW<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 3888 combinations of:</p>
+<p>we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 3888 combinations of:</p>
 <ul>
 <li>Site <em>[6 unique]</em> (Singleton)</li>
 <li>Rupture Strike <em>[18 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
 <p>We subdivide residual sets such that there is only a single unique value of each quantity marked '(Singleton)' above.</p>
-<p>We take φ to be the standard deviation of all residuals, δW<sub>es</sub>, across each combination of Rupture. This is done separately for each set of sites with the same V<sub>S30</sub> value.</p>
-<p>We also compute distance-independent φ, which is computed as the standard deviation of all residuals, δW<sub>es</sub>, across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
+<p>We take &phi; to be the standard deviation of all residuals, &delta;W<sub>es</sub>, across each combination of Rupture. This is done separately for each set of sites with the same V<sub>S30</sub> value.</p>
+<p>We also compute distance-independent &phi;, which is computed as the standard deviation of all residuals, &delta;W<sub>es</sub>, across all distances. Each residual is still computed relative to the log-median ground motion at it's distance.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_within_event.png" alt="Example" /></p>
 <h3 id="200-km-m72-within-event-results">20.0 km M7.2 Within-event Results</h3>
@@ -1014,30 +1036,30 @@ img {
 <p><img src="resources/within_event_m7.2_20km_std_dev.png" alt="Within-event Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>[0.01 1.17]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.02 1.15]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.45</strong></td><td><strong>0.45</strong></td><td><strong>[0.02 1.2]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>[0.02 1.18]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.02 1.19]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.45</strong></td><td><strong>0.45</strong></td><td><strong>[0.03 1.21]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 22 recordings. We then downsample our simulated data 100 times for each site, and compute φ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 22 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 29 fewer data points.</em></p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ</th><th>Downsampled median φ</th><th>Downsampled φ std. dev.</th><th>Downsampled φ 68% conf range</th><th>Downsampled φ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.44</td><td>0.43</td><td>0.04</td><td>[0.38 0.48]</td><td>[0.34 0.53]</td></tr>
-<tr><td>3</td><td>0.46</td><td>0.44</td><td>0.08</td><td>[0.37 0.53]</td><td>[0.3 0.62]</td></tr>
-<tr><td>4</td><td>0.44</td><td>0.42</td><td>0.08</td><td>[0.34 0.49]</td><td>[0.27 0.56]</td></tr>
-<tr><td>5</td><td>0.42</td><td>0.4</td><td>0.07</td><td>[0.34 0.48]</td><td>[0.26 0.57]</td></tr>
-<tr><td>7.5</td><td>0.46</td><td>0.45</td><td>0.07</td><td>[0.38 0.52]</td><td>[0.27 0.59]</td></tr>
-<tr><td>10</td><td>0.44</td><td>0.44</td><td>0.07</td><td>[0.37 0.52]</td><td>[0.3 0.59]</td></tr>
+<tr><td>T-independent</td><td>0.44</td><td>0.43</td><td>0.05</td><td>[0.38 0.48]</td><td>[0.34 0.55]</td></tr>
+<tr><td>3</td><td>0.46</td><td>0.45</td><td>0.08</td><td>[0.37 0.53]</td><td>[0.27 0.6]</td></tr>
+<tr><td>4</td><td>0.44</td><td>0.43</td><td>0.09</td><td>[0.35 0.53]</td><td>[0.29 0.62]</td></tr>
+<tr><td>5</td><td>0.42</td><td>0.4</td><td>0.08</td><td>[0.32 0.5]</td><td>[0.24 0.58]</td></tr>
+<tr><td>7.5</td><td>0.46</td><td>0.42</td><td>0.07</td><td>[0.36 0.5]</td><td>[0.33 0.64]</td></tr>
+<tr><td>10</td><td>0.44</td><td>0.43</td><td>0.07</td><td>[0.36 0.49]</td><td>[0.31 0.57]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled φ.</p>
+<p>This plot shows the distribution of period-independent downsampled &phi;.</p>
 <p><img src="resources/within_event_m7.2_20km_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
-<p>Here are plots of the histogram of φ for each individual rupture, from which we compute a total φ</p>
+<p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -1053,30 +1075,30 @@ img {
 <p><img src="resources/within_event_m7.2_50km_std_dev.png" alt="Within-event Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>0.51</strong></td><td><strong>[0.03 1.3]</strong></td><td></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.03 1.43]</strong></td><td></td><td><strong>0.57</strong></td><td><strong>0.57</strong></td><td><strong>0.56</strong></td><td><strong>[0.04 1.44]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>0.51</strong></td><td><strong>[0.02 1.32]</strong></td><td></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.03 1.52]</strong></td><td></td><td><strong>0.57</strong></td><td><strong>0.57</strong></td><td><strong>0.56</strong></td><td><strong>[0.03 1.53]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 21 recordings. We then downsample our simulated data 100 times for each site, and compute φ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 21 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 5 fewer data points.</em></p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ</th><th>Downsampled median φ</th><th>Downsampled φ std. dev.</th><th>Downsampled φ 68% conf range</th><th>Downsampled φ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.53</td><td>0.5</td><td>0.06</td><td>[0.44 0.56]</td><td>[0.37 0.64]</td></tr>
-<tr><td>3</td><td>0.52</td><td>0.5</td><td>0.1</td><td>[0.4 0.61]</td><td>[0.31 0.71]</td></tr>
-<tr><td>4</td><td>0.5</td><td>0.46</td><td>0.08</td><td>[0.4 0.57]</td><td>[0.33 0.69]</td></tr>
-<tr><td>5</td><td>0.5</td><td>0.47</td><td>0.08</td><td>[0.39 0.56]</td><td>[0.33 0.64]</td></tr>
-<tr><td>7.5</td><td>0.56</td><td>0.53</td><td>0.1</td><td>[0.44 0.66]</td><td>[0.35 0.72]</td></tr>
-<tr><td>10</td><td>0.57</td><td>0.54</td><td>0.09</td><td>[0.46 0.65]</td><td>[0.34 0.73]</td></tr>
+<tr><td>T-independent</td><td>0.53</td><td>0.52</td><td>0.06</td><td>[0.45 0.59]</td><td>[0.41 0.66]</td></tr>
+<tr><td>3</td><td>0.52</td><td>0.53</td><td>0.1</td><td>[0.44 0.63]</td><td>[0.31 0.72]</td></tr>
+<tr><td>4</td><td>0.5</td><td>0.5</td><td>0.1</td><td>[0.39 0.59]</td><td>[0.33 0.69]</td></tr>
+<tr><td>5</td><td>0.5</td><td>0.48</td><td>0.09</td><td>[0.39 0.57]</td><td>[0.32 0.68]</td></tr>
+<tr><td>7.5</td><td>0.56</td><td>0.56</td><td>0.09</td><td>[0.46 0.64]</td><td>[0.4 0.76]</td></tr>
+<tr><td>10</td><td>0.57</td><td>0.57</td><td>0.08</td><td>[0.5 0.67]</td><td>[0.42 0.76]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled φ.</p>
+<p>This plot shows the distribution of period-independent downsampled &phi;.</p>
 <p><img src="resources/within_event_m7.2_50km_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
-<p>Here are plots of the histogram of φ for each individual rupture, from which we compute a total φ</p>
+<p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -1092,30 +1114,30 @@ img {
 <p><img src="resources/within_event_m7.2_100km_std_dev.png" alt="Within-event Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.53</strong></td><td><strong>[0.04 1.39]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.03 1.49]</strong></td><td></td><td><strong>0.59</strong></td><td><strong>0.6</strong></td><td><strong>0.59</strong></td><td><strong>[0.02 1.52]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.53</strong></td><td><strong>[0.02 1.42]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.03 1.4]</strong></td><td></td><td><strong>0.59</strong></td><td><strong>0.6</strong></td><td><strong>0.59</strong></td><td><strong>[0.04 1.55]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 17 recordings. We then downsample our simulated data 100 times for each site, and compute φ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 17 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 44 fewer data points.</em></p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ</th><th>Downsampled median φ</th><th>Downsampled φ std. dev.</th><th>Downsampled φ 68% conf range</th><th>Downsampled φ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.56</td><td>0.56</td><td>0.09</td><td>[0.47 0.68]</td><td>[0.39 0.74]</td></tr>
-<tr><td>3</td><td>0.54</td><td>0.55</td><td>0.12</td><td>[0.42 0.64]</td><td>[0.3 0.82]</td></tr>
-<tr><td>4</td><td>0.54</td><td>0.53</td><td>0.12</td><td>[0.42 0.66]</td><td>[0.33 0.81]</td></tr>
-<tr><td>5</td><td>0.54</td><td>0.54</td><td>0.12</td><td>[0.44 0.68]</td><td>[0.35 0.86]</td></tr>
-<tr><td>7.5</td><td>0.6</td><td>0.62</td><td>0.13</td><td>[0.51 0.75]</td><td>[0.33 0.86]</td></tr>
-<tr><td>10</td><td>0.59</td><td>0.59</td><td>0.12</td><td>[0.47 0.71]</td><td>[0.37 0.87]</td></tr>
+<tr><td>T-independent</td><td>0.56</td><td>0.54</td><td>0.08</td><td>[0.48 0.62]</td><td>[0.38 0.74]</td></tr>
+<tr><td>3</td><td>0.54</td><td>0.53</td><td>0.11</td><td>[0.42 0.62]</td><td>[0.35 0.85]</td></tr>
+<tr><td>4</td><td>0.54</td><td>0.52</td><td>0.1</td><td>[0.42 0.6]</td><td>[0.34 0.78]</td></tr>
+<tr><td>5</td><td>0.54</td><td>0.51</td><td>0.11</td><td>[0.42 0.61]</td><td>[0.28 0.76]</td></tr>
+<tr><td>7.5</td><td>0.6</td><td>0.59</td><td>0.11</td><td>[0.48 0.7]</td><td>[0.39 0.82]</td></tr>
+<tr><td>10</td><td>0.59</td><td>0.61</td><td>0.11</td><td>[0.47 0.7]</td><td>[0.37 0.83]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled φ.</p>
+<p>This plot shows the distribution of period-independent downsampled &phi;.</p>
 <p><img src="resources/within_event_m7.2_100km_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
-<p>Here are plots of the histogram of φ for each individual rupture, from which we compute a total φ</p>
+<p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -1131,30 +1153,30 @@ img {
 <p><img src="resources/within_event_m7.2_std_dev.png" alt="Within-event Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s φ</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
+<tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.51</strong></td><td><strong>0.49</strong></td><td><strong>[0.01 1.39]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.02 1.49]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.02 1.52]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.51</strong></td><td><strong>0.49</strong></td><td><strong>[0.02 1.42]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.02 1.52]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.03 1.55]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on φ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 93 recordings. We then downsample our simulated data 100 times for each site, and compute φ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 93 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 95 fewer data points.</em></p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full φ</th><th>Downsampled median φ</th><th>Downsampled φ std. dev.</th><th>Downsampled φ 68% conf range</th><th>Downsampled φ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.51</td><td>0.51</td><td>0.03</td><td>[0.47 0.53]</td><td>[0.43 0.57]</td></tr>
-<tr><td>3</td><td>0.51</td><td>0.49</td><td>0.05</td><td>[0.45 0.54]</td><td>[0.39 0.59]</td></tr>
-<tr><td>4</td><td>0.49</td><td>0.49</td><td>0.05</td><td>[0.42 0.53]</td><td>[0.39 0.58]</td></tr>
-<tr><td>5</td><td>0.49</td><td>0.48</td><td>0.05</td><td>[0.43 0.53]</td><td>[0.4 0.57]</td></tr>
-<tr><td>7.5</td><td>0.54</td><td>0.54</td><td>0.05</td><td>[0.49 0.58]</td><td>[0.43 0.62]</td></tr>
-<tr><td>10</td><td>0.54</td><td>0.54</td><td>0.05</td><td>[0.48 0.59]</td><td>[0.43 0.62]</td></tr>
+<tr><td>T-independent</td><td>0.51</td><td>0.5</td><td>0.03</td><td>[0.48 0.53]</td><td>[0.45 0.56]</td></tr>
+<tr><td>3</td><td>0.51</td><td>0.49</td><td>0.04</td><td>[0.44 0.53]</td><td>[0.4 0.58]</td></tr>
+<tr><td>4</td><td>0.49</td><td>0.48</td><td>0.04</td><td>[0.43 0.52]</td><td>[0.4 0.55]</td></tr>
+<tr><td>5</td><td>0.49</td><td>0.47</td><td>0.04</td><td>[0.43 0.52]</td><td>[0.39 0.58]</td></tr>
+<tr><td>7.5</td><td>0.54</td><td>0.54</td><td>0.04</td><td>[0.49 0.57]</td><td>[0.45 0.62]</td></tr>
+<tr><td>10</td><td>0.54</td><td>0.53</td><td>0.04</td><td>[0.5 0.57]</td><td>[0.45 0.62]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled φ.</p>
+<p>This plot shows the distribution of period-independent downsampled &phi;.</p>
 <p><img src="resources/within_event_m7.2_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
-<p>Here are plots of the histogram of φ for each individual rupture, from which we compute a total φ</p>
+<p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
 <table>
 <thead>
 <tr><th>3s</th><th>5s</th></tr>
@@ -1169,22 +1191,22 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="between-events-variability-methodology">Between-events Variability Methodology</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<p>Between-events variability, denoted τ in Al Atik (2010), is computed separately for each:</p>
+<p>Between-events variability, denoted &tau; in Al Atik (2010), is computed separately for each:</p>
 <ul>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
-<p>We first compute the median natural-log ground motion, δB<sub>e</sub>, for each combination of:</p>
+<p>We first compute the median natural-log ground motion, &delta;B<sub>e</sub>, for each combination of:</p>
 <ul>
 <li>Rupture <em>[100 unique]</em></li>
 </ul>
-<p>That median, δB<sub>e</sub>, is computed across all 3888 combinations of:</p>
+<p>That median, &delta;B<sub>e</sub>, is computed across all 3888 combinations of:</p>
 <ul>
 <li>Site <em>[6 unique]</em></li>
 <li>Rupture Strike <em>[18 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
-<p>We take τ to be the standard deviation of all δB<sub>e</sub>. This is done separately for each set of sites with the same V<sub>S30</sub> value. Single-site values are also reported.</p>
-<p>We also compute distance-independent τ, which we take to be the mean value across all distances.</p>
+<p>We take &tau; to be the standard deviation of all &delta;B<sub>e</sub>. This is done separately for each set of sites with the same V<sub>S30</sub> value. Single-site values are also reported.</p>
+<p>We also compute distance-independent &tau;, which we take to be the mean value across all distances.</p>
 <p>Here is an exmample with 5 rotations, which would be repeated for each combination of [Rupture]. The site is shown with a blue square, and initially oriented rupture in bold with its hypocenter as a red star and centroid a green circle. Rotations of that rupture are in gray:</p>
 <p><img src="resources/example_between_events.png" alt="Example" /></p>
 <h3 id="200-km-m72-between-events-results">20.0 km M7.2 Between-events Results</h3>
@@ -1192,10 +1214,10 @@ img {
 <p><img src="resources/between_events_m7.2_20km_std_dev.png" alt="Between-events Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
+<tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.27</strong></td><td><strong>-2.03</strong></td><td><strong>[-3.24 -0.93]</strong></td><td><strong>0.29</strong></td><td><strong>-2.76</strong></td><td><strong>[-4 -1.52]</strong></td><td><strong>0.28</strong></td><td><strong>-4.12</strong></td><td><strong>[-5.23 -3.02]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.27</strong></td><td><strong>-2.03</strong></td><td><strong>[-3.14 -0.73]</strong></td><td><strong>0.29</strong></td><td><strong>-2.76</strong></td><td><strong>[-4.01 -1.51]</strong></td><td><strong>0.28</strong></td><td><strong>-4.12</strong></td><td><strong>[-5.2 -3.04]</strong></td></tr>
 <tr><td>PAS</td><td>0.12</td><td>-3.37</td><td>[-3.78 -3.1]</td><td>0.16</td><td>-4.06</td><td>[-4.42 -3.68]</td><td>0.24</td><td>-5.01</td><td>[-5.61 -4.45]</td></tr>
 <tr><td>SBSM</td><td>0.14</td><td>-1.74</td><td>[-2.26 -1.46]</td><td>0.16</td><td>-2.86</td><td>[-3.32 -2.45]</td><td>0.18</td><td>-4.54</td><td>[-4.98 -4.08]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-2.07</td><td>[-2.41 -1.86]</td><td>0.17</td><td>-2.64</td><td>[-3.1 -2.27]</td><td>0.21</td><td>-4.06</td><td>[-4.6 -3.53]</td></tr>
@@ -1204,31 +1226,31 @@ img {
 <tr><td>WNGC</td><td>0.12</td><td>-2.15</td><td>[-2.58 -1.92]</td><td>0.17</td><td>-2.88</td><td>[-3.3 -2.52]</td><td>0.21</td><td>-4.21</td><td>[-4.71 -3.66]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on τ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute τ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full τ</th><th>Downsampled median τ</th><th>Downsampled τ std. dev.</th><th>Downsampled τ 68% conf range</th><th>Downsampled τ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.28</td><td>0.24</td><td>0.07</td><td>[0.2 0.31]</td><td>[0.13 0.43]</td></tr>
-<tr><td>3</td><td>0.27</td><td>0.25</td><td>0.1</td><td>[0.16 0.35]</td><td>[0.09 0.53]</td></tr>
-<tr><td>4</td><td>0.28</td><td>0.23</td><td>0.12</td><td>[0.14 0.38]</td><td>[0.08 0.54]</td></tr>
-<tr><td>5</td><td>0.29</td><td>0.24</td><td>0.11</td><td>[0.12 0.35]</td><td>[0.05 0.49]</td></tr>
-<tr><td>7.5</td><td>0.29</td><td>0.24</td><td>0.09</td><td>[0.15 0.35]</td><td>[0.07 0.45]</td></tr>
-<tr><td>10</td><td>0.28</td><td>0.26</td><td>0.1</td><td>[0.17 0.37]</td><td>[0.09 0.47]</td></tr>
+<tr><td>T-independent</td><td>0.28</td><td>0.26</td><td>0.07</td><td>[0.19 0.34]</td><td>[0.17 0.46]</td></tr>
+<tr><td>3</td><td>0.27</td><td>0.25</td><td>0.1</td><td>[0.17 0.36]</td><td>[0.1 0.56]</td></tr>
+<tr><td>4</td><td>0.28</td><td>0.26</td><td>0.12</td><td>[0.17 0.41]</td><td>[0.11 0.58]</td></tr>
+<tr><td>5</td><td>0.29</td><td>0.28</td><td>0.13</td><td>[0.13 0.41]</td><td>[0.07 0.64]</td></tr>
+<tr><td>7.5</td><td>0.29</td><td>0.25</td><td>0.09</td><td>[0.16 0.36]</td><td>[0.07 0.45]</td></tr>
+<tr><td>10</td><td>0.28</td><td>0.23</td><td>0.12</td><td>[0.14 0.35]</td><td>[0.07 0.63]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled τ.</p>
+<p>This plot shows the distribution of period-independent downsampled &tau;.</p>
 <p><img src="resources/between_events_m7.2_20km_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
 <h3 id="500-km-m72-between-events-results">50.0 km M7.2 Between-events Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/between_events_m7.2_50km_std_dev.png" alt="Between-events Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
+<tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.29</strong></td><td><strong>-2.81</strong></td><td><strong>[-4.06 -1.34]</strong></td><td><strong>0.32</strong></td><td><strong>-3.34</strong></td><td><strong>[-4.66 -1.41]</strong></td><td><strong>0.34</strong></td><td><strong>-4.69</strong></td><td><strong>[-5.92 -3.21]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.29</strong></td><td><strong>-2.81</strong></td><td><strong>[-3.99 -1.29]</strong></td><td><strong>0.32</strong></td><td><strong>-3.34</strong></td><td><strong>[-4.6 -1.93]</strong></td><td><strong>0.34</strong></td><td><strong>-4.69</strong></td><td><strong>[-5.89 -3.36]</strong></td></tr>
 <tr><td>PAS</td><td>0.11</td><td>-4.27</td><td>[-4.64 -4.05]</td><td>0.16</td><td>-4.78</td><td>[-5.17 -4.38]</td><td>0.23</td><td>-5.62</td><td>[-6.2 -5.03]</td></tr>
 <tr><td>SBSM</td><td>0.13</td><td>-2.43</td><td>[-2.83 -2.14]</td><td>0.17</td><td>-3.51</td><td>[-3.98 -3.12]</td><td>0.17</td><td>-5.16</td><td>[-5.59 -4.73]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-2.94</td><td>[-3.29 -2.75]</td><td>0.16</td><td>-3.4</td><td>[-3.8 -2.97]</td><td>0.2</td><td>-4.71</td><td>[-5.23 -4.12]</td></tr>
@@ -1237,31 +1259,31 @@ img {
 <tr><td>WNGC</td><td>0.11</td><td>-3</td><td>[-3.36 -2.77]</td><td>0.18</td><td>-3.46</td><td>[-3.88 -3.02]</td><td>0.21</td><td>-4.77</td><td>[-5.29 -4.14]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on τ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute τ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full τ</th><th>Downsampled median τ</th><th>Downsampled τ std. dev.</th><th>Downsampled τ 68% conf range</th><th>Downsampled τ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.32</td><td>0.29</td><td>0.08</td><td>[0.23 0.38]</td><td>[0.19 0.53]</td></tr>
-<tr><td>3</td><td>0.29</td><td>0.28</td><td>0.12</td><td>[0.2 0.41]</td><td>[0.1 0.64]</td></tr>
-<tr><td>4</td><td>0.31</td><td>0.31</td><td>0.12</td><td>[0.19 0.41]</td><td>[0.1 0.58]</td></tr>
-<tr><td>5</td><td>0.32</td><td>0.3</td><td>0.12</td><td>[0.2 0.42]</td><td>[0.07 0.58]</td></tr>
-<tr><td>7.5</td><td>0.34</td><td>0.31</td><td>0.13</td><td>[0.2 0.44]</td><td>[0.08 0.64]</td></tr>
-<tr><td>10</td><td>0.34</td><td>0.29</td><td>0.14</td><td>[0.18 0.45]</td><td>[0.09 0.65]</td></tr>
+<tr><td>T-independent</td><td>0.32</td><td>0.33</td><td>0.09</td><td>[0.24 0.4]</td><td>[0.16 0.52]</td></tr>
+<tr><td>3</td><td>0.29</td><td>0.3</td><td>0.14</td><td>[0.16 0.44]</td><td>[0.07 0.6]</td></tr>
+<tr><td>4</td><td>0.31</td><td>0.34</td><td>0.12</td><td>[0.21 0.45]</td><td>[0.1 0.59]</td></tr>
+<tr><td>5</td><td>0.32</td><td>0.34</td><td>0.13</td><td>[0.2 0.49]</td><td>[0.1 0.61]</td></tr>
+<tr><td>7.5</td><td>0.34</td><td>0.29</td><td>0.15</td><td>[0.18 0.47]</td><td>[0.04 0.68]</td></tr>
+<tr><td>10</td><td>0.34</td><td>0.33</td><td>0.14</td><td>[0.19 0.49]</td><td>[0.11 0.62]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled τ.</p>
+<p>This plot shows the distribution of period-independent downsampled &tau;.</p>
 <p><img src="resources/between_events_m7.2_50km_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
 <h3 id="1000-km-m72-between-events-results">100.0 km M7.2 Between-events Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/between_events_m7.2_100km_std_dev.png" alt="Between-events Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
+<tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.32</strong></td><td><strong>-3.43</strong></td><td><strong>[-4.48 -1.68]</strong></td><td><strong>0.34</strong></td><td><strong>-3.89</strong></td><td><strong>[-5.18 -2.31]</strong></td><td><strong>0.36</strong></td><td><strong>-5.17</strong></td><td><strong>[-6.54 -3.66]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.32</strong></td><td><strong>-3.43</strong></td><td><strong>[-4.53 -1.96]</strong></td><td><strong>0.34</strong></td><td><strong>-3.89</strong></td><td><strong>[-5.29 -2.35]</strong></td><td><strong>0.35</strong></td><td><strong>-5.17</strong></td><td><strong>[-6.56 -3.53]</strong></td></tr>
 <tr><td>PAS</td><td>0.11</td><td>-4.83</td><td>[-5.2 -4.6]</td><td>0.15</td><td>-5.32</td><td>[-5.68 -4.95]</td><td>0.24</td><td>-6.07</td><td>[-6.7 -5.56]</td></tr>
 <tr><td>SBSM</td><td>0.13</td><td>-3.1</td><td>[-3.51 -2.79]</td><td>0.16</td><td>-4.09</td><td>[-4.54 -3.69]</td><td>0.18</td><td>-5.67</td><td>[-6.08 -5.27]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-3.62</td><td>[-3.96 -3.4]</td><td>0.17</td><td>-3.9</td><td>[-4.3 -3.5]</td><td>0.21</td><td>-5.19</td><td>[-5.75 -4.68]</td></tr>
@@ -1270,31 +1292,31 @@ img {
 <tr><td>WNGC</td><td>0.11</td><td>-3.59</td><td>[-3.96 -3.32]</td><td>0.17</td><td>-4.02</td><td>[-4.39 -3.63]</td><td>0.22</td><td>-5.24</td><td>[-5.79 -4.78]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on τ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute τ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full τ</th><th>Downsampled median τ</th><th>Downsampled τ std. dev.</th><th>Downsampled τ 68% conf range</th><th>Downsampled τ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.34</td><td>0.29</td><td>0.1</td><td>[0.2 0.4]</td><td>[0.13 0.57]</td></tr>
-<tr><td>3</td><td>0.32</td><td>0.26</td><td>0.14</td><td>[0.13 0.38]</td><td>[0.06 0.65]</td></tr>
-<tr><td>4</td><td>0.33</td><td>0.29</td><td>0.16</td><td>[0.12 0.46]</td><td>[0.05 0.64]</td></tr>
-<tr><td>5</td><td>0.34</td><td>0.27</td><td>0.16</td><td>[0.16 0.5]</td><td>[0.05 0.63]</td></tr>
-<tr><td>7.5</td><td>0.36</td><td>0.29</td><td>0.16</td><td>[0.15 0.5]</td><td>[0.05 0.73]</td></tr>
-<tr><td>10</td><td>0.36</td><td>0.29</td><td>0.15</td><td>[0.14 0.49]</td><td>[0.08 0.66]</td></tr>
+<tr><td>T-independent</td><td>0.34</td><td>0.28</td><td>0.09</td><td>[0.19 0.39]</td><td>[0.15 0.5]</td></tr>
+<tr><td>3</td><td>0.32</td><td>0.28</td><td>0.14</td><td>[0.13 0.42]</td><td>[0.05 0.58]</td></tr>
+<tr><td>4</td><td>0.33</td><td>0.28</td><td>0.16</td><td>[0.11 0.46]</td><td>[0.05 0.66]</td></tr>
+<tr><td>5</td><td>0.34</td><td>0.3</td><td>0.14</td><td>[0.16 0.45]</td><td>[0.07 0.61]</td></tr>
+<tr><td>7.5</td><td>0.36</td><td>0.27</td><td>0.15</td><td>[0.14 0.44]</td><td>[0.06 0.66]</td></tr>
+<tr><td>10</td><td>0.35</td><td>0.28</td><td>0.15</td><td>[0.15 0.44]</td><td>[0.05 0.65]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled τ.</p>
+<p>This plot shows the distribution of period-independent downsampled &tau;.</p>
 <p><img src="resources/between_events_m7.2_100km_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
 <h3 id="all-distances-m72-between-events-results">All Distances M7.2 Between-events Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/between_events_m7.2_std_dev.png" alt="Between-events Variability" /></p>
 <table>
 <thead>
-<tr><th>Site</th><th>3s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>5s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th><th>10s τ</th><th>Mean δB<sub>e</sub></th><th>δB<sub>e</sub> Range</th></tr>
+<tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.29</strong></td><td><strong>-2.76</strong></td><td><strong>[-4.48 -0.93]</strong></td><td><strong>0.32</strong></td><td><strong>-3.33</strong></td><td><strong>[-5.18 -1.41]</strong></td><td><strong>0.33</strong></td><td><strong>-4.66</strong></td><td><strong>[-6.54 -3.02]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.29</strong></td><td><strong>-2.76</strong></td><td><strong>[-4.53 -0.73]</strong></td><td><strong>0.32</strong></td><td><strong>-3.33</strong></td><td><strong>[-5.29 -1.51]</strong></td><td><strong>0.33</strong></td><td><strong>-4.66</strong></td><td><strong>[-6.56 -3.04]</strong></td></tr>
 <tr><td>PAS</td><td>0.11</td><td>-4.16</td><td>[-5.2 -3.1]</td><td>0.16</td><td>-4.72</td><td>[-5.68 -3.68]</td><td>0.24</td><td>-5.57</td><td>[-6.7 -4.45]</td></tr>
 <tr><td>SBSM</td><td>0.13</td><td>-2.42</td><td>[-3.51 -1.46]</td><td>0.17</td><td>-3.49</td><td>[-4.54 -2.45]</td><td>0.18</td><td>-5.12</td><td>[-6.08 -4.08]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-2.88</td><td>[-3.96 -1.86]</td><td>0.17</td><td>-3.31</td><td>[-4.3 -2.27]</td><td>0.21</td><td>-4.65</td><td>[-5.75 -3.53]</td></tr>
@@ -1303,21 +1325,21 @@ img {
 <tr><td>WNGC</td><td>0.12</td><td>-2.91</td><td>[-3.96 -1.92]</td><td>0.17</td><td>-3.45</td><td>[-4.39 -2.52]</td><td>0.21</td><td>-4.74</td><td>[-5.79 -3.66]</td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on τ through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 564 recordings. We then downsample our simulated data 100 times for each site, and compute τ from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p>We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 564 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
 <table>
 <thead>
-<tr><th>Period (s)</th><th>Full τ</th><th>Downsampled median τ</th><th>Downsampled τ std. dev.</th><th>Downsampled τ 68% conf range</th><th>Downsampled τ 95% conf range</th></tr>
+<tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.32</td><td>0.31</td><td>0.03</td><td>[0.28 0.34]</td><td>[0.24 0.38]</td></tr>
-<tr><td>3</td><td>0.29</td><td>0.29</td><td>0.05</td><td>[0.25 0.35]</td><td>[0.2 0.41]</td></tr>
-<tr><td>4</td><td>0.31</td><td>0.3</td><td>0.05</td><td>[0.25 0.35]</td><td>[0.21 0.39]</td></tr>
-<tr><td>5</td><td>0.32</td><td>0.3</td><td>0.05</td><td>[0.25 0.36]</td><td>[0.22 0.44]</td></tr>
-<tr><td>7.5</td><td>0.33</td><td>0.32</td><td>0.06</td><td>[0.26 0.39]</td><td>[0.21 0.46]</td></tr>
-<tr><td>10</td><td>0.33</td><td>0.32</td><td>0.06</td><td>[0.26 0.38]</td><td>[0.21 0.45]</td></tr>
+<tr><td>T-independent</td><td>0.31</td><td>0.31</td><td>0.04</td><td>[0.28 0.36]</td><td>[0.24 0.39]</td></tr>
+<tr><td>3</td><td>0.29</td><td>0.29</td><td>0.05</td><td>[0.23 0.34]</td><td>[0.2 0.41]</td></tr>
+<tr><td>4</td><td>0.31</td><td>0.3</td><td>0.06</td><td>[0.25 0.36]</td><td>[0.19 0.43]</td></tr>
+<tr><td>5</td><td>0.32</td><td>0.32</td><td>0.06</td><td>[0.25 0.38]</td><td>[0.2 0.44]</td></tr>
+<tr><td>7.5</td><td>0.33</td><td>0.34</td><td>0.06</td><td>[0.27 0.39]</td><td>[0.2 0.45]</td></tr>
+<tr><td>10</td><td>0.33</td><td>0.34</td><td>0.06</td><td>[0.27 0.4]</td><td>[0.22 0.46]</td></tr>
 </tbody>
 </table>
-<p>This plot shows the distribution of period-independent downsampled τ.</p>
+<p>This plot shows the distribution of period-independent downsampled &tau;.</p>
 <p><img src="resources/between_events_m7.2_downsampled_hist.png" alt="Dowmsampled Histogram" /></p>
 <h2 id="azumth-dependence">Azumth Dependence</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
@@ -1330,10 +1352,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1344,10 +1366,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1360,10 +1382,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1374,10 +1396,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1390,10 +1412,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1404,10 +1426,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1420,10 +1442,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1434,10 +1456,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1450,10 +1472,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1464,10 +1486,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1480,10 +1502,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1494,10 +1516,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1510,10 +1532,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>P2P</sub></strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1524,10 +1546,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>τ</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>s</sub></strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>φ<sub>SS</sub></strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>φ</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&tau;</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
