@@ -203,10 +203,10 @@ img {
 <tr><td>Within-event</td><td>&phi;</td><td>50 km</td><td>0.66</td><td>0.7</td><td>0.66</td><td>0.59</td></tr>
 <tr><td>Within-event</td><td>&phi;</td><td>100 km</td><td>0.69</td><td>0.71</td><td>0.71</td><td>0.61</td></tr>
 <tr><td>Within-event</td><td>&phi;</td><td>(all)</td><td>0.65</td><td>0.69</td><td>0.66</td><td>0.58</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>20 km</td><td>0.31</td><td>0.3</td><td>0.32</td><td>0.3</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>50 km</td><td>0.33</td><td>0.32</td><td>0.35</td><td>0.32</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>100 km</td><td>0.35</td><td>0.32</td><td>0.35</td><td>0.36</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>(all)</td><td>0.33</td><td>0.31</td><td>0.34</td><td>0.33</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>20 km</td><td>0.24</td><td>0.23</td><td>0.25</td><td>0.24</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>50 km</td><td>0.25</td><td>0.22</td><td>0.27</td><td>0.25</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>100 km</td><td>0.24</td><td>0.2</td><td>0.25</td><td>0.28</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>(all)</td><td>0.25</td><td>0.21</td><td>0.25</td><td>0.26</td></tr>
 </tbody>
 </table>
 <h3 id="gmpe-table">GMPE Table</h3>
@@ -1044,22 +1044,22 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>[0.01 1.15]</strong></td><td></td><td><strong>0.41</strong></td><td><strong>0.4</strong></td><td><strong>0.39</strong></td><td><strong>[0.02 1.16]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.45</strong></td><td><strong>0.43</strong></td><td><strong>[0.03 1.22]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>[0.02 1.1]</strong></td><td></td><td><strong>0.41</strong></td><td><strong>0.4</strong></td><td><strong>0.39</strong></td><td><strong>[0.02 1.25]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.45</strong></td><td><strong>0.43</strong></td><td><strong>[0.03 1.19]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 24 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
-<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 81 fewer data points.</em></p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 20 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 85 fewer data points.</em></p>
 <table>
 <thead>
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.42</td><td>0.41</td><td>0.05</td><td>[0.37 0.47]</td><td>[0.33 0.54]</td></tr>
-<tr><td>3</td><td>0.39</td><td>0.38</td><td>0.07</td><td>[0.31 0.45]</td><td>[0.26 0.53]</td></tr>
-<tr><td>4</td><td>0.38</td><td>0.38</td><td>0.08</td><td>[0.3 0.45]</td><td>[0.24 0.55]</td></tr>
-<tr><td>5</td><td>0.41</td><td>0.4</td><td>0.08</td><td>[0.32 0.48]</td><td>[0.27 0.56]</td></tr>
-<tr><td>7.5</td><td>0.48</td><td>0.47</td><td>0.09</td><td>[0.38 0.58]</td><td>[0.33 0.69]</td></tr>
-<tr><td>10</td><td>0.44</td><td>0.44</td><td>0.07</td><td>[0.36 0.5]</td><td>[0.3 0.63]</td></tr>
+<tr><td>T-independent</td><td>0.42</td><td>0.43</td><td>0.05</td><td>[0.38 0.47]</td><td>[0.32 0.56]</td></tr>
+<tr><td>3</td><td>0.39</td><td>0.39</td><td>0.07</td><td>[0.31 0.45]</td><td>[0.25 0.52]</td></tr>
+<tr><td>4</td><td>0.38</td><td>0.38</td><td>0.07</td><td>[0.32 0.47]</td><td>[0.27 0.58]</td></tr>
+<tr><td>5</td><td>0.41</td><td>0.4</td><td>0.08</td><td>[0.33 0.49]</td><td>[0.25 0.59]</td></tr>
+<tr><td>7.5</td><td>0.48</td><td>0.5</td><td>0.08</td><td>[0.41 0.56]</td><td>[0.3 0.67]</td></tr>
+<tr><td>10</td><td>0.44</td><td>0.45</td><td>0.07</td><td>[0.37 0.51]</td><td>[0.32 0.63]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1083,22 +1083,22 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>[0.02 1.26]</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.44</strong></td><td><strong>[0.03 1.31]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>[0.03 1.35]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>[0.03 1.28]</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.44</strong></td><td><strong>[0.02 1.4]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>[0.04 1.48]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 20 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
-<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 61 fewer data points.</em></p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 17 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 64 fewer data points.</em></p>
 <table>
 <thead>
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.48</td><td>0.45</td><td>0.07</td><td>[0.39 0.54]</td><td>[0.35 0.6]</td></tr>
-<tr><td>3</td><td>0.46</td><td>0.44</td><td>0.08</td><td>[0.36 0.55]</td><td>[0.27 0.61]</td></tr>
-<tr><td>4</td><td>0.44</td><td>0.43</td><td>0.09</td><td>[0.32 0.5]</td><td>[0.28 0.65]</td></tr>
-<tr><td>5</td><td>0.46</td><td>0.44</td><td>0.11</td><td>[0.34 0.58]</td><td>[0.23 0.66]</td></tr>
-<tr><td>7.5</td><td>0.53</td><td>0.5</td><td>0.1</td><td>[0.4 0.61]</td><td>[0.35 0.7]</td></tr>
-<tr><td>10</td><td>0.49</td><td>0.47</td><td>0.09</td><td>[0.38 0.58]</td><td>[0.32 0.67]</td></tr>
+<tr><td>T-independent</td><td>0.48</td><td>0.46</td><td>0.07</td><td>[0.4 0.53]</td><td>[0.35 0.61]</td></tr>
+<tr><td>3</td><td>0.46</td><td>0.43</td><td>0.08</td><td>[0.33 0.51]</td><td>[0.29 0.6]</td></tr>
+<tr><td>4</td><td>0.44</td><td>0.42</td><td>0.09</td><td>[0.33 0.51]</td><td>[0.24 0.6]</td></tr>
+<tr><td>5</td><td>0.46</td><td>0.45</td><td>0.09</td><td>[0.34 0.54]</td><td>[0.28 0.63]</td></tr>
+<tr><td>7.5</td><td>0.53</td><td>0.51</td><td>0.1</td><td>[0.42 0.61]</td><td>[0.34 0.75]</td></tr>
+<tr><td>10</td><td>0.49</td><td>0.47</td><td>0.1</td><td>[0.41 0.58]</td><td>[0.33 0.72]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1122,22 +1122,22 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.49</strong></td><td><strong>0.47</strong></td><td><strong>[0.03 1.45]</strong></td><td></td><td><strong>0.5</strong></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>[0.02 1.4]</strong></td><td></td><td><strong>0.53</strong></td><td><strong>0.53</strong></td><td><strong>0.52</strong></td><td><strong>[0.03 1.48]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.02 1.47]</strong></td><td></td><td><strong>0.5</strong></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>[0.02 1.3]</strong></td><td></td><td><strong>0.53</strong></td><td><strong>0.53</strong></td><td><strong>0.52</strong></td><td><strong>[0.01 1.52]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 18 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
-<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 127 fewer data points.</em></p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 15 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 130 fewer data points.</em></p>
 <table>
 <thead>
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.52</td><td>0.51</td><td>0.08</td><td>[0.45 0.6]</td><td>[0.37 0.74]</td></tr>
-<tr><td>3</td><td>0.49</td><td>0.48</td><td>0.11</td><td>[0.38 0.6]</td><td>[0.31 0.74]</td></tr>
-<tr><td>4</td><td>0.49</td><td>0.48</td><td>0.11</td><td>[0.39 0.62]</td><td>[0.29 0.75]</td></tr>
-<tr><td>5</td><td>0.5</td><td>0.51</td><td>0.11</td><td>[0.41 0.61]</td><td>[0.34 0.78]</td></tr>
-<tr><td>7.5</td><td>0.57</td><td>0.56</td><td>0.12</td><td>[0.47 0.7]</td><td>[0.34 0.86]</td></tr>
-<tr><td>10</td><td>0.53</td><td>0.52</td><td>0.12</td><td>[0.43 0.68]</td><td>[0.28 0.81]</td></tr>
+<tr><td>T-independent</td><td>0.52</td><td>0.52</td><td>0.06</td><td>[0.45 0.57]</td><td>[0.38 0.65]</td></tr>
+<tr><td>3</td><td>0.49</td><td>0.49</td><td>0.1</td><td>[0.39 0.6]</td><td>[0.32 0.72]</td></tr>
+<tr><td>4</td><td>0.49</td><td>0.48</td><td>0.11</td><td>[0.36 0.59]</td><td>[0.27 0.74]</td></tr>
+<tr><td>5</td><td>0.5</td><td>0.51</td><td>0.09</td><td>[0.41 0.61]</td><td>[0.32 0.69]</td></tr>
+<tr><td>7.5</td><td>0.57</td><td>0.58</td><td>0.1</td><td>[0.45 0.66]</td><td>[0.38 0.79]</td></tr>
+<tr><td>10</td><td>0.53</td><td>0.53</td><td>0.09</td><td>[0.42 0.6]</td><td>[0.34 0.75]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1161,22 +1161,22 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>[0.01 1.45]</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>[0.02 1.4]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.03 1.48]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>[0.02 1.47]</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>[0.02 1.4]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.01 1.52]</strong></td></tr>
 </tbody>
 </table>
-<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and all distances. We throw out any events with only 1 recording, leaving us with 7 events and a total of 102 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
-<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 348 fewer data points.</em></p>
+<p>We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and all distances. We throw out any events with only 1 recording, leaving us with 7 events and a total of 87 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.</p>
+<p><em>WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 363 fewer data points.</em></p>
 <table>
 <thead>
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.47</td><td>0.46</td><td>0.03</td><td>[0.43 0.49]</td><td>[0.4 0.51]</td></tr>
-<tr><td>3</td><td>0.45</td><td>0.42</td><td>0.05</td><td>[0.38 0.46]</td><td>[0.35 0.54]</td></tr>
-<tr><td>4</td><td>0.44</td><td>0.42</td><td>0.04</td><td>[0.39 0.47]</td><td>[0.35 0.51]</td></tr>
-<tr><td>5</td><td>0.46</td><td>0.45</td><td>0.04</td><td>[0.4 0.48]</td><td>[0.37 0.52]</td></tr>
-<tr><td>7.5</td><td>0.53</td><td>0.52</td><td>0.04</td><td>[0.48 0.56]</td><td>[0.43 0.59]</td></tr>
-<tr><td>10</td><td>0.49</td><td>0.48</td><td>0.04</td><td>[0.45 0.52]</td><td>[0.41 0.55]</td></tr>
+<tr><td>T-independent</td><td>0.47</td><td>0.45</td><td>0.03</td><td>[0.42 0.49]</td><td>[0.4 0.51]</td></tr>
+<tr><td>3</td><td>0.45</td><td>0.42</td><td>0.04</td><td>[0.38 0.47]</td><td>[0.34 0.51]</td></tr>
+<tr><td>4</td><td>0.44</td><td>0.42</td><td>0.04</td><td>[0.39 0.46]</td><td>[0.34 0.5]</td></tr>
+<tr><td>5</td><td>0.46</td><td>0.44</td><td>0.04</td><td>[0.41 0.49]</td><td>[0.38 0.54]</td></tr>
+<tr><td>7.5</td><td>0.53</td><td>0.51</td><td>0.05</td><td>[0.46 0.56]</td><td>[0.41 0.61]</td></tr>
+<tr><td>10</td><td>0.49</td><td>0.47</td><td>0.04</td><td>[0.43 0.51]</td><td>[0.39 0.55]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1222,7 +1222,7 @@ img {
 <tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.31</strong></td><td><strong>-3.35</strong></td><td><strong>[-4.51 -2.03]</strong></td><td><strong>0.33</strong></td><td><strong>-4.02</strong></td><td><strong>[-5.29 -2.7]</strong></td><td><strong>0.32</strong></td><td><strong>-5.45</strong></td><td><strong>[-6.7 -4.24]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.23</strong></td><td><strong>-3.34</strong></td><td><strong>[-3.86 -2.8]</strong></td><td><strong>0.25</strong></td><td><strong>-4.02</strong></td><td><strong>[-4.63 -3.42]</strong></td><td><strong>0.25</strong></td><td><strong>-5.45</strong></td><td><strong>[-6.14 -4.89]</strong></td></tr>
 <tr><td>PAS</td><td>0.2</td><td>-4.73</td><td>[-5.21 -4.23]</td><td>0.24</td><td>-5.27</td><td>[-5.88 -4.65]</td><td>0.27</td><td>-6.39</td><td>[-7.07 -5.79]</td></tr>
 <tr><td>SBSM</td><td>0.28</td><td>-3.19</td><td>[-3.85 -2.5]</td><td>0.27</td><td>-4.2</td><td>[-4.85 -3.5]</td><td>0.22</td><td>-5.94</td><td>[-6.64 -5.51]</td></tr>
 <tr><td>SMCA</td><td>0.21</td><td>-3.36</td><td>[-3.8 -2.83]</td><td>0.25</td><td>-3.86</td><td>[-4.53 -3.25]</td><td>0.25</td><td>-5.38</td><td>[-6.04 -4.81]</td></tr>
@@ -1237,12 +1237,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.33</td><td>0.3</td><td>0.09</td><td>[0.23 0.41]</td><td>[0.18 0.5]</td></tr>
-<tr><td>3</td><td>0.31</td><td>0.28</td><td>0.13</td><td>[0.2 0.43]</td><td>[0.1 0.59]</td></tr>
-<tr><td>4</td><td>0.33</td><td>0.29</td><td>0.13</td><td>[0.21 0.45]</td><td>[0.09 0.62]</td></tr>
-<tr><td>5</td><td>0.33</td><td>0.29</td><td>0.13</td><td>[0.19 0.45]</td><td>[0.09 0.58]</td></tr>
-<tr><td>7.5</td><td>0.35</td><td>0.33</td><td>0.14</td><td>[0.17 0.45]</td><td>[0.08 0.65]</td></tr>
-<tr><td>10</td><td>0.32</td><td>0.3</td><td>0.13</td><td>[0.16 0.43]</td><td>[0.07 0.6]</td></tr>
+<tr><td>T-independent</td><td>0.25</td><td>0.26</td><td>0.06</td><td>[0.19 0.32]</td><td>[0.14 0.39]</td></tr>
+<tr><td>3</td><td>0.23</td><td>0.24</td><td>0.1</td><td>[0.14 0.35]</td><td>[0.07 0.44]</td></tr>
+<tr><td>4</td><td>0.25</td><td>0.24</td><td>0.1</td><td>[0.15 0.37]</td><td>[0.06 0.48]</td></tr>
+<tr><td>5</td><td>0.25</td><td>0.27</td><td>0.1</td><td>[0.15 0.36]</td><td>[0.08 0.49]</td></tr>
+<tr><td>7.5</td><td>0.27</td><td>0.26</td><td>0.1</td><td>[0.17 0.4]</td><td>[0.09 0.49]</td></tr>
+<tr><td>10</td><td>0.25</td><td>0.26</td><td>0.11</td><td>[0.14 0.37]</td><td>[0.07 0.47]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1255,7 +1255,7 @@ img {
 <tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.34</strong></td><td><strong>-4.14</strong></td><td><strong>[-5.49 -2.57]</strong></td><td><strong>0.37</strong></td><td><strong>-4.63</strong></td><td><strong>[-6.05 -3.13]</strong></td><td><strong>0.34</strong></td><td><strong>-6.07</strong></td><td><strong>[-7.45 -4.61]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.23</strong></td><td><strong>-4.14</strong></td><td><strong>[-4.62 -3.6]</strong></td><td><strong>0.27</strong></td><td><strong>-4.63</strong></td><td><strong>[-5.35 -3.9]</strong></td><td><strong>0.26</strong></td><td><strong>-6.07</strong></td><td><strong>[-6.8 -5.37]</strong></td></tr>
 <tr><td>PAS</td><td>0.22</td><td>-5.57</td><td>[-6.05 -5.03]</td><td>0.27</td><td>-5.92</td><td>[-6.59 -5.19]</td><td>0.29</td><td>-6.99</td><td>[-7.74 -6.19]</td></tr>
 <tr><td>SBSM</td><td>0.31</td><td>-3.89</td><td>[-4.53 -3.2]</td><td>0.28</td><td>-4.83</td><td>[-5.55 -4.08]</td><td>0.23</td><td>-6.55</td><td>[-7.26 -6]</td></tr>
 <tr><td>SMCA</td><td>0.19</td><td>-4.26</td><td>[-4.68 -3.79]</td><td>0.26</td><td>-4.61</td><td>[-5.25 -3.88]</td><td>0.25</td><td>-6.04</td><td>[-6.73 -5.34]</td></tr>
@@ -1270,12 +1270,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.35</td><td>0.33</td><td>0.09</td><td>[0.24 0.44]</td><td>[0.19 0.54]</td></tr>
-<tr><td>3</td><td>0.34</td><td>0.3</td><td>0.15</td><td>[0.18 0.48]</td><td>[0.12 0.68]</td></tr>
-<tr><td>4</td><td>0.36</td><td>0.33</td><td>0.15</td><td>[0.19 0.5]</td><td>[0.1 0.67]</td></tr>
-<tr><td>5</td><td>0.37</td><td>0.35</td><td>0.15</td><td>[0.2 0.52]</td><td>[0.12 0.67]</td></tr>
-<tr><td>7.5</td><td>0.35</td><td>0.33</td><td>0.12</td><td>[0.22 0.47]</td><td>[0.15 0.66]</td></tr>
-<tr><td>10</td><td>0.34</td><td>0.32</td><td>0.13</td><td>[0.21 0.49]</td><td>[0.09 0.59]</td></tr>
+<tr><td>T-independent</td><td>0.25</td><td>0.29</td><td>0.09</td><td>[0.22 0.4]</td><td>[0.14 0.46]</td></tr>
+<tr><td>3</td><td>0.23</td><td>0.28</td><td>0.13</td><td>[0.18 0.43]</td><td>[0.08 0.61]</td></tr>
+<tr><td>4</td><td>0.26</td><td>0.31</td><td>0.12</td><td>[0.18 0.41]</td><td>[0.08 0.62]</td></tr>
+<tr><td>5</td><td>0.27</td><td>0.3</td><td>0.14</td><td>[0.17 0.44]</td><td>[0.1 0.59]</td></tr>
+<tr><td>7.5</td><td>0.25</td><td>0.29</td><td>0.13</td><td>[0.17 0.44]</td><td>[0.07 0.64]</td></tr>
+<tr><td>10</td><td>0.26</td><td>0.27</td><td>0.14</td><td>[0.13 0.4]</td><td>[0.04 0.57]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1288,7 +1288,7 @@ img {
 <tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.34</strong></td><td><strong>-4.77</strong></td><td><strong>[-6.03 -3.14]</strong></td><td><strong>0.37</strong></td><td><strong>-5.23</strong></td><td><strong>[-6.65 -3.67]</strong></td><td><strong>0.38</strong></td><td><strong>-6.52</strong></td><td><strong>[-7.85 -5.18]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.2</strong></td><td><strong>-4.77</strong></td><td><strong>[-5.24 -4.3]</strong></td><td><strong>0.25</strong></td><td><strong>-5.23</strong></td><td><strong>[-5.83 -4.57]</strong></td><td><strong>0.29</strong></td><td><strong>-6.52</strong></td><td><strong>[-7.22 -5.76]</strong></td></tr>
 <tr><td>PAS</td><td>0.2</td><td>-6.17</td><td>[-6.6 -5.73]</td><td>0.24</td><td>-6.57</td><td>[-7.14 -5.92]</td><td>0.32</td><td>-7.39</td><td>[-8.13 -6.57]</td></tr>
 <tr><td>SBSM</td><td>0.3</td><td>-4.6</td><td>[-5.16 -3.87]</td><td>0.26</td><td>-5.51</td><td>[-6.2 -4.87]</td><td>0.25</td><td>-7.03</td><td>[-7.71 -6.4]</td></tr>
 <tr><td>SMCA</td><td>0.18</td><td>-4.86</td><td>[-5.27 -4.5]</td><td>0.24</td><td>-5.18</td><td>[-5.72 -4.54]</td><td>0.3</td><td>-6.48</td><td>[-7.22 -5.71]</td></tr>
@@ -1303,12 +1303,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.37</td><td>0.32</td><td>0.11</td><td>[0.21 0.43]</td><td>[0.15 0.56]</td></tr>
-<tr><td>3</td><td>0.34</td><td>0.27</td><td>0.15</td><td>[0.12 0.45]</td><td>[0.04 0.58]</td></tr>
-<tr><td>4</td><td>0.37</td><td>0.32</td><td>0.17</td><td>[0.15 0.53]</td><td>[0.06 0.7]</td></tr>
-<tr><td>5</td><td>0.37</td><td>0.31</td><td>0.18</td><td>[0.15 0.54]</td><td>[0.04 0.74]</td></tr>
-<tr><td>7.5</td><td>0.38</td><td>0.33</td><td>0.17</td><td>[0.16 0.51]</td><td>[0.08 0.77]</td></tr>
-<tr><td>10</td><td>0.38</td><td>0.31</td><td>0.19</td><td>[0.15 0.51]</td><td>[0.06 0.81]</td></tr>
+<tr><td>T-independent</td><td>0.25</td><td>0.27</td><td>0.1</td><td>[0.19 0.35]</td><td>[0.09 0.5]</td></tr>
+<tr><td>3</td><td>0.2</td><td>0.21</td><td>0.12</td><td>[0.1 0.34]</td><td>[0.03 0.47]</td></tr>
+<tr><td>4</td><td>0.24</td><td>0.24</td><td>0.12</td><td>[0.13 0.4]</td><td>[0.03 0.48]</td></tr>
+<tr><td>5</td><td>0.25</td><td>0.24</td><td>0.15</td><td>[0.11 0.42]</td><td>[0.02 0.59]</td></tr>
+<tr><td>7.5</td><td>0.26</td><td>0.32</td><td>0.15</td><td>[0.15 0.49]</td><td>[0.03 0.63]</td></tr>
+<tr><td>10</td><td>0.29</td><td>0.33</td><td>0.16</td><td>[0.16 0.5]</td><td>[0.06 0.64]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1321,7 +1321,7 @@ img {
 <tr><th>Site</th><th>3s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>5s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th><th>10s &tau;</th><th>Mean &delta;B<sub>e</sub></th><th>&delta;B<sub>e</sub> Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.33</strong></td><td><strong>-4.08</strong></td><td><strong>[-6.03 -2.03]</strong></td><td><strong>0.35</strong></td><td><strong>-4.63</strong></td><td><strong>[-6.65 -2.7]</strong></td><td><strong>0.35</strong></td><td><strong>-6.01</strong></td><td><strong>[-7.85 -4.24]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.22</strong></td><td><strong>-4.09</strong></td><td><strong>[-5.24 -2.8]</strong></td><td><strong>0.25</strong></td><td><strong>-4.63</strong></td><td><strong>[-5.83 -3.42]</strong></td><td><strong>0.26</strong></td><td><strong>-6.01</strong></td><td><strong>[-7.22 -4.89]</strong></td></tr>
 <tr><td>PAS</td><td>0.21</td><td>-5.49</td><td>[-6.6 -4.23]</td><td>0.25</td><td>-5.92</td><td>[-7.14 -4.65]</td><td>0.29</td><td>-6.93</td><td>[-8.13 -5.79]</td></tr>
 <tr><td>SBSM</td><td>0.3</td><td>-3.89</td><td>[-5.16 -2.5]</td><td>0.27</td><td>-4.85</td><td>[-6.2 -3.5]</td><td>0.23</td><td>-6.51</td><td>[-7.71 -5.51]</td></tr>
 <tr><td>SMCA</td><td>0.19</td><td>-4.16</td><td>[-5.27 -2.83]</td><td>0.25</td><td>-4.55</td><td>[-5.72 -3.25]</td><td>0.27</td><td>-5.96</td><td>[-7.22 -4.81]</td></tr>
@@ -1336,12 +1336,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.35</td><td>0.36</td><td>0.04</td><td>[0.31 0.4]</td><td>[0.28 0.44]</td></tr>
-<tr><td>3</td><td>0.33</td><td>0.34</td><td>0.06</td><td>[0.27 0.4]</td><td>[0.21 0.46]</td></tr>
-<tr><td>4</td><td>0.35</td><td>0.36</td><td>0.06</td><td>[0.3 0.43]</td><td>[0.26 0.46]</td></tr>
-<tr><td>5</td><td>0.35</td><td>0.37</td><td>0.06</td><td>[0.31 0.43]</td><td>[0.24 0.49]</td></tr>
-<tr><td>7.5</td><td>0.36</td><td>0.37</td><td>0.07</td><td>[0.31 0.44]</td><td>[0.21 0.48]</td></tr>
-<tr><td>10</td><td>0.35</td><td>0.36</td><td>0.06</td><td>[0.29 0.42]</td><td>[0.22 0.49]</td></tr>
+<tr><td>T-independent</td><td>0.25</td><td>0.31</td><td>0.04</td><td>[0.28 0.35]</td><td>[0.25 0.41]</td></tr>
+<tr><td>3</td><td>0.22</td><td>0.28</td><td>0.06</td><td>[0.24 0.35]</td><td>[0.17 0.41]</td></tr>
+<tr><td>4</td><td>0.25</td><td>0.3</td><td>0.05</td><td>[0.25 0.35]</td><td>[0.2 0.41]</td></tr>
+<tr><td>5</td><td>0.25</td><td>0.31</td><td>0.06</td><td>[0.26 0.38]</td><td>[0.21 0.42]</td></tr>
+<tr><td>7.5</td><td>0.26</td><td>0.32</td><td>0.06</td><td>[0.28 0.39]</td><td>[0.23 0.46]</td></tr>
+<tr><td>10</td><td>0.26</td><td>0.32</td><td>0.06</td><td>[0.27 0.39]</td><td>[0.21 0.46]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1357,10 +1357,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1371,10 +1371,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1387,10 +1387,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1401,10 +1401,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1417,10 +1417,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1431,10 +1431,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1447,10 +1447,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1461,10 +1461,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1477,10 +1477,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1491,10 +1491,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1507,10 +1507,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1521,10 +1521,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1537,10 +1537,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1551,10 +1551,10 @@ img {
 <tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;</strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
