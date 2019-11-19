@@ -69,7 +69,6 @@
 **Legend**:
 * **Simulation Spectra**
   * Black Solid Line: RSQSim 2585
-  * Orange Solid Line: RSQSim/BBP
 * **GMPE Spectra**
   * Blue Solid Line: ASK2014 full spectra
   * Blue Dashed Line: ASK2014, 3-sigma truncation
@@ -100,7 +99,6 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Blue Solid Line: ASK2014 full curves
   * Blue Dashed Line: ASK2014, 3-sigma truncation
@@ -119,7 +117,6 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
@@ -158,7 +155,6 @@ This animation shows the affect of input simulation catalog length on the simula
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
@@ -197,7 +193,6 @@ This animation shows the affect of input simulation catalog length on the simula
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
@@ -236,7 +231,6 @@ This animation shows the affect of input simulation catalog length on the simula
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
   * Black Solid Line: RSQSim 2585
-  * Orange Solid Line: RSQSim/BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
   * Red Solid Line: ASK2014, mean of 100 simulations
