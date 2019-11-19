@@ -894,7 +894,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.43** | **0.43** | **0.42** | **[0.02 1.21]** |  | **0.43** | **0.43** | **0.42** | **[0.03 1.16]** |  | **0.43** | **0.45** | **0.44** | **[0.04 1.06]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.43** | **0.43** | **0.42** | **[0.03 1.21]** |  | **0.43** | **0.43** | **0.41** | **[0.03 1.23]** |  | **0.43** | **0.45** | **0.44** | **[0.04 1.06]** |
 
 We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 17 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
 
@@ -902,12 +902,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.43 | 0.42 | 0.05 | [0.37 0.48] | [0.31 0.54] |
-| 3 | 0.43 | 0.43 | 0.08 | [0.34 0.51] | [0.23 0.6] |
-| 4 | 0.43 | 0.42 | 0.09 | [0.32 0.51] | [0.25 0.62] |
-| 5 | 0.43 | 0.42 | 0.08 | [0.33 0.5] | [0.26 0.58] |
-| 7.5 | 0.45 | 0.43 | 0.07 | [0.38 0.52] | [0.3 0.6] |
-| 10 | 0.43 | 0.42 | 0.06 | [0.36 0.48] | [0.3 0.56] |
+| T-independent | 0.43 | 0.42 | 0.06 | [0.37 0.48] | [0.31 0.56] |
+| 3 | 0.43 | 0.42 | 0.09 | [0.34 0.52] | [0.28 0.62] |
+| 4 | 0.43 | 0.42 | 0.08 | [0.34 0.5] | [0.26 0.6] |
+| 5 | 0.43 | 0.41 | 0.08 | [0.35 0.5] | [0.27 0.61] |
+| 7.5 | 0.45 | 0.44 | 0.08 | [0.36 0.53] | [0.28 0.59] |
+| 10 | 0.43 | 0.43 | 0.06 | [0.36 0.48] | [0.31 0.54] |
 
 These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -936,7 +936,7 @@ Here are plots of the histogram of &phi; for each individual rupture, from which
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.5** | **0.5** | **0.49** | **[0.02 1.37]** |  | **0.48** | **0.48** | **0.47** | **[0.03 1.31]** |  | **0.55** | **0.56** | **0.55** | **[0.03 1.35]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.5** | **0.5** | **0.49** | **[0.03 1.45]** |  | **0.48** | **0.48** | **0.47** | **[0.02 1.27]** |  | **0.55** | **0.56** | **0.55** | **[0.04 1.31]** |
 
 We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 12 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
 
@@ -944,12 +944,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.52 | 0.5 | 0.08 | [0.41 0.59] | [0.33 0.67] |
-| 3 | 0.5 | 0.46 | 0.13 | [0.34 0.61] | [0.25 0.75] |
-| 4 | 0.48 | 0.45 | 0.12 | [0.31 0.56] | [0.22 0.7] |
-| 5 | 0.48 | 0.45 | 0.12 | [0.35 0.59] | [0.19 0.71] |
-| 7.5 | 0.56 | 0.55 | 0.12 | [0.43 0.69] | [0.32 0.8] |
-| 10 | 0.55 | 0.55 | 0.12 | [0.43 0.7] | [0.32 0.79] |
+| T-independent | 0.52 | 0.5 | 0.07 | [0.44 0.58] | [0.35 0.68] |
+| 3 | 0.5 | 0.48 | 0.12 | [0.37 0.61] | [0.28 0.72] |
+| 4 | 0.48 | 0.46 | 0.12 | [0.37 0.59] | [0.25 0.75] |
+| 5 | 0.48 | 0.46 | 0.11 | [0.39 0.58] | [0.25 0.73] |
+| 7.5 | 0.56 | 0.56 | 0.12 | [0.43 0.7] | [0.32 0.78] |
+| 10 | 0.55 | 0.56 | 0.11 | [0.44 0.66] | [0.32 0.79] |
 
 These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -978,7 +978,7 @@ Here are plots of the histogram of &phi; for each individual rupture, from which
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.53** | **0.53** | **0.51** | **[0.03 1.43]** |  | **0.53** | **0.53** | **0.52** | **[0.03 1.51]** |  | **0.57** | **0.57** | **0.57** | **[0.05 1.37]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.53** | **0.53** | **0.51** | **[0.03 1.45]** |  | **0.53** | **0.53** | **0.52** | **[0.01 1.55]** |  | **0.57** | **0.57** | **0.57** | **[0.02 1.44]** |
 
 We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 2 events and a total of 10 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
 
@@ -986,12 +986,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.55 | 0.52 | 0.08 | [0.43 0.59] | [0.37 0.67] |
-| 3 | 0.53 | 0.51 | 0.13 | [0.39 0.63] | [0.27 0.8] |
-| 4 | 0.53 | 0.52 | 0.13 | [0.37 0.6] | [0.25 0.78] |
-| 5 | 0.53 | 0.49 | 0.12 | [0.38 0.61] | [0.25 0.7] |
-| 7.5 | 0.59 | 0.55 | 0.14 | [0.42 0.71] | [0.25 0.79] |
-| 10 | 0.57 | 0.54 | 0.13 | [0.42 0.67] | [0.26 0.81] |
+| T-independent | 0.55 | 0.55 | 0.1 | [0.45 0.64] | [0.32 0.8] |
+| 3 | 0.53 | 0.51 | 0.17 | [0.37 0.72] | [0.23 0.88] |
+| 4 | 0.53 | 0.51 | 0.14 | [0.4 0.65] | [0.26 0.87] |
+| 5 | 0.53 | 0.53 | 0.12 | [0.38 0.65] | [0.3 0.78] |
+| 7.5 | 0.59 | 0.59 | 0.15 | [0.44 0.74] | [0.29 0.9] |
+| 10 | 0.57 | 0.59 | 0.13 | [0.45 0.7] | [0.31 0.9] |
 
 These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -1020,7 +1020,7 @@ Here are plots of the histogram of &phi; for each individual rupture, from which
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.49** | **0.49** | **0.47** | **[0.02 1.43]** |  | **0.48** | **0.48** | **0.46** | **[0.03 1.51]** |  | **0.52** | **0.53** | **0.51** | **[0.03 1.37]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.49** | **0.49** | **0.47** | **[0.03 1.45]** |  | **0.48** | **0.48** | **0.46** | **[0.01 1.55]** |  | **0.52** | **0.53** | **0.51** | **[0.02 1.44]** |
 
 We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [6.4 6.8], and all distances. We throw out any events with only 1 recording, leaving us with 5 events and a total of 60 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
 
@@ -1028,12 +1028,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.5 | 0.48 | 0.03 | [0.43 0.51] | [0.42 0.55] |
-| 3 | 0.49 | 0.47 | 0.05 | [0.42 0.52] | [0.39 0.57] |
-| 4 | 0.48 | 0.46 | 0.05 | [0.41 0.51] | [0.37 0.57] |
-| 5 | 0.48 | 0.45 | 0.05 | [0.4 0.5] | [0.36 0.57] |
-| 7.5 | 0.54 | 0.51 | 0.05 | [0.46 0.56] | [0.42 0.62] |
-| 10 | 0.52 | 0.49 | 0.05 | [0.45 0.55] | [0.42 0.62] |
+| T-independent | 0.5 | 0.48 | 0.04 | [0.45 0.52] | [0.41 0.56] |
+| 3 | 0.49 | 0.47 | 0.05 | [0.41 0.52] | [0.36 0.58] |
+| 4 | 0.48 | 0.46 | 0.05 | [0.4 0.51] | [0.36 0.56] |
+| 5 | 0.48 | 0.45 | 0.05 | [0.4 0.51] | [0.35 0.55] |
+| 7.5 | 0.54 | 0.51 | 0.06 | [0.47 0.57] | [0.41 0.64] |
+| 10 | 0.52 | 0.5 | 0.05 | [0.46 0.55] | [0.44 0.62] |
 
 These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
