@@ -24,53 +24,33 @@ We then  perform various rotations. We rotate the rupture in place around its ce
 * [Path-to-path Variability](#path-to-path-variability)
   * [Path-to-path Variability Methodology](#path-to-path-variability-methodology)
   * [20.0 km M7.2 Path-to-path Results](#200-km-m72-path-to-path-results)
-  * [20.0 km M7.2 Path-to-path Downsampled Results](#200-km-m72-path-to-path-downsampled-results)
   * [50.0 km M7.2 Path-to-path Results](#500-km-m72-path-to-path-results)
-  * [50.0 km M7.2 Path-to-path Downsampled Results](#500-km-m72-path-to-path-downsampled-results)
   * [100.0 km M7.2 Path-to-path Results](#1000-km-m72-path-to-path-results)
-  * [100.0 km M7.2 Path-to-path Downsampled Results](#1000-km-m72-path-to-path-downsampled-results)
   * [All Distances M7.2 Path-to-path Results](#all-distances-m72-path-to-path-results)
-  * [All Distances M7.2 Path-to-path Downsampled Results](#all-distances-m72-path-to-path-downsampled-results)
 * [Source-strike Variability](#source-strike-variability)
   * [Source-strike Variability Methodology](#source-strike-variability-methodology)
   * [20.0 km M7.2 Source-strike Results](#200-km-m72-source-strike-results)
-  * [20.0 km M7.2 Source-strike Downsampled Results](#200-km-m72-source-strike-downsampled-results)
   * [50.0 km M7.2 Source-strike Results](#500-km-m72-source-strike-results)
-  * [50.0 km M7.2 Source-strike Downsampled Results](#500-km-m72-source-strike-downsampled-results)
   * [100.0 km M7.2 Source-strike Results](#1000-km-m72-source-strike-results)
-  * [100.0 km M7.2 Source-strike Downsampled Results](#1000-km-m72-source-strike-downsampled-results)
   * [All Distances M7.2 Source-strike Results](#all-distances-m72-source-strike-results)
-  * [All Distances M7.2 Source-strike Downsampled Results](#all-distances-m72-source-strike-downsampled-results)
 * [Within-event, single-site Variability](#within-event-single-site-variability)
   * [Within-event, single-site Variability Methodology](#within-event-single-site-variability-methodology)
   * [20.0 km M7.2 Within-event, single-site Results](#200-km-m72-within-event-single-site-results)
-  * [20.0 km M7.2 Within-event, single-site Downsampled Results](#200-km-m72-within-event-single-site-downsampled-results)
   * [50.0 km M7.2 Within-event, single-site Results](#500-km-m72-within-event-single-site-results)
-  * [50.0 km M7.2 Within-event, single-site Downsampled Results](#500-km-m72-within-event-single-site-downsampled-results)
   * [100.0 km M7.2 Within-event, single-site Results](#1000-km-m72-within-event-single-site-results)
-  * [100.0 km M7.2 Within-event, single-site Downsampled Results](#1000-km-m72-within-event-single-site-downsampled-results)
   * [All Distances M7.2 Within-event, single-site Results](#all-distances-m72-within-event-single-site-results)
-  * [All Distances M7.2 Within-event, single-site Downsampled Results](#all-distances-m72-within-event-single-site-downsampled-results)
 * [Within-event Variability](#within-event-variability)
   * [Within-event Variability Methodology](#within-event-variability-methodology)
   * [20.0 km M7.2 Within-event Results](#200-km-m72-within-event-results)
-  * [20.0 km M7.2 Within-event Downsampled Results](#200-km-m72-within-event-downsampled-results)
   * [50.0 km M7.2 Within-event Results](#500-km-m72-within-event-results)
-  * [50.0 km M7.2 Within-event Downsampled Results](#500-km-m72-within-event-downsampled-results)
   * [100.0 km M7.2 Within-event Results](#1000-km-m72-within-event-results)
-  * [100.0 km M7.2 Within-event Downsampled Results](#1000-km-m72-within-event-downsampled-results)
   * [All Distances M7.2 Within-event Results](#all-distances-m72-within-event-results)
-  * [All Distances M7.2 Within-event Downsampled Results](#all-distances-m72-within-event-downsampled-results)
 * [Between-events Variability](#between-events-variability)
   * [Between-events Variability Methodology](#between-events-variability-methodology)
   * [20.0 km M7.2 Between-events Results](#200-km-m72-between-events-results)
-  * [20.0 km M7.2 Between-events Downsampled Results](#200-km-m72-between-events-downsampled-results)
   * [50.0 km M7.2 Between-events Results](#500-km-m72-between-events-results)
-  * [50.0 km M7.2 Between-events Downsampled Results](#500-km-m72-between-events-downsampled-results)
   * [100.0 km M7.2 Between-events Results](#1000-km-m72-between-events-results)
-  * [100.0 km M7.2 Between-events Downsampled Results](#1000-km-m72-between-events-downsampled-results)
   * [All Distances M7.2 Between-events Results](#all-distances-m72-between-events-results)
-  * [All Distances M7.2 Between-events Downsampled Results](#all-distances-m72-between-events-downsampled-results)
 * [Azumth Dependence](#azumth-dependence)
   * [PAS Azumth Dependence](#pas-azumth-dependence)
   * [SBSM Azumth Dependence](#sbsm-azumth-dependence)
@@ -170,7 +150,7 @@ This tables gives a list of all fault sections which participate in the ruptures
 | Within-event, single-site | &phi;<sub>SS</sub> | (all) | 0.47 | 0.51 | 0.48 | 0.42 |
 | Within-event | &phi; | 20 km | 0.64 | 0.69 | 0.65 | 0.55 |
 | Within-event | &phi; | 50 km | 0.71 | 0.74 | 0.71 | 0.65 |
-| Within-event | &phi; | 100 km | 0.73 | 0.75 | 0.74 | 0.66 |
+| Within-event | &phi; | 100 km | 0.73 | 0.75 | 0.74 | 0.67 |
 | Within-event | &phi; | (all) | 0.69 | 0.72 | 0.7 | 0.62 |
 | Between-events | &tau; | 20 km | 0.15 | 0.1 | 0.15 | 0.19 |
 | Between-events | &tau; | 50 km | 0.16 | 0.11 | 0.17 | 0.19 |
@@ -258,28 +238,29 @@ Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual ruptu
 | 10s |  |
 | ![10s](resources/path_m7.2_20km_10s_hist.png) |  |
 
-### 20.0 km M7.2 Path-to-path Downsampled Results
+#### 20.0 km M7.2 Path-to-path Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>P2P</sub> | Downsampled median &phi;<sub>P2P</sub> | Downsampled &phi;<sub>P2P</sub> std. dev. | Downsampled &phi;<sub>P2P</sub> 68% conf range | Downsampled &phi;<sub>P2P</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.29 | 0.29 | 0.02 | [0.27 0.31] | [0.25 0.33] |
+| 3 | 0.36 | 0.36 | 0.03 | [0.32 0.39] | [0.3 0.41] |
+| 4 | 0.34 | 0.34 | 0.03 | [0.31 0.37] | [0.28 0.39] |
+| 5 | 0.32 | 0.32 | 0.02 | [0.3 0.35] | [0.28 0.36] |
+| 7.5 | 0.24 | 0.24 | 0.02 | [0.22 0.26] | [0.2 0.28] |
+| 10 | 0.15 | 0.15 | 0.02 | [0.13 0.17] | [0.13 0.19] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_20km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_20km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_20km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_20km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_20km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -316,28 +297,29 @@ Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual ruptu
 | 10s |  |
 | ![10s](resources/path_m7.2_50km_10s_hist.png) |  |
 
-### 50.0 km M7.2 Path-to-path Downsampled Results
+#### 50.0 km M7.2 Path-to-path Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>P2P</sub> | Downsampled median &phi;<sub>P2P</sub> | Downsampled &phi;<sub>P2P</sub> std. dev. | Downsampled &phi;<sub>P2P</sub> 68% conf range | Downsampled &phi;<sub>P2P</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.37 | 0.34 | 0.02 | [0.32 0.37] | [0.3 0.39] |
+| 3 | 0.45 | 0.42 | 0.03 | [0.38 0.45] | [0.35 0.48] |
+| 4 | 0.42 | 0.39 | 0.03 | [0.36 0.43] | [0.34 0.45] |
+| 5 | 0.38 | 0.36 | 0.03 | [0.33 0.39] | [0.31 0.42] |
+| 7.5 | 0.31 | 0.3 | 0.02 | [0.27 0.32] | [0.25 0.34] |
+| 10 | 0.23 | 0.22 | 0.02 | [0.2 0.24] | [0.17 0.25] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_50km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_50km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_50km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_50km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_50km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -374,28 +356,29 @@ Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual ruptu
 | 10s |  |
 | ![10s](resources/path_m7.2_100km_10s_hist.png) |  |
 
-### 100.0 km M7.2 Path-to-path Downsampled Results
+#### 100.0 km M7.2 Path-to-path Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>P2P</sub> | Downsampled median &phi;<sub>P2P</sub> | Downsampled &phi;<sub>P2P</sub> std. dev. | Downsampled &phi;<sub>P2P</sub> 68% conf range | Downsampled &phi;<sub>P2P</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.41 | 0.41 | 0.02 | [0.39 0.43] | [0.38 0.45] |
+| 3 | 0.49 | 0.48 | 0.03 | [0.46 0.52] | [0.44 0.54] |
+| 4 | 0.47 | 0.46 | 0.02 | [0.44 0.49] | [0.42 0.51] |
+| 5 | 0.43 | 0.42 | 0.02 | [0.4 0.46] | [0.38 0.47] |
+| 7.5 | 0.36 | 0.37 | 0.02 | [0.34 0.39] | [0.32 0.4] |
+| 10 | 0.27 | 0.27 | 0.02 | [0.26 0.29] | [0.24 0.31] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_100km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_100km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_100km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_100km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_100km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -432,30 +415,31 @@ Here are plots of the histogram of &phi;<sub>P2P</sub> for each individual ruptu
 | 10s |  |
 | ![10s](resources/path_m7.2_10s_hist.png) |  |
 
-### All Distances M7.2 Path-to-path Downsampled Results
+#### All Distances M7.2 Path-to-path Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 489 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>P2P</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 489 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>P2P</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 73 fewer data points.*
 
+| Period (s) | Full &phi;<sub>P2P</sub> | Downsampled median &phi;<sub>P2P</sub> | Downsampled &phi;<sub>P2P</sub> std. dev. | Downsampled &phi;<sub>P2P</sub> 68% conf range | Downsampled &phi;<sub>P2P</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.36 | 0.36 | 0.01 | [0.35 0.37] | [0.35 0.37] |
+| 3 | 0.43 | 0.44 | 0.01 | [0.42 0.44] | [0.41 0.45] |
+| 4 | 0.41 | 0.41 | 0.01 | [0.4 0.42] | [0.39 0.43] |
+| 5 | 0.38 | 0.38 | 0.01 | [0.37 0.39] | [0.36 0.4] |
+| 7.5 | 0.31 | 0.31 | 0.01 | [0.3 0.32] | [0.29 0.32] |
+| 10 | 0.22 | 0.22 | 0.01 | [0.22 0.23] | [0.21 0.24] |
+
 These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/path_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/path_m7.2_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/path_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/path_m7.2_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/path_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/path_m7.2_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -521,30 +505,31 @@ Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture
 | 10s |  |
 | ![10s](resources/source_strike_m7.2_20km_10s_hist.png) |  |
 
-### 20.0 km M7.2 Source-strike Downsampled Results
+#### 20.0 km M7.2 Source-strike Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 49 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 49 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 2 fewer data points.*
 
+| Period (s) | Full &phi;<sub>s</sub> | Downsampled median &phi;<sub>s</sub> | Downsampled &phi;<sub>s</sub> std. dev. | Downsampled &phi;<sub>s</sub> 68% conf range | Downsampled &phi;<sub>s</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.36 | 0.36 | 0.02 | [0.34 0.38] | [0.33 0.4] |
+| 3 | 0.38 | 0.37 | 0.02 | [0.35 0.39] | [0.32 0.43] |
+| 4 | 0.39 | 0.39 | 0.02 | [0.36 0.41] | [0.34 0.44] |
+| 5 | 0.38 | 0.37 | 0.03 | [0.35 0.41] | [0.32 0.43] |
+| 7.5 | 0.35 | 0.35 | 0.03 | [0.33 0.38] | [0.3 0.41] |
+| 10 | 0.31 | 0.31 | 0.02 | [0.29 0.33] | [0.27 0.36] |
+
 These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_20km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -581,28 +566,29 @@ Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture
 | 10s |  |
 | ![10s](resources/source_strike_m7.2_50km_10s_hist.png) |  |
 
-### 50.0 km M7.2 Source-strike Downsampled Results
+#### 50.0 km M7.2 Source-strike Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>s</sub> | Downsampled median &phi;<sub>s</sub> | Downsampled &phi;<sub>s</sub> std. dev. | Downsampled &phi;<sub>s</sub> 68% conf range | Downsampled &phi;<sub>s</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.4 | 0.39 | 0.02 | [0.35 0.4] | [0.34 0.43] |
+| 3 | 0.36 | 0.35 | 0.03 | [0.32 0.37] | [0.29 0.4] |
+| 4 | 0.38 | 0.36 | 0.03 | [0.33 0.39] | [0.31 0.42] |
+| 5 | 0.39 | 0.36 | 0.03 | [0.34 0.4] | [0.3 0.43] |
+| 7.5 | 0.42 | 0.41 | 0.03 | [0.37 0.44] | [0.33 0.48] |
+| 10 | 0.44 | 0.43 | 0.03 | [0.4 0.45] | [0.37 0.49] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_50km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -639,30 +625,31 @@ Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture
 | 10s |  |
 | ![10s](resources/source_strike_m7.2_100km_10s_hist.png) |  |
 
-### 100.0 km M7.2 Source-strike Downsampled Results
+#### 100.0 km M7.2 Source-strike Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 41 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 41 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 20 fewer data points.*
 
+| Period (s) | Full &phi;<sub>s</sub> | Downsampled median &phi;<sub>s</sub> | Downsampled &phi;<sub>s</sub> std. dev. | Downsampled &phi;<sub>s</sub> 68% conf range | Downsampled &phi;<sub>s</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.4 | 0.4 | 0.03 | [0.38 0.43] | [0.35 0.47] |
+| 3 | 0.34 | 0.34 | 0.02 | [0.31 0.37] | [0.29 0.38] |
+| 4 | 0.38 | 0.38 | 0.03 | [0.35 0.41] | [0.31 0.44] |
+| 5 | 0.4 | 0.39 | 0.04 | [0.36 0.44] | [0.32 0.48] |
+| 7.5 | 0.44 | 0.43 | 0.04 | [0.41 0.47] | [0.38 0.54] |
+| 10 | 0.45 | 0.45 | 0.03 | [0.42 0.48] | [0.38 0.54] |
+
 These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_100km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -699,30 +686,31 @@ Here are plots of the histogram of &phi;<sub>s</sub> for each individual rupture
 | 10s |  |
 | ![10s](resources/source_strike_m7.2_10s_hist.png) |  |
 
-### All Distances M7.2 Source-strike Downsampled Results
+#### All Distances M7.2 Source-strike Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 273 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>s</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 273 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>s</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 289 fewer data points.*
 
+| Period (s) | Full &phi;<sub>s</sub> | Downsampled median &phi;<sub>s</sub> | Downsampled &phi;<sub>s</sub> std. dev. | Downsampled &phi;<sub>s</sub> 68% conf range | Downsampled &phi;<sub>s</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.39 | 0.39 | 0.01 | [0.38 0.4] | [0.37 0.4] |
+| 3 | 0.36 | 0.36 | 0.01 | [0.35 0.37] | [0.34 0.38] |
+| 4 | 0.38 | 0.38 | 0.01 | [0.37 0.39] | [0.36 0.4] |
+| 5 | 0.39 | 0.39 | 0.01 | [0.38 0.4] | [0.37 0.41] |
+| 7.5 | 0.41 | 0.41 | 0.01 | [0.39 0.42] | [0.38 0.42] |
+| 10 | 0.41 | 0.4 | 0.01 | [0.39 0.42] | [0.38 0.43] |
+
 These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/source_strike_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/source_strike_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/source_strike_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/source_strike_m7.2_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -788,28 +776,29 @@ Here are plots of the histogram of &phi;<sub>SS</sub> for each individual ruptur
 | 10s |  |
 | ![10s](resources/within_event_ss_m7.2_20km_10s_hist.png) |  |
 
-### 20.0 km M7.2 Within-event, single-site Downsampled Results
+#### 20.0 km M7.2 Within-event, single-site Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>SS</sub> | Downsampled median &phi;<sub>SS</sub> | Downsampled &phi;<sub>SS</sub> std. dev. | Downsampled &phi;<sub>SS</sub> 68% conf range | Downsampled &phi;<sub>SS</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.41 | 0.4 | 0.02 | [0.39 0.42] | [0.38 0.44] |
+| 3 | 0.46 | 0.45 | 0.02 | [0.43 0.47] | [0.41 0.5] |
+| 4 | 0.46 | 0.44 | 0.02 | [0.43 0.46] | [0.41 0.49] |
+| 5 | 0.43 | 0.42 | 0.03 | [0.4 0.45] | [0.37 0.48] |
+| 7.5 | 0.37 | 0.37 | 0.02 | [0.34 0.4] | [0.32 0.42] |
+| 10 | 0.32 | 0.31 | 0.02 | [0.29 0.34] | [0.26 0.37] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_20km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -846,28 +835,29 @@ Here are plots of the histogram of &phi;<sub>SS</sub> for each individual ruptur
 | 10s |  |
 | ![10s](resources/within_event_ss_m7.2_50km_10s_hist.png) |  |
 
-### 50.0 km M7.2 Within-event, single-site Downsampled Results
+#### 50.0 km M7.2 Within-event, single-site Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>SS</sub> | Downsampled median &phi;<sub>SS</sub> | Downsampled &phi;<sub>SS</sub> std. dev. | Downsampled &phi;<sub>SS</sub> 68% conf range | Downsampled &phi;<sub>SS</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.48 | 0.46 | 0.03 | [0.43 0.49] | [0.42 0.52] |
+| 3 | 0.51 | 0.49 | 0.04 | [0.46 0.53] | [0.43 0.57] |
+| 4 | 0.5 | 0.47 | 0.04 | [0.44 0.52] | [0.42 0.55] |
+| 5 | 0.48 | 0.45 | 0.04 | [0.42 0.5] | [0.4 0.54] |
+| 7.5 | 0.46 | 0.44 | 0.03 | [0.4 0.47] | [0.38 0.5] |
+| 10 | 0.45 | 0.44 | 0.03 | [0.41 0.47] | [0.38 0.51] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_50km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -904,28 +894,29 @@ Here are plots of the histogram of &phi;<sub>SS</sub> for each individual ruptur
 | 10s |  |
 | ![10s](resources/within_event_ss_m7.2_100km_10s_hist.png) |  |
 
-### 100.0 km M7.2 Within-event, single-site Downsampled Results
+#### 100.0 km M7.2 Within-event, single-site Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>SS</sub> | Downsampled median &phi;<sub>SS</sub> | Downsampled &phi;<sub>SS</sub> std. dev. | Downsampled &phi;<sub>SS</sub> 68% conf range | Downsampled &phi;<sub>SS</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.52 | 0.52 | 0.02 | [0.5 0.54] | [0.49 0.56] |
+| 3 | 0.54 | 0.54 | 0.02 | [0.51 0.56] | [0.49 0.58] |
+| 4 | 0.54 | 0.54 | 0.02 | [0.52 0.56] | [0.49 0.59] |
+| 5 | 0.52 | 0.52 | 0.02 | [0.5 0.55] | [0.48 0.57] |
+| 7.5 | 0.51 | 0.5 | 0.02 | [0.48 0.53] | [0.46 0.55] |
+| 10 | 0.48 | 0.48 | 0.02 | [0.45 0.51] | [0.43 0.53] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_100km_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -962,28 +953,29 @@ Here are plots of the histogram of &phi;<sub>SS</sub> for each individual ruptur
 | 10s |  |
 | ![10s](resources/within_event_ss_m7.2_10s_hist.png) |  |
 
-### All Distances M7.2 Within-event, single-site Downsampled Results
+#### All Distances M7.2 Within-event, single-site Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 1686 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi;<sub>SS</sub> through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 1686 recordings. We then downsample our simulated data 100 times for each site, and compute &phi;<sub>SS</sub> from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &phi;<sub>SS</sub> | Downsampled median &phi;<sub>SS</sub> | Downsampled &phi;<sub>SS</sub> std. dev. | Downsampled &phi;<sub>SS</sub> 68% conf range | Downsampled &phi;<sub>SS</sub> 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.47 | 0.47 | 0.01 | [0.47 0.48] | [0.46 0.49] |
+| 3 | 0.51 | 0.51 | 0.01 | [0.5 0.51] | [0.49 0.52] |
+| 4 | 0.5 | 0.5 | 0.01 | [0.49 0.51] | [0.48 0.53] |
+| 5 | 0.48 | 0.48 | 0.01 | [0.47 0.49] | [0.46 0.51] |
+| 7.5 | 0.45 | 0.45 | 0.01 | [0.44 0.47] | [0.42 0.48] |
+| 10 | 0.42 | 0.42 | 0.01 | [0.41 0.44] | [0.39 0.45] |
 
 These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.
 
-| Period | Period | **PAS** | **SBSM** |
+| Period | **PAS** | **SBSM** | **SMCA** |
 |-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_USC_downsampled_hist_3s.png) |
-
-| Period | Period | **PAS** | **SBSM** |
-|-----|-----|-----|-----|
-| Period-Indep | Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SBSM_downsampled_hist_period_indep.png) |
-| Period | 3s | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SBSM_downsampled_hist_3s.png) |
-| Period-Indep | **SMCA** | **STNI** | **USC** |
-| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SMCA_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_USC_downsampled_hist_period_indep.png) |
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SMCA_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_USC_downsampled_hist_3s.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_PAS_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SBSM_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SMCA_downsampled_hist_period_indep.png) |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_PAS_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SBSM_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_SMCA_downsampled_hist_3s.png) |
+| Period-Indep | **STNI** | **USC** | **WNGC** |
+| Period | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_STNI_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_USC_downsampled_hist_period_indep.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_WNGC_downsampled_hist_period_indep.png) |
+| Period-Indep | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_STNI_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_USC_downsampled_hist_3s.png) | ![Dowmsampled Histogram](resources/within_event_ss_m7.2_WNGC_downsampled_hist_3s.png) |
 
 These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.
 
@@ -1035,7 +1027,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.46** | **0.46** | **0.45** | **[0.02 1.15]** |  | **0.42** | **0.42** | **0.41** | **[0.03 1.17]** |  | **0.44** | **0.45** | **0.45** | **[0.03 1.21]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.46** | **0.46** | **0.45** | **[0.01 1.16]** |  | **0.42** | **0.42** | **0.41** | **[0.02 1.16]** |  | **0.44** | **0.45** | **0.45** | **[0.02 1.14]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1045,18 +1037,23 @@ Here are plots of the histogram of &phi; for each individual rupture, from which
 | 10s |  |
 | ![10s](resources/within_event_m7.2_20km_10s_hist.png) |  |
 
-### 20.0 km M7.2 Within-event Downsampled Results
+#### 20.0 km M7.2 Within-event Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 19 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 19 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 32 fewer data points.*
 
-This plot shows the distribution of period-independent downsampled &phi;.
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.44 | 0.44 | 0.05 | [0.38 0.5] | [0.34 0.54] |
+| 3 | 0.46 | 0.44 | 0.08 | [0.36 0.53] | [0.26 0.62] |
+| 4 | 0.44 | 0.42 | 0.08 | [0.35 0.5] | [0.29 0.58] |
+| 5 | 0.42 | 0.42 | 0.08 | [0.35 0.51] | [0.26 0.57] |
+| 7.5 | 0.46 | 0.45 | 0.08 | [0.38 0.54] | [0.31 0.6] |
+| 10 | 0.44 | 0.45 | 0.07 | [0.37 0.54] | [0.33 0.61] |
 
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_20km_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/within_event_m7.2_20km_downsampled_hist_3s.png) |
+This plot shows the distribution of period-independent downsampled &phi;.
 
 | Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_20km_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1081,7 +1078,7 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.52** | **0.52** | **0.51** | **[0.03 1.35]** |  | **0.5** | **0.49** | **0.48** | **[0.03 1.64]** |  | **0.57** | **0.57** | **0.56** | **[0.03 1.49]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.52** | **0.52** | **0.51** | **[0.03 1.35]** |  | **0.5** | **0.49** | **0.48** | **[0.02 1.48]** |  | **0.57** | **0.57** | **0.56** | **[0.03 1.54]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1091,18 +1088,23 @@ Here are plots of the histogram of &phi; for each individual rupture, from which
 | 10s |  |
 | ![10s](resources/within_event_m7.2_50km_10s_hist.png) |  |
 
-### 50.0 km M7.2 Within-event Downsampled Results
+#### 50.0 km M7.2 Within-event Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 18 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 18 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 8 fewer data points.*
 
-This plot shows the distribution of period-independent downsampled &phi;.
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.53 | 0.51 | 0.06 | [0.45 0.58] | [0.41 0.65] |
+| 3 | 0.52 | 0.51 | 0.1 | [0.42 0.62] | [0.31 0.76] |
+| 4 | 0.5 | 0.5 | 0.08 | [0.42 0.58] | [0.33 0.68] |
+| 5 | 0.5 | 0.49 | 0.09 | [0.39 0.56] | [0.32 0.68] |
+| 7.5 | 0.56 | 0.54 | 0.1 | [0.46 0.63] | [0.36 0.81] |
+| 10 | 0.57 | 0.55 | 0.09 | [0.45 0.63] | [0.38 0.78] |
 
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_50km_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/within_event_m7.2_50km_downsampled_hist_3s.png) |
+This plot shows the distribution of period-independent downsampled &phi;.
 
 | Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_50km_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1127,7 +1129,7 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.54** | **0.54** | **0.53** | **[0.03 1.4]** |  | **0.54** | **0.54** | **0.52** | **[0.03 1.46]** |  | **0.59** | **0.6** | **0.59** | **[0.04 1.52]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.54** | **0.54** | **0.53** | **[0.04 1.44]** |  | **0.54** | **0.54** | **0.52** | **[0.04 1.39]** |  | **0.59** | **0.6** | **0.59** | **[0.03 1.5]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1137,18 +1139,23 @@ Here are plots of the histogram of &phi; for each individual rupture, from which
 | 10s |  |
 | ![10s](resources/within_event_m7.2_100km_10s_hist.png) |  |
 
-### 100.0 km M7.2 Within-event Downsampled Results
+#### 100.0 km M7.2 Within-event Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 15 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 15 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 46 fewer data points.*
 
-This plot shows the distribution of period-independent downsampled &phi;.
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.56 | 0.55 | 0.08 | [0.48 0.62] | [0.4 0.72] |
+| 3 | 0.54 | 0.52 | 0.12 | [0.41 0.64] | [0.31 0.79] |
+| 4 | 0.54 | 0.51 | 0.1 | [0.42 0.61] | [0.31 0.74] |
+| 5 | 0.54 | 0.54 | 0.11 | [0.43 0.64] | [0.29 0.75] |
+| 7.5 | 0.6 | 0.6 | 0.12 | [0.47 0.72] | [0.37 0.84] |
+| 10 | 0.59 | 0.61 | 0.11 | [0.46 0.71] | [0.39 0.83] |
 
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_100km_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/within_event_m7.2_100km_downsampled_hist_3s.png) |
+This plot shows the distribution of period-independent downsampled &phi;.
 
 | Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_100km_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1173,7 +1180,7 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.51** | **0.51** | **0.49** | **[0.02 1.4]** |  | **0.49** | **0.48** | **0.47** | **[0.03 1.64]** |  | **0.54** | **0.54** | **0.52** | **[0.03 1.52]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.51** | **0.51** | **0.49** | **[0.01 1.44]** |  | **0.49** | **0.48** | **0.47** | **[0.02 1.48]** |  | **0.54** | **0.54** | **0.52** | **[0.02 1.54]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1183,18 +1190,23 @@ Here are plots of the histogram of &phi; for each individual rupture, from which
 | 10s |  |
 | ![10s](resources/within_event_m7.2_10s_hist.png) |  |
 
-### All Distances M7.2 Within-event Downsampled Results
+#### All Distances M7.2 Within-event Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 87 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &phi; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 87 recordings. We then downsample our simulated data 100 times for each site, and compute &phi; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
 
 *WARNING: Some real events had more recordings than we have rotations per event, so our dataset for this test is smaller. We are using 475 fewer data points.*
 
-This plot shows the distribution of period-independent downsampled &phi;.
+| Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.51 | 0.51 | 0.03 | [0.48 0.54] | [0.45 0.58] |
+| 3 | 0.51 | 0.5 | 0.04 | [0.47 0.55] | [0.42 0.6] |
+| 4 | 0.49 | 0.48 | 0.04 | [0.45 0.53] | [0.4 0.6] |
+| 5 | 0.49 | 0.48 | 0.04 | [0.44 0.52] | [0.39 0.57] |
+| 7.5 | 0.54 | 0.54 | 0.04 | [0.5 0.58] | [0.44 0.63] |
+| 10 | 0.54 | 0.54 | 0.04 | [0.49 0.57] | [0.45 0.6] |
 
-| Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/within_event_m7.2_downsampled_hist_3s.png) |
+This plot shows the distribution of period-independent downsampled &phi;.
 
 | Period-Indep | ![Dowmsampled Histogram](resources/within_event_m7.2_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1256,16 +1268,21 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 | USC | 0.11 | -2.15 | [-2.49 -1.94] | 0.16 | -2.85 | [-3.26 -2.5] | 0.22 | -4.06 | [-4.63 -3.48] |
 | WNGC | 0.12 | -2.15 | [-2.58 -1.92] | 0.17 | -2.88 | [-3.3 -2.52] | 0.21 | -4.21 | [-4.71 -3.66] |
 
-### 20.0 km M7.2 Between-events Downsampled Results
+#### 20.0 km M7.2 Between-events Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [10.0 30.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 51 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.16 | 0.21 | 0.05 | [0.15 0.26] | [0.12 0.34] |
+| 3 | 0.11 | 0.17 | 0.08 | [0.09 0.25] | [0.05 0.32] |
+| 4 | 0.13 | 0.2 | 0.08 | [0.11 0.27] | [0.05 0.35] |
+| 5 | 0.16 | 0.18 | 0.09 | [0.13 0.28] | [0.08 0.43] |
+| 7.5 | 0.18 | 0.22 | 0.1 | [0.12 0.35] | [0.05 0.47] |
+| 10 | 0.2 | 0.23 | 0.1 | [0.14 0.36] | [0.07 0.45] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
-
-| Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_20km_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/between_events_m7.2_20km_downsampled_hist_3s.png) |
 
 | Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_20km_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1298,16 +1315,21 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | USC | 0.11 | -2.89 | [-3.23 -2.62] | 0.17 | -3.4 | [-3.82 -2.96] | 0.22 | -4.62 | [-5.14 -4.02] |
 | WNGC | 0.11 | -3 | [-3.36 -2.77] | 0.18 | -3.46 | [-3.88 -3.02] | 0.21 | -4.77 | [-5.29 -4.14] |
 
-### 50.0 km M7.2 Between-events Downsampled Results
+#### 50.0 km M7.2 Between-events Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [40.0 60.0] km. We throw out any events with only 1 recording, leaving us with 4 events and a total of 26 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.16 | 0.3 | 0.08 | [0.22 0.39] | [0.17 0.53] |
+| 3 | 0.11 | 0.27 | 0.13 | [0.15 0.38] | [0.06 0.65] |
+| 4 | 0.14 | 0.27 | 0.11 | [0.17 0.38] | [0.1 0.58] |
+| 5 | 0.17 | 0.3 | 0.13 | [0.16 0.42] | [0.08 0.58] |
+| 7.5 | 0.19 | 0.32 | 0.14 | [0.18 0.47] | [0.09 0.64] |
+| 10 | 0.2 | 0.29 | 0.14 | [0.2 0.49] | [0.12 0.66] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
-
-| Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_50km_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/between_events_m7.2_50km_downsampled_hist_3s.png) |
 
 | Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_50km_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1340,16 +1362,21 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | USC | 0.11 | -3.53 | [-3.89 -3.24] | 0.17 | -3.95 | [-4.36 -3.53] | 0.22 | -5.1 | [-5.67 -4.58] |
 | WNGC | 0.11 | -3.59 | [-3.96 -3.32] | 0.17 | -4.02 | [-4.39 -3.63] | 0.22 | -5.24 | [-5.79 -4.78] |
 
-### 100.0 km M7.2 Between-events Downsampled Results
+#### 100.0 km M7.2 Between-events Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and distance within the range [80.0 120.0] km. We throw out any events with only 1 recording, leaving us with 3 events and a total of 61 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.16 | 0.22 | 0.08 | [0.16 0.33] | [0.1 0.39] |
+| 3 | 0.11 | 0.2 | 0.11 | [0.08 0.32] | [0.03 0.44] |
+| 4 | 0.14 | 0.21 | 0.11 | [0.1 0.35] | [0.05 0.45] |
+| 5 | 0.17 | 0.24 | 0.11 | [0.13 0.37] | [0.04 0.48] |
+| 7.5 | 0.2 | 0.24 | 0.14 | [0.12 0.38] | [0.03 0.62] |
+| 10 | 0.2 | 0.23 | 0.14 | [0.09 0.37] | [0.02 0.55] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
-
-| Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_100km_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/between_events_m7.2_100km_downsampled_hist_3s.png) |
 
 | Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_100km_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1382,16 +1409,21 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | USC | 0.11 | -2.86 | [-3.89 -1.94] | 0.17 | -3.4 | [-4.36 -2.5] | 0.22 | -4.59 | [-5.67 -3.48] |
 | WNGC | 0.12 | -2.91 | [-3.96 -1.92] | 0.17 | -3.45 | [-4.39 -2.52] | 0.21 | -4.74 | [-5.79 -3.66] |
 
-### All Distances M7.2 Between-events Downsampled Results
+#### All Distances M7.2 Between-events Downsampled Results
 *[(top)](#table-of-contents)*
 
-We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 1686 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below.
+We compute uncertainties on &tau; through downsampling the rotational synthetic data to match the sample sizes used in the ASK 2014 regressions. We search the ASK dataset for ruptures with the same mechanism, magnitude in the range [7.0 7.4], and all distances. We throw out any events with only 1 recording, leaving us with 6 events and a total of 1686 recordings. We then downsample our simulated data 100 times for each site, and compute &tau; from each sample. The 95% confidence range from these samples is plotted as a shaded region above, and listed in the table below. Weighted standard deviations are calculated, weighted by the square-root of the number of recordings in each event.
+
+| Period (s) | Full &tau; | Downsampled median &tau; | Downsampled &tau; std. dev. | Downsampled &tau; 68% conf range | Downsampled &tau; 95% conf range |
+|-----|-----|-----|-----|-----|-----|
+| T-independent | 0.16 | 0.2 | 0.02 | [0.17 0.22] | [0.16 0.24] |
+| 3 | 0.11 | 0.16 | 0.03 | [0.12 0.19] | [0.1 0.24] |
+| 4 | 0.14 | 0.18 | 0.03 | [0.15 0.21] | [0.12 0.24] |
+| 5 | 0.17 | 0.2 | 0.03 | [0.17 0.24] | [0.13 0.27] |
+| 7.5 | 0.19 | 0.22 | 0.04 | [0.18 0.26] | [0.14 0.3] |
+| 10 | 0.2 | 0.22 | 0.04 | [0.18 0.27] | [0.15 0.31] |
 
 This plot shows the distribution of period-independent downsampled &tau;.
-
-| Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_downsampled_hist_period_indep.png) |
-|-----|-----|
-| 3s | ![Dowmsampled Histogram](resources/between_events_m7.2_downsampled_hist_3s.png) |
 
 | Period-Indep | ![Dowmsampled Histogram](resources/between_events_m7.2_downsampled_hist_period_indep.png) |
 |-----|-----|
@@ -1432,9 +1464,9 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **&phi;<sub>SS</sub>** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
-| **&phi;<sub>s</sub>** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&tau;** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### SBSM Azumth Dependence
@@ -1457,9 +1489,9 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **&phi;<sub>SS</sub>** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
-| **&phi;<sub>s</sub>** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&tau;** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### SMCA Azumth Dependence
@@ -1482,9 +1514,9 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **&phi;<sub>SS</sub>** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
-| **&phi;<sub>s</sub>** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&tau;** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### STNI Azumth Dependence
@@ -1507,9 +1539,9 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **&phi;<sub>SS</sub>** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
-| **&phi;<sub>s</sub>** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&tau;** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### USC Azumth Dependence
@@ -1532,9 +1564,9 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **&phi;<sub>SS</sub>** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
-| **&phi;<sub>s</sub>** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&tau;** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### WNGC Azumth Dependence
@@ -1557,9 +1589,9 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **&phi;<sub>SS</sub>** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
-| **&phi;<sub>s</sub>** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&tau;** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### All Sites Azumth Dependence
@@ -1582,9 +1614,9 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **&phi;<sub>SS</sub>** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
-| **&phi;<sub>s</sub>** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **&phi;** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&tau;** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
+| **&phi;<sub>s</sub>** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
 | **Median SA** | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ## BBP PartB Comparison
