@@ -149,8 +149,8 @@ This tables gives a list of all fault sections which participate in the ruptures
 | Within-event, single-site | &phi;<sub>SS</sub> | 100 km | 0.52 | 0.54 | 0.52 | 0.48 |
 | Within-event, single-site | &phi;<sub>SS</sub> | (all) | 0.47 | 0.51 | 0.48 | 0.42 |
 | Within-event | &phi; | 20 km | 0.64 | 0.69 | 0.65 | 0.55 |
-| Within-event | &phi; | 50 km | 0.71 | 0.74 | 0.71 | 0.65 |
-| Within-event | &phi; | 100 km | 0.73 | 0.75 | 0.74 | 0.67 |
+| Within-event | &phi; | 50 km | 0.71 | 0.74 | 0.72 | 0.65 |
+| Within-event | &phi; | 100 km | 0.73 | 0.75 | 0.74 | 0.66 |
 | Within-event | &phi; | (all) | 0.69 | 0.72 | 0.7 | 0.62 |
 | Between-events | &tau; | 20 km | 0.15 | 0.1 | 0.15 | 0.19 |
 | Between-events | &tau; | 50 km | 0.16 | 0.11 | 0.17 | 0.19 |
@@ -1027,7 +1027,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.46** | **0.46** | **0.45** | **[0.01 1.16]** |  | **0.42** | **0.42** | **0.41** | **[0.02 1.16]** |  | **0.44** | **0.45** | **0.45** | **[0.02 1.14]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.46** | **0.46** | **0.45** | **[0.03 1.21]** |  | **0.42** | **0.42** | **0.41** | **[0.02 1.12]** |  | **0.44** | **0.45** | **0.45** | **[0.04 1.22]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1046,12 +1046,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.44 | 0.44 | 0.05 | [0.38 0.5] | [0.34 0.54] |
-| 3 | 0.46 | 0.44 | 0.08 | [0.36 0.53] | [0.26 0.62] |
-| 4 | 0.44 | 0.42 | 0.08 | [0.35 0.5] | [0.29 0.58] |
-| 5 | 0.42 | 0.42 | 0.08 | [0.35 0.51] | [0.26 0.57] |
-| 7.5 | 0.46 | 0.45 | 0.08 | [0.38 0.54] | [0.31 0.6] |
-| 10 | 0.44 | 0.45 | 0.07 | [0.37 0.54] | [0.33 0.61] |
+| T-independent | 0.44 | 0.44 | 0.06 | [0.37 0.49] | [0.32 0.55] |
+| 3 | 0.46 | 0.45 | 0.08 | [0.36 0.53] | [0.28 0.59] |
+| 4 | 0.44 | 0.44 | 0.08 | [0.35 0.52] | [0.26 0.58] |
+| 5 | 0.42 | 0.42 | 0.09 | [0.34 0.5] | [0.23 0.63] |
+| 7.5 | 0.46 | 0.47 | 0.08 | [0.38 0.53] | [0.27 0.63] |
+| 10 | 0.44 | 0.46 | 0.07 | [0.39 0.51] | [0.28 0.56] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
@@ -1078,7 +1078,7 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.52** | **0.52** | **0.51** | **[0.03 1.35]** |  | **0.5** | **0.49** | **0.48** | **[0.02 1.48]** |  | **0.57** | **0.57** | **0.56** | **[0.03 1.54]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.52** | **0.52** | **0.51** | **[0.03 1.35]** |  | **0.5** | **0.49** | **0.48** | **[0.01 1.53]** |  | **0.57** | **0.57** | **0.56** | **[0.04 1.43]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1097,12 +1097,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.53 | 0.51 | 0.06 | [0.45 0.58] | [0.41 0.65] |
-| 3 | 0.52 | 0.51 | 0.1 | [0.42 0.62] | [0.31 0.76] |
-| 4 | 0.5 | 0.5 | 0.08 | [0.42 0.58] | [0.33 0.68] |
-| 5 | 0.5 | 0.49 | 0.09 | [0.39 0.56] | [0.32 0.68] |
-| 7.5 | 0.56 | 0.54 | 0.1 | [0.46 0.63] | [0.36 0.81] |
-| 10 | 0.57 | 0.55 | 0.09 | [0.45 0.63] | [0.38 0.78] |
+| T-independent | 0.53 | 0.52 | 0.08 | [0.45 0.61] | [0.37 0.69] |
+| 3 | 0.52 | 0.53 | 0.09 | [0.42 0.61] | [0.35 0.74] |
+| 4 | 0.5 | 0.5 | 0.1 | [0.4 0.6] | [0.3 0.69] |
+| 5 | 0.5 | 0.48 | 0.11 | [0.37 0.6] | [0.3 0.72] |
+| 7.5 | 0.56 | 0.55 | 0.11 | [0.46 0.67] | [0.35 0.79] |
+| 10 | 0.57 | 0.56 | 0.12 | [0.46 0.7] | [0.34 0.82] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
@@ -1129,7 +1129,7 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.54** | **0.54** | **0.53** | **[0.04 1.44]** |  | **0.54** | **0.54** | **0.52** | **[0.04 1.39]** |  | **0.59** | **0.6** | **0.59** | **[0.03 1.5]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.54** | **0.54** | **0.53** | **[0.03 1.47]** |  | **0.54** | **0.54** | **0.52** | **[0.03 1.49]** |  | **0.59** | **0.6** | **0.59** | **[0.04 1.69]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1148,12 +1148,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.56 | 0.55 | 0.08 | [0.48 0.62] | [0.4 0.72] |
-| 3 | 0.54 | 0.52 | 0.12 | [0.41 0.64] | [0.31 0.79] |
-| 4 | 0.54 | 0.51 | 0.1 | [0.42 0.61] | [0.31 0.74] |
-| 5 | 0.54 | 0.54 | 0.11 | [0.43 0.64] | [0.29 0.75] |
-| 7.5 | 0.6 | 0.6 | 0.12 | [0.47 0.72] | [0.37 0.84] |
-| 10 | 0.59 | 0.61 | 0.11 | [0.46 0.71] | [0.39 0.83] |
+| T-independent | 0.56 | 0.56 | 0.07 | [0.5 0.63] | [0.41 0.7] |
+| 3 | 0.54 | 0.55 | 0.12 | [0.43 0.67] | [0.32 0.8] |
+| 4 | 0.54 | 0.54 | 0.11 | [0.44 0.66] | [0.32 0.76] |
+| 5 | 0.54 | 0.54 | 0.1 | [0.45 0.65] | [0.32 0.77] |
+| 7.5 | 0.6 | 0.6 | 0.12 | [0.48 0.72] | [0.34 0.79] |
+| 10 | 0.59 | 0.61 | 0.11 | [0.5 0.68] | [0.32 0.81] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
@@ -1180,7 +1180,7 @@ This is a histogram of the number of recordings per event from ASK 2014 with M=[
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **5 sites, V<sub>S30</sub>=500** |  | **0.51** | **0.51** | **0.49** | **[0.01 1.44]** |  | **0.49** | **0.48** | **0.47** | **[0.02 1.48]** |  | **0.54** | **0.54** | **0.52** | **[0.02 1.54]** |
+| **5 sites, V<sub>S30</sub>=500** |  | **0.51** | **0.51** | **0.49** | **[0.03 1.47]** |  | **0.49** | **0.48** | **0.47** | **[0.01 1.53]** |  | **0.54** | **0.54** | **0.52** | **[0.04 1.69]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1200,11 +1200,11 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
 | T-independent | 0.51 | 0.51 | 0.03 | [0.48 0.54] | [0.45 0.58] |
-| 3 | 0.51 | 0.5 | 0.04 | [0.47 0.55] | [0.42 0.6] |
-| 4 | 0.49 | 0.48 | 0.04 | [0.45 0.53] | [0.4 0.6] |
-| 5 | 0.49 | 0.48 | 0.04 | [0.44 0.52] | [0.39 0.57] |
-| 7.5 | 0.54 | 0.54 | 0.04 | [0.5 0.58] | [0.44 0.63] |
-| 10 | 0.54 | 0.54 | 0.04 | [0.49 0.57] | [0.45 0.6] |
+| 3 | 0.51 | 0.51 | 0.05 | [0.46 0.55] | [0.43 0.62] |
+| 4 | 0.49 | 0.49 | 0.04 | [0.45 0.53] | [0.4 0.58] |
+| 5 | 0.49 | 0.49 | 0.04 | [0.45 0.53] | [0.41 0.56] |
+| 7.5 | 0.54 | 0.54 | 0.05 | [0.5 0.59] | [0.44 0.62] |
+| 10 | 0.54 | 0.53 | 0.04 | [0.49 0.58] | [0.45 0.63] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
