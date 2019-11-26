@@ -94,9 +94,18 @@ img {
 <li><a href="#all-distances-m72-between-events-results">All Distances M7.2 Between-events Results</a></li>
 </ul>
 </li>
+<li><a href="#event-term-scatters">Event Term Scatters</a>
+<ul>
+<li><a href="#propagation-velocity-event-term-scatters">Propagation Velocity Event Term Scatters</a></li>
+<li><a href="#mag-event-term-scatters">Mag Event Term Scatters</a></li>
+<li><a href="#log10area-event-term-scatters">Log10(Area) Event Term Scatters</a></li>
+<li><a href="#max-slip-event-term-scatters">Max Slip Event Term Scatters</a></li>
+<li><a href="#mean-slip-event-term-scatters">Mean Slip Event Term Scatters</a></li>
+<li><a href="#mid-seismogenic-mean-slip-event-term-scatters">Mid-Seismogenic Mean Slip Event Term Scatters</a></li>
+</ul>
+</li>
 <li><a href="#azumth-dependence">Azumth Dependence</a>
 <ul>
-<li><a href="#pas-azumth-dependence">PAS Azumth Dependence</a></li>
 <li><a href="#sbsm-azumth-dependence">SBSM Azumth Dependence</a></li>
 <li><a href="#smca-azumth-dependence">SMCA Azumth Dependence</a></li>
 <li><a href="#stni-azumth-dependence">STNI Azumth Dependence</a></li>
@@ -120,11 +129,11 @@ img {
 </thead>
 <tbody>
 <tr><td>Rupture</td><td>100</td><td>Unique (but similar in faulting style and magnitude) ruptures which match the given scenario.</td></tr>
-<tr><td>Site</td><td>6</td><td>Unique site locations. If 3-d, each will have unique velocity profiles.</td></tr>
+<tr><td>Site</td><td>5</td><td>Unique site locations. If 3-d, each will have unique velocity profiles.</td></tr>
 <tr><td>Rupture Strike</td><td>18</td><td>Rupture strike conforming to the Aki &amp; Richards (1980) convention, where dipping faults dip to the right of the rupture. If path rotation is also performed, this azimuth is relative to the path.</td></tr>
 <tr><td>Path</td><td>36</td><td>Path from the site to the centroid of the rupture, in azimuthal degrees (0 is North)</td></tr>
 <tr><td>Distance</td><td>20.0, 50.0, 100.0 km</td><td>3-dimensional distance between the site and the rupture surface.</td></tr>
-<tr><td><strong>Total # Simulations</strong></td><td><strong>1166400</strong></td><td>Total number of combinations of the above.</td></tr>
+<tr><td><strong>Total # Simulations</strong></td><td><strong>972000</strong></td><td>Total number of combinations of the above.</td></tr>
 </tbody>
 </table>
 <h2 id="m72-ss-rsqsim-rupture-match-criteria">M7.2 SS RSQSim Rupture Match Criteria</h2>
@@ -173,15 +182,16 @@ img {
 <tr><td>San Jacinto (San Bernardino)</td><td>1</td></tr>
 <tr><td>Johnson Valley (No) 2011 rev</td><td>1</td></tr>
 <tr><td>Camp Rock 2011</td><td>1</td></tr>
+<tr><td>TOTAL # PARENTS</td><td>108</td></tr>
 </tbody>
 </table>
+<p>Actual magnitude range: [7.1988983,7.201106], average: 7.1999545, stdDev: 6.3244975E-4</p>
 <h2 id="sites">Sites</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>Location</th><th>Vs30 (m/s)</th><th>Z1.0 (km)</th><th>Z2.5 (km)</th></tr>
 </thead>
 <tbody>
-<tr><td>PAS</td><td><em>34.148426, -118.17119</em></td><td>838.8</td><td>0.01</td><td>0.68</td></tr>
 <tr><td>SBSM</td><td><em>34.064987, -117.29201</em></td><td>500</td><td>0.33</td><td>1.82</td></tr>
 <tr><td>SMCA</td><td><em>34.00909, -118.48939</em></td><td>500</td><td>0.59</td><td>2.45</td></tr>
 <tr><td>STNI</td><td><em>33.93088, -118.17881</em></td><td>500</td><td>0.88</td><td>5.57</td></tr>
@@ -195,26 +205,26 @@ img {
 <tr><th>Type</th><th>Notation</th><th>Distance</th><th>T-independent Std. Dev.</th><th>3s Std. Dev.</th><th>5s Std. Dev.</th><th>10s Std. Dev.</th></tr>
 </thead>
 <tbody>
-<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>20 km</td><td>0.29</td><td>0.36</td><td>0.32</td><td>0.15</td></tr>
-<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>50 km</td><td>0.37</td><td>0.45</td><td>0.38</td><td>0.23</td></tr>
-<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>100 km</td><td>0.41</td><td>0.49</td><td>0.43</td><td>0.27</td></tr>
-<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>(all)</td><td>0.36</td><td>0.43</td><td>0.38</td><td>0.22</td></tr>
-<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>20 km</td><td>0.36</td><td>0.38</td><td>0.38</td><td>0.31</td></tr>
-<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>50 km</td><td>0.4</td><td>0.36</td><td>0.39</td><td>0.44</td></tr>
-<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>100 km</td><td>0.4</td><td>0.34</td><td>0.4</td><td>0.45</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>20 km</td><td>0.29</td><td>0.36</td><td>0.32</td><td>0.16</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>50 km</td><td>0.37</td><td>0.45</td><td>0.39</td><td>0.23</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>100 km</td><td>0.42</td><td>0.5</td><td>0.44</td><td>0.28</td></tr>
+<tr><td>Path-to-path</td><td>&phi;<sub>P2P</sub></td><td>(all)</td><td>0.37</td><td>0.44</td><td>0.38</td><td>0.23</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>20 km</td><td>0.36</td><td>0.37</td><td>0.37</td><td>0.31</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>50 km</td><td>0.4</td><td>0.36</td><td>0.4</td><td>0.44</td></tr>
+<tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>100 km</td><td>0.41</td><td>0.34</td><td>0.4</td><td>0.45</td></tr>
 <tr><td>Source-strike</td><td>&phi;<sub>s</sub></td><td>(all)</td><td>0.39</td><td>0.36</td><td>0.39</td><td>0.41</td></tr>
 <tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>20 km</td><td>0.41</td><td>0.46</td><td>0.43</td><td>0.32</td></tr>
-<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>50 km</td><td>0.48</td><td>0.51</td><td>0.48</td><td>0.45</td></tr>
-<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>100 km</td><td>0.52</td><td>0.54</td><td>0.52</td><td>0.48</td></tr>
-<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>(all)</td><td>0.47</td><td>0.51</td><td>0.48</td><td>0.42</td></tr>
-<tr><td>Within-event</td><td>&phi;</td><td>20 km</td><td>0.64</td><td>0.69</td><td>0.65</td><td>0.55</td></tr>
-<tr><td>Within-event</td><td>&phi;</td><td>50 km</td><td>0.71</td><td>0.74</td><td>0.72</td><td>0.65</td></tr>
-<tr><td>Within-event</td><td>&phi;</td><td>100 km</td><td>0.73</td><td>0.75</td><td>0.74</td><td>0.66</td></tr>
-<tr><td>Within-event</td><td>&phi;</td><td>(all)</td><td>0.69</td><td>0.72</td><td>0.7</td><td>0.62</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>20 km</td><td>0.15</td><td>0.1</td><td>0.15</td><td>0.19</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>50 km</td><td>0.16</td><td>0.11</td><td>0.17</td><td>0.19</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>100 km</td><td>0.16</td><td>0.11</td><td>0.16</td><td>0.2</td></tr>
-<tr><td>Between-events</td><td>&tau;</td><td>(all)</td><td>0.16</td><td>0.11</td><td>0.16</td><td>0.19</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>50 km</td><td>0.49</td><td>0.52</td><td>0.48</td><td>0.46</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>100 km</td><td>0.53</td><td>0.55</td><td>0.53</td><td>0.49</td></tr>
+<tr><td>Within-event, single-site</td><td>&phi;<sub>SS</sub></td><td>(all)</td><td>0.48</td><td>0.51</td><td>0.48</td><td>0.43</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>20 km</td><td>0.44</td><td>0.46</td><td>0.42</td><td>0.44</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>50 km</td><td>0.53</td><td>0.52</td><td>0.5</td><td>0.57</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>100 km</td><td>0.56</td><td>0.54</td><td>0.54</td><td>0.59</td></tr>
+<tr><td>Within-event</td><td>&phi;</td><td>(all)</td><td>0.51</td><td>0.51</td><td>0.49</td><td>0.54</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>20 km</td><td>0.16</td><td>0.11</td><td>0.16</td><td>0.2</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>50 km</td><td>0.16</td><td>0.11</td><td>0.17</td><td>0.2</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>100 km</td><td>0.16</td><td>0.11</td><td>0.17</td><td>0.2</td></tr>
+<tr><td>Between-events</td><td>&tau;</td><td>(all)</td><td>0.16</td><td>0.11</td><td>0.17</td><td>0.2</td></tr>
 </tbody>
 </table>
 <h3 id="gmpe-table">GMPE Table</h3>
@@ -257,7 +267,7 @@ img {
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p>Path-to-path variability, denoted &phi;<sub>P2P</sub> in Al Atik (2010), is computed separately for each:</p>
 <ul>
-<li>Site <em>[6 unique]</em></li>
+<li>Site <em>[5 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
 <p>Then, for each unique combination of:</p>
@@ -281,8 +291,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.34</strong></td><td><strong>0.3</strong></td><td><strong>[0.1 0.96]</strong></td><td></td><td><strong>0.32</strong></td><td><strong>0.3</strong></td><td><strong>0.29</strong></td><td><strong>[0.05 0.84]</strong></td><td></td><td><strong>0.15</strong></td><td><strong>0.14</strong></td><td><strong>0.13</strong></td><td><strong>[0.03 0.46]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.36</td><td>0.35</td><td>0.33</td><td>[0.11 0.75]</td><td></td><td>0.31</td><td>0.3</td><td>0.29</td><td>[0.08 0.63]</td><td></td><td>0.14</td><td>0.13</td><td>0.12</td><td>[0.03 0.39]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.33</strong></td><td><strong>0.3</strong></td><td><strong>[0.1 0.96]</strong></td><td></td><td><strong>0.32</strong></td><td><strong>0.3</strong></td><td><strong>0.29</strong></td><td><strong>[0.05 0.84]</strong></td><td></td><td><strong>0.16</strong></td><td><strong>0.15</strong></td><td><strong>0.14</strong></td><td><strong>[0.03 0.46]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.28</td><td>0.27</td><td>0.26</td><td>[0.1 0.6]</td><td></td><td>0.21</td><td>0.2</td><td>0.18</td><td>[0.05 0.49]</td><td></td><td>0.13</td><td>0.12</td><td>0.11</td><td>[0.03 0.32]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.32</td><td>0.3</td><td>0.29</td><td>[0.11 0.65]</td><td></td><td>0.31</td><td>0.29</td><td>0.28</td><td>[0.12 0.59]</td><td></td><td>0.16</td><td>0.15</td><td>0.15</td><td>[0.04 0.38]</td></tr>
 <tr><td>STNI</td><td></td><td>0.26</td><td>0.25</td><td>0.25</td><td>[0.11 0.47]</td><td></td><td>0.27</td><td>0.27</td><td>0.26</td><td>[0.06 0.5]</td><td></td><td>0.13</td><td>0.12</td><td>0.12</td><td>[0.03 0.32]</td></tr>
@@ -309,39 +318,27 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.29</td><td>0.29</td><td>0.02</td><td>[0.27 0.31]</td><td>[0.25 0.33]</td></tr>
-<tr><td>3</td><td>0.36</td><td>0.36</td><td>0.03</td><td>[0.32 0.39]</td><td>[0.3 0.41]</td></tr>
-<tr><td>4</td><td>0.34</td><td>0.34</td><td>0.03</td><td>[0.31 0.37]</td><td>[0.28 0.39]</td></tr>
-<tr><td>5</td><td>0.32</td><td>0.32</td><td>0.02</td><td>[0.3 0.35]</td><td>[0.28 0.36]</td></tr>
-<tr><td>7.5</td><td>0.24</td><td>0.24</td><td>0.02</td><td>[0.22 0.26]</td><td>[0.2 0.28]</td></tr>
-<tr><td>10</td><td>0.15</td><td>0.15</td><td>0.02</td><td>[0.13 0.17]</td><td>[0.13 0.19]</td></tr>
+<tr><td>T-independent</td><td>0.29</td><td>0.29</td><td>0.02</td><td>[0.27 0.32]</td><td>[0.25 0.33]</td></tr>
+<tr><td>3</td><td>0.36</td><td>0.36</td><td>0.03</td><td>[0.33 0.39]</td><td>[0.29 0.42]</td></tr>
+<tr><td>4</td><td>0.34</td><td>0.34</td><td>0.03</td><td>[0.31 0.37]</td><td>[0.29 0.4]</td></tr>
+<tr><td>5</td><td>0.32</td><td>0.32</td><td>0.03</td><td>[0.3 0.35]</td><td>[0.27 0.38]</td></tr>
+<tr><td>7.5</td><td>0.24</td><td>0.24</td><td>0.03</td><td>[0.22 0.27]</td><td>[0.19 0.29]</td></tr>
+<tr><td>10</td><td>0.16</td><td>0.15</td><td>0.02</td><td>[0.14 0.17]</td><td>[0.12 0.19]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_20km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_20km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_20km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_20km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_20km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_20km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_20km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_20km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_20km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/path_event_count_dependence_20km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_20km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/path_event_count_dependence_20km_3s.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_20km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [10.0,30.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/path_event_recordings_hist_20km.png" alt="Histogram" /></p>
 <h3 id="500-km-m72-path-to-path-results">50.0 km M7.2 Path-to-path Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/path_m7.2_50km_std_dev.png" alt="Path-to-path Variability" /></p>
@@ -350,8 +347,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.17 0.94]</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>[0.15 0.75]</strong></td><td></td><td><strong>0.23</strong></td><td><strong>0.22</strong></td><td><strong>0.21</strong></td><td><strong>[0.06 0.49]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.4</td><td>0.39</td><td>0.38</td><td>[0.18 0.75]</td><td></td><td>0.35</td><td>0.34</td><td>0.33</td><td>[0.15 0.6]</td><td></td><td>0.2</td><td>0.19</td><td>0.18</td><td>[0.06 0.43]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>[0.17 0.94]</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>0.36</strong></td><td><strong>[0.18 0.75]</strong></td><td></td><td><strong>0.23</strong></td><td><strong>0.22</strong></td><td><strong>0.22</strong></td><td><strong>[0.06 0.49]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.5</td><td>0.5</td><td>0.49</td><td>[0.28 0.88]</td><td></td><td>0.4</td><td>0.4</td><td>0.39</td><td>[0.18 0.75]</td><td></td><td>0.23</td><td>0.22</td><td>0.21</td><td>[0.07 0.43]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.47</td><td>0.46</td><td>0.46</td><td>[0.23 0.74]</td><td></td><td>0.38</td><td>0.37</td><td>0.36</td><td>[0.19 0.66]</td><td></td><td>0.25</td><td>0.25</td><td>0.24</td><td>[0.11 0.45]</td></tr>
 <tr><td>STNI</td><td></td><td>0.29</td><td>0.29</td><td>0.28</td><td>[0.17 0.48]</td><td></td><td>0.33</td><td>0.33</td><td>0.32</td><td>[0.18 0.54]</td><td></td><td>0.21</td><td>0.2</td><td>0.19</td><td>[0.06 0.43]</td></tr>
@@ -378,39 +374,27 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.37</td><td>0.34</td><td>0.02</td><td>[0.32 0.37]</td><td>[0.3 0.39]</td></tr>
-<tr><td>3</td><td>0.45</td><td>0.42</td><td>0.03</td><td>[0.38 0.45]</td><td>[0.35 0.48]</td></tr>
-<tr><td>4</td><td>0.42</td><td>0.39</td><td>0.03</td><td>[0.36 0.43]</td><td>[0.34 0.45]</td></tr>
-<tr><td>5</td><td>0.38</td><td>0.36</td><td>0.03</td><td>[0.33 0.39]</td><td>[0.31 0.42]</td></tr>
-<tr><td>7.5</td><td>0.31</td><td>0.3</td><td>0.02</td><td>[0.27 0.32]</td><td>[0.25 0.34]</td></tr>
-<tr><td>10</td><td>0.23</td><td>0.22</td><td>0.02</td><td>[0.2 0.24]</td><td>[0.17 0.25]</td></tr>
+<tr><td>T-independent</td><td>0.37</td><td>0.36</td><td>0.02</td><td>[0.33 0.38]</td><td>[0.31 0.41]</td></tr>
+<tr><td>3</td><td>0.45</td><td>0.44</td><td>0.04</td><td>[0.39 0.47]</td><td>[0.37 0.53]</td></tr>
+<tr><td>4</td><td>0.43</td><td>0.41</td><td>0.04</td><td>[0.37 0.44]</td><td>[0.32 0.48]</td></tr>
+<tr><td>5</td><td>0.39</td><td>0.37</td><td>0.03</td><td>[0.34 0.39]</td><td>[0.3 0.44]</td></tr>
+<tr><td>7.5</td><td>0.32</td><td>0.31</td><td>0.03</td><td>[0.28 0.33]</td><td>[0.24 0.35]</td></tr>
+<tr><td>10</td><td>0.23</td><td>0.22</td><td>0.02</td><td>[0.2 0.24]</td><td>[0.18 0.26]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_50km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_50km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_50km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_50km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_50km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_50km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_50km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_50km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_50km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/path_event_count_dependence_50km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_50km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/path_event_count_dependence_50km_3s.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_50km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [40.0,60.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/path_event_recordings_hist_50km.png" alt="Histogram" /></p>
 <h3 id="1000-km-m72-path-to-path-results">100.0 km M7.2 Path-to-path Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/path_m7.2_100km_std_dev.png" alt="Path-to-path Variability" /></p>
@@ -419,8 +403,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.47</strong></td><td><strong>0.46</strong></td><td><strong>[0.2 0.92]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.18 0.79]</strong></td><td></td><td><strong>0.27</strong></td><td><strong>0.27</strong></td><td><strong>0.26</strong></td><td><strong>[0.09 0.51]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.42</td><td>0.42</td><td>0.41</td><td>[0.23 0.7]</td><td></td><td>0.38</td><td>0.38</td><td>0.37</td><td>[0.2 0.64]</td><td></td><td>0.22</td><td>0.21</td><td>0.21</td><td>[0.09 0.41]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.5</strong></td><td><strong>0.48</strong></td><td><strong>0.49</strong></td><td><strong>[0.2 0.92]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>[0.18 0.79]</strong></td><td></td><td><strong>0.28</strong></td><td><strong>0.28</strong></td><td><strong>0.27</strong></td><td><strong>[0.09 0.51]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.58</td><td>0.57</td><td>0.57</td><td>[0.3 0.92]</td><td></td><td>0.44</td><td>0.44</td><td>0.44</td><td>[0.22 0.7]</td><td></td><td>0.26</td><td>0.26</td><td>0.25</td><td>[0.11 0.46]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.55</td><td>0.55</td><td>0.55</td><td>[0.31 0.85]</td><td></td><td>0.43</td><td>0.43</td><td>0.43</td><td>[0.26 0.62]</td><td></td><td>0.31</td><td>0.31</td><td>0.31</td><td>[0.16 0.49]</td></tr>
 <tr><td>STNI</td><td></td><td>0.32</td><td>0.32</td><td>0.32</td><td>[0.2 0.51]</td><td></td><td>0.39</td><td>0.39</td><td>0.38</td><td>[0.18 0.62]</td><td></td><td>0.27</td><td>0.26</td><td>0.26</td><td>[0.09 0.51]</td></tr>
@@ -447,39 +430,27 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.41</td><td>0.41</td><td>0.02</td><td>[0.39 0.43]</td><td>[0.38 0.45]</td></tr>
-<tr><td>3</td><td>0.49</td><td>0.48</td><td>0.03</td><td>[0.46 0.52]</td><td>[0.44 0.54]</td></tr>
-<tr><td>4</td><td>0.47</td><td>0.46</td><td>0.02</td><td>[0.44 0.49]</td><td>[0.42 0.51]</td></tr>
-<tr><td>5</td><td>0.43</td><td>0.42</td><td>0.02</td><td>[0.4 0.46]</td><td>[0.38 0.47]</td></tr>
-<tr><td>7.5</td><td>0.36</td><td>0.37</td><td>0.02</td><td>[0.34 0.39]</td><td>[0.32 0.4]</td></tr>
-<tr><td>10</td><td>0.27</td><td>0.27</td><td>0.02</td><td>[0.26 0.29]</td><td>[0.24 0.31]</td></tr>
+<tr><td>T-independent</td><td>0.42</td><td>0.43</td><td>0.02</td><td>[0.41 0.44]</td><td>[0.39 0.46]</td></tr>
+<tr><td>3</td><td>0.5</td><td>0.5</td><td>0.02</td><td>[0.49 0.53]</td><td>[0.45 0.56]</td></tr>
+<tr><td>4</td><td>0.48</td><td>0.48</td><td>0.03</td><td>[0.45 0.51]</td><td>[0.42 0.53]</td></tr>
+<tr><td>5</td><td>0.44</td><td>0.44</td><td>0.02</td><td>[0.41 0.46]</td><td>[0.38 0.49]</td></tr>
+<tr><td>7.5</td><td>0.37</td><td>0.37</td><td>0.02</td><td>[0.35 0.39]</td><td>[0.32 0.41]</td></tr>
+<tr><td>10</td><td>0.28</td><td>0.28</td><td>0.02</td><td>[0.26 0.3]</td><td>[0.24 0.33]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_100km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_100km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_100km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_100km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_100km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_100km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_100km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_100km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_100km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/path_event_count_dependence_100km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_100km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/path_event_count_dependence_100km_3s.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_100km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [80.0,120.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/path_event_recordings_hist_100km.png" alt="Histogram" /></p>
 <h3 id="all-distances-m72-path-to-path-results">All Distances M7.2 Path-to-path Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/path_m7.2_std_dev.png" alt="Path-to-path Variability" /></p>
@@ -488,8 +459,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>P2P</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.41</strong></td><td><strong>0.39</strong></td><td><strong>[0.1 0.96]</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.36</strong></td><td><strong>0.36</strong></td><td><strong>[0.05 0.84]</strong></td><td></td><td><strong>0.22</strong></td><td><strong>0.21</strong></td><td><strong>0.2</strong></td><td><strong>[0.03 0.51]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.39</td><td>0.38</td><td>0.38</td><td>[0.11 0.75]</td><td></td><td>0.35</td><td>0.34</td><td>0.33</td><td>[0.08 0.64]</td><td></td><td>0.19</td><td>0.18</td><td>0.18</td><td>[0.03 0.43]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.41</strong></td><td><strong>0.39</strong></td><td><strong>[0.1 0.96]</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>[0.05 0.84]</strong></td><td></td><td><strong>0.23</strong></td><td><strong>0.21</strong></td><td><strong>0.21</strong></td><td><strong>[0.03 0.51]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.47</td><td>0.45</td><td>0.47</td><td>[0.1 0.92]</td><td></td><td>0.37</td><td>0.34</td><td>0.36</td><td>[0.05 0.75]</td><td></td><td>0.21</td><td>0.2</td><td>0.2</td><td>[0.03 0.46]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.46</td><td>0.44</td><td>0.45</td><td>[0.11 0.85]</td><td></td><td>0.38</td><td>0.37</td><td>0.37</td><td>[0.12 0.66]</td><td></td><td>0.25</td><td>0.24</td><td>0.24</td><td>[0.04 0.49]</td></tr>
 <tr><td>STNI</td><td></td><td>0.29</td><td>0.29</td><td>0.29</td><td>[0.11 0.51]</td><td></td><td>0.33</td><td>0.33</td><td>0.32</td><td>[0.06 0.62]</td><td></td><td>0.21</td><td>0.19</td><td>0.19</td><td>[0.03 0.51]</td></tr>
@@ -517,46 +487,34 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>P2P</sub></th><th>Downsampled median &phi;<sub>P2P</sub></th><th>Downsampled &phi;<sub>P2P</sub> std. dev.</th><th>Downsampled &phi;<sub>P2P</sub> 68% conf range</th><th>Downsampled &phi;<sub>P2P</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.36</td><td>0.36</td><td>0.01</td><td>[0.35 0.37]</td><td>[0.35 0.37]</td></tr>
-<tr><td>3</td><td>0.43</td><td>0.44</td><td>0.01</td><td>[0.42 0.44]</td><td>[0.41 0.45]</td></tr>
-<tr><td>4</td><td>0.41</td><td>0.41</td><td>0.01</td><td>[0.4 0.42]</td><td>[0.39 0.43]</td></tr>
+<tr><td>T-independent</td><td>0.37</td><td>0.36</td><td>0.01</td><td>[0.36 0.37]</td><td>[0.35 0.38]</td></tr>
+<tr><td>3</td><td>0.44</td><td>0.44</td><td>0.01</td><td>[0.43 0.45]</td><td>[0.42 0.47]</td></tr>
+<tr><td>4</td><td>0.42</td><td>0.42</td><td>0.01</td><td>[0.4 0.43]</td><td>[0.39 0.44]</td></tr>
 <tr><td>5</td><td>0.38</td><td>0.38</td><td>0.01</td><td>[0.37 0.39]</td><td>[0.36 0.4]</td></tr>
-<tr><td>7.5</td><td>0.31</td><td>0.31</td><td>0.01</td><td>[0.3 0.32]</td><td>[0.29 0.32]</td></tr>
-<tr><td>10</td><td>0.22</td><td>0.22</td><td>0.01</td><td>[0.22 0.23]</td><td>[0.21 0.24]</td></tr>
+<tr><td>7.5</td><td>0.32</td><td>0.31</td><td>0.01</td><td>[0.31 0.32]</td><td>[0.3 0.33]</td></tr>
+<tr><td>10</td><td>0.23</td><td>0.23</td><td>0.01</td><td>[0.22 0.24]</td><td>[0.21 0.24]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>P2P</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/path_m7.2_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/path_m7.2_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/path_m7.2_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/path_m7.2_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>P2P</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (36), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/path_event_count_dependence_all_dists_period_indep.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_all_dists_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/path_event_count_dependence_all_dists_3s.png" alt="num events dependence" /></td><td><img src="resources/path_event_recordings_dependence_all_dists_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4].</p>
-<p><img src="resources/path_event_recordings_hist_all_dists.png" alt="Histogram" /></p>
 <h2 id="source-strike-variability">Source-strike Variability</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="source-strike-variability-methodology">Source-strike Variability Methodology</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p>Source-strike variability, denoted &phi;<sub>s</sub> in Aki &amp; Richards (1980), is computed separately for each:</p>
 <ul>
-<li>Site <em>[6 unique]</em></li>
+<li>Site <em>[5 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
 <p>Then, for each unique combination of:</p>
@@ -580,8 +538,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.81]</strong></td><td></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>0.35</strong></td><td><strong>[0.12 0.86]</strong></td><td></td><td><strong>0.31</strong></td><td><strong>0.3</strong></td><td><strong>0.29</strong></td><td><strong>[0.09 0.68]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.41</td><td>0.4</td><td>0.4</td><td>[0.15 0.74]</td><td></td><td>0.39</td><td>0.38</td><td>0.37</td><td>[0.14 0.78]</td><td></td><td>0.3</td><td>0.29</td><td>0.28</td><td>[0.1 0.59]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.81]</strong></td><td></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>[0.12 0.86]</strong></td><td></td><td><strong>0.31</strong></td><td><strong>0.3</strong></td><td><strong>0.29</strong></td><td><strong>[0.09 0.68]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.43</td><td>0.42</td><td>0.41</td><td>[0.15 0.81]</td><td></td><td>0.41</td><td>0.4</td><td>0.38</td><td>[0.14 0.8]</td><td></td><td>0.3</td><td>0.29</td><td>0.28</td><td>[0.11 0.61]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.38</td><td>0.38</td><td>0.38</td><td>[0.16 0.68]</td><td></td><td>0.4</td><td>0.39</td><td>0.37</td><td>[0.15 0.86]</td><td></td><td>0.32</td><td>0.31</td><td>0.3</td><td>[0.1 0.68]</td></tr>
 <tr><td>STNI</td><td></td><td>0.31</td><td>0.31</td><td>0.3</td><td>[0.09 0.59]</td><td></td><td>0.32</td><td>0.32</td><td>0.3</td><td>[0.13 0.74]</td><td></td><td>0.32</td><td>0.31</td><td>0.3</td><td>[0.1 0.66]</td></tr>
@@ -609,39 +566,27 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.36</td><td>0.36</td><td>0.02</td><td>[0.34 0.38]</td><td>[0.33 0.4]</td></tr>
-<tr><td>3</td><td>0.38</td><td>0.37</td><td>0.02</td><td>[0.35 0.39]</td><td>[0.32 0.43]</td></tr>
-<tr><td>4</td><td>0.39</td><td>0.39</td><td>0.02</td><td>[0.36 0.41]</td><td>[0.34 0.44]</td></tr>
-<tr><td>5</td><td>0.38</td><td>0.37</td><td>0.03</td><td>[0.35 0.41]</td><td>[0.32 0.43]</td></tr>
-<tr><td>7.5</td><td>0.35</td><td>0.35</td><td>0.03</td><td>[0.33 0.38]</td><td>[0.3 0.41]</td></tr>
-<tr><td>10</td><td>0.31</td><td>0.31</td><td>0.02</td><td>[0.29 0.33]</td><td>[0.27 0.36]</td></tr>
+<tr><td>T-independent</td><td>0.36</td><td>0.36</td><td>0.02</td><td>[0.33 0.38]</td><td>[0.31 0.39]</td></tr>
+<tr><td>3</td><td>0.37</td><td>0.37</td><td>0.02</td><td>[0.34 0.4]</td><td>[0.32 0.42]</td></tr>
+<tr><td>4</td><td>0.38</td><td>0.38</td><td>0.03</td><td>[0.35 0.41]</td><td>[0.32 0.43]</td></tr>
+<tr><td>5</td><td>0.37</td><td>0.37</td><td>0.03</td><td>[0.33 0.39]</td><td>[0.31 0.42]</td></tr>
+<tr><td>7.5</td><td>0.36</td><td>0.35</td><td>0.03</td><td>[0.33 0.37]</td><td>[0.29 0.41]</td></tr>
+<tr><td>10</td><td>0.31</td><td>0.31</td><td>0.03</td><td>[0.28 0.34]</td><td>[0.25 0.36]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_20km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_20km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_20km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_20km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_20km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_20km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_20km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_20km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_20km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/source_strike_event_count_dependence_20km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_20km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/source_strike_event_count_dependence_20km_3s.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_20km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [10.0,30.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/source_strike_event_recordings_hist_20km.png" alt="Histogram" /></p>
 <h3 id="500-km-m72-source-strike-results">50.0 km M7.2 Source-strike Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/source_strike_m7.2_50km_std_dev.png" alt="Source-strike Variability" /></p>
@@ -650,8 +595,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>0.33</strong></td><td><strong>[0.1 0.88]</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.87]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>0.43</strong></td><td><strong>[0.12 0.92]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.36</td><td>0.34</td><td>0.32</td><td>[0.12 0.77]</td><td></td><td>0.36</td><td>0.34</td><td>0.32</td><td>[0.11 0.81]</td><td></td><td>0.44</td><td>0.43</td><td>0.43</td><td>[0.19 0.82]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>0.34</strong></td><td><strong>[0.1 0.88]</strong></td><td></td><td><strong>0.4</strong></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>[0.09 0.87]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.44</strong></td><td><strong>0.43</strong></td><td><strong>[0.12 0.92]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.45</td><td>0.45</td><td>0.45</td><td>[0.17 0.88]</td><td></td><td>0.45</td><td>0.44</td><td>0.43</td><td>[0.2 0.79]</td><td></td><td>0.43</td><td>0.43</td><td>0.42</td><td>[0.23 0.76]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.35</td><td>0.34</td><td>0.33</td><td>[0.1 0.71]</td><td></td><td>0.39</td><td>0.38</td><td>0.36</td><td>[0.09 0.85]</td><td></td><td>0.44</td><td>0.43</td><td>0.42</td><td>[0.16 0.83]</td></tr>
 <tr><td>STNI</td><td></td><td>0.3</td><td>0.3</td><td>0.29</td><td>[0.1 0.64]</td><td></td><td>0.36</td><td>0.35</td><td>0.33</td><td>[0.11 0.82]</td><td></td><td>0.47</td><td>0.46</td><td>0.46</td><td>[0.2 0.91]</td></tr>
@@ -678,39 +622,27 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.4</td><td>0.39</td><td>0.02</td><td>[0.35 0.4]</td><td>[0.34 0.43]</td></tr>
-<tr><td>3</td><td>0.36</td><td>0.35</td><td>0.03</td><td>[0.32 0.37]</td><td>[0.29 0.4]</td></tr>
-<tr><td>4</td><td>0.38</td><td>0.36</td><td>0.03</td><td>[0.33 0.39]</td><td>[0.31 0.42]</td></tr>
-<tr><td>5</td><td>0.39</td><td>0.36</td><td>0.03</td><td>[0.34 0.4]</td><td>[0.3 0.43]</td></tr>
-<tr><td>7.5</td><td>0.42</td><td>0.41</td><td>0.03</td><td>[0.37 0.44]</td><td>[0.33 0.48]</td></tr>
-<tr><td>10</td><td>0.44</td><td>0.43</td><td>0.03</td><td>[0.4 0.45]</td><td>[0.37 0.49]</td></tr>
+<tr><td>T-independent</td><td>0.4</td><td>0.39</td><td>0.03</td><td>[0.37 0.42]</td><td>[0.33 0.44]</td></tr>
+<tr><td>3</td><td>0.36</td><td>0.35</td><td>0.03</td><td>[0.32 0.38]</td><td>[0.28 0.42]</td></tr>
+<tr><td>4</td><td>0.39</td><td>0.37</td><td>0.03</td><td>[0.34 0.4]</td><td>[0.31 0.45]</td></tr>
+<tr><td>5</td><td>0.4</td><td>0.38</td><td>0.04</td><td>[0.34 0.42]</td><td>[0.31 0.45]</td></tr>
+<tr><td>7.5</td><td>0.42</td><td>0.41</td><td>0.03</td><td>[0.38 0.45]</td><td>[0.34 0.48]</td></tr>
+<tr><td>10</td><td>0.44</td><td>0.43</td><td>0.03</td><td>[0.39 0.46]</td><td>[0.37 0.49]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_50km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_50km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_50km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_50km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_50km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_50km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_50km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_50km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_50km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/source_strike_event_count_dependence_50km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_50km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/source_strike_event_count_dependence_50km_3s.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_50km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [40.0,60.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/source_strike_event_recordings_hist_50km.png" alt="Histogram" /></p>
 <h3 id="1000-km-m72-source-strike-results">100.0 km M7.2 Source-strike Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/source_strike_m7.2_100km_std_dev.png" alt="Source-strike Variability" /></p>
@@ -719,8 +651,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.34</strong></td><td><strong>0.33</strong></td><td><strong>0.32</strong></td><td><strong>[0.08 0.91]</strong></td><td></td><td><strong>0.4</strong></td><td><strong>0.38</strong></td><td><strong>0.37</strong></td><td><strong>[0.09 0.89]</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>0.44</strong></td><td><strong>[0.12 0.97]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.34</td><td>0.33</td><td>0.33</td><td>[0.12 0.67]</td><td></td><td>0.38</td><td>0.36</td><td>0.35</td><td>[0.11 0.85]</td><td></td><td>0.45</td><td>0.44</td><td>0.44</td><td>[0.13 0.87]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.34</strong></td><td><strong>0.33</strong></td><td><strong>0.32</strong></td><td><strong>[0.08 0.91]</strong></td><td></td><td><strong>0.4</strong></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>[0.09 0.89]</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>0.44</strong></td><td><strong>[0.12 0.97]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.42</td><td>0.42</td><td>0.41</td><td>[0.1 0.91]</td><td></td><td>0.45</td><td>0.44</td><td>0.43</td><td>[0.12 0.85]</td><td></td><td>0.43</td><td>0.43</td><td>0.43</td><td>[0.13 0.78]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.33</td><td>0.32</td><td>0.31</td><td>[0.08 0.8]</td><td></td><td>0.39</td><td>0.37</td><td>0.36</td><td>[0.1 0.78]</td><td></td><td>0.43</td><td>0.42</td><td>0.42</td><td>[0.12 0.88]</td></tr>
 <tr><td>STNI</td><td></td><td>0.29</td><td>0.28</td><td>0.28</td><td>[0.1 0.56]</td><td></td><td>0.38</td><td>0.37</td><td>0.36</td><td>[0.12 0.85]</td><td></td><td>0.49</td><td>0.49</td><td>0.48</td><td>[0.16 0.93]</td></tr>
@@ -748,39 +679,27 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.4</td><td>0.4</td><td>0.03</td><td>[0.38 0.43]</td><td>[0.35 0.47]</td></tr>
-<tr><td>3</td><td>0.34</td><td>0.34</td><td>0.02</td><td>[0.31 0.37]</td><td>[0.29 0.38]</td></tr>
-<tr><td>4</td><td>0.38</td><td>0.38</td><td>0.03</td><td>[0.35 0.41]</td><td>[0.31 0.44]</td></tr>
-<tr><td>5</td><td>0.4</td><td>0.39</td><td>0.04</td><td>[0.36 0.44]</td><td>[0.32 0.48]</td></tr>
-<tr><td>7.5</td><td>0.44</td><td>0.43</td><td>0.04</td><td>[0.41 0.47]</td><td>[0.38 0.54]</td></tr>
-<tr><td>10</td><td>0.45</td><td>0.45</td><td>0.03</td><td>[0.42 0.48]</td><td>[0.38 0.54]</td></tr>
+<tr><td>T-independent</td><td>0.41</td><td>0.4</td><td>0.02</td><td>[0.38 0.43]</td><td>[0.36 0.45]</td></tr>
+<tr><td>3</td><td>0.34</td><td>0.34</td><td>0.03</td><td>[0.31 0.37]</td><td>[0.29 0.42]</td></tr>
+<tr><td>4</td><td>0.38</td><td>0.37</td><td>0.03</td><td>[0.35 0.41]</td><td>[0.32 0.43]</td></tr>
+<tr><td>5</td><td>0.4</td><td>0.4</td><td>0.04</td><td>[0.36 0.44]</td><td>[0.33 0.47]</td></tr>
+<tr><td>7.5</td><td>0.44</td><td>0.44</td><td>0.03</td><td>[0.4 0.47]</td><td>[0.38 0.51]</td></tr>
+<tr><td>10</td><td>0.45</td><td>0.45</td><td>0.03</td><td>[0.42 0.48]</td><td>[0.39 0.51]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_100km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_100km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_100km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_100km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_100km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_100km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_100km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_100km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_100km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/source_strike_event_count_dependence_100km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_100km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/source_strike_event_count_dependence_100km_3s.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_100km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [80.0,120.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/source_strike_event_recordings_hist_100km.png" alt="Histogram" /></p>
 <h3 id="all-distances-m72-source-strike-results">All Distances M7.2 Source-strike Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/source_strike_m7.2_std_dev.png" alt="Source-strike Variability" /></p>
@@ -789,8 +708,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>s</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>0.34</strong></td><td><strong>[0.08 0.91]</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.37</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.89]</strong></td><td></td><td><strong>0.41</strong></td><td><strong>0.39</strong></td><td><strong>0.39</strong></td><td><strong>[0.09 0.97]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.37</td><td>0.36</td><td>0.35</td><td>[0.12 0.77]</td><td></td><td>0.38</td><td>0.36</td><td>0.35</td><td>[0.11 0.85]</td><td></td><td>0.4</td><td>0.39</td><td>0.39</td><td>[0.1 0.87]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.36</strong></td><td><strong>0.35</strong></td><td><strong>0.34</strong></td><td><strong>[0.08 0.91]</strong></td><td></td><td><strong>0.39</strong></td><td><strong>0.38</strong></td><td><strong>0.36</strong></td><td><strong>[0.09 0.89]</strong></td><td></td><td><strong>0.41</strong></td><td><strong>0.39</strong></td><td><strong>0.39</strong></td><td><strong>[0.09 0.97]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.44</td><td>0.43</td><td>0.42</td><td>[0.1 0.91]</td><td></td><td>0.44</td><td>0.43</td><td>0.41</td><td>[0.12 0.85]</td><td></td><td>0.39</td><td>0.38</td><td>0.39</td><td>[0.11 0.78]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.36</td><td>0.35</td><td>0.34</td><td>[0.08 0.8]</td><td></td><td>0.39</td><td>0.38</td><td>0.37</td><td>[0.09 0.86]</td><td></td><td>0.4</td><td>0.38</td><td>0.38</td><td>[0.1 0.88]</td></tr>
 <tr><td>STNI</td><td></td><td>0.3</td><td>0.29</td><td>0.29</td><td>[0.09 0.64]</td><td></td><td>0.36</td><td>0.34</td><td>0.33</td><td>[0.11 0.85]</td><td></td><td>0.43</td><td>0.42</td><td>0.42</td><td>[0.1 0.93]</td></tr>
@@ -818,46 +736,34 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>s</sub></th><th>Downsampled median &phi;<sub>s</sub></th><th>Downsampled &phi;<sub>s</sub> std. dev.</th><th>Downsampled &phi;<sub>s</sub> 68% conf range</th><th>Downsampled &phi;<sub>s</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.39</td><td>0.39</td><td>0.01</td><td>[0.38 0.4]</td><td>[0.37 0.4]</td></tr>
-<tr><td>3</td><td>0.36</td><td>0.36</td><td>0.01</td><td>[0.35 0.37]</td><td>[0.34 0.38]</td></tr>
+<tr><td>T-independent</td><td>0.39</td><td>0.39</td><td>0.01</td><td>[0.38 0.4]</td><td>[0.37 0.41]</td></tr>
+<tr><td>3</td><td>0.36</td><td>0.36</td><td>0.01</td><td>[0.35 0.37]</td><td>[0.33 0.38]</td></tr>
 <tr><td>4</td><td>0.38</td><td>0.38</td><td>0.01</td><td>[0.37 0.39]</td><td>[0.36 0.4]</td></tr>
-<tr><td>5</td><td>0.39</td><td>0.39</td><td>0.01</td><td>[0.38 0.4]</td><td>[0.37 0.41]</td></tr>
-<tr><td>7.5</td><td>0.41</td><td>0.41</td><td>0.01</td><td>[0.39 0.42]</td><td>[0.38 0.42]</td></tr>
-<tr><td>10</td><td>0.41</td><td>0.4</td><td>0.01</td><td>[0.39 0.42]</td><td>[0.38 0.43]</td></tr>
+<tr><td>5</td><td>0.39</td><td>0.39</td><td>0.01</td><td>[0.37 0.4]</td><td>[0.36 0.41]</td></tr>
+<tr><td>7.5</td><td>0.41</td><td>0.41</td><td>0.01</td><td>[0.39 0.42]</td><td>[0.38 0.43]</td></tr>
+<tr><td>10</td><td>0.41</td><td>0.41</td><td>0.01</td><td>[0.4 0.42]</td><td>[0.38 0.44]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>s</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/source_strike_m7.2_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/source_strike_m7.2_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/source_strike_m7.2_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/source_strike_m7.2_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi;<sub>s</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (18), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/source_strike_event_count_dependence_all_dists_period_indep.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_all_dists_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/source_strike_event_count_dependence_all_dists_3s.png" alt="num events dependence" /></td><td><img src="resources/source_strike_event_recordings_dependence_all_dists_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4].</p>
-<p><img src="resources/source_strike_event_recordings_hist_all_dists.png" alt="Histogram" /></p>
 <h2 id="within-event-single-site-variability">Within-event, single-site Variability</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="within-event-single-site-variability-methodology">Within-event, single-site Variability Methodology</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p>Within-event, single-site variability, denoted &phi;<sub>SS</sub> in Al Atik (2010), is computed separately for each:</p>
 <ul>
-<li>Site <em>[6 unique]</em></li>
+<li>Site <em>[5 unique]</em></li>
 <li>Distance <em>[3 unique]</em></li>
 </ul>
 <p>Then, for each unique combination of:</p>
@@ -881,8 +787,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>0.43</strong></td><td><strong>[0.27 0.7]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.26 0.7]</strong></td><td></td><td><strong>0.32</strong></td><td><strong>0.3</strong></td><td><strong>0.3</strong></td><td><strong>[0.15 0.59]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.49</td><td>0.48</td><td>0.47</td><td>[0.38 0.62]</td><td></td><td>0.45</td><td>0.44</td><td>0.43</td><td>[0.33 0.7]</td><td></td><td>0.31</td><td>0.29</td><td>0.28</td><td>[0.17 0.5]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.44</strong></td><td><strong>0.42</strong></td><td><strong>[0.27 0.7]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.42</strong></td><td><strong>0.4</strong></td><td><strong>[0.26 0.69]</strong></td><td></td><td><strong>0.32</strong></td><td><strong>0.31</strong></td><td><strong>0.3</strong></td><td><strong>[0.15 0.59]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.45</td><td>0.44</td><td>0.44</td><td>[0.29 0.67]</td><td></td><td>0.42</td><td>0.41</td><td>0.39</td><td>[0.26 0.66]</td><td></td><td>0.3</td><td>0.29</td><td>0.28</td><td>[0.15 0.49]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.43</td><td>0.43</td><td>0.42</td><td>[0.33 0.53]</td><td></td><td>0.43</td><td>0.42</td><td>0.4</td><td>[0.31 0.68]</td><td></td><td>0.32</td><td>0.31</td><td>0.3</td><td>[0.19 0.53]</td></tr>
 <tr><td>STNI</td><td></td><td>0.34</td><td>0.34</td><td>0.34</td><td>[0.27 0.45]</td><td></td><td>0.35</td><td>0.34</td><td>0.34</td><td>[0.26 0.53]</td><td></td><td>0.32</td><td>0.31</td><td>0.3</td><td>[0.15 0.59]</td></tr>
@@ -909,25 +814,25 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.41</td><td>0.4</td><td>0.02</td><td>[0.39 0.42]</td><td>[0.38 0.44]</td></tr>
-<tr><td>3</td><td>0.46</td><td>0.45</td><td>0.02</td><td>[0.43 0.47]</td><td>[0.41 0.5]</td></tr>
-<tr><td>4</td><td>0.46</td><td>0.44</td><td>0.02</td><td>[0.43 0.46]</td><td>[0.41 0.49]</td></tr>
+<tr><td>T-independent</td><td>0.41</td><td>0.4</td><td>0.02</td><td>[0.38 0.42]</td><td>[0.36 0.44]</td></tr>
+<tr><td>3</td><td>0.46</td><td>0.45</td><td>0.03</td><td>[0.42 0.48]</td><td>[0.4 0.5]</td></tr>
+<tr><td>4</td><td>0.45</td><td>0.44</td><td>0.03</td><td>[0.42 0.47]</td><td>[0.39 0.49]</td></tr>
 <tr><td>5</td><td>0.43</td><td>0.42</td><td>0.03</td><td>[0.4 0.45]</td><td>[0.37 0.48]</td></tr>
-<tr><td>7.5</td><td>0.37</td><td>0.37</td><td>0.02</td><td>[0.34 0.4]</td><td>[0.32 0.42]</td></tr>
-<tr><td>10</td><td>0.32</td><td>0.31</td><td>0.02</td><td>[0.29 0.34]</td><td>[0.26 0.37]</td></tr>
+<tr><td>7.5</td><td>0.38</td><td>0.37</td><td>0.03</td><td>[0.34 0.4]</td><td>[0.32 0.43]</td></tr>
+<tr><td>10</td><td>0.32</td><td>0.31</td><td>0.02</td><td>[0.29 0.34]</td><td>[0.27 0.36]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_20km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_20km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_20km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_20km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_20km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
 <p>These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
@@ -950,8 +855,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.5</strong></td><td><strong>0.5</strong></td><td><strong>[0.3 0.74]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>0.46</strong></td><td><strong>[0.31 0.75]</strong></td><td></td><td><strong>0.45</strong></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>[0.28 0.81]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.47</td><td>0.47</td><td>0.47</td><td>[0.37 0.57]</td><td></td><td>0.43</td><td>0.43</td><td>0.41</td><td>[0.32 0.62]</td><td></td><td>0.44</td><td>0.43</td><td>0.43</td><td>[0.28 0.71]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.52</strong></td><td><strong>0.5</strong></td><td><strong>0.51</strong></td><td><strong>[0.3 0.74]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.31 0.75]</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>0.44</strong></td><td><strong>[0.3 0.81]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.61</td><td>0.61</td><td>0.6</td><td>[0.49 0.74]</td><td></td><td>0.55</td><td>0.55</td><td>0.53</td><td>[0.42 0.75]</td><td></td><td>0.46</td><td>0.45</td><td>0.44</td><td>[0.36 0.68]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.52</td><td>0.52</td><td>0.52</td><td>[0.44 0.6]</td><td></td><td>0.46</td><td>0.46</td><td>0.45</td><td>[0.34 0.66]</td><td></td><td>0.45</td><td>0.45</td><td>0.43</td><td>[0.31 0.71]</td></tr>
 <tr><td>STNI</td><td></td><td>0.37</td><td>0.36</td><td>0.36</td><td>[0.3 0.48]</td><td></td><td>0.41</td><td>0.41</td><td>0.39</td><td>[0.31 0.63]</td><td></td><td>0.48</td><td>0.46</td><td>0.46</td><td>[0.3 0.81]</td></tr>
@@ -978,25 +882,25 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.48</td><td>0.46</td><td>0.03</td><td>[0.43 0.49]</td><td>[0.42 0.52]</td></tr>
-<tr><td>3</td><td>0.51</td><td>0.49</td><td>0.04</td><td>[0.46 0.53]</td><td>[0.43 0.57]</td></tr>
-<tr><td>4</td><td>0.5</td><td>0.47</td><td>0.04</td><td>[0.44 0.52]</td><td>[0.42 0.55]</td></tr>
-<tr><td>5</td><td>0.48</td><td>0.45</td><td>0.04</td><td>[0.42 0.5]</td><td>[0.4 0.54]</td></tr>
-<tr><td>7.5</td><td>0.46</td><td>0.44</td><td>0.03</td><td>[0.4 0.47]</td><td>[0.38 0.5]</td></tr>
-<tr><td>10</td><td>0.45</td><td>0.44</td><td>0.03</td><td>[0.41 0.47]</td><td>[0.38 0.51]</td></tr>
+<tr><td>T-independent</td><td>0.49</td><td>0.47</td><td>0.03</td><td>[0.45 0.5]</td><td>[0.42 0.53]</td></tr>
+<tr><td>3</td><td>0.52</td><td>0.5</td><td>0.04</td><td>[0.47 0.54]</td><td>[0.43 0.58]</td></tr>
+<tr><td>4</td><td>0.51</td><td>0.49</td><td>0.04</td><td>[0.46 0.53]</td><td>[0.42 0.57]</td></tr>
+<tr><td>5</td><td>0.48</td><td>0.47</td><td>0.04</td><td>[0.43 0.5]</td><td>[0.39 0.54]</td></tr>
+<tr><td>7.5</td><td>0.46</td><td>0.45</td><td>0.03</td><td>[0.42 0.48]</td><td>[0.39 0.52]</td></tr>
+<tr><td>10</td><td>0.46</td><td>0.44</td><td>0.03</td><td>[0.41 0.48]</td><td>[0.37 0.51]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_50km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_50km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_50km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_50km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_50km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
 <p>These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
@@ -1019,8 +923,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.53</strong></td><td><strong>0.54</strong></td><td><strong>[0.31 0.76]</strong></td><td></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>[0.38 0.76]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.29 0.82]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.49</td><td>0.49</td><td>0.48</td><td>[0.41 0.56]</td><td></td><td>0.48</td><td>0.48</td><td>0.47</td><td>[0.38 0.66]</td><td></td><td>0.46</td><td>0.45</td><td>0.45</td><td>[0.29 0.73]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.55</strong></td><td><strong>0.54</strong></td><td><strong>0.58</strong></td><td><strong>[0.31 0.76]</strong></td><td></td><td><strong>0.53</strong></td><td><strong>0.53</strong></td><td><strong>0.52</strong></td><td><strong>[0.38 0.76]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>0.48</strong></td><td><strong>[0.32 0.82]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.65</td><td>0.65</td><td>0.65</td><td>[0.53 0.76]</td><td></td><td>0.57</td><td>0.57</td><td>0.56</td><td>[0.45 0.73]</td><td></td><td>0.47</td><td>0.47</td><td>0.46</td><td>[0.36 0.68]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.6</td><td>0.6</td><td>0.6</td><td>[0.5 0.66]</td><td></td><td>0.52</td><td>0.52</td><td>0.51</td><td>[0.42 0.72]</td><td></td><td>0.48</td><td>0.47</td><td>0.47</td><td>[0.33 0.76]</td></tr>
 <tr><td>STNI</td><td></td><td>0.38</td><td>0.38</td><td>0.38</td><td>[0.31 0.46]</td><td></td><td>0.49</td><td>0.48</td><td>0.46</td><td>[0.38 0.71]</td><td></td><td>0.51</td><td>0.51</td><td>0.5</td><td>[0.33 0.82]</td></tr>
@@ -1047,25 +950,25 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.52</td><td>0.52</td><td>0.02</td><td>[0.5 0.54]</td><td>[0.49 0.56]</td></tr>
-<tr><td>3</td><td>0.54</td><td>0.54</td><td>0.02</td><td>[0.51 0.56]</td><td>[0.49 0.58]</td></tr>
-<tr><td>4</td><td>0.54</td><td>0.54</td><td>0.02</td><td>[0.52 0.56]</td><td>[0.49 0.59]</td></tr>
-<tr><td>5</td><td>0.52</td><td>0.52</td><td>0.02</td><td>[0.5 0.55]</td><td>[0.48 0.57]</td></tr>
-<tr><td>7.5</td><td>0.51</td><td>0.5</td><td>0.02</td><td>[0.48 0.53]</td><td>[0.46 0.55]</td></tr>
-<tr><td>10</td><td>0.48</td><td>0.48</td><td>0.02</td><td>[0.45 0.51]</td><td>[0.43 0.53]</td></tr>
+<tr><td>T-independent</td><td>0.53</td><td>0.53</td><td>0.02</td><td>[0.51 0.55]</td><td>[0.49 0.57]</td></tr>
+<tr><td>3</td><td>0.55</td><td>0.55</td><td>0.02</td><td>[0.53 0.57]</td><td>[0.5 0.61]</td></tr>
+<tr><td>4</td><td>0.55</td><td>0.55</td><td>0.03</td><td>[0.52 0.58]</td><td>[0.49 0.6]</td></tr>
+<tr><td>5</td><td>0.53</td><td>0.53</td><td>0.03</td><td>[0.5 0.56]</td><td>[0.47 0.58]</td></tr>
+<tr><td>7.5</td><td>0.52</td><td>0.51</td><td>0.03</td><td>[0.49 0.55]</td><td>[0.46 0.58]</td></tr>
+<tr><td>10</td><td>0.49</td><td>0.48</td><td>0.03</td><td>[0.46 0.5]</td><td>[0.43 0.56]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_100km_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_100km_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_100km_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_100km_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_100km_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
 <p>These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
@@ -1088,8 +991,7 @@ img {
 <tr><th>Site</th><th>3s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;<sub>SS</sub></th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.27 0.76]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>0.47</strong></td><td><strong>[0.26 0.76]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>0.42</strong></td><td><strong>[0.15 0.82]</strong></td></tr>
-<tr><td>PAS</td><td></td><td>0.48</td><td>0.48</td><td>0.48</td><td>[0.37 0.62]</td><td></td><td>0.46</td><td>0.45</td><td>0.44</td><td>[0.32 0.7]</td><td></td><td>0.41</td><td>0.39</td><td>0.4</td><td>[0.17 0.73]</td></tr>
+<tr><td><strong>ALL SITES</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.5</strong></td><td><strong>0.48</strong></td><td><strong>[0.27 0.76]</strong></td><td></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>0.48</strong></td><td><strong>[0.26 0.76]</strong></td><td></td><td><strong>0.43</strong></td><td><strong>0.41</strong></td><td><strong>0.42</strong></td><td><strong>[0.15 0.82]</strong></td></tr>
 <tr><td>SBSM</td><td></td><td>0.58</td><td>0.57</td><td>0.59</td><td>[0.29 0.76]</td><td></td><td>0.52</td><td>0.51</td><td>0.52</td><td>[0.26 0.75]</td><td></td><td>0.42</td><td>0.4</td><td>0.42</td><td>[0.15 0.68]</td></tr>
 <tr><td>SMCA</td><td></td><td>0.52</td><td>0.52</td><td>0.52</td><td>[0.33 0.66]</td><td></td><td>0.47</td><td>0.46</td><td>0.46</td><td>[0.31 0.72]</td><td></td><td>0.42</td><td>0.41</td><td>0.42</td><td>[0.19 0.76]</td></tr>
 <tr><td>STNI</td><td></td><td>0.37</td><td>0.36</td><td>0.36</td><td>[0.27 0.48]</td><td></td><td>0.42</td><td>0.41</td><td>0.41</td><td>[0.26 0.71]</td><td></td><td>0.44</td><td>0.43</td><td>0.44</td><td>[0.15 0.82]</td></tr>
@@ -1116,25 +1018,25 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;<sub>SS</sub></th><th>Downsampled median &phi;<sub>SS</sub></th><th>Downsampled &phi;<sub>SS</sub> std. dev.</th><th>Downsampled &phi;<sub>SS</sub> 68% conf range</th><th>Downsampled &phi;<sub>SS</sub> 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.47</td><td>0.47</td><td>0.01</td><td>[0.47 0.48]</td><td>[0.46 0.49]</td></tr>
-<tr><td>3</td><td>0.51</td><td>0.51</td><td>0.01</td><td>[0.5 0.51]</td><td>[0.49 0.52]</td></tr>
-<tr><td>4</td><td>0.5</td><td>0.5</td><td>0.01</td><td>[0.49 0.51]</td><td>[0.48 0.53]</td></tr>
-<tr><td>5</td><td>0.48</td><td>0.48</td><td>0.01</td><td>[0.47 0.49]</td><td>[0.46 0.51]</td></tr>
-<tr><td>7.5</td><td>0.45</td><td>0.45</td><td>0.01</td><td>[0.44 0.47]</td><td>[0.42 0.48]</td></tr>
-<tr><td>10</td><td>0.42</td><td>0.42</td><td>0.01</td><td>[0.41 0.44]</td><td>[0.39 0.45]</td></tr>
+<tr><td>T-independent</td><td>0.48</td><td>0.48</td><td>0.01</td><td>[0.47 0.49]</td><td>[0.46 0.5]</td></tr>
+<tr><td>3</td><td>0.51</td><td>0.51</td><td>0.01</td><td>[0.5 0.52]</td><td>[0.49 0.53]</td></tr>
+<tr><td>4</td><td>0.51</td><td>0.5</td><td>0.01</td><td>[0.5 0.52]</td><td>[0.48 0.53]</td></tr>
+<tr><td>5</td><td>0.48</td><td>0.48</td><td>0.02</td><td>[0.47 0.5]</td><td>[0.46 0.52]</td></tr>
+<tr><td>7.5</td><td>0.46</td><td>0.45</td><td>0.02</td><td>[0.44 0.47]</td><td>[0.43 0.49]</td></tr>
+<tr><td>10</td><td>0.43</td><td>0.42</td><td>0.02</td><td>[0.41 0.45]</td><td>[0.4 0.47]</td></tr>
 </tbody>
 </table>
 <p>These plots show the distribution of period-independent downsampled &phi;<sub>SS</sub> for each site.</p>
 <table>
 <thead>
-<tr><th>Period</th><th><strong>PAS</strong></th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th></tr>
+<tr><th>Period</th><th><strong>SBSM</strong></th><th><strong>SMCA</strong></th><th><strong>STNI</strong></th></tr>
 </thead>
 <tbody>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_PAS_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_PAS_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><strong>STNI</strong></td><td><strong>USC</strong></td><td><strong>WNGC</strong></td></tr>
-<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
-<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_SBSM_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_SMCA_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_STNI_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_SBSM_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_SMCA_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_STNI_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
+<tr><td>Period-Indep</td><td><strong>USC</strong></td><td><strong>WNGC</strong></td><td></td></tr>
+<tr><td>Period</td><td><img src="resources/within_event_ss_m7.2_USC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_WNGC_downsampled_hist_period_indep.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
+<tr><td>Period-Indep</td><td><img src="resources/within_event_ss_m7.2_USC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td><img src="resources/within_event_ss_m7.2_WNGC_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td><td></td></tr>
 </tbody>
 </table>
 <p>These plots show the dependence of &phi;<sub>SS</sub> to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (648), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
@@ -1161,9 +1063,9 @@ img {
 <ul>
 <li>Rupture <em>[100 unique]</em></li>
 </ul>
-<p>we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 3888 combinations of:</p>
+<p>we compute residuals, &delta;W<sub>es</sub>, of the natural-log ground motions (relative to the median), computed across all 3240 combinations of:</p>
 <ul>
-<li>Site <em>[6 unique]</em> (Singleton)</li>
+<li>Site <em>[5 unique]</em> (Singleton)</li>
 <li>Rupture Strike <em>[18 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
@@ -1180,7 +1082,7 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>[0.03 1.21]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.02 1.12]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.45</strong></td><td><strong>0.45</strong></td><td><strong>[0.04 1.22]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.46</strong></td><td><strong>0.46</strong></td><td><strong>0.45</strong></td><td><strong>[0.03 1.2]</strong></td><td></td><td><strong>0.42</strong></td><td><strong>0.42</strong></td><td><strong>0.41</strong></td><td><strong>[0.02 1.19]</strong></td><td></td><td><strong>0.44</strong></td><td><strong>0.45</strong></td><td><strong>0.45</strong></td><td><strong>[0.04 1.18]</strong></td></tr>
 </tbody>
 </table>
 <p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
@@ -1203,12 +1105,12 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.44</td><td>0.44</td><td>0.06</td><td>[0.37 0.49]</td><td>[0.32 0.55]</td></tr>
-<tr><td>3</td><td>0.46</td><td>0.45</td><td>0.08</td><td>[0.36 0.53]</td><td>[0.28 0.59]</td></tr>
-<tr><td>4</td><td>0.44</td><td>0.44</td><td>0.08</td><td>[0.35 0.52]</td><td>[0.26 0.58]</td></tr>
-<tr><td>5</td><td>0.42</td><td>0.42</td><td>0.09</td><td>[0.34 0.5]</td><td>[0.23 0.63]</td></tr>
-<tr><td>7.5</td><td>0.46</td><td>0.47</td><td>0.08</td><td>[0.38 0.53]</td><td>[0.27 0.63]</td></tr>
-<tr><td>10</td><td>0.44</td><td>0.46</td><td>0.07</td><td>[0.39 0.51]</td><td>[0.28 0.56]</td></tr>
+<tr><td>T-independent</td><td>0.44</td><td>0.44</td><td>0.05</td><td>[0.39 0.49]</td><td>[0.33 0.54]</td></tr>
+<tr><td>3</td><td>0.46</td><td>0.46</td><td>0.08</td><td>[0.37 0.56]</td><td>[0.29 0.63]</td></tr>
+<tr><td>4</td><td>0.44</td><td>0.44</td><td>0.08</td><td>[0.35 0.52]</td><td>[0.28 0.61]</td></tr>
+<tr><td>5</td><td>0.42</td><td>0.41</td><td>0.08</td><td>[0.34 0.5]</td><td>[0.27 0.59]</td></tr>
+<tr><td>7.5</td><td>0.46</td><td>0.44</td><td>0.07</td><td>[0.38 0.51]</td><td>[0.33 0.57]</td></tr>
+<tr><td>10</td><td>0.44</td><td>0.43</td><td>0.07</td><td>[0.37 0.52]</td><td>[0.29 0.56]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1220,18 +1122,6 @@ img {
 <tr><td>3s</td><td><img src="resources/within_event_m7.2_20km_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/within_event_event_count_dependence_20km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_20km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/within_event_event_count_dependence_20km_3s.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_20km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [10.0,30.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/within_event_event_recordings_hist_20km.png" alt="Histogram" /></p>
 <h3 id="500-km-m72-within-event-results">50.0 km M7.2 Within-event Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/within_event_m7.2_50km_std_dev.png" alt="Within-event Variability" /></p>
@@ -1240,7 +1130,7 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>0.51</strong></td><td><strong>[0.03 1.35]</strong></td><td></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.01 1.53]</strong></td><td></td><td><strong>0.57</strong></td><td><strong>0.57</strong></td><td><strong>0.56</strong></td><td><strong>[0.04 1.43]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.52</strong></td><td><strong>0.52</strong></td><td><strong>0.51</strong></td><td><strong>[0.03 1.46]</strong></td><td></td><td><strong>0.5</strong></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>[0.02 1.46]</strong></td><td></td><td><strong>0.57</strong></td><td><strong>0.57</strong></td><td><strong>0.56</strong></td><td><strong>[0.02 1.43]</strong></td></tr>
 </tbody>
 </table>
 <p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
@@ -1263,12 +1153,12 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.53</td><td>0.52</td><td>0.08</td><td>[0.45 0.61]</td><td>[0.37 0.69]</td></tr>
-<tr><td>3</td><td>0.52</td><td>0.53</td><td>0.09</td><td>[0.42 0.61]</td><td>[0.35 0.74]</td></tr>
-<tr><td>4</td><td>0.5</td><td>0.5</td><td>0.1</td><td>[0.4 0.6]</td><td>[0.3 0.69]</td></tr>
-<tr><td>5</td><td>0.5</td><td>0.48</td><td>0.11</td><td>[0.37 0.6]</td><td>[0.3 0.72]</td></tr>
-<tr><td>7.5</td><td>0.56</td><td>0.55</td><td>0.11</td><td>[0.46 0.67]</td><td>[0.35 0.79]</td></tr>
-<tr><td>10</td><td>0.57</td><td>0.56</td><td>0.12</td><td>[0.46 0.7]</td><td>[0.34 0.82]</td></tr>
+<tr><td>T-independent</td><td>0.53</td><td>0.52</td><td>0.06</td><td>[0.45 0.58]</td><td>[0.39 0.63]</td></tr>
+<tr><td>3</td><td>0.52</td><td>0.52</td><td>0.09</td><td>[0.4 0.6]</td><td>[0.31 0.7]</td></tr>
+<tr><td>4</td><td>0.5</td><td>0.48</td><td>0.08</td><td>[0.43 0.58]</td><td>[0.32 0.69]</td></tr>
+<tr><td>5</td><td>0.5</td><td>0.48</td><td>0.08</td><td>[0.41 0.58]</td><td>[0.35 0.66]</td></tr>
+<tr><td>7.5</td><td>0.56</td><td>0.55</td><td>0.1</td><td>[0.43 0.64]</td><td>[0.36 0.77]</td></tr>
+<tr><td>10</td><td>0.57</td><td>0.54</td><td>0.1</td><td>[0.45 0.67]</td><td>[0.36 0.78]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1280,18 +1170,6 @@ img {
 <tr><td>3s</td><td><img src="resources/within_event_m7.2_50km_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/within_event_event_count_dependence_50km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_50km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/within_event_event_count_dependence_50km_3s.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_50km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [40.0,60.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/within_event_event_recordings_hist_50km.png" alt="Histogram" /></p>
 <h3 id="1000-km-m72-within-event-results">100.0 km M7.2 Within-event Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/within_event_m7.2_100km_std_dev.png" alt="Within-event Variability" /></p>
@@ -1300,7 +1178,7 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.53</strong></td><td><strong>[0.03 1.47]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.03 1.49]</strong></td><td></td><td><strong>0.59</strong></td><td><strong>0.6</strong></td><td><strong>0.59</strong></td><td><strong>[0.04 1.69]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.53</strong></td><td><strong>[0.03 1.4]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.03 1.59]</strong></td><td></td><td><strong>0.59</strong></td><td><strong>0.6</strong></td><td><strong>0.59</strong></td><td><strong>[0.03 1.51]</strong></td></tr>
 </tbody>
 </table>
 <p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
@@ -1323,12 +1201,12 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.56</td><td>0.56</td><td>0.07</td><td>[0.5 0.63]</td><td>[0.41 0.7]</td></tr>
-<tr><td>3</td><td>0.54</td><td>0.55</td><td>0.12</td><td>[0.43 0.67]</td><td>[0.32 0.8]</td></tr>
-<tr><td>4</td><td>0.54</td><td>0.54</td><td>0.11</td><td>[0.44 0.66]</td><td>[0.32 0.76]</td></tr>
-<tr><td>5</td><td>0.54</td><td>0.54</td><td>0.1</td><td>[0.45 0.65]</td><td>[0.32 0.77]</td></tr>
-<tr><td>7.5</td><td>0.6</td><td>0.6</td><td>0.12</td><td>[0.48 0.72]</td><td>[0.34 0.79]</td></tr>
-<tr><td>10</td><td>0.59</td><td>0.61</td><td>0.11</td><td>[0.5 0.68]</td><td>[0.32 0.81]</td></tr>
+<tr><td>T-independent</td><td>0.56</td><td>0.55</td><td>0.07</td><td>[0.46 0.63]</td><td>[0.41 0.69]</td></tr>
+<tr><td>3</td><td>0.54</td><td>0.52</td><td>0.09</td><td>[0.44 0.64]</td><td>[0.34 0.75]</td></tr>
+<tr><td>4</td><td>0.54</td><td>0.52</td><td>0.11</td><td>[0.42 0.63]</td><td>[0.32 0.76]</td></tr>
+<tr><td>5</td><td>0.54</td><td>0.51</td><td>0.11</td><td>[0.42 0.62]</td><td>[0.34 0.78]</td></tr>
+<tr><td>7.5</td><td>0.6</td><td>0.6</td><td>0.12</td><td>[0.47 0.71]</td><td>[0.38 0.85]</td></tr>
+<tr><td>10</td><td>0.59</td><td>0.58</td><td>0.12</td><td>[0.47 0.73]</td><td>[0.34 0.82]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1340,18 +1218,6 @@ img {
 <tr><td>3s</td><td><img src="resources/within_event_m7.2_100km_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/within_event_event_count_dependence_100km_period_indep.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_100km_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/within_event_event_count_dependence_100km_3s.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_100km_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4]. The top plot shows the subset with distance in the range [80.0,120.0], and the bottom the whole distribution at all distances.</p>
-<p><img src="resources/within_event_event_recordings_hist_100km.png" alt="Histogram" /></p>
 <h3 id="all-distances-m72-within-event-results">All Distances M7.2 Within-event Results</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/within_event_m7.2_std_dev.png" alt="Within-event Variability" /></p>
@@ -1360,7 +1226,7 @@ img {
 <tr><th>Site</th><th>3s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>5s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th><th>10s &phi;</th><th>Total</th><th>Mean</th><th>Median</th><th>Range</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.51</strong></td><td><strong>0.49</strong></td><td><strong>[0.03 1.47]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.01 1.53]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.04 1.69]</strong></td></tr>
+<tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td></td><td><strong>0.51</strong></td><td><strong>0.51</strong></td><td><strong>0.49</strong></td><td><strong>[0.03 1.46]</strong></td><td></td><td><strong>0.49</strong></td><td><strong>0.48</strong></td><td><strong>0.47</strong></td><td><strong>[0.02 1.59]</strong></td><td></td><td><strong>0.54</strong></td><td><strong>0.54</strong></td><td><strong>0.52</strong></td><td><strong>[0.02 1.51]</strong></td></tr>
 </tbody>
 </table>
 <p>Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;</p>
@@ -1383,12 +1249,12 @@ img {
 <tr><th>Period (s)</th><th>Full &phi;</th><th>Downsampled median &phi;</th><th>Downsampled &phi; std. dev.</th><th>Downsampled &phi; 68% conf range</th><th>Downsampled &phi; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.51</td><td>0.51</td><td>0.03</td><td>[0.48 0.54]</td><td>[0.45 0.58]</td></tr>
-<tr><td>3</td><td>0.51</td><td>0.51</td><td>0.05</td><td>[0.46 0.55]</td><td>[0.43 0.62]</td></tr>
+<tr><td>T-independent</td><td>0.51</td><td>0.51</td><td>0.03</td><td>[0.48 0.54]</td><td>[0.44 0.57]</td></tr>
+<tr><td>3</td><td>0.51</td><td>0.51</td><td>0.04</td><td>[0.46 0.55]</td><td>[0.42 0.58]</td></tr>
 <tr><td>4</td><td>0.49</td><td>0.49</td><td>0.04</td><td>[0.45 0.53]</td><td>[0.4 0.58]</td></tr>
-<tr><td>5</td><td>0.49</td><td>0.49</td><td>0.04</td><td>[0.45 0.53]</td><td>[0.41 0.56]</td></tr>
-<tr><td>7.5</td><td>0.54</td><td>0.54</td><td>0.05</td><td>[0.5 0.59]</td><td>[0.44 0.62]</td></tr>
-<tr><td>10</td><td>0.54</td><td>0.53</td><td>0.04</td><td>[0.49 0.58]</td><td>[0.45 0.63]</td></tr>
+<tr><td>5</td><td>0.49</td><td>0.48</td><td>0.05</td><td>[0.43 0.54]</td><td>[0.39 0.58]</td></tr>
+<tr><td>7.5</td><td>0.54</td><td>0.53</td><td>0.05</td><td>[0.49 0.58]</td><td>[0.44 0.62]</td></tr>
+<tr><td>10</td><td>0.54</td><td>0.53</td><td>0.04</td><td>[0.49 0.57]</td><td>[0.46 0.61]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &phi;.</p>
@@ -1400,18 +1266,6 @@ img {
 <tr><td>3s</td><td><img src="resources/within_event_m7.2_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &phi; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
-<table>
-<thead>
-<tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
-</thead>
-<tbody>
-<tr><td>Period Indep.</td><td><img src="resources/within_event_event_count_dependence_all_dists_period_indep.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_all_dists_period_indep.png" alt="num recordings dependence" /></td></tr>
-<tr><td>3s</td><td><img src="resources/within_event_event_count_dependence_all_dists_3s.png" alt="num events dependence" /></td><td><img src="resources/within_event_event_recordings_dependence_all_dists_3.png" alt="num recordings dependence" /></td></tr>
-</tbody>
-</table>
-<p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4].</p>
-<p><img src="resources/within_event_event_recordings_hist_all_dists.png" alt="Histogram" /></p>
 <h2 id="between-events-variability">Between-events Variability</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h3 id="between-events-variability-methodology">Between-events Variability Methodology</h3>
@@ -1424,9 +1278,9 @@ img {
 <ul>
 <li>Rupture <em>[100 unique]</em></li>
 </ul>
-<p>That median, &delta;B<sub>e</sub>, is computed across all 3888 combinations of:</p>
+<p>That median, &delta;B<sub>e</sub>, is computed across all 3240 combinations of:</p>
 <ul>
-<li>Site <em>[6 unique]</em></li>
+<li>Site <em>[5 unique]</em></li>
 <li>Rupture Strike <em>[18 unique]</em></li>
 <li>Path <em>[36 unique]</em></li>
 </ul>
@@ -1443,7 +1297,6 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.11</strong></td><td><strong>-2.02</strong></td><td><strong>[-2.38 -1.82]</strong></td><td><strong>0.16</strong></td><td><strong>-2.75</strong></td><td><strong>[-3.17 -2.38]</strong></td><td><strong>0.2</strong></td><td><strong>-4.11</strong></td><td><strong>[-4.66 -3.64]</strong></td></tr>
-<tr><td>PAS</td><td>0.12</td><td>-3.37</td><td>[-3.78 -3.1]</td><td>0.16</td><td>-4.06</td><td>[-4.42 -3.68]</td><td>0.24</td><td>-5.01</td><td>[-5.61 -4.45]</td></tr>
 <tr><td>SBSM</td><td>0.14</td><td>-1.74</td><td>[-2.26 -1.46]</td><td>0.16</td><td>-2.86</td><td>[-3.32 -2.45]</td><td>0.18</td><td>-4.54</td><td>[-4.98 -4.08]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-2.07</td><td>[-2.41 -1.86]</td><td>0.17</td><td>-2.64</td><td>[-3.1 -2.27]</td><td>0.21</td><td>-4.06</td><td>[-4.6 -3.53]</td></tr>
 <tr><td>STNI</td><td>0.11</td><td>-2.02</td><td>[-2.34 -1.82]</td><td>0.17</td><td>-2.57</td><td>[-2.97 -2.2]</td><td>0.24</td><td>-3.56</td><td>[-4.23 -2.93]</td></tr>
@@ -1459,12 +1312,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.16</td><td>0.21</td><td>0.05</td><td>[0.15 0.26]</td><td>[0.12 0.34]</td></tr>
-<tr><td>3</td><td>0.11</td><td>0.17</td><td>0.08</td><td>[0.09 0.25]</td><td>[0.05 0.32]</td></tr>
-<tr><td>4</td><td>0.13</td><td>0.2</td><td>0.08</td><td>[0.11 0.27]</td><td>[0.05 0.35]</td></tr>
-<tr><td>5</td><td>0.16</td><td>0.18</td><td>0.09</td><td>[0.13 0.28]</td><td>[0.08 0.43]</td></tr>
-<tr><td>7.5</td><td>0.18</td><td>0.22</td><td>0.1</td><td>[0.12 0.35]</td><td>[0.05 0.47]</td></tr>
-<tr><td>10</td><td>0.2</td><td>0.23</td><td>0.1</td><td>[0.14 0.36]</td><td>[0.07 0.45]</td></tr>
+<tr><td>T-independent</td><td>0.16</td><td>0.21</td><td>0.07</td><td>[0.17 0.29]</td><td>[0.1 0.44]</td></tr>
+<tr><td>3</td><td>0.11</td><td>0.17</td><td>0.08</td><td>[0.1 0.25]</td><td>[0.04 0.34]</td></tr>
+<tr><td>4</td><td>0.13</td><td>0.18</td><td>0.1</td><td>[0.1 0.29]</td><td>[0.07 0.43]</td></tr>
+<tr><td>5</td><td>0.16</td><td>0.22</td><td>0.1</td><td>[0.11 0.32]</td><td>[0.07 0.44]</td></tr>
+<tr><td>7.5</td><td>0.18</td><td>0.26</td><td>0.11</td><td>[0.16 0.35]</td><td>[0.07 0.6]</td></tr>
+<tr><td>10</td><td>0.2</td><td>0.27</td><td>0.1</td><td>[0.17 0.37]</td><td>[0.08 0.5]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1476,7 +1329,7 @@ img {
 <tr><td>3s</td><td><img src="resources/between_events_m7.2_20km_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
+<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3240), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
 <table>
 <thead>
 <tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
@@ -1497,7 +1350,6 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.11</strong></td><td><strong>-2.82</strong></td><td><strong>[-3.17 -2.57]</strong></td><td><strong>0.17</strong></td><td><strong>-3.34</strong></td><td><strong>[-3.76 -2.92]</strong></td><td><strong>0.2</strong></td><td><strong>-4.69</strong></td><td><strong>[-5.18 -4.22]</strong></td></tr>
-<tr><td>PAS</td><td>0.11</td><td>-4.27</td><td>[-4.64 -4.05]</td><td>0.16</td><td>-4.78</td><td>[-5.17 -4.38]</td><td>0.23</td><td>-5.62</td><td>[-6.2 -5.03]</td></tr>
 <tr><td>SBSM</td><td>0.13</td><td>-2.43</td><td>[-2.83 -2.14]</td><td>0.17</td><td>-3.51</td><td>[-3.98 -3.12]</td><td>0.17</td><td>-5.16</td><td>[-5.59 -4.73]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-2.94</td><td>[-3.29 -2.75]</td><td>0.16</td><td>-3.4</td><td>[-3.8 -2.97]</td><td>0.2</td><td>-4.71</td><td>[-5.23 -4.12]</td></tr>
 <tr><td>STNI</td><td>0.11</td><td>-2.75</td><td>[-3.08 -2.49]</td><td>0.19</td><td>-2.98</td><td>[-3.38 -2.56]</td><td>0.24</td><td>-4.08</td><td>[-4.65 -3.44]</td></tr>
@@ -1513,12 +1365,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.16</td><td>0.3</td><td>0.08</td><td>[0.22 0.39]</td><td>[0.17 0.53]</td></tr>
-<tr><td>3</td><td>0.11</td><td>0.27</td><td>0.13</td><td>[0.15 0.38]</td><td>[0.06 0.65]</td></tr>
-<tr><td>4</td><td>0.14</td><td>0.27</td><td>0.11</td><td>[0.17 0.38]</td><td>[0.1 0.58]</td></tr>
-<tr><td>5</td><td>0.17</td><td>0.3</td><td>0.13</td><td>[0.16 0.42]</td><td>[0.08 0.58]</td></tr>
-<tr><td>7.5</td><td>0.19</td><td>0.32</td><td>0.14</td><td>[0.18 0.47]</td><td>[0.09 0.64]</td></tr>
-<tr><td>10</td><td>0.2</td><td>0.29</td><td>0.14</td><td>[0.2 0.49]</td><td>[0.12 0.66]</td></tr>
+<tr><td>T-independent</td><td>0.16</td><td>0.29</td><td>0.08</td><td>[0.22 0.37]</td><td>[0.17 0.51]</td></tr>
+<tr><td>3</td><td>0.11</td><td>0.24</td><td>0.11</td><td>[0.15 0.33]</td><td>[0.07 0.57]</td></tr>
+<tr><td>4</td><td>0.14</td><td>0.27</td><td>0.11</td><td>[0.16 0.39]</td><td>[0.08 0.5]</td></tr>
+<tr><td>5</td><td>0.17</td><td>0.26</td><td>0.13</td><td>[0.16 0.39]</td><td>[0.07 0.61]</td></tr>
+<tr><td>7.5</td><td>0.19</td><td>0.32</td><td>0.14</td><td>[0.17 0.49]</td><td>[0.1 0.61]</td></tr>
+<tr><td>10</td><td>0.2</td><td>0.31</td><td>0.14</td><td>[0.21 0.49]</td><td>[0.11 0.67]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1530,7 +1382,7 @@ img {
 <tr><td>3s</td><td><img src="resources/between_events_m7.2_50km_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
+<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3240), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
 <table>
 <thead>
 <tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
@@ -1551,7 +1403,6 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.11</strong></td><td><strong>-3.45</strong></td><td><strong>[-3.81 -3.17]</strong></td><td><strong>0.17</strong></td><td><strong>-3.89</strong></td><td><strong>[-4.29 -3.48]</strong></td><td><strong>0.2</strong></td><td><strong>-5.17</strong></td><td><strong>[-5.69 -4.73]</strong></td></tr>
-<tr><td>PAS</td><td>0.11</td><td>-4.83</td><td>[-5.2 -4.6]</td><td>0.15</td><td>-5.32</td><td>[-5.68 -4.95]</td><td>0.24</td><td>-6.07</td><td>[-6.7 -5.56]</td></tr>
 <tr><td>SBSM</td><td>0.13</td><td>-3.1</td><td>[-3.51 -2.79]</td><td>0.16</td><td>-4.09</td><td>[-4.54 -3.69]</td><td>0.18</td><td>-5.67</td><td>[-6.08 -5.27]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-3.62</td><td>[-3.96 -3.4]</td><td>0.17</td><td>-3.9</td><td>[-4.3 -3.5]</td><td>0.21</td><td>-5.19</td><td>[-5.75 -4.68]</td></tr>
 <tr><td>STNI</td><td>0.11</td><td>-3.36</td><td>[-3.72 -3.08]</td><td>0.18</td><td>-3.56</td><td>[-3.97 -3.09]</td><td>0.24</td><td>-4.55</td><td>[-5.18 -3.98]</td></tr>
@@ -1567,12 +1418,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.16</td><td>0.22</td><td>0.08</td><td>[0.16 0.33]</td><td>[0.1 0.39]</td></tr>
-<tr><td>3</td><td>0.11</td><td>0.2</td><td>0.11</td><td>[0.08 0.32]</td><td>[0.03 0.44]</td></tr>
-<tr><td>4</td><td>0.14</td><td>0.21</td><td>0.11</td><td>[0.1 0.35]</td><td>[0.05 0.45]</td></tr>
-<tr><td>5</td><td>0.17</td><td>0.24</td><td>0.11</td><td>[0.13 0.37]</td><td>[0.04 0.48]</td></tr>
-<tr><td>7.5</td><td>0.2</td><td>0.24</td><td>0.14</td><td>[0.12 0.38]</td><td>[0.03 0.62]</td></tr>
-<tr><td>10</td><td>0.2</td><td>0.23</td><td>0.14</td><td>[0.09 0.37]</td><td>[0.02 0.55]</td></tr>
+<tr><td>T-independent</td><td>0.16</td><td>0.22</td><td>0.08</td><td>[0.16 0.31]</td><td>[0.11 0.45]</td></tr>
+<tr><td>3</td><td>0.11</td><td>0.16</td><td>0.12</td><td>[0.08 0.3]</td><td>[0.02 0.55]</td></tr>
+<tr><td>4</td><td>0.14</td><td>0.2</td><td>0.13</td><td>[0.1 0.33]</td><td>[0.04 0.52]</td></tr>
+<tr><td>5</td><td>0.17</td><td>0.21</td><td>0.11</td><td>[0.12 0.35]</td><td>[0.06 0.48]</td></tr>
+<tr><td>7.5</td><td>0.2</td><td>0.23</td><td>0.11</td><td>[0.13 0.36]</td><td>[0.06 0.51]</td></tr>
+<tr><td>10</td><td>0.2</td><td>0.25</td><td>0.13</td><td>[0.13 0.39]</td><td>[0.06 0.56]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1584,7 +1435,7 @@ img {
 <tr><td>3s</td><td><img src="resources/between_events_m7.2_100km_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
+<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3240), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
 <table>
 <thead>
 <tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
@@ -1605,7 +1456,6 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>5 sites, V<sub>S30</sub>=500</strong></td><td><strong>0.11</strong></td><td><strong>-2.76</strong></td><td><strong>[-3.81 -1.82]</strong></td><td><strong>0.17</strong></td><td><strong>-3.33</strong></td><td><strong>[-4.29 -2.38]</strong></td><td><strong>0.2</strong></td><td><strong>-4.66</strong></td><td><strong>[-5.69 -3.64]</strong></td></tr>
-<tr><td>PAS</td><td>0.11</td><td>-4.16</td><td>[-5.2 -3.1]</td><td>0.16</td><td>-4.72</td><td>[-5.68 -3.68]</td><td>0.24</td><td>-5.57</td><td>[-6.7 -4.45]</td></tr>
 <tr><td>SBSM</td><td>0.13</td><td>-2.42</td><td>[-3.51 -1.46]</td><td>0.17</td><td>-3.49</td><td>[-4.54 -2.45]</td><td>0.18</td><td>-5.12</td><td>[-6.08 -4.08]</td></tr>
 <tr><td>SMCA</td><td>0.11</td><td>-2.88</td><td>[-3.96 -1.86]</td><td>0.17</td><td>-3.31</td><td>[-4.3 -2.27]</td><td>0.21</td><td>-4.65</td><td>[-5.75 -3.53]</td></tr>
 <tr><td>STNI</td><td>0.11</td><td>-2.71</td><td>[-3.72 -1.82]</td><td>0.18</td><td>-3.04</td><td>[-3.97 -2.2]</td><td>0.24</td><td>-4.06</td><td>[-5.18 -2.93]</td></tr>
@@ -1621,12 +1471,12 @@ img {
 <tr><th>Period (s)</th><th>Full &tau;</th><th>Downsampled median &tau;</th><th>Downsampled &tau; std. dev.</th><th>Downsampled &tau; 68% conf range</th><th>Downsampled &tau; 95% conf range</th></tr>
 </thead>
 <tbody>
-<tr><td>T-independent</td><td>0.16</td><td>0.2</td><td>0.02</td><td>[0.17 0.22]</td><td>[0.16 0.24]</td></tr>
-<tr><td>3</td><td>0.11</td><td>0.16</td><td>0.03</td><td>[0.12 0.19]</td><td>[0.1 0.24]</td></tr>
-<tr><td>4</td><td>0.14</td><td>0.18</td><td>0.03</td><td>[0.15 0.21]</td><td>[0.12 0.24]</td></tr>
-<tr><td>5</td><td>0.17</td><td>0.2</td><td>0.03</td><td>[0.17 0.24]</td><td>[0.13 0.27]</td></tr>
-<tr><td>7.5</td><td>0.19</td><td>0.22</td><td>0.04</td><td>[0.18 0.26]</td><td>[0.14 0.3]</td></tr>
-<tr><td>10</td><td>0.2</td><td>0.22</td><td>0.04</td><td>[0.18 0.27]</td><td>[0.15 0.31]</td></tr>
+<tr><td>T-independent</td><td>0.16</td><td>0.19</td><td>0.02</td><td>[0.17 0.21]</td><td>[0.15 0.25]</td></tr>
+<tr><td>3</td><td>0.11</td><td>0.15</td><td>0.03</td><td>[0.12 0.19]</td><td>[0.09 0.22]</td></tr>
+<tr><td>4</td><td>0.14</td><td>0.17</td><td>0.03</td><td>[0.14 0.2]</td><td>[0.11 0.24]</td></tr>
+<tr><td>5</td><td>0.17</td><td>0.2</td><td>0.04</td><td>[0.16 0.23]</td><td>[0.12 0.27]</td></tr>
+<tr><td>7.5</td><td>0.19</td><td>0.22</td><td>0.04</td><td>[0.18 0.25]</td><td>[0.15 0.31]</td></tr>
+<tr><td>10</td><td>0.2</td><td>0.22</td><td>0.04</td><td>[0.19 0.26]</td><td>[0.15 0.32]</td></tr>
 </tbody>
 </table>
 <p>This plot shows the distribution of period-independent downsampled &tau;.</p>
@@ -1638,7 +1488,7 @@ img {
 <tr><td>3s</td><td><img src="resources/between_events_m7.2_downsampled_hist_3s.png" alt="Dowmsampled Histogram" /></td></tr>
 </tbody>
 </table>
-<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3888), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
+<p>These plots show the dependence of &tau; to the number of events included and the number of recordings per event. The left plot holds the number of recordings per event fixed at the full set of simulated recordings (3240), varying the number of events. The right plot holds the number of events fixed at the full set of simulated events (100), varying the number of recordings per event.</p>
 <table>
 <thead>
 <tr><th>Period</th><th>Event Count Dependence</th><th>Recordings/Event Dependence</th></tr>
@@ -1650,38 +1500,82 @@ img {
 </table>
 <p>This is a histogram of the number of recordings per event from ASK 2014 with M=[7.0,7.4].</p>
 <p><img src="resources/between_events_event_recordings_hist_all_dists.png" alt="Histogram" /></p>
+<h2 id="event-term-scatters">Event Term Scatters</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="propagation-velocity-event-term-scatters">Propagation Velocity Event Term Scatters</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Distance</th><th>3 s</th><th>5 s</th><th>10 s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>20 km</strong></td><td><img src="resources/event_term_scatter_v_prop_m7.2_20km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_v_prop_m7.2_20km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_v_prop_m7.2_20km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>50 km</strong></td><td><img src="resources/event_term_scatter_v_prop_m7.2_50km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_v_prop_m7.2_50km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_v_prop_m7.2_50km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>100 km</strong></td><td><img src="resources/event_term_scatter_v_prop_m7.2_100km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_v_prop_m7.2_100km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_v_prop_m7.2_100km_5sites_10s.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="mag-event-term-scatters">Mag Event Term Scatters</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Distance</th><th>3 s</th><th>5 s</th><th>10 s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>20 km</strong></td><td><img src="resources/event_term_scatter_mag_m7.2_20km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mag_m7.2_20km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mag_m7.2_20km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>50 km</strong></td><td><img src="resources/event_term_scatter_mag_m7.2_50km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mag_m7.2_50km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mag_m7.2_50km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>100 km</strong></td><td><img src="resources/event_term_scatter_mag_m7.2_100km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mag_m7.2_100km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mag_m7.2_100km_5sites_10s.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="log10area-event-term-scatters">Log10(Area) Event Term Scatters</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Distance</th><th>3 s</th><th>5 s</th><th>10 s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>20 km</strong></td><td><img src="resources/event_term_scatter_area_m7.2_20km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_area_m7.2_20km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_area_m7.2_20km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>50 km</strong></td><td><img src="resources/event_term_scatter_area_m7.2_50km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_area_m7.2_50km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_area_m7.2_50km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>100 km</strong></td><td><img src="resources/event_term_scatter_area_m7.2_100km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_area_m7.2_100km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_area_m7.2_100km_5sites_10s.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="max-slip-event-term-scatters">Max Slip Event Term Scatters</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Distance</th><th>3 s</th><th>5 s</th><th>10 s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>20 km</strong></td><td><img src="resources/event_term_scatter_max_slip_m7.2_20km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_max_slip_m7.2_20km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_max_slip_m7.2_20km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>50 km</strong></td><td><img src="resources/event_term_scatter_max_slip_m7.2_50km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_max_slip_m7.2_50km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_max_slip_m7.2_50km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>100 km</strong></td><td><img src="resources/event_term_scatter_max_slip_m7.2_100km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_max_slip_m7.2_100km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_max_slip_m7.2_100km_5sites_10s.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="mean-slip-event-term-scatters">Mean Slip Event Term Scatters</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Distance</th><th>3 s</th><th>5 s</th><th>10 s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>20 km</strong></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_20km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_20km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_20km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>50 km</strong></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_50km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_50km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_50km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>100 km</strong></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_100km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_100km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mean_slip_m7.2_100km_5sites_10s.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="mid-seismogenic-mean-slip-event-term-scatters">Mid-Seismogenic Mean Slip Event Term Scatters</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th>Distance</th><th>3 s</th><th>5 s</th><th>10 s</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>20 km</strong></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_20km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_20km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_20km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>50 km</strong></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_50km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_50km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_50km_5sites_10s.png" alt="plot" /></td></tr>
+<tr><td><strong>100 km</strong></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_100km_5sites_3s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_100km_5sites_5s.png" alt="plot" /></td><td><img src="resources/event_term_scatter_mid_seis_mean_slip_m7.2_100km_5sites_10s.png" alt="plot" /></td></tr>
+</tbody>
+</table>
 <h2 id="azumth-dependence">Azumth Dependence</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<h3 id="pas-azumth-dependence">PAS Azumth Dependence</h3>
-<p><em><a href="#table-of-contents">(top)</a></em></p>
-<h4 id="pas-rupture-strike-dependence">PAS Rupture Strike Dependence</h4>
-<p><em><a href="#table-of-contents">(top)</a></em></p>
-<table>
-<thead>
-<tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&tau;</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/PAS_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
-</tbody>
-</table>
-<h4 id="pas-path-dependence">PAS Path Dependence</h4>
-<p><em><a href="#table-of-contents">(top)</a></em></p>
-<table>
-<thead>
-<tr><th>Type</th><th>3s</th><th>5s</th><th>10s</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
-<tr><td><strong>&tau;</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
-<tr><td><strong>Median SA</strong></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/PAS_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
-</tbody>
-</table>
 <h3 id="sbsm-azumth-dependence">SBSM Azumth Dependence</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <h4 id="sbsm-rupture-strike-dependence">SBSM Rupture Strike Dependence</h4>
@@ -1693,8 +1587,8 @@ img {
 <tbody>
 <tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SBSM_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1706,9 +1600,9 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/SBSM_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1723,8 +1617,8 @@ img {
 <tbody>
 <tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/SMCA_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1736,9 +1630,9 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/SMCA_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1753,8 +1647,8 @@ img {
 <tbody>
 <tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/STNI_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1766,9 +1660,9 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/STNI_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1783,8 +1677,8 @@ img {
 <tbody>
 <tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/USC_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1796,9 +1690,9 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/USC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1813,8 +1707,8 @@ img {
 <tbody>
 <tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/WNGC_m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1826,9 +1720,9 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/WNGC_m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1843,8 +1737,8 @@ img {
 <tbody>
 <tr><td><strong>&phi;<sub>P2P</sub></strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_path.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_path.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event_ss.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event_ss.png" alt="Rupture Strike" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_between_events.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_between_events.png" alt="Rupture Strike" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_within_event.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_within_event.png" alt="Rupture Strike" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_3s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_5s_median_sa.png" alt="Rupture Strike" /></td><td><img src="resources/m7.2_dist_SOURCE_AZIMUTH_10s_median_sa.png" alt="Rupture Strike" /></td></tr>
 </tbody>
 </table>
@@ -1856,9 +1750,9 @@ img {
 </thead>
 <tbody>
 <tr><td><strong>&phi;<sub>SS</sub></strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png" alt="Path" /></td></tr>
-<tr><td><strong>&phi;</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>&tau;</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png" alt="Path" /></td></tr>
 <tr><td><strong>&phi;<sub>s</sub></strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png" alt="Path" /></td></tr>
+<tr><td><strong>&phi;</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png" alt="Path" /></td></tr>
 <tr><td><strong>Median SA</strong></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png" alt="Path" /></td><td><img src="resources/m7.2_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png" alt="Path" /></td></tr>
 </tbody>
 </table>
@@ -1874,7 +1768,6 @@ img {
 <tr><th>Scenario</th><th>Site</th><th>20.0 km</th><th>50.0 km</th><th>100.0 km</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>M7.2 SS</strong></td><td><strong>PAS</strong></td><td><em>(PASS)</em></td><td><em>(PASS)</em></td><td><em>(PASS)</em></td></tr>
 <tr><td><strong>M7.2 SS</strong></td><td><strong>SBSM</strong></td><td><em>(FAIL)</em></td><td><em>(FAIL)</em></td><td><em>(FAIL)</em></td></tr>
 <tr><td><strong>M7.2 SS</strong></td><td><strong>SMCA</strong></td><td><em>(FAIL)</em></td><td><em>(FAIL)</em></td><td><em>(FAIL)</em></td></tr>
 <tr><td><strong>M7.2 SS</strong></td><td><strong>STNI</strong></td><td><em>(FAIL)</em></td><td><em>(FAIL)</em></td><td><em>(FAIL)</em></td></tr>
@@ -1890,7 +1783,6 @@ img {
 <tr><th>Site</th><th>20.0 km</th><th>50.0 km</th><th>100.0 km</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>PAS</strong></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_20km_PAS.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_50km_PAS.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_100km_PAS.png" alt="PartB Plot" /></td></tr>
 <tr><td><strong>SBSM</strong></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_20km_SBSM.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_50km_SBSM.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_100km_SBSM.png" alt="PartB Plot" /></td></tr>
 <tr><td><strong>SMCA</strong></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_20km_SMCA.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_50km_SMCA.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_100km_SMCA.png" alt="PartB Plot" /></td></tr>
 <tr><td><strong>STNI</strong></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_20km_STNI.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_50km_STNI.png" alt="PartB Plot" /></td><td><img src="resources/bbp_partB_m7p2_vert_ss_surface_100km_STNI.png" alt="PartB Plot" /></td></tr>
@@ -1906,19 +1798,16 @@ img {
 <tr><th>Magnitude</th><th>Distance</th><th>Site</th><th>CSV File</th></tr>
 </thead>
 <tbody>
-<tr><td>M7.2</td><td>20.0 km</td><td>PAS</td><td><a href="resources/sa_PAS_m7.2_20.0km.csv.gz">sa_PAS_m7.2_20.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>20.0 km</td><td>SBSM</td><td><a href="resources/sa_SBSM_m7.2_20.0km.csv.gz">sa_SBSM_m7.2_20.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>20.0 km</td><td>SMCA</td><td><a href="resources/sa_SMCA_m7.2_20.0km.csv.gz">sa_SMCA_m7.2_20.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>20.0 km</td><td>STNI</td><td><a href="resources/sa_STNI_m7.2_20.0km.csv.gz">sa_STNI_m7.2_20.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>20.0 km</td><td>USC</td><td><a href="resources/sa_USC_m7.2_20.0km.csv.gz">sa_USC_m7.2_20.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>20.0 km</td><td>WNGC</td><td><a href="resources/sa_WNGC_m7.2_20.0km.csv.gz">sa_WNGC_m7.2_20.0km.csv.gz</a></td></tr>
-<tr><td>M7.2</td><td>50.0 km</td><td>PAS</td><td><a href="resources/sa_PAS_m7.2_50.0km.csv.gz">sa_PAS_m7.2_50.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>50.0 km</td><td>SBSM</td><td><a href="resources/sa_SBSM_m7.2_50.0km.csv.gz">sa_SBSM_m7.2_50.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>50.0 km</td><td>SMCA</td><td><a href="resources/sa_SMCA_m7.2_50.0km.csv.gz">sa_SMCA_m7.2_50.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>50.0 km</td><td>STNI</td><td><a href="resources/sa_STNI_m7.2_50.0km.csv.gz">sa_STNI_m7.2_50.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>50.0 km</td><td>USC</td><td><a href="resources/sa_USC_m7.2_50.0km.csv.gz">sa_USC_m7.2_50.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>50.0 km</td><td>WNGC</td><td><a href="resources/sa_WNGC_m7.2_50.0km.csv.gz">sa_WNGC_m7.2_50.0km.csv.gz</a></td></tr>
-<tr><td>M7.2</td><td>100.0 km</td><td>PAS</td><td><a href="resources/sa_PAS_m7.2_100.0km.csv.gz">sa_PAS_m7.2_100.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>100.0 km</td><td>SBSM</td><td><a href="resources/sa_SBSM_m7.2_100.0km.csv.gz">sa_SBSM_m7.2_100.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>100.0 km</td><td>SMCA</td><td><a href="resources/sa_SMCA_m7.2_100.0km.csv.gz">sa_SMCA_m7.2_100.0km.csv.gz</a></td></tr>
 <tr><td>M7.2</td><td>100.0 km</td><td>STNI</td><td><a href="resources/sa_STNI_m7.2_100.0km.csv.gz">sa_STNI_m7.2_100.0km.csv.gz</a></td></tr>
