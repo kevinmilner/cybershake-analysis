@@ -1,0 +1,4 @@
+Scenario,Distance (km),Overall Result,Plot File Name,3s Min Criterion,3s Max Criterion,3s GMPE Median,3s Sim Median,3s Sim Std Dev,3s Result
+"M6.6, Reverse, Dip=45, Ztor=3",20.0,PASS,bbp_partB_m6p6_reverse_20km_USC.png,0.0319616,0.06652389,0.046110846,0.045336965,0.43738613,PASS
+"M6.6, Reverse, Dip=45, Ztor=3",50.0,PASS,bbp_partB_m6p6_reverse_50km_USC.png,0.013144753,0.02735908,0.01896387,0.02098501,0.4557765,PASS
+"M6.6, Reverse, Dip=45, Ztor=3",100.0,PASS,bbp_partB_m6p6_reverse_100km_USC.png,0.0065663774,0.013667054,0.00947328,0.011202895,0.49409768,PASS
