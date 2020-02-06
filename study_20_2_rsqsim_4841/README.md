@@ -10,6 +10,7 @@
 * [Metadata](#metadata)
 * [Site Hazard Comparisons](#site-hazard-comparisons)
   * [GMPE: ASK2014, Vs30 model: Simulation Value](#gmpe-ask2014-vs30-model-simulation-value)
+* [3-D vs 1-D Comparisons](3d_1d_comparison/)
 * [Plots](#plots)
   * [Magnitude-Frequency Plot](#magnitude-frequency-plot)
   * [Rupture Variation Count Plot](#rupture-variation-count-plot)
@@ -22,6 +23,11 @@
 ### GMPE: ASK2014, Vs30 model: Simulation Value
 
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
+
+## 3-D vs 1-D Comparisons
+*[(top)](#rsqsim-4841)*
+
+[3-D vs 1-D Comparisons Plotted Here](3d_1d_comparison/)
 
 ## Plots
 ### Magnitude-Frequency Plot

@@ -18,7 +18,7 @@
 | **Latitude** | 34.0192 |
 | **Longitude** | -118.286 |
 | **GMPE Parameters** |  |
-| **Vs30** (*m/sec*) | 313.1 |
+| **Vs30** (*m/sec*) | 500.0 |
 | **Vs30 Type** | Inferred |
 | **Depth 1.0 km/sec** (*m*) | 580.0 |
 | **Depth 2.5 km/sec** (*km*) | 4.1 |
@@ -51,6 +51,7 @@
     * [10s Simulation Curve Animation](#10s-simulation-curve-animation)
 * [Disaggregations](#disaggregations)
   * [3s Disaggregations](#3s-disaggregations)
+    * [3s Disaggregations at Simulation/GMPE Intersections](#3s-disaggregations-at-simulationgmpe-intersections)
     * [3s Disaggregations at Fixed Return Periods](#3s-disaggregations-at-fixed-return-periods)
     * [3s Disaggregations at Fixed IMLs](#3s-disaggregations-at-fixed-imls)
   * [5s Disaggregations](#5s-disaggregations)
@@ -62,6 +63,7 @@
     * [7.5s Disaggregations at Fixed Return Periods](#75s-disaggregations-at-fixed-return-periods)
     * [7.5s Disaggregations at Fixed IMLs](#75s-disaggregations-at-fixed-imls)
   * [10s Disaggregations](#10s-disaggregations)
+    * [10s Disaggregations at Simulation/GMPE Intersections](#10s-disaggregations-at-simulationgmpe-intersections)
     * [10s Disaggregations at Fixed Return Periods](#10s-disaggregations-at-fixed-return-periods)
     * [10s Disaggregations at Fixed IMLs](#10s-disaggregations-at-fixed-imls)
 ## Hazard Spectra
@@ -133,7 +135,7 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 *NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
 
@@ -172,7 +174,7 @@ This animation shows the affect of input simulation catalog length on the simula
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 *NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
 
@@ -211,7 +213,7 @@ This animation shows the affect of input simulation catalog length on the simula
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 *NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
 
@@ -250,7 +252,7 @@ This animation shows the affect of input simulation catalog length on the simula
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 *NOTE: Source curves are not mututally exclusive. For the case of multi fault ruptures, a single rupture can be included in the curve for multiple sources*
 
@@ -279,6 +281,15 @@ This simulation does not have distributions for each rupture, so in order to com
 ### 3s Disaggregations
 *[(top)](#table-of-contents)*
 
+#### 3s Disaggregations at Simulation/GMPE Intersections
+*[(top)](#table-of-contents)*
+
+| **Disagg Level** | **RSQSim 4841 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+|-----|-----|-----|
+| **10015 yr<br>0.4146075 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.4146075.png) | ![Disaggregation](resources/disagg_gmpe_3s_intersect_0.4146075.png) |
+| **10862 yr<br>0.42430508 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.42430508.png) | ![Disaggregation](resources/disagg_gmpe_3s_intersect_0.42430508.png) |
+| **13612 yr<br>0.45333722 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.45333722.png) | ![Disaggregation](resources/disagg_gmpe_3s_intersect_0.45333722.png) |
+
 #### 3s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
@@ -305,7 +316,7 @@ This simulation does not have distributions for each rupture, so in order to com
 
 | **Disagg Level** | **RSQSim 4841 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
-| **252 yr<br>0.08201979 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_intersect_0.08201979.png) | ![Disaggregation](resources/disagg_gmpe_5s_intersect_0.08201979.png) |
+| **5298 yr<br>0.18431233 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_intersect_0.18431233.png) | ![Disaggregation](resources/disagg_gmpe_5s_intersect_0.18431233.png) |
 
 #### 5s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
@@ -333,7 +344,7 @@ This simulation does not have distributions for each rupture, so in order to com
 
 | **Disagg Level** | **RSQSim 4841 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
-| **117 yr<br>0.03641529 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_intersect_0.03641529.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_intersect_0.03641529.png) |
+| **1432 yr<br>0.07626204 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_intersect_0.07626204.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_intersect_0.07626204.png) |
 
 #### 7.5s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
@@ -355,6 +366,13 @@ This simulation does not have distributions for each rupture, so in order to com
 
 ### 10s Disaggregations
 *[(top)](#table-of-contents)*
+
+#### 10s Disaggregations at Simulation/GMPE Intersections
+*[(top)](#table-of-contents)*
+
+| **Disagg Level** | **RSQSim 4841 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+|-----|-----|-----|
+| **430 yr<br>0.034977075 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_10s_intersect_0.034977075.png) | ![Disaggregation](resources/disagg_gmpe_10s_intersect_0.034977075.png) |
 
 #### 10s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
