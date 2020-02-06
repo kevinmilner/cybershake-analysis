@@ -2,6 +2,12 @@
 <html>
 <head>
 <style>
+table {
+	border-collapse: collapse
+}
+table, th, td {
+	border: 1px solid black
+}
 body {
 	max-width:1000px;
 	margin: auto;
@@ -16,31 +22,239 @@ img {
 <h2 id="3-d-vs-1-d-comparisons">3-D vs 1-D Comparisons</h2>
 <ul>
 <li>3-D Model: RSQSim 2585</li>
-<li>1-D Model: RSQSim/BBP</li>
+<li>1-D Model: RSQSim-BBP (Vs30=500 m/s)</li>
 </ul>
 <h2 id="table-of-contents">Table Of Contents</h2>
 <ul>
 <li><a href="#3-d-vs-1-d-comparisons">3-D vs 1-D Comparisons</a></li>
-<li><a href="#pas">PAS</a>
+<li><a href="#4-similar-vs-sites">4 Similar Vs Sites</a>
 <ul>
-<li><a href="#pas-3-d-gain-spectra">PAS 3-D Gain Spectra</a></li>
-<li><a href="#pas-3-d-magdistance-gain-plots">PAS 3-D Mag/Distance Gain Plots</a></li>
+<li><a href="#4-similar-vs-sites-3-d-gain-spectra">4 Similar Vs Sites 3-D Gain Spectra</a></li>
+<li><a href="#4-similar-vs-sites-scatter-plots">4 Similar Vs Sites Scatter Plots</a></li>
+<li><a href="#4-similar-vs-sites-3-d-magdistance-gain-plots">4 Similar Vs Sites 3-D Mag/Distance Gain Plots</a></li>
+</ul>
+</li>
+<li><a href="#usc">USC</a>
+<ul>
+<li><a href="#usc-3-d-gain-spectra">USC 3-D Gain Spectra</a></li>
+<li><a href="#usc-scatter-plots">USC Scatter Plots</a></li>
+<li><a href="#usc-3-d-magdistance-gain-plots">USC 3-D Mag/Distance Gain Plots</a></li>
+</ul>
+</li>
+<li><a href="#stni">STNI</a>
+<ul>
+<li><a href="#stni-3-d-gain-spectra">STNI 3-D Gain Spectra</a></li>
+<li><a href="#stni-scatter-plots">STNI Scatter Plots</a></li>
+<li><a href="#stni-3-d-magdistance-gain-plots">STNI 3-D Mag/Distance Gain Plots</a></li>
+</ul>
+</li>
+<li><a href="#sbsm">SBSM</a>
+<ul>
+<li><a href="#sbsm-3-d-gain-spectra">SBSM 3-D Gain Spectra</a></li>
+<li><a href="#sbsm-scatter-plots">SBSM Scatter Plots</a></li>
+<li><a href="#sbsm-3-d-magdistance-gain-plots">SBSM 3-D Mag/Distance Gain Plots</a></li>
+</ul>
+</li>
+<li><a href="#wngc">WNGC</a>
+<ul>
+<li><a href="#wngc-3-d-gain-spectra">WNGC 3-D Gain Spectra</a></li>
+<li><a href="#wngc-scatter-plots">WNGC Scatter Plots</a></li>
+<li><a href="#wngc-3-d-magdistance-gain-plots">WNGC 3-D Mag/Distance Gain Plots</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="pas">PAS</h2>
+<h2 id="4-similar-vs-sites">4 Similar Vs Sites</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<h3 id="pas-3-d-gain-spectra">PAS 3-D Gain Spectra</h3>
+<p>Results for all 4 with Vs30 within 150 m/s of 1-D Vs30=500 m/s</p>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th><strong>Vs30</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>USC</td><td>500 m/s</td></tr>
+<tr><td>STNI</td><td>500 m/s</td></tr>
+<tr><td>SBSM</td><td>500 m/s</td></tr>
+<tr><td>WNGC</td><td>500 m/s</td></tr>
+</tbody>
+</table>
+<h3 id="4-similar-vs-sites-3-d-gain-spectra">4 Similar Vs Sites 3-D Gain Spectra</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
-<p><img src="resources/PAS_amp_spectra.png" alt="Gain Spectra" /></p>
-<h3 id="pas-3-d-magdistance-gain-plots">PAS 3-D Mag/Distance Gain Plots</h3>
+<p><img src="resources/similar_sites_amp_spectra.png" alt="Gain Spectra" /></p>
+<h3 id="4-similar-vs-sites-scatter-plots">4 Similar Vs Sites Scatter Plots</h3>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <table>
 <thead>
 <tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><img src="resources/PAS_mag_dist_gains_3s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/PAS_mag_dist_gains_5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/PAS_mag_dist_gains_7.5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/PAS_mag_dist_gains_10s.png" alt="Mag Dist XYZ" /></td></tr>
+<tr><td><img src="resources/similar_sites_scatter_3.png" alt="plot" /></td><td><img src="resources/similar_sites_scatter_5.png" alt="plot" /></td><td><img src="resources/similar_sites_scatter_7.5.png" alt="plot" /></td><td><img src="resources/similar_sites_scatter_10.png" alt="plot" /></td></tr>
+<tr><td><img src="resources/similar_sites_scatter_3s_hist2D.png" alt="plot" /></td><td><img src="resources/similar_sites_scatter_5s_hist2D.png" alt="plot" /></td><td><img src="resources/similar_sites_scatter_7.5s_hist2D.png" alt="plot" /></td><td><img src="resources/similar_sites_scatter_10s_hist2D.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="4-similar-vs-sites-3-d-magdistance-gain-plots">4 Similar Vs Sites 3-D Mag/Distance Gain Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/similar_sites_mag_dist_gains_3s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/similar_sites_mag_dist_gains_5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/similar_sites_mag_dist_gains_7.5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/similar_sites_mag_dist_gains_10s.png" alt="Mag Dist XYZ" /></td></tr>
+</tbody>
+</table>
+<h2 id="usc">USC</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th>USC</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Latitude</strong></td><td>34.0192</td></tr>
+<tr><td><strong>Longitude</strong></td><td>-118.286</td></tr>
+<tr><td><strong>Site Parameters</strong></td><td></td></tr>
+<tr><td><strong>Vs30</strong> (<em>m/sec</em>)</td><td>500.0</td></tr>
+<tr><td><strong>Depth 1.0 km/sec</strong> (<em>m</em>)</td><td>600.0</td></tr>
+<tr><td><strong>Depth 2.5 km/sec</strong> (<em>km</em>)</td><td>4.05</td></tr>
+</tbody>
+</table>
+<h3 id="usc-3-d-gain-spectra">USC 3-D Gain Spectra</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/USC_amp_spectra.png" alt="Gain Spectra" /></p>
+<h3 id="usc-scatter-plots">USC Scatter Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/USC_scatter_3.png" alt="plot" /></td><td><img src="resources/USC_scatter_5.png" alt="plot" /></td><td><img src="resources/USC_scatter_7.5.png" alt="plot" /></td><td><img src="resources/USC_scatter_10.png" alt="plot" /></td></tr>
+<tr><td><img src="resources/USC_scatter_3s_hist2D.png" alt="plot" /></td><td><img src="resources/USC_scatter_5s_hist2D.png" alt="plot" /></td><td><img src="resources/USC_scatter_7.5s_hist2D.png" alt="plot" /></td><td><img src="resources/USC_scatter_10s_hist2D.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="usc-3-d-magdistance-gain-plots">USC 3-D Mag/Distance Gain Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/USC_mag_dist_gains_3s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/USC_mag_dist_gains_5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/USC_mag_dist_gains_7.5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/USC_mag_dist_gains_10s.png" alt="Mag Dist XYZ" /></td></tr>
+</tbody>
+</table>
+<h2 id="stni">STNI</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th>STNI</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Latitude</strong></td><td>33.93088</td></tr>
+<tr><td><strong>Longitude</strong></td><td>-118.17881</td></tr>
+<tr><td><strong>Site Parameters</strong></td><td></td></tr>
+<tr><td><strong>Vs30</strong> (<em>m/sec</em>)</td><td>500.0</td></tr>
+<tr><td><strong>Depth 1.0 km/sec</strong> (<em>m</em>)</td><td>900.0</td></tr>
+<tr><td><strong>Depth 2.5 km/sec</strong> (<em>km</em>)</td><td>5.6</td></tr>
+</tbody>
+</table>
+<h3 id="stni-3-d-gain-spectra">STNI 3-D Gain Spectra</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/STNI_amp_spectra.png" alt="Gain Spectra" /></p>
+<h3 id="stni-scatter-plots">STNI Scatter Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/STNI_scatter_3.png" alt="plot" /></td><td><img src="resources/STNI_scatter_5.png" alt="plot" /></td><td><img src="resources/STNI_scatter_7.5.png" alt="plot" /></td><td><img src="resources/STNI_scatter_10.png" alt="plot" /></td></tr>
+<tr><td><img src="resources/STNI_scatter_3s_hist2D.png" alt="plot" /></td><td><img src="resources/STNI_scatter_5s_hist2D.png" alt="plot" /></td><td><img src="resources/STNI_scatter_7.5s_hist2D.png" alt="plot" /></td><td><img src="resources/STNI_scatter_10s_hist2D.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="stni-3-d-magdistance-gain-plots">STNI 3-D Mag/Distance Gain Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/STNI_mag_dist_gains_3s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/STNI_mag_dist_gains_5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/STNI_mag_dist_gains_7.5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/STNI_mag_dist_gains_10s.png" alt="Mag Dist XYZ" /></td></tr>
+</tbody>
+</table>
+<h2 id="sbsm">SBSM</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th>SBSM</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Latitude</strong></td><td>34.064987</td></tr>
+<tr><td><strong>Longitude</strong></td><td>-117.29201</td></tr>
+<tr><td><strong>Site Parameters</strong></td><td></td></tr>
+<tr><td><strong>Vs30</strong> (<em>m/sec</em>)</td><td>500.0</td></tr>
+<tr><td><strong>Depth 1.0 km/sec</strong> (<em>m</em>)</td><td>350.0</td></tr>
+<tr><td><strong>Depth 2.5 km/sec</strong> (<em>km</em>)</td><td>1.8</td></tr>
+</tbody>
+</table>
+<h3 id="sbsm-3-d-gain-spectra">SBSM 3-D Gain Spectra</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/SBSM_amp_spectra.png" alt="Gain Spectra" /></p>
+<h3 id="sbsm-scatter-plots">SBSM Scatter Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_scatter_3.png" alt="plot" /></td><td><img src="resources/SBSM_scatter_5.png" alt="plot" /></td><td><img src="resources/SBSM_scatter_7.5.png" alt="plot" /></td><td><img src="resources/SBSM_scatter_10.png" alt="plot" /></td></tr>
+<tr><td><img src="resources/SBSM_scatter_3s_hist2D.png" alt="plot" /></td><td><img src="resources/SBSM_scatter_5s_hist2D.png" alt="plot" /></td><td><img src="resources/SBSM_scatter_7.5s_hist2D.png" alt="plot" /></td><td><img src="resources/SBSM_scatter_10s_hist2D.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="sbsm-3-d-magdistance-gain-plots">SBSM 3-D Mag/Distance Gain Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/SBSM_mag_dist_gains_3s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/SBSM_mag_dist_gains_5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/SBSM_mag_dist_gains_7.5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/SBSM_mag_dist_gains_10s.png" alt="Mag Dist XYZ" /></td></tr>
+</tbody>
+</table>
+<h2 id="wngc">WNGC</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>Name</strong></th><th>WNGC</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Latitude</strong></td><td>34.041824</td></tr>
+<tr><td><strong>Longitude</strong></td><td>-118.0653</td></tr>
+<tr><td><strong>Site Parameters</strong></td><td></td></tr>
+<tr><td><strong>Vs30</strong> (<em>m/sec</em>)</td><td>500.0</td></tr>
+<tr><td><strong>Depth 1.0 km/sec</strong> (<em>m</em>)</td><td>550.0</td></tr>
+<tr><td><strong>Depth 2.5 km/sec</strong> (<em>km</em>)</td><td>3.7</td></tr>
+</tbody>
+</table>
+<h3 id="wngc-3-d-gain-spectra">WNGC 3-D Gain Spectra</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p><img src="resources/WNGC_amp_spectra.png" alt="Gain Spectra" /></p>
+<h3 id="wngc-scatter-plots">WNGC Scatter Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/WNGC_scatter_3.png" alt="plot" /></td><td><img src="resources/WNGC_scatter_5.png" alt="plot" /></td><td><img src="resources/WNGC_scatter_7.5.png" alt="plot" /></td><td><img src="resources/WNGC_scatter_10.png" alt="plot" /></td></tr>
+<tr><td><img src="resources/WNGC_scatter_3s_hist2D.png" alt="plot" /></td><td><img src="resources/WNGC_scatter_5s_hist2D.png" alt="plot" /></td><td><img src="resources/WNGC_scatter_7.5s_hist2D.png" alt="plot" /></td><td><img src="resources/WNGC_scatter_10s_hist2D.png" alt="plot" /></td></tr>
+</tbody>
+</table>
+<h3 id="wngc-3-d-magdistance-gain-plots">WNGC 3-D Mag/Distance Gain Plots</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<table>
+<thead>
+<tr><th><strong>3s</strong></th><th><strong>5s</strong></th><th><strong>7.5s</strong></th><th><strong>10s</strong></th></tr>
+</thead>
+<tbody>
+<tr><td><img src="resources/WNGC_mag_dist_gains_3s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/WNGC_mag_dist_gains_5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/WNGC_mag_dist_gains_7.5s.png" alt="Mag Dist XYZ" /></td><td><img src="resources/WNGC_mag_dist_gains_10s.png" alt="Mag Dist XYZ" /></td></tr>
 </tbody>
 </table>
 </body>
