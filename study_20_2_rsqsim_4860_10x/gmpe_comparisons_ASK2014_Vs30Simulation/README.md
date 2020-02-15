@@ -38,6 +38,8 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
   * [GMPE Magnitude Residuals](#gmpe-magnitude-residuals)
   * [GMPE rJB Residuals](#gmpe-rjb-residuals)
   * [GMPE rRup Residuals](#gmpe-rrup-residuals)
+  * [GMPE Z10 Residuals](#gmpe-z10-residuals)
+  * [GMPE Z25 Residuals](#gmpe-z25-residuals)
   * [GMPE Occurrence Time Residuals](#gmpe-occurrence-time-residuals)
 ## Site Scatters/Z-Score Histograms
 *[(top)](#table-of-contents)*
@@ -45,13 +47,14 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 ### All Sites Aggregated
 *[(top)](#table-of-contents)*
 
-**1 sites**
+**2 sites**
 
 | Name | Location | # Ruptures | Vs30 (m/s) | Z1.0 (km) | Z2.5 (km) |
 |-----|-----|-----|-----|-----|-----|
 | USC | *34.0192, -118.286* | 31699 (31699 sims) | 500 | 0.58 | 4.1 |
+| WSS | *34.1717, -118.64971* | 28587 (28587 sims) | 500 | 0.09 | 2.42 |
 
-31699 ruptures within 200 km of *any* site
+32315 ruptures within 200 km of *any* site
 #### All Sites, 6 < Mw < 6.5
 0 Ruptures
 ##### All Sites, 6 < Mw < 6.5, Scatter Plots
@@ -88,7 +91,7 @@ These plots compare RSQSim 4860 10x to the full GMPE log-normal distributions. E
 | **40 km < rJB < 80 km** | **80 km < rJB < 160 km** | **160 km < rJB < 200 km** |
 | N/A | N/A | N/A |
 #### All Sites, 6.5 < Mw < 7
-14249 Ruptures
+14511 Ruptures
 ##### All Sites, 6.5 < Mw < 7, Scatter Plots
 *[(top)](#table-of-contents)*
 
@@ -123,7 +126,7 @@ These plots compare RSQSim 4860 10x to the full GMPE log-normal distributions. E
 | **40 km < rJB < 80 km** | **80 km < rJB < 160 km** | **160 km < rJB < 200 km** |
 | ![Standard Normal Plot](resources/All_Sites_mag_6.5_7_dist_40_80_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/All_Sites_mag_6.5_7_dist_80_160_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/All_Sites_mag_6.5_7_dist_160_200_ASK2014_std_norm.png) |
 #### All Sites, 7 < Mw < 7.5
-12680 Ruptures
+12990 Ruptures
 ##### All Sites, 7 < Mw < 7.5, Scatter Plots
 *[(top)](#table-of-contents)*
 
@@ -158,7 +161,7 @@ These plots compare RSQSim 4860 10x to the full GMPE log-normal distributions. E
 | **40 km < rJB < 80 km** | **80 km < rJB < 160 km** | **160 km < rJB < 200 km** |
 | ![Standard Normal Plot](resources/All_Sites_mag_7_7.5_dist_40_80_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/All_Sites_mag_7_7.5_dist_80_160_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/All_Sites_mag_7_7.5_dist_160_200_ASK2014_std_norm.png) |
 #### All Sites, 7.5 < Mw < 8
-4769 Ruptures
+4813 Ruptures
 ##### All Sites, 7.5 < Mw < 8, Scatter Plots
 *[(top)](#table-of-contents)*
 
@@ -284,7 +287,7 @@ These plots compare RSQSim 4860 10x to the full GMPE log-normal distributions. E
 | **40 km < rJB < 80 km** | **80 km < rJB < 160 km** | **160 km < rJB < 200 km** |
 | N/A | N/A | N/A |
 #### USC, 6.5 < Mw < 7
-14249 Ruptures
+14511 Ruptures
 ##### USC, 6.5 < Mw < 7, Scatter Plots
 *[(top)](#table-of-contents)*
 
@@ -319,7 +322,7 @@ These plots compare RSQSim 4860 10x to the full GMPE log-normal distributions. E
 | **40 km < rJB < 80 km** | **80 km < rJB < 160 km** | **160 km < rJB < 200 km** |
 | ![Standard Normal Plot](resources/USC_mag_6.5_7_dist_40_80_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/USC_mag_6.5_7_dist_80_160_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/USC_mag_6.5_7_dist_160_200_ASK2014_std_norm.png) |
 #### USC, 7 < Mw < 7.5
-12680 Ruptures
+12990 Ruptures
 ##### USC, 7 < Mw < 7.5, Scatter Plots
 *[(top)](#table-of-contents)*
 
@@ -354,7 +357,7 @@ These plots compare RSQSim 4860 10x to the full GMPE log-normal distributions. E
 | **40 km < rJB < 80 km** | **80 km < rJB < 160 km** | **160 km < rJB < 200 km** |
 | ![Standard Normal Plot](resources/USC_mag_7_7.5_dist_40_80_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/USC_mag_7_7.5_dist_80_160_ASK2014_std_norm.png) | ![Standard Normal Plot](resources/USC_mag_7_7.5_dist_160_200_ASK2014_std_norm.png) |
 #### USC, 7.5 < Mw < 8
-4769 Ruptures
+4813 Ruptures
 ##### USC, 7.5 < Mw < 8, Scatter Plots
 *[(top)](#table-of-contents)*
 
@@ -456,6 +459,7 @@ z-score standard normal plots across all magnitudes/distances
 | Site | 3s | 5s | 10s |
 |-----|-----|-----|-----|
 | **USC** | ![Hazard Curve](resources/USC_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/USC_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/USC_curves_10.0s_ASK2014.png) |
+| **WSS** | ![Hazard Curve](resources/WSS_curves_3.0s_ASK2014.png) | ![Hazard Curve](resources/WSS_curves_5.0s_ASK2014.png) | ![Hazard Curve](resources/WSS_curves_10.0s_ASK2014.png) |
 ## GMPE Residuals
 *[(top)](#table-of-contents)*
 
@@ -472,12 +476,12 @@ GMPE Residuals use the following values, averaged among all ruptures, for all pa
 | Name | Average Value |
 |-----|-----|
 | Magnitude | 7.08 |
-| rRup | 113.68 |
-| rJB | 113.97 |
+| rRup | 110.44 |
+| rJB | 110.99 |
 | Vs30 | 500 |
-| Z10 | 580 |
-| Z25 | 4.1 |
-| Occurrence Time | 139859.37 |
+| Z10 | 347.65 |
+| Z25 | 3.3 |
+| Occurrence Time | 139924.09 |
 
 ### Period-Dependent Residual Components
 *[(top)](#table-of-contents)*
@@ -524,6 +528,22 @@ Residuals shown here are first detrended according to the following magnitude & 
 |-----|-----|-----|
 | ![Scatter](resources/gmpe_residuals_DIST_RUP_3s_scatter.png) | ![Scatter](resources/gmpe_residuals_DIST_RUP_5s_scatter.png) | ![Scatter](resources/gmpe_residuals_DIST_RUP_10s_scatter.png) |
 | ![2-D Hist](resources/gmpe_residuals_DIST_RUP_3s_hist2d.png) | ![2-D Hist](resources/gmpe_residuals_DIST_RUP_5s_hist2d.png) | ![2-D Hist](resources/gmpe_residuals_DIST_RUP_10s_hist2d.png) |
+### GMPE Z10 Residuals
+*[(top)](#table-of-contents)*
+
+
+| **3 s** | **5 s** | **10 s** |
+|-----|-----|-----|
+| ![Scatter](resources/gmpe_residuals_Z10_3s_scatter.png) | ![Scatter](resources/gmpe_residuals_Z10_5s_scatter.png) | ![Scatter](resources/gmpe_residuals_Z10_10s_scatter.png) |
+| ![2-D Hist](resources/gmpe_residuals_Z10_3s_hist2d.png) | ![2-D Hist](resources/gmpe_residuals_Z10_5s_hist2d.png) | ![2-D Hist](resources/gmpe_residuals_Z10_10s_hist2d.png) |
+### GMPE Z25 Residuals
+*[(top)](#table-of-contents)*
+
+
+| **3 s** | **5 s** | **10 s** |
+|-----|-----|-----|
+| ![Scatter](resources/gmpe_residuals_Z25_3s_scatter.png) | ![Scatter](resources/gmpe_residuals_Z25_5s_scatter.png) | ![Scatter](resources/gmpe_residuals_Z25_10s_scatter.png) |
+| ![2-D Hist](resources/gmpe_residuals_Z25_3s_hist2d.png) | ![2-D Hist](resources/gmpe_residuals_Z25_5s_hist2d.png) | ![2-D Hist](resources/gmpe_residuals_Z25_10s_hist2d.png) |
 ### GMPE Occurrence Time Residuals
 *[(top)](#table-of-contents)*
 

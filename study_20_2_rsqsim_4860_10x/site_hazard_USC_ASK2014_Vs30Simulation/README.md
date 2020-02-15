@@ -70,7 +70,7 @@
 
 **Legend**:
 * **Simulation Spectra**
-  * Black Solid Line: RSQSim 4860 10x
+  * Black Solid Line: CyberShake
   * Orange Solid Line: RSQSim-BBP
 * **GMPE Spectra**
   * Blue Solid Line: ASK2014 full spectra
@@ -101,7 +101,7 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: RSQSim 4860 10x
+  * Black Solid Line: CyberShake
   * Orange Solid Line: RSQSim-BBP
 * **GMPE Curves**
   * Blue Solid Line: ASK2014 full curves
@@ -120,7 +120,7 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: RSQSim 4860 10x
+  * Black Solid Line: CyberShake
   * Orange Solid Line: RSQSim-BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -159,7 +159,7 @@ This animation shows the affect of input simulation catalog length on the simula
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: RSQSim 4860 10x
+  * Black Solid Line: CyberShake
   * Orange Solid Line: RSQSim-BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -198,7 +198,7 @@ This animation shows the affect of input simulation catalog length on the simula
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: RSQSim 4860 10x
+  * Black Solid Line: CyberShake
   * Orange Solid Line: RSQSim-BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -237,7 +237,7 @@ This animation shows the affect of input simulation catalog length on the simula
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: RSQSim 4860 10x
+  * Black Solid Line: CyberShake
   * Orange Solid Line: RSQSim-BBP
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -283,7 +283,7 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 3s Disaggregations at Simulation/GMPE Intersections
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **131 yr<br>0.07866276 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.07866276.png) | ![Disaggregation](resources/disagg_gmpe_3s_intersect_0.07866276.png) |
 | **240 yr<br>0.10811616 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.10811616.png) | ![Disaggregation](resources/disagg_gmpe_3s_intersect_0.10811616.png) |
@@ -292,7 +292,7 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 3s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_3s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_3s_2500yr.png) |
@@ -301,7 +301,7 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 3s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **0.1 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.1.png) | ![Disaggregation](resources/disagg_gmpe_3s_iml_0.1.png) |
 | **0.5 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.5.png) | ![Disaggregation](resources/disagg_gmpe_3s_iml_0.5.png) |
@@ -313,14 +313,14 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 5s Disaggregations at Simulation/GMPE Intersections
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **2032 yr<br>0.1440344 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_intersect_0.1440344.png) | ![Disaggregation](resources/disagg_gmpe_5s_intersect_0.1440344.png) |
 
 #### 5s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_5s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_5s_2500yr.png) |
@@ -329,7 +329,7 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 5s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **0.1 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_iml_0.1.png) | ![Disaggregation](resources/disagg_gmpe_5s_iml_0.1.png) |
 | **0.5 g** | N/A | N/A | ![Disaggregation](resources/disagg_gmpe_5s_iml_0.5.png) |
@@ -341,14 +341,14 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 7.5s Disaggregations at Simulation/GMPE Intersections
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **623 yr<br>0.05919112 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_intersect_0.05919112.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_intersect_0.05919112.png) |
 
 #### 7.5s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_2500yr.png) |
@@ -357,7 +357,7 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 7.5s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **0.1 g** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_iml_0.1.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_iml_0.1.png) |
 | **0.5 g** | N/A | N/A | ![Disaggregation](resources/disagg_gmpe_7.5s_iml_0.5.png) |
@@ -369,7 +369,7 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 10s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_10s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_10s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_10s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_10s_2500yr.png) |
@@ -378,7 +378,7 @@ This simulation does not have distributions for each rupture, so in order to com
 #### 10s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **RSQSim 4860 10x w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShake w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|
 | **0.1 g** | N/A | N/A | ![Disaggregation](resources/disagg_gmpe_10s_iml_0.1.png) |
 | **0.5 g** | N/A | N/A | ![Disaggregation](resources/disagg_gmpe_10s_iml_0.5.png) |
