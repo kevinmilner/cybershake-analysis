@@ -29,6 +29,7 @@
 ### GMPE: ASK2014, Vs30 model: Simulation Value
 
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
+* [WSS](site_hazard_WSS_ASK2014_Vs30Simulation/)
 
 ## Source/Site Ground Motion Comparisons
 *[(top)](#rsqsim-4860-10x)*
