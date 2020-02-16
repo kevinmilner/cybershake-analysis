@@ -28,6 +28,8 @@
 
 ### GMPE: ASK2014, Vs30 model: Simulation Value
 
+* [OSI](site_hazard_OSI_ASK2014_Vs30Simulation/)
+* [SMCA](site_hazard_SMCA_ASK2014_Vs30Simulation/)
 * [USC](site_hazard_USC_ASK2014_Vs30Simulation/)
 * [WSS](site_hazard_WSS_ASK2014_Vs30Simulation/)
 
