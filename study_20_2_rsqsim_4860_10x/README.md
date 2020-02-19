@@ -31,6 +31,7 @@
 
 * [LAF](site_hazard_LAF_ASK2014_Vs30Simulation/)
 * [OSI](site_hazard_OSI_ASK2014_Vs30Simulation/)
+* [PAS](site_hazard_PAS_ASK2014_Vs30Simulation/)
 * [PDE](site_hazard_PDE_ASK2014_Vs30Simulation/)
 * [s022](site_hazard_s022_ASK2014_Vs30Simulation/)
 * [SBSM](site_hazard_SBSM_ASK2014_Vs30Simulation/)
