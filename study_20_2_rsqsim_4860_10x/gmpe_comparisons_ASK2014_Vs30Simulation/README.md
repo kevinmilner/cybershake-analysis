@@ -16,7 +16,8 @@
 Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore distance (**rJB**), the shortest horizontal distance from a site to the surface projection of the rupture surface
 
 ## Table Of Contents
-* [Site Scatters/z-Score Histograms](#site-scattersz-score-histograms)
+* [Site Scatters/z-score Histograms](#site-scattersz-score-histograms)
+  * [z-score Summary Table](#z-score-summary-table)
   * [Bundled z-scores](#bundled-z-scores)
     * [Vs30=500 z-scores](#vs30500-z-scores)
     * [LA Vs30=500 Initial Set z-scores](#la-vs30500-initial-set-z-scores)
@@ -122,8 +123,29 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
   * [GMPE Z10 Residuals](#gmpe-z10-residuals)
   * [GMPE Z25 Residuals](#gmpe-z25-residuals)
   * [GMPE Occurrence Time Residuals](#gmpe-occurrence-time-residuals)
-## Site Scatters/z-Score Histograms
+## Site Scatters/z-score Histograms
 *[(top)](#table-of-contents)*
+
+### z-score Summary Table
+*[(top)](#table-of-contents)*
+
+| Site | 3s Mean | 3s &sigma;-fract | 5s Mean | 5s &sigma;-fract | 10s Mean | 10s &sigma;-fract |
+|-----|-----|-----|-----|-----|-----|-----|
+| All Sites | 0.28 | 0.85 | 0.65 | 0.99 | 0.18 | 0.96 |
+| Vs30=500 | 0.40 | 0.83 | 0.77 | 0.97 | 0.23 | 0.97 |
+| LA Vs30=500 Initial Set | 0.40 | 0.83 | 0.77 | 0.97 | 0.23 | 0.97 |
+| USC | 0.33 | 0.64 | 0.78 | 0.79 | 0.36 | 0.85 |
+| OSI | -0.54 | 0.71 | -0.60 | 0.80 | -0.67 | 0.85 |
+| SMCA | 0.17 | 0.65 | 0.90 | 0.78 | 0.21 | 0.83 |
+| SBSM | 0.92 | 0.99 | 0.65 | 0.89 | -0.28 | 0.85 |
+| WSS | 0.38 | 0.63 | 0.60 | 0.79 | -0.19 | 0.79 |
+| WNGC | 0.60 | 0.98 | 0.95 | 0.98 | 0.21 | 0.83 |
+| STNI | 0.47 | 0.64 | 1.23 | 0.83 | 1.12 | 0.85 |
+| PDE | 0.67 | 0.65 | 0.96 | 0.85 | 0.30 | 0.84 |
+| LAF | 0.24 | 0.61 | 1.20 | 0.83 | 0.59 | 0.82 |
+| s022 | 0.67 | 0.66 | 1.08 | 0.78 | 0.83 | 0.80 |
+| PAS | -0.36 | 0.72 | -0.02 | 0.80 | -0.16 | 0.81 |
+| s119 | -0.22 | 0.69 | 0.07 | 0.81 | 0.02 | 0.87 |
 
 ### Bundled z-scores
 *[(top)](#table-of-contents)*

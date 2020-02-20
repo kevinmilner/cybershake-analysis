@@ -16,7 +16,8 @@
 Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore distance (**rJB**), the shortest horizontal distance from a site to the surface projection of the rupture surface
 
 ## Table Of Contents
-* [Site Scatters/z-Score Histograms](#site-scattersz-score-histograms)
+* [Site Scatters/z-score Histograms](#site-scattersz-score-histograms)
+  * [z-score Summary Table](#z-score-summary-table)
   * [Bundled z-scores](#bundled-z-scores)
     * [Vs30=500 z-scores](#vs30500-z-scores)
     * [LA Vs30=500 Initial Set z-scores](#la-vs30500-initial-set-z-scores)
@@ -128,8 +129,30 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
   * [GMPE Vs30 Residuals](#gmpe-vs30-residuals)
   * [GMPE Z10 Residuals](#gmpe-z10-residuals)
   * [GMPE Z25 Residuals](#gmpe-z25-residuals)
-## Site Scatters/z-Score Histograms
+## Site Scatters/z-score Histograms
 *[(top)](#table-of-contents)*
+
+### z-score Summary Table
+*[(top)](#table-of-contents)*
+
+| Site | 3s Mean | 3s &sigma;-fract | 5s Mean | 5s &sigma;-fract | 10s Mean | 10s &sigma;-fract |
+|-----|-----|-----|-----|-----|-----|-----|
+| All Sites | 0.80 | 0.93 | 1.03 | 1.03 | 0.41 | 0.97 |
+| Vs30=500 | 0.71 | 0.92 | 0.87 | 1.06 | 0.29 | 1.03 |
+| LA Vs30=500 Initial Set | 1.00 | 0.85 | 1.22 | 0.97 | 0.52 | 0.97 |
+| WNGC | 1.14 | 0.89 | 1.31 | 0.92 | 0.47 | 0.84 |
+| SMCA | 0.86 | 0.72 | 1.35 | 0.83 | 0.55 | 0.82 |
+| STNI | 1.05 | 0.67 | 1.64 | 0.85 | 1.37 | 0.90 |
+| LAPD | 0.04 | 0.78 | 0.28 | 0.84 | -0.09 | 0.90 |
+| PAS | -0.02 | 0.77 | 0.23 | 0.82 | -0.05 | 0.84 |
+| SBSM | 1.21 | 0.88 | 0.95 | 0.87 | -0.01 | 0.86 |
+| LAF | 0.81 | 0.64 | 1.58 | 0.82 | 0.90 | 0.81 |
+| OSI | 0.63 | 1.08 | 0.38 | 1.15 | -0.13 | 0.99 |
+| PDE | 1.01 | 0.74 | 1.24 | 0.86 | 0.52 | 0.83 |
+| USC | 0.95 | 0.71 | 1.26 | 0.83 | 0.65 | 0.87 |
+| WSS | 0.82 | 0.70 | 1.04 | 0.82 | 0.14 | 0.78 |
+| s022 | 1.45 | 0.87 | 1.59 | 0.87 | 0.86 | 0.87 |
+| s119 | 0.48 | 1.06 | 0.75 | 1.11 | 0.30 | 0.93 |
 
 ### Bundled z-scores
 *[(top)](#table-of-contents)*
