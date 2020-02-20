@@ -137,7 +137,7 @@ Ruptures are binned by their moment magnitude (**Mw**) and the Joyner-Boore dist
 
 | Site | 3s Mean | 3s &sigma;-fract | 5s Mean | 5s &sigma;-fract | 10s Mean | 10s &sigma;-fract |
 |-----|-----|-----|-----|-----|-----|-----|
-| All Sites | 0.80 | 0.93 | 1.03 | 1.03 | 0.41 | 0.97 |
+| All Sites | 0.44 | 0.94 | 0.62 | 1.02 | 0.15 | 0.97 |
 | Vs30=500 | 0.71 | 0.92 | 0.87 | 1.06 | 0.29 | 1.03 |
 | LA Vs30=500 Initial Set | 1.00 | 0.85 | 1.22 | 0.97 | 0.52 | 0.97 |
 | WNGC | 1.14 | 0.89 | 1.31 | 0.92 | 0.47 | 0.84 |
