@@ -6,6 +6,7 @@
 | Feb 2020 | [RSQSim 4860](study_20_2_rsqsim_4860#rsqsim-4860) | RSQSim prototype with catalog 4860 (35kyr) |
 | Feb 2020 | [RSQSim 4860 10x](study_20_2_rsqsim_4860_10x#rsqsim-4860-10x) | RSQSim prototype with catalog 4860 (10x, 270kyr) |
 | Mar 2019 | [RSQSim RotRup 2585](study_19_3_rsqsim_rot_2585#rsqsim-rotrup-2585) | RSQSim rotated-rupture variability study with catalog 2585 |
+| Mar 2019 | [RSQSim RotRup 4860 10X](study_20_2_rsqsim_rot_4860_10x#rsqsim-rotrup-4860-10x) | RSQSim rotated-rupture variability study with catalog 4860 10X |
 | Feb 2019 | [RSQSim RotRup 2740](study_19_2_rsqsim_rot_2740#rsqsim-rotrup-2740) | RSQSim rotated-rupture variability study with catalog 2740 |
 | Sep 2018 | [RSQSim 2740](study_18_9_rsqsim_2740#rsqsim-2740) | RSQSim prototype with catalog 2740 (259kyr) |
 | Aug 2018 | [Study 18.8](study_18_8#study-188) | Northern California with Bay Area, CCA, and CVM-S4.26 Velocity Models, 1hz |

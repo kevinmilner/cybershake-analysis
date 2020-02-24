@@ -1,0 +1,4 @@
+Scenario,Distance (km),Overall Result,Plot File Name,3s Min Criterion,3s Max Criterion,3s GMPE Median,3s Sim Median,3s Sim Std Dev,3s Result
+"M6.6, Vertical Strike-Slip with Surface Rupture",20.0,FAIL,bbp_partB_m6p6_vert_ss_surface_20km_10sites_Vs30_500.png,0.020477558,0.04275056,0.02954287,0.053063463,0.54661316,FAIL
+"M6.6, Vertical Strike-Slip with Surface Rupture",50.0,FAIL,bbp_partB_m6p6_vert_ss_surface_50km_10sites_Vs30_500.png,0.008439771,0.017566279,0.012176016,0.023534115,0.6027662,FAIL
+"M6.6, Vertical Strike-Slip with Surface Rupture",100.0,FAIL,bbp_partB_m6p6_vert_ss_surface_100km_10sites_Vs30_500.png,0.004185036,0.008710604,0.0060377307,0.011362606,0.6546703,FAIL

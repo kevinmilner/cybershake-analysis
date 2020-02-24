@@ -65,7 +65,7 @@
 
 **Legend**:
 * **Simulation Spectra**
-  * Black Solid Line: Study 15.4
+  * Black Solid Line: CyberShakeStudy 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Spectra**
   * Blue Solid Line: ASK2014 full spectra
@@ -94,7 +94,7 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: Study 15.4
+  * Black Solid Line: CyberShakeStudy 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Blue Solid Line: ASK2014 full curves
@@ -113,7 +113,7 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: Study 15.4
+  * Black Solid Line: CyberShakeStudy 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -127,7 +127,7 @@ These plots show the contribution of each fault source to the hazard spectra. Th
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
@@ -143,7 +143,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: Study 15.4
+  * Black Solid Line: CyberShakeStudy 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -157,7 +157,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
@@ -173,7 +173,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: Study 15.4
+  * Black Solid Line: CyberShakeStudy 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -187,7 +187,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
@@ -203,7 +203,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 
 **Legend**:
 * **Simulation Curves** *(truncated below lowest possible y-value)*
-  * Black Solid Line: Study 15.4
+  * Black Solid Line: CyberShakeStudy 15.4
   * Gray Solid Line: Study 15.4 w/o Aleatory Mag
 * **GMPE Curves**
   * Light Red Thin Solid Lines: ASK2014 simulations (with samples from GMPE log-normal distribution)
@@ -217,7 +217,7 @@ These plots show the contribution of each fault source to the hazard curves. The
 *[(top)](#table-of-contents)*
 
 
-These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their contrubution in the simulation results at the **POE=4.0E-4** level, and only the top 10 sources are plotted.
+These plots show the contribution of each fault source to the hazard curves. The same set of sources are plotted for both simulation values (left) and GMPE values (right). Sources are sorted in the legend (and colored by) their risk-targeted ground motion in the simulation results, and only the top 10 sources are plotted.
 
 | **Simulation Source Contributions** | **GMPE Source Contributions** |
 |-----|-----|
@@ -244,14 +244,14 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 3s Disaggregations at Simulation/GMPE Intersections
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **274955 yr<br>0.9850555 g** | ![Disaggregation](resources/disagg_sim_3s_intersect_0.9850555.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_intersect_0.9850555.png) | ![Disaggregation](resources/disagg_gmpe_3s_intersect_0.9850555.png) |
 
 #### 3s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_3s_1000yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_3s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_3s_2500yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_3s_2500yr.png) |
@@ -260,7 +260,7 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 3s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **0.1 g** | ![Disaggregation](resources/disagg_sim_3s_iml_0.1.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.1.png) | ![Disaggregation](resources/disagg_gmpe_3s_iml_0.1.png) |
 | **0.5 g** | ![Disaggregation](resources/disagg_sim_3s_iml_0.5.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_3s_iml_0.5.png) | ![Disaggregation](resources/disagg_gmpe_3s_iml_0.5.png) |
@@ -272,7 +272,7 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 5s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_5s_1000yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_5s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_5s_2500yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_5s_2500yr.png) |
@@ -281,7 +281,7 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 5s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **0.1 g** | ![Disaggregation](resources/disagg_sim_5s_iml_0.1.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_iml_0.1.png) | ![Disaggregation](resources/disagg_gmpe_5s_iml_0.1.png) |
 | **0.5 g** | ![Disaggregation](resources/disagg_sim_5s_iml_0.5.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_5s_iml_0.5.png) | ![Disaggregation](resources/disagg_gmpe_5s_iml_0.5.png) |
@@ -293,7 +293,7 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 7.5s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_7.5s_1000yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_7.5s_2500yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_2500yr.png) |
@@ -302,7 +302,7 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 7.5s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **0.1 g** | ![Disaggregation](resources/disagg_sim_7.5s_iml_0.1.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_iml_0.1.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_iml_0.1.png) |
 | **0.5 g** | ![Disaggregation](resources/disagg_sim_7.5s_iml_0.5.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_7.5s_iml_0.5.png) | ![Disaggregation](resources/disagg_gmpe_7.5s_iml_0.5.png) |
@@ -314,14 +314,14 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 10s Disaggregations at Simulation/GMPE Intersections
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **6510 yr<br>0.08786106 g** | ![Disaggregation](resources/disagg_sim_10s_intersect_0.08786106.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_10s_intersect_0.08786106.png) | ![Disaggregation](resources/disagg_gmpe_10s_intersect_0.08786106.png) |
 
 #### 10s Disaggregations at Fixed Return Periods
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **1000 yr** | ![Disaggregation](resources/disagg_sim_10s_1000yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_10s_1000yr.png) | ![Disaggregation](resources/disagg_gmpe_10s_1000yr.png) |
 | **2500 yr** | ![Disaggregation](resources/disagg_sim_10s_2500yr.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_10s_2500yr.png) | ![Disaggregation](resources/disagg_gmpe_10s_2500yr.png) |
@@ -330,7 +330,7 @@ We also include plots which use the GMPE mean and sigma when computing sigma:
 #### 10s Disaggregations at Fixed IMLs
 *[(top)](#table-of-contents)*
 
-| **Disagg Level** | **Study 15.4 w/ sim dist for Epsilon** | **Study 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
+| **Disagg Level** | **CyberShakeStudy 15.4 w/ sim dist for Epsilon** | **CyberShakeStudy 15.4 w/ GMPE dist for Epsilon** | **Abrahamson, Silva & Kamai (2014)** |
 |-----|-----|-----|-----|
 | **0.1 g** | ![Disaggregation](resources/disagg_sim_10s_iml_0.1.png) | ![Disaggregation](resources/disagg_sim_gmpe_dist_for_epsilon_10s_iml_0.1.png) | ![Disaggregation](resources/disagg_gmpe_10s_iml_0.1.png) |
 | **0.5 g** | N/A | N/A | ![Disaggregation](resources/disagg_gmpe_10s_iml_0.5.png) |
