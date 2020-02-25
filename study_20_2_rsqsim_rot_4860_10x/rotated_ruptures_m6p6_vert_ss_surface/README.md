@@ -159,7 +159,8 @@ This tables gives a list of all fault sections which participate in the ruptures
 | Eureka Peak | 1 |
 | Cerro Prieto | 1 |
 | San Andreas (Offshore) 2011 CFM | 1 |
-| TOTAL # PARENTS | 52 |
+| SUM OF PARENT PARTICIPATIONS | 52 |
+| # UNIQUE PARENTS | [Hunting Creek - Bartlett Springs connector 2011, Earthquake Valley (So Extension), San Jacinto (Superstition Mtn), San Diego Trough south, Emerson-Copper Mtn 2011, Gravel Hills-Harper Lk, Rose Canyon, Honey Lake 2011 CFM, Brawley (Seismic Zone) alt 1, San Andreas (Cholame) rev, Goldstone Lake, Owl Lake, Pinto Mtn, Coyote Lake, San Gregorio (North) 2011 CFM, San Andreas (San Bernardino S), San Jacinto (Coyote Creek), Coronado Bank alt1, Death Valley (So), Earthquake Valley, San Jacinto (San Bernardino), Garlock (East), Ortigalita (South), Ludlow, Hunting Creek - Berryessa 2011 CFM, Newport-Inglewood (Offshore), San Andreas (San Bernardino N), Owens Valley, Johnson Valley (No) 2011 rev, Concord 2011 CFM, Garlock (West), Laguna Salada, Superstition Hills, Garberville - Briceland 2011 CFM, San Andreas (Parkfield), Homestead Valley 2011, San Andreas (Coachella) rev, San Jacinto (Clark) rev, Garlock (Central), San Andreas (Creeping Section) 2011 CFM, Calico-Hidalgo, Mendocino, Ash Hill, Death Valley (No), Palos Verdes, Elmore Ranch, Bartlett Springs 2011 CFM, Ortigalita (North), Little Lake, Eureka Peak, Cerro Prieto, San Andreas (Offshore) 2011 CFM] |
 
 Actual magnitude range: [6.5510917,6.6451483], average: 6.5999436, stdDev: 0.028095247
 
@@ -1073,7 +1074,7 @@ Here is an exmample with 5 rotations, which would be repeated for each combinati
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **10 sites, V<sub>S30</sub>=500** |  | **0.51** | **0.52** | **0.51** | **[0.13 1.08]** |  | **0.57** | **0.58** | **0.57** | **[0.14 1.18]** |  | **0.52** | **0.53** | **0.52** | **[0.21 1.05]** |
+| **10 sites, V<sub>S30</sub>=500** |  | **0.51** | **0.52** | **0.51** | **[0.14 1.11]** |  | **0.57** | **0.58** | **0.57** | **[0.16 1.16]** |  | **0.52** | **0.53** | **0.52** | **[0.22 1.03]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1092,12 +1093,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.55 | 0.55 | 0.06 | [0.48 0.61] | [0.41 0.66] |
-| 3 | 0.51 | 0.51 | 0.07 | [0.43 0.59] | [0.37 0.66] |
-| 4 | 0.56 | 0.58 | 0.08 | [0.47 0.65] | [0.43 0.72] |
-| 5 | 0.57 | 0.58 | 0.09 | [0.47 0.67] | [0.4 0.73] |
-| 7.5 | 0.57 | 0.56 | 0.07 | [0.48 0.65] | [0.41 0.72] |
-| 10 | 0.52 | 0.51 | 0.06 | [0.46 0.57] | [0.39 0.64] |
+| T-independent | 0.55 | 0.53 | 0.06 | [0.47 0.6] | [0.43 0.67] |
+| 3 | 0.51 | 0.49 | 0.07 | [0.42 0.58] | [0.36 0.65] |
+| 4 | 0.56 | 0.55 | 0.08 | [0.46 0.65] | [0.38 0.73] |
+| 5 | 0.57 | 0.55 | 0.08 | [0.49 0.65] | [0.41 0.75] |
+| 7.5 | 0.57 | 0.56 | 0.08 | [0.48 0.65] | [0.43 0.76] |
+| 10 | 0.52 | 0.5 | 0.06 | [0.45 0.59] | [0.4 0.65] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
@@ -1113,7 +1114,7 @@ This plot shows the distribution of period-independent downsampled &phi;.
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **10 sites, V<sub>S30</sub>=500** |  | **0.57** | **0.57** | **0.57** | **[0.15 1.24]** |  | **0.66** | **0.66** | **0.65** | **[0.2 1.39]** |  | **0.65** | **0.66** | **0.66** | **[0.21 1.16]** |
+| **10 sites, V<sub>S30</sub>=500** |  | **0.57** | **0.57** | **0.57** | **[0.13 1.24]** |  | **0.66** | **0.66** | **0.65** | **[0.2 1.34]** |  | **0.65** | **0.66** | **0.66** | **[0.19 1.24]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1132,12 +1133,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.64 | 0.64 | 0.09 | [0.56 0.74] | [0.48 0.82] |
-| 3 | 0.57 | 0.57 | 0.09 | [0.48 0.67] | [0.41 0.79] |
-| 4 | 0.62 | 0.62 | 0.11 | [0.5 0.74] | [0.45 0.86] |
-| 5 | 0.66 | 0.67 | 0.11 | [0.55 0.79] | [0.47 0.88] |
-| 7.5 | 0.71 | 0.71 | 0.12 | [0.6 0.85] | [0.51 1] |
-| 10 | 0.65 | 0.65 | 0.1 | [0.55 0.77] | [0.47 0.87] |
+| T-independent | 0.64 | 0.63 | 0.08 | [0.56 0.72] | [0.49 0.82] |
+| 3 | 0.57 | 0.56 | 0.09 | [0.48 0.67] | [0.38 0.75] |
+| 4 | 0.62 | 0.62 | 0.1 | [0.51 0.71] | [0.45 0.83] |
+| 5 | 0.66 | 0.65 | 0.09 | [0.55 0.75] | [0.51 0.87] |
+| 7.5 | 0.71 | 0.7 | 0.11 | [0.6 0.81] | [0.5 0.95] |
+| 10 | 0.65 | 0.65 | 0.09 | [0.57 0.74] | [0.47 0.84] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
@@ -1153,7 +1154,7 @@ This plot shows the distribution of period-independent downsampled &phi;.
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **10 sites, V<sub>S30</sub>=500** |  | **0.62** | **0.63** | **0.62** | **[0.14 1.37]** |  | **0.72** | **0.73** | **0.72** | **[0.23 1.48]** |  | **0.67** | **0.68** | **0.67** | **[0.19 1.3]** |
+| **10 sites, V<sub>S30</sub>=500** |  | **0.62** | **0.63** | **0.62** | **[0.15 1.36]** |  | **0.72** | **0.73** | **0.72** | **[0.2 1.49]** |  | **0.67** | **0.67** | **0.67** | **[0.21 1.31]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1172,12 +1173,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.69 | 0.66 | 0.07 | [0.6 0.75] | [0.55 0.82] |
-| 3 | 0.62 | 0.59 | 0.1 | [0.51 0.71] | [0.4 0.84] |
-| 4 | 0.68 | 0.64 | 0.1 | [0.57 0.75] | [0.48 0.87] |
-| 5 | 0.72 | 0.71 | 0.1 | [0.62 0.82] | [0.52 0.93] |
-| 7.5 | 0.75 | 0.73 | 0.1 | [0.63 0.84] | [0.55 0.95] |
-| 10 | 0.67 | 0.64 | 0.09 | [0.55 0.75] | [0.49 0.84] |
+| T-independent | 0.69 | 0.67 | 0.09 | [0.59 0.78] | [0.52 0.89] |
+| 3 | 0.62 | 0.63 | 0.11 | [0.53 0.73] | [0.4 0.85] |
+| 4 | 0.68 | 0.67 | 0.11 | [0.57 0.8] | [0.46 0.92] |
+| 5 | 0.72 | 0.72 | 0.12 | [0.6 0.83] | [0.48 0.97] |
+| 7.5 | 0.75 | 0.73 | 0.11 | [0.63 0.83] | [0.51 0.94] |
+| 10 | 0.67 | 0.66 | 0.1 | [0.56 0.76] | [0.43 0.87] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
@@ -1193,7 +1194,7 @@ This plot shows the distribution of period-independent downsampled &phi;.
 
 | Site | 3s &phi; | Total | Mean | Median | Range | 5s &phi; | Total | Mean | Median | Range | 10s &phi; | Total | Mean | Median | Range |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **10 sites, V<sub>S30</sub>=500** |  | **0.57** | **0.57** | **0.56** | **[0.13 1.37]** |  | **0.65** | **0.66** | **0.64** | **[0.14 1.48]** |  | **0.62** | **0.62** | **0.61** | **[0.19 1.3]** |
+| **10 sites, V<sub>S30</sub>=500** |  | **0.57** | **0.57** | **0.56** | **[0.13 1.36]** |  | **0.65** | **0.66** | **0.64** | **[0.16 1.49]** |  | **0.62** | **0.62** | **0.61** | **[0.19 1.31]** |
 
 Here are plots of the histogram of &phi; for each individual rupture, from which we compute a total &phi;
 
@@ -1212,12 +1213,12 @@ We compute uncertainties on &phi; through downsampling the rotational synthetic 
 
 | Period (s) | Full &phi; | Downsampled median &phi; | Downsampled &phi; std. dev. | Downsampled &phi; 68% conf range | Downsampled &phi; 95% conf range |
 |-----|-----|-----|-----|-----|-----|
-| T-independent | 0.63 | 0.62 | 0.03 | [0.59 0.66] | [0.56 0.69] |
-| 3 | 0.57 | 0.56 | 0.04 | [0.53 0.6] | [0.49 0.65] |
-| 4 | 0.62 | 0.61 | 0.04 | [0.58 0.65] | [0.53 0.71] |
-| 5 | 0.65 | 0.65 | 0.04 | [0.61 0.68] | [0.57 0.72] |
-| 7.5 | 0.68 | 0.68 | 0.05 | [0.62 0.71] | [0.58 0.77] |
-| 10 | 0.62 | 0.61 | 0.04 | [0.57 0.65] | [0.53 0.69] |
+| T-independent | 0.63 | 0.62 | 0.04 | [0.59 0.66] | [0.55 0.7] |
+| 3 | 0.57 | 0.57 | 0.04 | [0.53 0.61] | [0.48 0.66] |
+| 4 | 0.62 | 0.62 | 0.04 | [0.58 0.65] | [0.54 0.7] |
+| 5 | 0.65 | 0.65 | 0.04 | [0.6 0.69] | [0.57 0.73] |
+| 7.5 | 0.68 | 0.68 | 0.05 | [0.63 0.73] | [0.58 0.77] |
+| 10 | 0.62 | 0.61 | 0.04 | [0.58 0.65] | [0.52 0.68] |
 
 This plot shows the distribution of period-independent downsampled &phi;.
 
@@ -1539,10 +1540,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/LAF_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### LAF Path Dependence
@@ -1550,10 +1551,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/LAF_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### OSI Azumth Dependence
@@ -1564,10 +1565,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/OSI_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### OSI Path Dependence
@@ -1575,10 +1576,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/OSI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### PDE Azumth Dependence
@@ -1589,10 +1590,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/PDE_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### PDE Path Dependence
@@ -1600,10 +1601,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/PDE_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### SBSM Azumth Dependence
@@ -1614,10 +1615,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/SBSM_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### SBSM Path Dependence
@@ -1625,10 +1626,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SBSM_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### SMCA Azumth Dependence
@@ -1639,10 +1640,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/SMCA_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### SMCA Path Dependence
@@ -1650,10 +1651,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/SMCA_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### STNI Azumth Dependence
@@ -1664,10 +1665,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/STNI_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### STNI Path Dependence
@@ -1675,10 +1676,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/STNI_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### USC Azumth Dependence
@@ -1689,10 +1690,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/USC_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### USC Path Dependence
@@ -1700,10 +1701,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/USC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### WNGC Azumth Dependence
@@ -1714,10 +1715,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/WNGC_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### WNGC Path Dependence
@@ -1725,10 +1726,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/WNGC_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### WSS Azumth Dependence
@@ -1739,10 +1740,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/WSS_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### WSS Path Dependence
@@ -1750,10 +1751,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/WSS_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### s022 Azumth Dependence
@@ -1764,10 +1765,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/s022_m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### s022 Path Dependence
@@ -1775,10 +1776,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/s022_m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ### All Sites Azumth Dependence
@@ -1789,10 +1790,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
-| **&phi;** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
-| **&tau;** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **&phi;<sub>SS</sub>** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event_ss.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event_ss.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_between_events.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_between_events.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_between_events.png) |
+| **&phi;** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_within_event.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_within_event.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_within_event.png) |
+| **&phi;<sub>P2P</sub>** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_path.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_path.png) |
 | **Median SA** | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_3s_median_sa.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_5s_median_sa.png) | ![Rupture Strike](resources/m6.6_dist_SOURCE_AZIMUTH_10s_median_sa.png) |
 
 #### All Sites Path Dependence
@@ -1800,10 +1801,10 @@ Directivity comparisons for individual ruptures can be found [here](resources/di
 
 | Type | 3s | 5s | 10s |
 |-----|-----|-----|-----|
+| **&phi;<sub>SS</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
+| **&tau;** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
 | **&phi;** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event.png) |
 | **&phi;<sub>s</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_source_strike.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_source_strike.png) |
-| **&tau;** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_between_events.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_between_events.png) |
-| **&phi;<sub>SS</sub>** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_within_event_ss.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_within_event_ss.png) |
 | **Median SA** | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_3s_median_sa.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_5s_median_sa.png) | ![Path](resources/m6.6_dist_SITE_TO_SOURTH_AZIMUTH_10s_median_sa.png) |
 
 ## BBP PartB Comparison
