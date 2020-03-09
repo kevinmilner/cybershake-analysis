@@ -30,6 +30,7 @@
 ## Table Of Contents
 * [Site Information](#site-information)
   * [Site Map](#site-map)
+* [Curve Values Table](#curve-values-table)
 * [Hazard Spectra](#hazard-spectra)
   * [Source Contribution Spectra](#source-contribution-spectra)
 * [Hazard Curves](#hazard-curves)
@@ -64,6 +65,16 @@
   * [10s Disaggregations](#10s-disaggregations)
     * [10s Disaggregations at Fixed Return Periods](#10s-disaggregations-at-fixed-return-periods)
     * [10s Disaggregations at Fixed IMLs](#10s-disaggregations-at-fixed-imls)
+## Curve Values Table
+*[(top)](#table-of-contents)*
+
+| Hazard Level | RSQSim 4860 10x 3s | ASK2014 3s | RSQSim 4860 10x 5s | ASK2014 5s | RSQSim 4860 10x 7.5s | ASK2014 7.5s | RSQSim 4860 10x 10s | ASK2014 10s |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 1000yr | 0.10623208 | 0.12835196 | 0.068691835 | 0.07236125 | 0.031554263 | 0.051882118 | 0.019583276 | 0.03922398 |
+| 2500yr | 0.1333943 | 0.17185983 | 0.08131243 | 0.096744366 | 0.038609207 | 0.06931669 | 0.024106208 | 0.052452732 |
+| 10000yr | 0.17413805 | 0.25247025 | 0.107442416 | 0.14168374 | 0.052268486 | 0.10135004 | 0.032254953 | 0.07674206 |
+| RTGM | 0.13739632 | 0.15245494 | 0.088842936 | 0.06410785 | 0.041744944 | 0.027725203 | 0.025409142 | 0.012155367 |
+
 ## Hazard Spectra
 *[(top)](#table-of-contents)*
 
